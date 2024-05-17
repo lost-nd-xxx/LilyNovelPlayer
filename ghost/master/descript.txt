@@ -20,3 +20,5 @@ balloon.dontmove,1
 
 seriko.alignmenttodesktop,free
 readme.charset,UTF-8
+
+homeurl,https://raw.githubusercontent.com/kanadelab/LilyNovelPlayer/main/
