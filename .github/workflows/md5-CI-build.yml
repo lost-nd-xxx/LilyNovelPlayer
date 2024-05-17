@@ -16,5 +16,3 @@ jobs:
       uses: ukatech/ukagaka-mirror-md5-CI-build@v1
       with:
         build-mode: other
-
-
