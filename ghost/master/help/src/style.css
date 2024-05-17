@@ -7,7 +7,6 @@ body {
 	background-attachment: fixed;
 	background-position: left bottom;
 	background-repeat: no-repeat;
-	background-color: #eee;
 	background-size: 512px;
 	background-color: rgba(238, 238, 238, 0.75);
 	background-blend-mode: soft-light;
@@ -78,7 +77,7 @@ pre code {
 }
 
 .copy-button:hover {
-	background: #999
+	background: #999;
 }
 
 em {
@@ -97,39 +96,30 @@ em {
 .side ul li {
 	width: auto;
 	color: #222;
-	border-left: solid 6px #2196F3;
-	/*左側の線*/
-	background: #B3E5FC;
-	/*背景色*/
-	margin-bottom: 5px;
-	/*下のバーとの余白*/
+	border-left: solid 6px #2196F3; /* 左側の線 */
+	background: #B3E5FC; /* 背景色 */
+	margin-bottom: 5px; /* 下のバーとの余白 */
 	line-height: 1.5;
 	padding: 0.2em;
 	padding-left: 0.5em;
 	padding-right: 3em;
-	list-style-type: none !important;
-	/*ポチ消す*/
+	list-style-type: none !important; /* ポチ消す */
 	vertical-align: middle;
 	box-shadow: 1px 1px 3px #666;
 }
 
 .returntotop {
-	border-left: solid 6px #FFC107 !important;
-	/*左側の線*/
-	background: #FFECB3 !important;
-	/*背景色*/
+	border-left: solid 6px #FFC107 !important; /* 左側の線 */
+	background: #FFECB3 !important; /* 背景色 */
 }
 
 .differentpage {
-	border-left: solid 6px #E91E63 !important;
-	/*左側の線*/
-	background: #F8BBD0 !important;
-	/*背景色*/
+	border-left: solid 6px #E91E63 !important; /* 左側の線 */
+	background: #F8BBD0 !important; /* 背景色 */
 }
 
 .side ul li:hover {
-	background: #fff !important;
-	/*背景*/
+	background: #fff !important; /* 背景 */
 }
 
 .side ul li a {
@@ -186,8 +176,7 @@ em {
 	justify-content: center;
 	position: -webkit-sticky;
 	position: sticky;
-	top: 5px;
-	/* 追従する */
+	top: 5px; /* 追従する */
 	height: 100%;
 	width: 270px;
 	min-width: 270px;
@@ -228,8 +217,7 @@ screen and (max-width: 850px) {
 	}
 
 	.side {
-		top: auto;
-		/* 追従しない */
+		top: auto; /* 追従しない */
 		margin-top: 5px;
 	}
 
@@ -267,7 +255,7 @@ screen and (max-width: 850px) {
 	}
 
 	#page_top.fadein {
-		opacity: .5;
+		opacity: 0.5;
 		pointer-events: auto;
 	}
 
