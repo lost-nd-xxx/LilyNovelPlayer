@@ -1,0 +1,272 @@
+＃メニュー系
+
+＃以下の独自項目がある場合、そちらが優先されます
+＃（フォルダ名）.ギャラリー
+＃（フォルダ名）.コンフィグ
+＃（フォルダ名）.セーブ
+＃（フォルダ名）.タイトルに戻る
+＃（フォルダ名）.バックログ
+＃（フォルダ名）.ロード
+＃（フォルダ名）.不許可
+＃（フォルダ名）.終了ダイアログ
+
+＃＃「（シェルフォルダ名）.不許可」は（__MenuCurrent）に何が不許可だったか入っている
+＃＃内容リストは以下
+＃＃オート/ギャラリー/クイックセーブ/クイックロード/コンフィグ/スキップ/セーブ/タイトルに戻る/ハイド/バックログ/ロード
+
+
+
+＊OnMenu
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＄__MenuCurrent	（R0）
+＞メニュー.不許可	（メニュー状態.（__MenuCurrent））!=1
+＄文字色.current	（文字色.normal）
+＄メニュー中	1
+＞メニュー.（__MenuCurrent）	（メニュー状態.（__MenuCurrent））==1
+
+
+
+＊メニュー.キャンセル
+＄__BG	
+＄__BackLog_BG	
+＄__BackLog_BackButton	
+＄__BackLog_MaxCount	
+＄__BackLog_Suffix	
+＄__CurrentItem	
+＄__CurrentPage	
+＄__Gallery_BGM	
+＄__Gallery_BackButton	
+＄__Gallery_Background	
+＄__Gallery_Background2	
+＄__Gallery_ButtonAll	
+＄__Gallery_ButtonCoordinate	
+＄__Gallery_ButtonHeight	
+＄__Gallery_ButtonWidth	
+＄__Gallery_CurrentPage	
+＄__Gallery_DisableButton	
+＄__Gallery_FlagNameAll	
+＄__Gallery_ImageAll	
+＄__Gallery_IsCountHalfWidth	
+＄__Gallery_ListName	
+＄__Gallery_List_EndCountPerPage	
+＄__Gallery_List_MaxPerPage	
+＄__Gallery_MaxImageCount	
+＄__Gallery_MaxPageCount	
+＄__Gallery_MaxSectionCount	
+＄__Gallery_OffsetX	
+＄__Gallery_OffsetY	
+＄__Gallery_PagerEndCount	
+＄__Gallery_PagerStartCount	
+＄__Gallery_SectionHeadCount	
+＄__Gallery_SpacingHeight	
+＄__Gallery_SpacingWidth	
+＄__Gallery_StatusAll_Joined	
+＄__Gallery_StatusAll_Split	
+＄__MaxItemCount	
+＄__MaxPageCount	
+＄__count	
+＄__current	
+＄__end	
+＄__n	
+＄__start	
+＄__stats	
+＄__t	
+＄__tmp	
+＄__x	
+＄__x2	
+＄__x3	
+＄__x4	
+＄__y	
+＄バックログ中	
+＄メニュー中	
+＞中断から再開
+
+
+
+＊メニュー.不許可
+＞（ゲームID）.不許可
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）現在、「（__MenuCurrent）」を行うことはできません。
+＄__MenuCurrent	
+\_q\x
+\![raise,中断から再開]
+
+
+
+＊操作でスキップ及びオート解除
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＞中断から再開
+
+
+
+＠メニュー.hr
+\n[100]\_n（文字色.disable）────────────────────────────────────────────────────────────────────────（文字色.normal）\_n\n
+
+
+
+＊メニュー.最小化
+＄Translate有効	0
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+（一体化解除）\![sound,pause]\![set,windowstate,minimize]
+＃本体設定で「最小化時に喋らない」が有効かつここ（クリック反応）以外からの最小化をすると音が止まらない
+＃どうしようもないので仕様とします
+
+
+
+＊メニュー.終了ダイアログ
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＞（ゲームID）.終了ダイアログ
+＄文字色.current	（文字色.normal）
+（bg,（call,存在確認,メニュー.背景））
+：\_q\*
+（call,__offset,m,0）終了しますか？\n[200]
+（call,__offset,m）\__q[ゲーム終了]終了する\__q\n
+（call,__offset,m）\__q[メニュー.キャンセル]終了しない\__q
+\_q
+
+
+
+＊メニュー.れあどめ
+\![open,readme,shell,（ゲームID）]
+\![raise,中断から再開]
+
+
+
+＊メニュー.タイトルに戻る
+＄__MenuCurrent	タイトルに戻る
+＞メニュー.不許可	（メニュー状態.タイトルに戻る）!=1
+＞（ゲームID）.タイトルに戻る
+＞ゲームを起動できない	（文「（ゲームID）.起動」の存在）==0
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＄メニュー中	1
+（bg,（call,存在確認,メニュー.背景））
+：\_q\*
+（call,__offset,m,0）タイトル画面に戻りますか？\n[200]
+（call,__offset,m）\__q[メニュー.タイトルに戻る.決定]タイトル画面に戻る\__q\n
+（call,__offset,m）\__q[メニュー.キャンセル]タイトル画面に戻らない\__q
+\_q
+
+
+
+＊メニュー.確認無しでタイトルに戻る
+＄文字色.current	（文字色.normal）
+＞ゲームを起動できない	（文「（ゲームID）.起動」の存在）==0
+\![raise,（ゲームID）.起動]
+
+
+
+＊メニュー.タイトルに戻る.決定
+＄メニュー中	0
+＞（ゲームID）.起動
+
+
+
+＊メニュー.ハイド
+＄__MenuCurrent	ハイド
+＞メニュー.不許可	（メニュー状態.ハイド）!=1
+＄ハイド中	1
+＞中断から再開
+
+
+
+＊メニュー.ハイド解除
+＄ハイド中	0
+＞中断から再開
+
+
+
+＠ハイド部品
+\_qφ
+\0\b[0]\c　\_l[0,0]φ
+\1\b[0]\c　\_l[0,0]φ
+\_q\_w[1000]φ
+\x[noclear]φ
+\![embed,メニュー.ハイド解除]
+
+
+
+＊メニュー.オート
+＄__MenuCurrent	オート
+＞メニュー.不許可	（メニュー状態.オート）!=1
+＞メニュー.オート解除	（オート）==1
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄オート	1
+＞中断から再開
+
+
+
+＊メニュー.オート解除
+＄__tmp＝（nop,（メニュー.オート解除.変数戻す））
+＞中断から再開
+
+
+
+＠メニュー.オート解除.変数戻す
+（set,オート,0）
+
+
+
+＊メニュー.スキップ
+＄__MenuCurrent	スキップ
+＞メニュー.不許可	（メニュー状態.スキップ）!=1
+＞メニュー.スキップ停止	（スキップ）==1
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＄スキップ	1
+＞中断から再開
+
+
+
+＊メニュー.スキップ停止
+＄__tmp＝（nop,（メニュー.スキップ停止.変数戻す））
+＞中断から再開
+
+
+
+＠メニュー.スキップ停止.変数戻す
+（set,スキップ,0）
+
+
+
+＊メニュー.バックログ
+＄__MenuCurrent	バックログ
+＞メニュー.不許可	（メニュー状態.バックログ）!=1
+＞（ゲームID）.バックログ
+＄バックログ中	1
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＄__BackLog_Suffix	（call,存在確認,バックログ.接尾辞）
+＄__BackLog_BG	（bg,（call,存在確認,バックログ.背景））
+＄__BackLog_BackButton	（call,存在確認,バックログ.戻るボタン）
+＄__BackLog_MaxCount	（call,存在確認,バックログ.履歴最大数）
+＄__x	（call,存在確認,バックログ.offset_x）
+＄__y	（call,存在確認,バックログ.offset_y）
+＄__tmp	（split_reset）
+＄__count	（calc,（split（b1）（バックログ格納）（b1）|（b1）（__BackLog_MaxCount）（b1）0）-1）
+＞BackLog_Core
+
+
+
+＊BackLog_Core
+（__BackLog_BG）
+：\_q\*　\_l[（__x）,（__y）]
+（loop,BackLog_Part,（__count）,0,-1）\x
+\![raise,メニュー.キャンセル]
+＃先頭の空白がないと、ログが何もない時にクリック不能になる可能性がある
+
+
+
+＠BackLog_Part
+（whenlist（b1）（nop,）（b1）φ
+（equal（b1）（S（BackLog_Partカウンタ））（b1）__horizon__）==1（b1）φ
+\n[-100]\_n（call,存在確認,バックログ.水平線）\_n\n \_l[（__x）,]（b1）φ
+（vncall（b1）length（b1）（ゲームID）.（S（BackLog_Partカウンタ））ログ）>0（b1）φ
+（（ゲームID）.（S（BackLog_Partカウンタ））ログ）\n[200] \_l[（__x）,]φ
+）
+
+

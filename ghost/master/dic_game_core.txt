@@ -1,0 +1,561 @@
+＃LNPの根幹とその周辺
+
+
+
+＠一体化_ウェイト
+\p[3]\s[10]\b[2]\_l[0,0]φ
+（call,存在確認,スプラッシュスクリーン）φ
+\p[2]\s[10]\b[2]φ
+（call,存在確認,スプラッシュスクリーン）φ
+\1\s[10]\b[2]φ
+（call,存在確認,スプラッシュスクリーン）φ
+\0\s[10]\b[2]φ
+（call,存在確認,スプラッシュスクリーン）φ
+\_w[50]φ
+（一体化解除）φ
+（一体化_ウェイト_部品）φ
+（一体化解除）φ
+（一体化_ウェイト_部品）
+
+
+
+＠一体化_ウェイト_部品
+（set,一体化中,1）φ
+\p[3]φ
+\![set,alignmenttodesktop,free]φ
+\_w[50]φ
+\p[2]φ
+\![set,alignmenttodesktop,free]φ
+\![move,--X=0,--Y=-0,--time=0,--base=3,--base-offset=left.top,--move-offset=left.top]φ
+\_w[50]φ
+\1φ
+\![set,alignmenttodesktop,free]φ
+\![move,--X=0,--Y=-0,--time=0,--base=3,--base-offset=left.top,--move-offset=left.top]φ
+\_w[50]φ
+\0φ
+\![set,alignmenttodesktop,free]φ
+\![move,--X=0,--Y=-0,--time=0,--base=3,--base-offset=left.top,--move-offset=left.top]φ
+\_w[50]φ
+\0φ
+\![set,zorder,0,1,2,3]\_w[50]φ
+\![set,sticky-window,0,1,2,3]\_w[50]
+
+
+
+＠一体化_クリック
+（when、（一体化中）==0、（一体化解除））φ
+（set,一体化中,1）φ
+\p[3]\s[10]\b[2]\![set,alignmenttodesktop,free]φ
+\![move,--X=0,--Y=-0,--time=0,--base=screen,--base-offset=center.center,--move-offset=center.center]φ
+\p[2]\s[10]\b[2]\![set,alignmenttodesktop,free]φ
+\![move,--X=0,--Y=-0,--time=0,--base=3,--base-offset=left.top,--move-offset=left.top]φ
+\1\s[10]\b[2]\![set,alignmenttodesktop,free]φ
+\![move,--X=0,--Y=-0,--time=0,--base=3,--base-offset=left.top,--move-offset=left.top]φ
+\0\s[10]\b[2]\![set,alignmenttodesktop,free]φ
+\![move,--X=0,--Y=-0,--time=0,--base=3,--base-offset=left.top,--move-offset=left.top]φ
+\p[3]\_w[50]\![set,zorder,0,1,2,3]\_w[50]\![set,sticky-window,0,1,2,3]φ
+\p[3]\b[2]\_q画面を再構築中です。\nクリックしてください...(1/4)\_q\xφ
+\p[2]\b[2]\_q画面を再構築中です。\nクリックしてください...(2/4)\_q\xφ
+\1\b[2]\_q画面を再構築中です。\nクリックしてください...(3/4)\_q\xφ
+\0\b[2]\_q画面を再構築中です。\nクリックしてください...(4/4)\_q\x
+
+
+
+＠一体化解除
+（set,一体化中,0）φ
+\![reset,zorder]\![reset,sticky-window]
+
+
+
+＊OnUnstacking
+＄Translate有効	0
+（一体化解除）
+（一体化_ウェイト_部品）
+（一体化解除）
+（一体化_クリック）
+\![raise,OnUnstackingComplete]
+
+
+
+＊OnUnstackingComplete
+＄Translate有効	1
+\_b["assets/preset/color_dark.png",inline,--option=opaque,--option=foreground]
+：\_q\_l[0,0]\f[color,#fff]復旧完了しました。\n
+中断された箇所に戻ります...
+\_q
+\_w[1000]\c
+\![raise,中断から再開]
+
+
+
+＠ラベル通過
+（set,中断箇所,（ゲームID）.（A0））φ
+（set（b1）文字色.current（b1）φ
+（when（b1）（count（b1）（s_（ゲームID）.既読判定）（b1）|（A0）|）==0（b1）φ
+（文字色.normal）（b1）φ
+（文字色.visited）φ
+）φ
+）φ
+（when（b1）（変数「A1」の存在）==0||（vncall,length,A1）==0（b1）φ
+（call（b1）ラベル通過_既読判定追加（b1）（A0））φ
+（split_reset）φ
+（nop,（split（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0））φ
+（set（b1）s_（ゲームID）.オートセーブ（b1）φ
+|（A0）|（next接頭辞）|（next数値）|φ
+（when（b1）（変数「S3」の存在）==1（b1）φ
+（for（b1）3（b1）（Sの数）-1（b1）1（b1）（S（C0））|）φ
+）φ
+）φ
+）φ
+（set,手動セーブ,実行）
+＃A1に何か入っていた時、オートセーブは更新されない
+＃中断箇所は更新される
+＃タイトル画面などで中断時、それがオートセーブに残ってしまうための措置
+
+
+
+＠ラベル通過_既読判定追加
+（when,（count,（s_（ゲームID）.既読判定）,|（A0）|）==0,（set,s_（ゲームID）.既読判定,（s_（ゲームID）.既読判定）（A0）|））
+
+
+
+＊中断から再開
+＄Translate有効	1
+＞中断から再開できない	（文「（中断箇所）」の存在）==0
+＄メニュー中	0
+＄中断再開中	1
+＄__tmp	（erase,（中断箇所）,（ゲームID）.）
+＄文字色.current	（when,（count,（s_（ゲームID）.既読判定）,|（__tmp）|）==0,（文字色.normal）,（文字色.visited））
+＄描画中1	|
+＄描画中2	|
+＄描画中3	|
+＄手動セーブ	実行
+＞（中断箇所）
+
+
+
+＊中断から再開できない
+＞ゲームを起動できない	（文「（ゲームID）.起動」の存在）==0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）中断箇所からの再開に失敗しました。\n
+（call,__offset,m）タイトルに戻ります。
+\_q\x
+\![raise,（ゲームID）.起動]
+
+
+
+＊OnGamePlayCore_Choiced
+＄描画中1	|
+＄描画中2	|
+＄描画中3	|
+＞OnGamePlayCore
+
+
+
+＊OnGamePlayCore
+＞OnGamePlayCore.再生失敗	（文「（ゲームID）.（R0）」の存在）==0
+＄__t	（when（b1）（vncall,length,R1）>0（b1）（for（b1）1（b1）（Rの数）-1（b1）2（b1）（vncall（b1）OnGamePlayCore.変数操作（b1）R（C0）（b1）R（calc,（C0）+1））））
+＄__t＝（next数値）+1
+＄next数値	（when（b1）（vncall,全角半角判定,next数値）==半角（b1）（vncall,zen2han,__t）（b1）（__t））
+＄__tmp	（when（b1）（スキップ）==1&&（スキップ_未読で停止）==1&&（count（b1）（s_（ゲームID）.既読判定）（b1）|（R0）|）==0（b1）（メニュー.スキップ停止.変数戻す））
+＄__tmp	（vncall,ラベル通過,R0）
+＄__tmp	（when（b1）（バックログ状態）==1（b1）（vncall,バックログ追加,R0））
+＞（ゲームID）.（R0）
+＃中断やセーブデータからの復帰時はここには来ない
+＃（変数操作が多重に行われてしまうため）
+
+
+
+＊OnGamePlayCore.再生失敗
+＄文字色.current	（文字色.normal）
+＞ゲームを起動できない	（文「（ゲームID）.起動」の存在）==0
+\_q
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+（call,__offset,m,0）シナリオの再生に失敗しました。\n
+（call,__offset,m）タイトルに戻ります。
+\_q\x
+\![raise,（ゲームID）.起動]
+
+
+
+＊OnGamePlayCore.変数操作
+＞OnGamePlayCore.変数操作しない	（変数「A0」の存在）==0||（vncall,length,A0）==0
+＞OnGamePlayCore.グローバル変数操作	（equal（b1）（substr（b1）（A0）（b1）0（b1）10）（b1）__global__）==1
+＞OnGamePlayCore.変数削除	（vncall,length,A1）==0||（変数「A1」の存在）==0
+＄__tmp	（split_reset）
+＄__count	（calc,-1+（split（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0））
+＄__t	0
+＄s_（ゲームID）.オートセーブ	|（S0）|（S1）|（S2）|（when（b1）（変数「S3」の存在）==1&&（vncall,length,（S3））>0（b1）（for（b1）3（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（A0）:）==1（b1）（A0）:（A1）（set（b1）__t（b1）1）（b1）（S（C0））|）））
+＄s_（ゲームID）.オートセーブ	（s_（ゲームID）.オートセーブ）（when（b1）（__t）==0（b1）（A0）:（A1）|）
+＄__t	
+
+
+
+＊OnGamePlayCore.変数操作しない
+＃何もしないをする
+
+
+
+＊OnGamePlayCore.変数削除
+＄__tmp	（split_reset）
+＄__count	（calc,-1+（split（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0））
+＄s_（ゲームID）.オートセーブ	|（S0）|（S1）|（S2）|（when（b1）（vncall,length,S3）>0（b1）（for（b1）3（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（A0）:）<=0（b1）（S（C0））|）））
+
+
+
+＊OnGamePlayCore.グローバル変数操作
+＄__A0	（substr（b1）（A0）（b1）10）
+＞OnGamePlayCore.変数操作しない	（変数「__A0」の存在）==0||（vncall,length,__A0）==0
+＞OnGamePlayCore.グローバル変数削除	（vncall,length,A1）==0||（変数「A1」の存在）==0
+＄__tmp	（split_reset）
+＄__count	（calc,-1+（split（b1）（s_（ゲームID）.グローバルセーブ）（b1）|（b1）0（b1）0））
+＄__t	0
+＄s_（ゲームID）.グローバルセーブ	|（when（b1）（vncall,length,S0）>0（b1）（for（b1）0（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（__A0）:）==1（b1）（__A0）:（A1）（set,__t,1）（b1）（S（C0）））|））
+＄s_（ゲームID）.グローバルセーブ	（s_（ゲームID）.グローバルセーブ）（when（b1）（__t）==0（b1）（__A0）:（A1）|）
+＄__t	
+＄__A0	
+
+
+
+＊OnGamePlayCore.グローバル変数削除
+＄__tmp	（split_reset）
+＄__count	（calc,-1+（split（b1）（s_（ゲームID）.グローバルセーブ）（b1）|（b1）0（b1）0））
+＄s_（ゲームID）.グローバルセーブ	|（when（b1）（vncall,length,S0）>0（b1）（for（b1）0（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（__A0）:）<=0（b1）（S（C0））|）））
+
+
+
+＠全角半角判定	（is_digit,（A0））==1
+（set,SAORI引数の計算,無効）φ
+（when,（equal,（at,（A0）,0）,（switch,（at,（A0）,0）,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9））==1,半角,全角）φ
+（set,SAORI引数の計算,自動）
+＃１文字目で判定　２文字以降に別種の字が混ざっていても検知しない
+
+
+
+＠全角半角判定	（is_digit,（A0））==0
+文字
+＃１文字目で判定　２文字以降に別種の字が混ざっていても検知しない
+
+＠__window
+\_qφ
+\p[3]\s[（サーフェス_ウィンドウ）]\b[0]φ
+\p[2]\s[10]\b[0]φ
+\1\s[10]\b[0]φ
+\0\s[10]\b[0]φ
+\_q
+
+＠__textcolor
+（when（b1）（vncall,length,文字色強制）>0（b1）（文字色強制）（b1）（文字色.選択肢.normal）（文字色.アンカー）（文字色.current））
+
+＊OnTranslate	（Translate有効）==1&&（変数「R0」の存在）==1&&（vncall,length,R0）>0
+＄スクリプトの一番頭	（__window）
+＄__translate	（R0）
+＄__MenuCurrent	
+＞OnTranslate.ハイド中	（ハイド中）==1
+＞OnTranslate.バックログ中	（バックログ中）==1
+＞OnTranslate.メニュー中	（メニュー中）==1
+＞OnTranslate.中断から再開	（中断再開中）==1
+＞OnTranslate.スキップ中	（スキップ）==1
+＞OnTranslate.オート中	（オート）==1
+＞OnTranslate.ウェイトを削除する	（ウェイト乗数）==0
+＞OnTranslate.ウェイトを置換する
+
+
+
+＊OnTranslate.ハイド中
+＄__tmp	（__wait_erase）
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,0]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄__window	
+＄TalkPrefix	
+
+
+
+＊OnTranslate.バックログ中
+＄__translate	（vncall,replace,__translate,__replace_backlog1,__replace_backlog2）
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,0]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄__window	
+＄TalkPrefix	
+
+
+
+＊OnTranslate.メニュー中
+＄__tmp	（__wait_replace）
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄__window	
+＄TalkPrefix	
+
+
+
+＊OnTranslate.中断から再開
+＄__tmp	（__wait_erase）
+＄__tmp	（whenlist（b1）（nop,）（b1）（オート）==1（b1）__x_replace（b1）（スキップ）==1（b1）__x_erase（b1）__x_replace2）
+＄__tmp	（when（b1）（変数「__tmp」の存在）==1（b1）（（__tmp）））
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,0]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄中断再開中	0
+＄__window	
+＄TalkPrefix	
+
+
+
+＊OnTranslate.スキップ中
+＄__tmp	（__wait_erase）
+＄__tmp	（__x_erase）
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,0]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄__window	
+＄TalkPrefix	
+
+
+
+＊OnTranslate.オート中
+＄__tmp	（__wait_replace）
+＄__tmp	（__x_replace）
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄__window	
+＄TalkPrefix	
+
+
+
+＊OnTranslate.ウェイトを置換する
+＄__tmp	（__wait_replace）
+＄__tmp	（__x_replace2）
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄__window	
+＄TalkPrefix	
+
+
+
+＊OnTranslate.ウェイトを削除する
+＄__tmp	（__wait_erase）
+＄__tmp	（__x_replace2）
+＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
+（TalkPrefix）（__translate）
+＄__translate	
+＄__window	
+＄TalkPrefix	
+
+
+
+＠__translate_tempvarname
+__translate
+
+
+
+＠__replace_backlog1
+\n[0]
+
+＠__replace_backlog2
+\n[100]\_l[（__x）,]
+
+
+
+＠__x_replace
+（for,1,2,1,（vncall,set,__translate_tempvarname,__x_replace_core1））
+
+＠__x_replace_core1
+（vncall,__x_replace_core2,__translate,C0）
+
+＠__x_replace_core2
+（vncall,replace,A0,__cw（A1）,__cw_after）
+
+
+
+＠__x_replace2
+（for,1,2,1,（vncall,set,__translate_tempvarname,__x_replace2_core1））
+
+＠__x_replace2_core1
+（vncall,__x_replace2_core2,__translate,C0）
+
+＠__x_replace2_core2
+（call（b1）replace（b1）（A0）（b1）（__cw（A1））（b1）（__cw_after2）（__cw（A1）））
+
+
+
+＠__x_erase
+（for,1,2,1,（vncall,set,__translate_tempvarname,__x_erase_core1））
+
+＠__x_erase_core1
+（vncall,__x_erase_core2,__translate,C0）
+
+＠__x_erase_core2
+（vncall,erase,A0,__cw（A1））
+
+
+
+＠__cw1
+\x[noclear]
+
+＠__cw2
+\x
+
+＠__cw_after
+\_w[（オート_待ち時間）]
+
+＠__cw_after2
+（call,__クリック待ち描画,（call,存在確認,クリック待ちマーカー））φ
+
+＠__クリック待ち描画
+\_l[（A1）,（A2）]\_b["（A0）",inline,--option=fixed,--option=foreground]
+
+
+
+＠__wait_replace
+（for,1,9,1,（vncall,set,__translate_tempvarname,__wait_replace_core1））
+
+＠__wait_replace_core1
+（vncall,__wait_replace_core2,__translate,C0）
+
+＠__wait_replace_core2
+（vncall,replace,A0,__wr（A1）,__wr_after）
+
+
+
+＠__wait_erase
+（for,1,9,1,（vncall,set,__translate_tempvarname,__wait_erase_core1））
+
+＠__wait_erase_core1
+（vncall,__wait_erase_core2,__translate,C0）
+
+＠__wait_erase_core2
+（vncall,erase,A0,__wr（A1））
+
+
+
+＠__wr1
+\w1
+
+＠__wr2
+\w2
+
+＠__wr3
+\w3
+
+＠__wr4
+\w4
+
+＠__wr5
+\w5
+
+＠__wr6
+\w6
+
+＠__wr7
+\w7
+
+＠__wr8
+\w8
+
+＠__wr9
+\w9
+
+
+
+＠__wr_after	（ウェイト乗数）>0
+\_w[（calc,（C0）*（ウェイト乗数））]
+
+＠__wr_after	（ウェイト乗数）==0
+\_w[0]
+
+
+
+＠文字色.既読選択肢.取得
+\f[cursorstyle,（call,存在確認,cursorvisitedstyle）]φ
+\f[cursormethod,（call,存在確認,cursorvisitedmethod）]φ
+\f[cursorfontcolor,（call,存在確認,cursorvisitedfontcolor）]φ
+\f[cursorpencolor,（call,存在確認,cursorvisitedpencolor）]φ
+\f[cursorbrushcolor,（call,存在確認,cursorvisitedbrushcolor）]φ
+\f[cursornotselectstyle,（call,存在確認,cursorvisitednotselectstyle）]φ
+\f[cursornotselectmethod,（call,存在確認,cursorvisitednotselectmethod）]φ
+\f[cursornotselectfontcolor,（call,存在確認,cursorvisitednotselectfontcolor）]φ
+\f[cursornotselectpencolor,（call,存在確認,cursorvisitednotselectpencolor）]φ
+\f[cursornotselectbrushcolor,（call,存在確認,cursorvisitednotselectbrushcolor）]
+
+
+
+＠文字色.選択肢.取得
+\f[cursorstyle,（call,存在確認,cursorstyle）]φ
+\f[cursormethod,（call,存在確認,cursormethod）]φ
+\f[cursorfontcolor,（call,存在確認,cursorfontcolor）]φ
+\f[cursorpencolor,（call,存在確認,cursorpencolor）]φ
+\f[cursorbrushcolor,（call,存在確認,cursorbrushcolor）]φ
+\f[cursornotselectstyle,（call,存在確認,cursornotselectstyle）]φ
+\f[cursornotselectmethod,（call,存在確認,cursornotselectmethod）]φ
+\f[cursornotselectfontcolor,（call,存在確認,cursornotselectfontcolor）]φ
+\f[cursornotselectpencolor,（call,存在確認,cursornotselectpencolor）]φ
+\f[cursornotselectbrushcolor,（call,存在確認,cursornotselectbrushcolor）]
+
+
+
+＠文字色.アンカー.取得
+\f[anchorstyle,（call,存在確認,anchorstyle）]φ
+\f[anchorbrushcolor,（call,存在確認,anchorbrushcolor）]φ
+\f[anchorpencolor,（call,存在確認,anchorpencolor）]φ
+\f[anchorfontcolor,（call,存在確認,anchorfontcolor）]φ
+\f[anchormethod,（call,存在確認,anchormethod）]φ
+\f[anchornotselectstyle,（call,存在確認,anchornotselectstyle）]φ
+\f[anchornotselectbrushcolor,（call,存在確認,anchornotselectbrushcolor）]φ
+\f[anchornotselectpencolor,（call,存在確認,anchornotselectpencolor）]φ
+\f[anchornotselectfontcolor,（call,存在確認,anchornotselectfontcolor）]φ
+\f[anchornotselectmethod,（call,存在確認,anchornotselectmethod）]φ
+\f[anchorvisitedstyle,（call,存在確認,anchorvisitedstyle）]φ
+\f[anchorvisitedbrushcolor,（call,存在確認,anchorvisitedbrushcolor）]φ
+\f[anchorvisitedpencolor,（call,存在確認,anchorvisitedpencolor）]φ
+\f[anchorvisitedfontcolor,（call,存在確認,anchorvisitedfontcolor）]φ
+\f[anchorvisitedmethod,（call,存在確認,anchorvisitedmethod）]
+
+
+
+＠存在確認
+（when（b1）（vncall,length,（存在確認_部品１））>0（b1）（（存在確認_部品１））（b1）（存在確認_部品２））
+＃「（ゲームID）.（A0）」という名前の中身があればそれを展開、存在しなかったら「__default.（A0）」を展開して返す
+
+
+
+＠存在確認_部品１
+（ゲームID）.（A0）
+
+
+
+＠存在確認_部品２
+（__default.（A0））
+
+
+
+＠split_reset
+（nop,（split,ab,a,0,0））（set,S0,）（set,Ｓ０,）（set,Sの数,）（set,Ｓの数,）
+＃S系の変数を無理矢理に消す
+
+
+
+＠__offset	（count（b1）|menu|m|メニュー|メ|（b1）|（A0）|）==1
+（when、（Aの数）>=2、\0（文字色.normal））\_l[（call,存在確認,メニュー.offset_x）,（when,（Aの数）>=2,（call,存在確認,メニュー.offset_y）,）]
+
+＠__offset	（count（b1）|save|s|セーブ|セ|（b1）|（A0）|）==1
+（when、（Aの数）>=2、\0（文字色.normal））\_l[（call,存在確認,セーブ.offset_x）,（when,（Aの数）>=2,（call,存在確認,セーブ.offset_y）,）]
+
+＠__offset	（count（b1）|load|l|ロード|ロ|（b1）|（A0）|）==1
+（when、（Aの数）>=2、\0（文字色.normal））\_l[（call,存在確認,ロード.offset_x）,（when,（Aの数）>=2,（call,存在確認,ロード.offset_y）,）]
+
+＠__offset	（count（b1）|config|c|コンフィグ|コ|（b1）|（A0）|）==1
+（when、（Aの数）>=2、\0（文字色.normal））\_l[（call,存在確認,コンフィグ.offset_x）,（when,（Aの数）>=2,（call,存在確認,コンフィグ.offset_y）,）]
+
+＠__offset	（count（b1）|gallery|g|ギャラリー|ギ|（b1）|（A0）|）==1
+（when、（Aの数）>=2、\0（文字色.normal））\_l[（call,存在確認,ギャラリー.offset_x）,（when,（Aの数）>=2,（call,存在確認,ギャラリー.offset_y）,）]
+
+

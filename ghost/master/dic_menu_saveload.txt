@@ -1,0 +1,351 @@
+＃セーブ・ロード
+
+
+＊メニュー.セーブ
+＄__MenuCurrent	セーブ
+＞メニュー.不許可	（メニュー状態.セーブ）!=1
+＞（ゲームID）.セーブ
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＄__CurrentPage	1
+＄__MaxItemCount	（call,存在確認,最大セーブスロット数）
+＄__MaxItemCount	（when,（__MaxItemCount）>100,100,（__MaxItemCount））
+＄__MaxPageCount	（calc,(（__MaxItemCount）+2)/6（when,（calc,(（__MaxItemCount）+2)%6）>0,+1））
+＄__BG	（call,存在確認,セーブ.背景）
+＄__BG	\p[3]\_l[0,0]\_b["（__BG）",inline,--option=foreground,--option=opaque,--option=fixed]
+：（call,メニュー.セーブロード.ページ生成,セーブ）
+
+
+
+＊メニュー.ロード
+＄__MenuCurrent	ロード
+＞メニュー.不許可	（メニュー状態.ロード）!=1
+＞（ゲームID）.ロード
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＄__CurrentPage	1
+＄__MaxItemCount	（call,存在確認,最大セーブスロット数）
+＄__MaxItemCount	（when,（__MaxItemCount）>100,100,（__MaxItemCount））
+＄__MaxPageCount	（calc,(（__MaxItemCount）+2)/6（when,（calc,(（__MaxItemCount）+2)%6）>0,+1））
+＄__BG	（call,存在確認,ロード.背景）
+＄__BG	\p[3]\_l[0,0]\_b["（__BG）",inline,--option=foreground,--option=opaque,--option=fixed]
+（call,メニュー.セーブロード.ページ生成,ロード）
+
+
+
+＊メニュー.セーブロード.ページ生成
+\_q\*
+（__BG）
+：（call,存在確認,（A0）.戻るボタン）
+（when,（__MaxPageCount）>1,（call,メニュー.ページ移動,（A0）））
+（call,メニュー.ページ項目,（A0））
+
+
+
+＠メニュー.ページ項目.ボタン生成
+（call,（A0）ボタン,
+（whenlist、（A1）==、-1、オートセーブ、0、クイックセーブ、セーブ（han2zen、（A1）））,
+（call、ボタン座標、（A0）、（A1））,
+（call、存在確認、（A0）.ボタン台）
+）
+
+
+
+＠ボタン座標
+（nswitch、（calc,(（A1）+2)%6+1）、
+
+（calc、（call、存在確認、（A0）.offset_x）+（call、存在確認、（A0）.ボタン台_width）+（call、存在確認、（A0）.spacing_width））,
+（calc、（call、存在確認、（A0）.offset_y）+（call、存在確認、（A0）.ボタン台_height）*2+（call、存在確認、（A0）.spacing_height）*4）、
+
+（call、存在確認、（A0）.offset_x）,
+（calc、（call、存在確認、（A0）.offset_y）+（call、存在確認、（A0）.spacing_height）*2）、
+
+（calc、（call、存在確認、（A0）.offset_x）+（call、存在確認、（A0）.ボタン台_width）+（call、存在確認、（A0）.spacing_width））,
+（calc、（call、存在確認、（A0）.offset_y）+（call、存在確認、（A0）.spacing_height）*2）、
+
+（call、存在確認、（A0）.offset_x）,
+（calc、（call、存在確認、（A0）.offset_y）+（call、存在確認、（A0）.ボタン台_height）+（call、存在確認、（A0）.spacing_height）*3）、
+
+（calc、（call、存在確認、（A0）.offset_x）+（call、存在確認、（A0）.ボタン台_width）+（call、存在確認、（A0）.spacing_width））,
+（calc、（call、存在確認、（A0）.offset_y）+（call、存在確認、（A0）.ボタン台_height）+（call、存在確認、（A0）.spacing_height）*3）、
+
+（call、存在確認、（A0）.offset_x）,
+（calc、（call、存在確認、（A0）.offset_y）+（call、存在確認、（A0）.ボタン台_height）*2+（call、存在確認、（A0）.spacing_height）*4）
+）
+
+
+
+＊メニュー.ページ項目
+＄__t	（split_reset）
+＄__maxperpage	（calc,（__CurrentPage）*6-2）
+＄__endcount	（when,（__maxperpage）>（__MaxItemCount）,（__MaxItemCount）,（__maxperpage））
+：\f[align,left]
+（for,（__maxperpage）-5,（__endcount）,1,
+（call、メニュー.ページ項目.ボタン生成、（A0）、（C0））
+）
+＄__maxperpage	
+＄__endcount	
+
+
+
+＊OnSaveListPageMove
+＄__CurrentPage	（R1）
+（call,メニュー.セーブロード.ページ生成,（R0））
+
+
+
+＠メニュー.ページ移動
+\_l[0,（call,存在確認,（A0）.offset_y）]φ
+\f[align,center]φ
+（when、（__CurrentPage）>=3、
+\__q[OnSaveListPageMove,（A0）,1]φ≪\__q、
+（文字色.disable）φ≪（文字色.normal）
+）φ
+ （when、（__CurrentPage）>=2、
+\__q[OnSaveListPageMove,（A0）,（calc,（__CurrentPage）-1）]φ＜\__q、
+（文字色.disable）φ＜（文字色.normal）
+）φ
+（whenlist,（nop,）,
+（__MaxPageCount）<=5,
+（nop,）,
+（__MaxPageCount）>5&&（__CurrentPage）>=4,
+ ..,
+   ）φ
+（when,（__MaxPageCount）>5,
+（set,__start,（calc,（__CurrentPage）-2））
+（set,__end,（calc,（__CurrentPage）+2））,
+（set,__start,1）（set,__end,（__MaxPageCount）））φ
+（when,（__start）<=0,
+（set,__start,1）（set,__end,5））φ
+（when,（__end）>（__MaxPageCount）,
+（set,__end,（__MaxPageCount））（set,__start,（calc,（__end）-4）））φ
+（for、（__start）、（__end）、1、
+（whenlist、（C0）、
+==（__CurrentPage）、 （メニュー.ページ移動.桁合わせ）、
+>（__MaxPageCount）、、
+ \__q[OnSaveListPageMove,（A0）,（C0）]（メニュー.ページ移動.桁合わせ）\__q
+））φ
+（whenlist,（nop,）,
+（__MaxPageCount）<=5,
+（nop,）,
+（__MaxPageCount）>5&&（__end）<（__MaxPageCount）,
+ ..,
+   ）φ
+ （when、(（__CurrentPage）+1)<=（__MaxPageCount）、
+\__q[OnSaveListPageMove,（A0）,（calc,（__CurrentPage）+1）]φ＞\__q、
+（文字色.disable）φ＞（文字色.normal）
+）φ
+ （when、(（__CurrentPage）+2)<=（__MaxPageCount）、
+\__q[OnSaveListPageMove,（A0）,（__MaxPageCount）]φ≫\__q、
+（文字色.disable）φ≫（文字色.normal）
+）\n[200]
+＃複数ページある
+＃計算順調整のため半角括弧あり
+
+
+
+＠メニュー.ページ移動.桁合わせ
+（han2zen,（sprintf,%0（length,（__MaxPageCount））d,（C0）））
+
+
+
+＠セーブロードボタン_内容表示
+（when（b1）（変数「s_（ゲームID）.（A0）」の存在）==0||（vncall,length,s_（ゲームID）.（A0））<=1（b1）空白のセーブデータ（b1）（nop（b1）（split（b1）（s_（ゲームID）.（A0））（b1）|（b1）0（b1）0））（when（b1）（vncall,length,S0）>=9（b1）（substr（b1）（S0）（b1）0（b1）9）..（b1）（S0）））
+
+
+
+＠セーブボタン
+（when（b1）（equal（b1）オートセーブ（b1）（A0））==1||（equal（b1）クイックセーブ（b1）（A0））==1（b1）（セーブボタン.押せない）（b1）（セーブボタン.押せる））φ
+（when、（length、（s_（ゲームID）.（A0）））>1&&（A0）!=オートセーブ&&（変数「s_（ゲームID）.（A0）」の存在）==1、
+\_l[（calc,（A1）+（call,存在確認,セーブ.削除ボタン_offset_x））,（calc,（A2）+（call,存在確認,セーブ.削除ボタン_offset_y））]
+\__q[OnSavedataEraseDialog,セーブ,（A0）]
+（call,存在確認,セーブ.削除ボタン）\__q
+）
+＃（call,セーブボタン,セーブデータ変数名,x座標,y座標,ボタン画像のパス※１）
+＃※１：ほにゃらら.pngとほにゃららd.pngを用意し、「ほにゃらら」の部分を引数として書く
+＃ほにゃらら.pngが押せる時、ほにゃららd.pngが押せない時
+
+
+
+＠セーブボタン.押せる
+\_l[（A1）,（A2）]\__q[OnSavedataUpdate,s_（ゲームID）.（A0）]φ
+\_b["（A3）.png",inline,--option=use_self_alpha,--option=foreground]\__qφ
+\_l[（calc,（A1）+10）,（calc,（A2）+15）]φ
+（A0）\nφ
+\_l[（calc,（A1）+10）,]φ
+（vncall,セーブロードボタン_内容表示,A0）
+
+
+
+＠セーブボタン.押せない
+\_l[（A1）,（A2）]φ
+\_b["（A3）d.png",inline,--option=use_self_alpha,--option=foreground]φ
+\_l[（calc,（A1）+10）,（calc,（A2）+15）]φ
+（文字色.disable）（A0）\nφ
+\_l[（calc,（A1）+10）,]φ
+（vncall,セーブロードボタン_内容表示,A0）φ
+（文字色.normal）
+
+
+
+＠ロードボタン
+（when,（length,（s_（ゲームID）.（A0）））>1&&（変数「s_（ゲームID）.（A0）」の存在）==1,
+（ロードボタン.押せる）
+（when、（length、（s_（ゲームID）.（A0）））>1&&（A0）!=オートセーブ&&（変数「s_（ゲームID）.（A0）」の存在）==1、
+\_l[（calc,（A1）+（call,存在確認,ロード.削除ボタン_offset_x））,（calc,（A2）+（call,存在確認,ロード.削除ボタン_offset_y））]
+\__q[OnSavedataEraseDialog,ロード,（A0）]
+（call,存在確認,ロード.削除ボタン）\__q
+）,
+（ロードボタン.押せない））
+＃例：（call,ロードボタン,セーブデータ変数名,x座標,y座標,ボタン画像のパス※１）
+＃※１：ほにゃらら.pngとほにゃららd.pngを用意し、「ほにゃらら」の部分を引数として書く
+＃ほにゃらら.pngが押せる時、ほにゃららd.pngが押せない時
+
+
+
+＠ロードボタン.押せる
+\_l[（A1）,（A2）]\__q[OnResumeGame,（A0）]φ
+\_b["（A3）.png",inline,--option=use_self_alpha,--option=foreground]\__qφ
+\_l[（calc,（A1）+10）,（calc,（A2）+15）]φ
+（A0）\nφ
+\_l[（calc,（A1）+10）,]φ
+（vncall,セーブロードボタン_内容表示,A0）
+
+
+
+＠ロードボタン.押せない
+\_l[（A1）,（A2）]φ
+\_b["（A3）d.png",inline,--option=use_self_alpha,--option=foreground]φ
+\_l[（calc,（A1）+10）,（calc,（A2）+15）]φ
+（文字色.disable）（A0）\nφ
+\_l[（calc,（A1）+10）,]φ
+（vncall,セーブロードボタン_内容表示,A0）φ
+（文字色.normal）
+
+
+
+＊OnSavedataUpdate
+＄（R0）	（s_（ゲームID）.オートセーブ）
+＞メニュー.セーブ
+
+
+
+＊OnResumeGame
+＄メニュー中	0
+＄__tmp＝（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
+＄__tmp＝（when,（オート）==1,（メニュー.オート解除.変数戻す））
+＄s_（ゲームID）.オートセーブ	（s_（ゲームID）.（R0））
+＄__tmp	（split_reset）
+＄__tmp	（split,（s_（ゲームID）.オートセーブ）,|,0,0）
+＄中断箇所	（ゲームID）.（S0）
+＄__tmp	（S0）
+＞OnResumeGameFailure	（文「（中断箇所）」の存在）==0
+＄バックログ状態	1
+＄next接頭辞	（when（b1）（vncall,length,S1）>0（b1）（S1）（b1）シナリオ）
+＄next数値	（when（b1）（vncall,length,S2）>0（b1）（S2）（b1）１）
+＄文字色.current	（when,（count（b1）（s_（ゲームID）.既読判定）（b1）|（S0）|）==0,（文字色.normal）,（文字色.visited））
+＄__t	（call,バックログ追加,__horizon__）
+＄__t	（split_reset）
+＄__t	（nop,（split（b1）（バックログ格納）（b1）|（b1）3（b1）0））
+＄__t	（when（b1）（vncall,equal,__tmp,S1）==0（b1）（call（b1）バックログ追加（b1）（__tmp）））
+＄描画中1	|
+＄描画中2	|
+＄描画中3	|
+＄手動セーブ	実行
+\![raise,（中断箇所）]
+
+
+
+＊OnResumeGameFailure
+\_q
+（bg,（call,存在確認,メニュー.背景））
+（call,__offset,m,0）ロードに失敗しました。\n
+（call,__offset,m）タイトルに戻ります。
+\_q\x
+\![raise,（ゲームID）.起動]
+
+
+
+＊OnSavedataEraseDialog
+＄__t	（split_reset）
+\_q\*
+（__BG）
+（call,__offset,（R0）,0）以下のセーブデータを削除してもよいですか？\n[200]
+（call,__offset,（R0））（R1）\n
+（nop（b1）（split（b1）（s_（ゲームID）.（R1））（b1）|（b1）0（b1）0））
+（call,__offset,（R0））（S0）\n[200]
+（call,__offset,（R0））\__q[OnSavedataEraseDialog.Set,（R0）,（R1）]削除する\__q\n[125]
+（call,__offset,（R0））\__q[メニュー.（R0）]削除しない\__q\n
+
+
+
+＊OnSavedataEraseDialog.Set
+＄s_（ゲームID）.（R1）	
+＄手動セーブ	実行
+＞メニュー.（R0）
+
+
+
+＊メニュー.クイックセーブ
+＄__MenuCurrent	クイックセーブ
+＞メニュー.不許可	（メニュー状態.クイックセーブ）!=1
+＄メニュー中	0
+＞クイックセーブ失敗	（length,（s_（ゲームID）.オートセーブ））<=1
+＄s_（ゲームID）.クイックセーブ	（s_（ゲームID）.オートセーブ）
+＄手動セーブ	実行
+＞中断から再開
+
+
+＊クイックセーブ失敗
+＄__tmp＝（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
+＄__tmp＝（when,（オート）==1,（メニュー.オート解除.変数戻す））
+\_q
+（bg,（call,存在確認,メニュー.背景））
+（call,__offset,m,0）クイックセーブに失敗しました。\n
+（call,__offset,m）タイトルに戻ります。
+\_q\x
+\![raise,（ゲームID）.起動]
+
+
+
+＊メニュー.クイックロード
+＄__MenuCurrent	クイックロード
+＞メニュー.不許可	（メニュー状態.クイックロード）!=1
+＄メニュー中	0
+＄__tmp＝（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
+＄__tmp＝（when,（オート）==1,（メニュー.オート解除.変数戻す））
+＄__t	（split_reset）
+＄__t	（nop,（split（b1）（s_（ゲームID）.クイックセーブ）（b1）|（b1）4（b1）0））
+＞クイックロード失敗	（文「（ゲームID）.（S0）」の存在）==0
+＄s_（ゲームID）.オートセーブ	（s_（ゲームID）.クイックセーブ）
+＄中断箇所	（ゲームID）.（S0）
+＄__tmp	（S0）
+＞クイックロード失敗	（文「（中断箇所）」の存在）==0
+＄バックログ状態	1
+＄next接頭辞	（when（b1）（vncall,length,S1）>0（b1）（S1）（b1）シナリオ）
+＄next数値	（when（b1）（vncall,length,S2）>0（b1）（S2）（b1）１）
+＄文字色.current	（when,（count（b1）（s_（ゲームID）.既読判定）（b1）|（S0）|）==0,（文字色.normal）,（文字色.visited））
+＄__t	（call,バックログ追加,__horizon__）
+＄__t	（split_reset）
+＄__t	（nop,（split（b1）（バックログ格納）（b1）|（b1）3（b1）0））
+＄__t	（when（b1）（vncall,equal,__tmp,S1）==0（b1）（call（b1）バックログ追加（b1）（__tmp）））
+＄描画中1	|
+＄描画中2	|
+＄描画中3	|
+＄手動セーブ	実行
+＞（中断箇所）
+
+
+
+＊クイックロード失敗
+＄__tmp＝（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
+＄__tmp＝（when,（オート）==1,（メニュー.オート解除.変数戻す））
+\_q
+（bg,（call,存在確認,メニュー.背景））
+（call,__offset,m,0）クイックロードに失敗しました。\n
+（call,__offset,m）タイトルに戻ります。
+\_q\x
+\![raise,（ゲームID）.起動]
+＃クイックロードできなかった場合
+
+

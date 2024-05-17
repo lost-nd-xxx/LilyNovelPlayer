@@ -1,0 +1,400 @@
+＃SSPのイベントとその周辺
+
+
+
+＊OnNotifyShellInfo
+＄シェル名	（R0）
+＄__t	（split_reset）
+＄ゲームID	（S（calc,（split（b1）（R1）（b1）/（b1）0（b1）0）-1））
+＃シェルフォルダ名をユニークな英数字文字列とみなす
+＃そのため、名前かぶりで変更されると製作委員が泣く
+
+
+
+＊OnNotifyBalloonInfo
+＄バルーン名	（R0）
+
+
+
+＊OnBalloonChange
+＄BalloonWidth	（get_property,currentghost.balloon.scope(0).validwidth.initial）
+＄BalloonHeight	（get_property,currentghost.balloon.scope(0).validheight.initial）
+＞中断から再開	（変数「__ゴーストによるバルーン変更」の存在）==0
+＄__ゴーストによるバルーン変更	
+（一体化_ウェイト）\![raise,（ゲームID）.起動]
+
+
+
+＊OnBalloonSizeGet
+＄BalloonWidth	（get_property,currentghost.balloon.scope(0).validwidth.initial）
+＄BalloonHeight	（get_property,currentghost.balloon.scope(0).validheight.initial）
+
+
+
+＊OnTalk	（count、（Status）、talking）==0&&（count、（Status）、passive）==0&&（count、（Status）、induction）==0&&（count、（Status）、timecritical）==0&&（count、（Status）、online）==0&&（count、（Status）、choosing）==0&&（count、（Status）、minimizing）==0
+\_q
+\0\s[1]\b[2]\_l[0,0]
+\_b["assets/preset/resumewindow.png",inline,--option=foreground,--option=fixed]
+\1\s[1]\b[2]\_l[0,0]
+\_b["assets/preset/resumewindow.png",inline,--option=foreground,--option=fixed]
+\p[2]\s[1]\b[2]\_l[0,0]
+\_b["assets/preset/resumewindow.png",inline,--option=foreground,--option=fixed]
+\p[3]\s[1]\b[2]\_l[0,0]
+\_b["assets/preset/resumewindow.png",inline,--option=foreground,--option=fixed]
+\_q
+\x
+\![raise,OnUnstacking]
+
+
+
+＊OnBoot
+（ゲーム起動準備）
+
+
+
+＊OnClose
+（ゲーム終了）
+
+
+
+＊OnShellChanging
+＄__tmp	（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
+＄__tmp	（when,（オート）==1,（オート解除.変数戻す））
+（一体化解除）
+
+
+
+＊OnShellChanged
+（ゲーム起動準備）
+
+
+
+＊OnWindowStateMinimize
+＄Translate有効	0
+＄__tmp	（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
+＄__tmp	（when,（オート）==1,（オート解除.変数戻す））
+（一体化解除）\![sound,pause]
+
+
+
+＊OnWindowStateRestore
+＄Translate有効	0
+＄__tmp	（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
+＄__tmp	（when,（オート）==1,（オート解除.変数戻す））
+＄スクリプトの一番頭	（一体化_クリック）
+\![sound,resume]
+\![raise,中断から再開]
+
+
+
+＊OnUserInput	（ユーザ入力受付中）==1
+＞OnUserInputCancel	（変数「R1」の存在）==0||（vncall,length,R1）==0
+＄__t	（vncall,区切り字消し,R1）
+＄ユーザ入力受付中	0
+＄__tmp	（when（b1）（変数「R3」の存在）==0（b1）（next接頭辞）（next数値）（b1）（R3））
+\![raise,OnGamePlayCore,（__tmp）,（R0）,（__t）]
+
+
+
+＊OnUserInputCancel.続き
+＄ユーザ入力受付中	0
+＄__tmp	（when（b1）（変数「R3」の存在）==0（b1）（next接頭辞）（next数値）（b1）（R3））
+\![raise,OnGamePlayCore,（__tmp）,（R0）,]
+
+
+
+＊OnUserInputCancel
+＞On（R0）Cancel
+＞OnUserInputCancel.続き	（ユーザ入力受付中）==1
+
+
+
+＠区切り字消し
+（set,単語群「区切り字消し.リスト」の重複回避,降順、起動中）φ
+（vncall,set,区切り字消し.一時変数名,A0）φ
+（times,（単語群「区切り字消し.リスト」の数）,（vncall,set,区切り字消し.一時変数名,区切り字消し.部品））φ
+（__tmp）φ
+（set,__tmp,）φ
+（set,単語群「区切り字消し.リスト」の重複回避,）
+
+
+
+＠区切り字消し.一時変数名
+__tmp
+
+
+
+＠区切り字消し.部品
+（vncall,erase,__tmp,区切り字消し.リスト）
+
+
+
+＠区切り字消し.リスト
+、
+､
+，
+,
+|
+:
+
+
+
+＊OnInstallComplete
+（メニュー不可）
+（一体化_ウェイト）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）インストール完了\n
+\_?[（R0）]（R1）\_?
+\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnInstallFailure
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）インストール失敗。\n
+（call,__offset,m）原因:「\_?（R0）\_?」
+\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnInstallRefuse
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）インストール失敗。\n
+（call,__offset,m）「\_?（R0）\_?」用のファイルです。
+\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnUpdateComplete	（R0）==changed&&（R3）==ghost
+（メニュー不可）
+（一体化_ウェイト）
+：\_q
+（bg,（call,存在確認,メニュー.背景））
+\_q
+（call,__offset,m,0）ゴーストの更新が完了しました。
+\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnUpdateComplete	（R0）==changed&&（R3）==shell
+＄__tmp	（get_property,currentghost.shelllist.current.craftmanurl）
+＞OnUpdateComplete.UndefShellURL	（変数「__tmp」の存在）==0
+（メニュー不可）
+（一体化_ウェイト）
+：\_q\*
+（bg,（call,存在確認,メニュー.背景））
+（call,__offset,m,0）シェルの更新が完了しました。\n
+（call,__offset,m）サプリメントも更新されている可能性があります。\n
+（call,__offset,m）シェルの配布元URLを開きますか？\n[200]
+
+（call,__offset,m）\__q[OnUpdateComplete.OpenURL]URLを開く\__q\n
+（call,__offset,m）\__q[メニュー.キャンセル]URLを開かずに戻る\__q
+\_q
+
+
+
+＊OnUpdateComplete.UndefShellURL
+（メニュー不可）
+（一体化_ウェイト）
+（bg,（call,存在確認,メニュー.背景））
+：\_q\*
+（call,__offset,m,0）シェルの更新が完了しました。\n
+（call,__offset,m）サプリメントも更新されている可能性があります。\n
+（call,__offset,m）シェルの配布元URLが未定義のため、中断地点に戻ります。\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnUpdateComplete.OpenURL
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+\![open,browser,（get_property,currentghost.shelllist.current.craftmanurl）]
+（call,__offset,m,0）シェルの配布元URLを開いています...
+\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnNarCreating
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）narを作っています...
+
+
+
+＊OnNarCreated
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）narを作りました。\n[150]
+（call,__offset,m）ファイルの所在:\n
+（call,__offset,m）\_?（R1）\_?
+\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnKeyPress
+＞操作でスキップ及びオート解除	（スキップ）==1||（オート）==1
+＞KeyPressCommand_Check_Pre	（KeyPressCommand_AcceptingInputs）==1
+＞（ゲームID）.（Ｒ０）が押された
+＃単語群「【フォルダ名】.KeyPressCommand」に検知したいコマンドと検知後のジャンプ先シナリオ名を記述する　半角カンマ区切り
+＃単語群内の左から１つずつ検証し、合致したら検証終了します
+
+＃【例】※冒頭の全角＃は記述時には取ること
+＃＠【フォルダ名】.KeyPressCommand
+＃command1,シナリオ名１,command2,シナリオ名２
+＃合致後に飛ぶ関数名：「【フォルダ名】.シナリオ名」
+＃チェックポイントがセーブデータに残らない飛び方をするため、適宜対応すること
+
+
+
+＠KeyPressCommand_VarName
+KeyPressCommand_FunctionNameToJump
+
+
+
+＠KeyPressCommand_Initialize
+（nop,（set,KeyPressCommand_InputedReverse,（times,20,（b1））））
+
+
+
+＊KeyPressCommand_Check_Pre
+＞KeyPressCommand_NoMatched	（単語群「（ゲームID）.KeyPressCommand_List」の存在）==0||（vncall,length,（ゲームID）.KeyPressCommand_List）==0
+＄KeyPressCommand_ThisVariableWillBeCleared＝（when,（変数「KeyPressCommand_InputedReverse」の存在）==0,（KeyPressCommand_Initialize））
+＄KeyPressCommand_InputedReverse	（vncall,at,R0,calc、0）（vncall,substr,KeyPressCommand_InputedReverse,calc、0,calc、19）
+＄KeyPressCommand_InputedReverse	（vncall,erase,KeyPressCommand_InputedReverse,バイト値、1）
+＄KeyPressCommand_InputedForward	（vncall,reverse,KeyPressCommand_InputedReverse）
+＄KeyPressCommand_Check	（（ゲームID）.KeyPressCommand_List）
+＄__tmp	（split_reset）
+＄KeyPressCommand_EndCount	（split（b1）（KeyPressCommand_Check）（b1）,（b1）0（b1）0）
+＞KeyPressCommand_NoMatched	（KeyPressCommand_EndCount）<=1
+＄KeyPressCommand_EndCount	（calc,（KeyPressCommand_EndCount）-1）
+＄KeyPressCommand_Count	0
+＄（KeyPressCommand_VarName）	
+＞KeyPressCommand_Check_Main
+
+
+
+＊KeyPressCommand_Check_Main
+＄KeyPressCommand_Search＝（vncall,count,KeyPressCommand_InputedForward,S（KeyPressCommand_Count））>=1
+＄KeyPressCommand_Count	（calc,（KeyPressCommand_Count）+1）
+＄KeyPressCommand_ThisVariableWillBeCleared	（when,（KeyPressCommand_Search）==1,（vncall,set,KeyPressCommand_VarName,S（KeyPressCommand_Count）））
+＞KeyPressCommand_Matched＝（変数「（KeyPressCommand_VarName）」の存在）==1&&（vncall,length,（KeyPressCommand_VarName））>0
+＄KeyPressCommand_Count	（calc,（KeyPressCommand_Count）+1）
+＞KeyPressCommand_NoMatched＝（KeyPressCommand_EndCount）<（KeyPressCommand_Count）
+＞KeyPressCommand_Check_Main
+
+
+
+＊KeyPressCommand_NoMatched
+＄KeyPressCommand_Check	
+＄KeyPressCommand_Count	
+＄KeyPressCommand_EndCount	
+＄KeyPressCommand_InputedForward	
+＄KeyPressCommand_Search	
+＄（KeyPressCommand_VarName）	
+
+
+
+＊KeyPressCommand_Matched
+＄KeyPressCommand_AcceptingInputs	
+＄KeyPressCommand_Check	
+＄KeyPressCommand_Count	
+＄KeyPressCommand_EndCount	
+＄KeyPressCommand_InputedForward	
+＄KeyPressCommand_InputedReverse	
+＄KeyPressCommand_Search	
+＞（ゲームID）.（（KeyPressCommand_VarName））
+
+
+
+＊OnMouseClick
+＞OnUnstacking	（compare,（Ｒ４）,unstack）==1&&（Ｒ５）==0&&（count、（Status）、talking）==0&&（count、（Status）、passive）==0&&（count、（Status）、induction）==0&&（count、（Status）、timecritical）==0&&（count、（Status）、online）==0&&（count、（Status）、choosing）==0&&（count、（Status）、minimizing）==0
+＞操作でスキップ及びオート解除	（スキップ）==1||（オート）==1
+＞メニュー.終了ダイアログ	（compare,（Ｒ４）,close）==1&&（Ｒ５）==0
+＞メニュー.最小化	（compare,（Ｒ４）,minimize）==1&&（Ｒ５）==0
+＞メニュー.れあどめ	（compare,（Ｒ４）,readme）==1&&（Ｒ５）==0
+＞（ゲームID）.（Ｒ４）左クリック	（Ｒ５）==0&&（マウス受付_クリック）==1
+＞（ゲームID）.（Ｒ４）右クリック	（Ｒ５）==1&&（マウス受付_クリック）==1
+
+
+
+＊OnMouseDoubleClick
+＞操作でスキップ及びオート解除	（スキップ）==1||（オート）==1
+＞（ゲームID）.（Ｒ４）つつかれ	（マウス受付_つつかれ）==1
+
+
+
+＊なでられ時の反応
+＞操作でスキップ及びオート解除	（スキップ）==1||（オート）==1
+＞（ゲームID）.（Ｒ４）なでられ	（マウス受付_なでられ）==1
+
+
+
+＊OnMouseWheel	（count（b1）（Status）（b1）talking）==0
+＞操作でスキップ及びオート解除	（スキップ）==1||（オート）==1
+＞（ゲームID）.（Ｒ４）ころころ上	（Ｒ２）>0&&（マウス受付_ころころ）==1
+＞（ゲームID）.（Ｒ４）ころころ下	（マウス受付_ころころ）==1
+＞（ゲームID）.（Ｒ４）ころころ	（マウス受付_ころころ）==1
+
+
+
+＊OnUpdateOtherComplete
+＄描画中1	|
+＄描画中2	|
+＄描画中3	|
+＄スクリプトの一番頭	（一体化_ウェイト）
+＞（中断箇所）
+＞（ゲームID）.起動
+＞master.起動
+
+
+
+＊OnChoiceSelect
+＞（R0）
+＞ジャンプ先が無い
+
+
+
+＊OnAnchorSelect
+＞（R0）
+＞ジャンプ先が無い
+
+
+
+＊ジャンプ先が無い
+＞ジャンプ先が無いしゲームIDの起動もない	（文「（ゲームID）.起動」の存在）==0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）中断箇所からの再開に失敗しました。\n
+（call,__offset,m）タイトルに戻ります。
+\_q\x
+\![raise,（ゲームID）.起動]
+
+
+
+＊ジャンプ先が無いしゲームIDの起動もない
+＞ゲームを起動できないしマスターシェルもない	（導入済みシェル「master」の存在）==0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）中断箇所からの再開に失敗しました。\n
+（call,__offset,m）起動イベントが見つかりませんでした。\n
+（call,__offset,m）シェルをmasterに変更します。
+\_q\x
+\![change,shell,master,--option=raise-event]
+
+

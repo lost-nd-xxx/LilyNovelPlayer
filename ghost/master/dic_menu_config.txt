@@ -1,0 +1,332 @@
+＃コンフィグ系
+
+
+
+＊メニュー.コンフィグ
+＄__MenuCurrent	コンフィグ
+＞メニュー.不許可	（メニュー状態.コンフィグ）!=1
+＞（ゲームID）.コンフィグ
+＄__tmp＝（nop,（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す）））
+＄__tmp＝（nop,（when,（オート）==1,（メニュー.オート解除.変数戻す）））
+＄__x	（call,存在確認,コンフィグ.offset_x）
+＄__y	（call,存在確認,コンフィグ.offset_y）
+＄__x2	（calc,（call,存在確認,コンフィグ.配置可能空間_width）/2+（__x））
+＄__x3	（calc,（call,存在確認,コンフィグ.配置可能空間_width）/3+（__x））
+＄__x4	（calc,(（call,存在確認,コンフィグ.配置可能空間_width）/3)*2+（__x））
+＄__CurrentItem	ウェイトの長さ
+＄__BG	（call,存在確認,コンフィグ.背景）
+＄__BG	\p[3]\_l[0,0]\_b["（__BG）",inline,--option=foreground,--option=opaque,--option=fixed]
+＞メニュー.コンフィグ.本体
+
+
+
+＊メニュー.コンフィグ.本体
+（__BG）
+：\_q\*
+（call,存在確認,コンフィグ.戻るボタン）
+（メニュー.コンフィグ.（__CurrentItem））
+
+
+
+＊メニュー.コンフィグ.ウェイトの長さ
+：\_l[（__x）,（__y）]
+ウェイト
+ \__q[Onメニュー.コンフィグ.SetCurrent,テキストスピード]文字の速さ\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,音声設定]音声\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,スキップ・オート]スキップ･オート\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,既読設定]既読\__q
+
+（メニュー.hr）
+\_l[（__x）,（__y）]\n[200]
+
+\_l[（__x）,]\![*]（when、（ウェイト乗数）==0、無し　( 0ms)、\__q[OnWaitMultiplierSet,0]無し　( 0ms)\__q）\n
+\_l[（__x）,]\![*]（when、（ウェイト乗数）==10、短い　(10ms)、\__q[OnWaitMultiplierSet,10]短い　(10ms)\__q）\n
+\_l[（__x）,]\![*]（when、（ウェイト乗数）==25、やや短(25ms)、\__q[OnWaitMultiplierSet,25]やや短(25ms)\__q）\n
+\_l[（__x）,]\![*]（when、（ウェイト乗数）==50、標準　(50ms)、\__q[OnWaitMultiplierSet,50]標準　(50ms)\__q）
+
+\_l[（__x）,（__y）]\n[200]
+\_l[（__x2）,]\![*]（when、（ウェイト乗数）==75、やや長( 75ms)、\__q[OnWaitMultiplierSet,75]やや長( 75ms)\__q）\n
+\_l[（__x2）,]\![*]（when、（ウェイト乗数）==100、長い　(100ms)、\__q[OnWaitMultiplierSet,100]長い　(100ms)\__q）\n
+\_l[（__x2）,]\![*]（when、（ウェイト乗数）==200、４倍長(200ms)、\__q[OnWaitMultiplierSet,200]４倍長(200ms)\__q）\n[250]
+
+\_l[（__x）,（__y）]\n[700]
+\_l[（__x）,]\__q[メニュー.コンフィグ.本体]お試し用文章を再生\__q\n[150]\_q
+\_l[（__x）,]現在の設定は、\w5このように。\w9なって…\w3…\w3います。
+
+
+
+＊メニュー.コンフィグ.テキストスピード
+：\_l[（__x）,（__y）]
+\__q[Onメニュー.コンフィグ.SetCurrent,ウェイトの長さ]ウェイト\__q
+ 文字の速さ
+ \__q[Onメニュー.コンフィグ.SetCurrent,音声設定]音声\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,スキップ・オート]スキップ･オート\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,既読設定]既読\__q
+
+（メニュー.hr）
+\_l[（__x）,（__y）]\n[200]
+
+\_l[（__x）,]\![*]（when、（equal、（テキスピ乗数）、0）、ノーウェイト、\__q[OnTextSpeedMultiplierSet,0]ノーウェイト\__q）\n
+\_l[（__x）,]\![*]（when、（equal、（テキスピ乗数）、25%）、２５％、\__q[OnTextSpeedMultiplierSet,25%]２５％\__q）\n
+\_l[（__x）,]\![*]（when、（equal、（テキスピ乗数）、50%）、５０％、\__q[OnTextSpeedMultiplierSet,50%]５０％\__q）\n
+\_l[（__x）,]\![*]（when、（equal、（テキスピ乗数）、75%）、７５％、\__q[OnTextSpeedMultiplierSet,75%]７５％\__q）
+
+\_l[（__x）,（__y）]\n[200]
+\_l[（__x2）,]\![*]（when、（equal、（テキスピ乗数）、100%）、標準、\__q[OnTextSpeedMultiplierSet,100%]標準\__q）\n
+\_l[（__x2）,]\![*]（when、（equal、（テキスピ乗数）、125%）、１２５％、\__q[OnTextSpeedMultiplierSet,125%]１２５％\__q）\n
+\_l[（__x2）,]\![*]（when、（equal、（テキスピ乗数）、150%）、１５０％、\__q[OnTextSpeedMultiplierSet,150%]１５０％\__q）\n
+\_l[（__x2）,]\![*]（when、（equal、（テキスピ乗数）、200%）、２００％、\__q[OnTextSpeedMultiplierSet,200%]２００％\__q）
+
+\_l[（__x）,（__y）]\n[700]
+\_l[（__x）,]\__q[メニュー.コンフィグ.本体]お試し用文章を再生\__q\n[150]\_q
+\_l[（__x）,]現在の設定は、\w5このように。\w9なって…\w3…\w3います。
+
+
+
+＊メニュー.コンフィグ.音声設定
+：\_l[（__x）,（__y）]
+\__q[Onメニュー.コンフィグ.SetCurrent,ウェイトの長さ]ウェイト\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,テキストスピード]文字の速さ\__q
+ 音声
+ \__q[Onメニュー.コンフィグ.SetCurrent,スキップ・オート]スキップ･オート\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,既読設定]既読\__q
+
+（メニュー.hr）
+\_l[（__x）,（__y）]\n[200]
+
+\_l[（__x）,]音楽\n
+\_l[（__x）,]\![*]
+（when、（音量_BGM）==100、１００％、
+\__q[OnSoundVolumeSet,BGM,100]１００％\__q）\n
+\_l[（__x）,]\![*]
+（when、（音量_BGM）==75、　７５％、
+\__q[OnSoundVolumeSet,BGM,75]　７５％\__q）\n
+\_l[（__x）,]\![*]
+（when、（音量_BGM）==50、　５０％、
+\__q[OnSoundVolumeSet,BGM,50]　５０％\__q）\n
+\_l[（__x）,]\![*]
+（when、（音量_BGM）==25、　２５％、
+\__q[OnSoundVolumeSet,BGM,25]　２５％\__q）\n
+\_l[（__x）,]\![*]
+（when、（音量_BGM）==0、　　０％、
+\__q[OnSoundVolumeSet,BGM,0]　　０％\__q）\n[150]
+
+\_l[（__x）,]外部プラグイン読み上げ対応\n
+\_l[（__x）,]\![*]
+（when、（外部プラグイン読み上げ対応）==1、する　、
+\__q[OnCompatibleVoiceReadingSet,1]する　\__q）\f[valign,center]\f[height,14]（文字色.disable）※「する」では画面がチラつきやすく、処理が不安定になります（文字色.normal）\f[height,default]\n
+\_l[（__x）,]\![*]
+（when、（外部プラグイン読み上げ対応）==0、しない、
+\__q[OnCompatibleVoiceReadingSet,0]しない\__q）
+
+（音ロード,assets/preset/sample_se.wav）
+\_l[,（__y）]\n[200]
+\_l[（__x3）,]効果音\n
+\_l[（__x3）,]\![*]
+（when、（音量_SE）==100、１００％、
+\__q[OnSoundVolumeSet,SE,100]１００％\__q）\n
+\_l[（__x3）,]\![*]
+（when、（音量_SE）==75、　７５％、
+\__q[OnSoundVolumeSet,SE,75]　７５％\__q）\n
+\_l[（__x3）,]\![*]
+（when、（音量_SE）==50、　５０％、
+\__q[OnSoundVolumeSet,SE,50]　５０％\__q）\n
+\_l[（__x3）,]\![*]
+（when、（音量_SE）==25、　２５％、
+\__q[OnSoundVolumeSet,SE,25]　２５％\__q）\n
+\_l[（__x3）,]\![*]
+（when、（音量_SE）==0、　　０％、
+\__q[OnSoundVolumeSet,SE,0]　　０％\__q）
+
+（音ロード,assets/preset/sample_voice.wav）
+\_l[,（__y）]\n[200]
+\_l[（__x4）,]ボイス\n
+\_l[（__x4）,]\![*]
+（when、（音量_VOICE）==100、１００％、
+\__q[OnSoundVolumeSet,VOICE,100]１００％\__q）\n
+\_l[（__x4）,]\![*]
+（when、（音量_VOICE）==75、　７５％、
+\__q[OnSoundVolumeSet,VOICE,75]　７５％\__q）\n
+\_l[（__x4）,]\![*]
+（when、（音量_VOICE）==50、　５０％、
+\__q[OnSoundVolumeSet,VOICE,50]　５０％\__q）\n
+\_l[（__x4）,]\![*]
+（when、（音量_VOICE）==25、　２５％、
+\__q[OnSoundVolumeSet,VOICE,25]　２５％\__q）\n
+\_l[（__x4）,]\![*]
+（when、（音量_VOICE）==0、　　０％、
+\__q[OnSoundVolumeSet,VOICE,0]　　０％\__q）\n[120]
+\_l[（__x4）,]\f[height,12]サンプル音声\n
+\_l[（__x4）,]VOICEVOX:ずんだもん\f[height,default]
+
+\_q
+
+
+
+＊メニュー.コンフィグ.スキップ・オート
+：\_l[（__x）,（__y）]
+\__q[Onメニュー.コンフィグ.SetCurrent,ウェイトの長さ]ウェイト\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,テキストスピード]文字の速さ\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,音声設定]音声\__q
+ スキップ･オート
+ \__q[Onメニュー.コンフィグ.SetCurrent,既読設定]既読\__q
+
+（メニュー.hr）
+\_l[（__x）,（__y）]\n[200]
+
+\_l[（__x）,]未読でスキップ停止\n
+\_l[（__x）,]\![*]
+（when、（スキップ_未読で停止）==1、ＯＮ　、
+\__q[OnSkipConfigSet,スキップ_未読で停止,1]ＯＮ　\__q）\n
+\_l[（__x）,]\![*]
+（when、（スキップ_未読で停止）==0、ＯＦＦ、
+\__q[OnSkipConfigSet,スキップ_未読で停止,0]ＯＦＦ\__q）\n[200]
+
+\_l[（__x）,]選択肢後にも\n
+\_l[（__x）,]スキップ･オート維持\n
+\_l[（__x）,]\![*]
+（when、（スキップ_選択肢後維持）==1、ＯＮ　、
+\__q[OnSkipConfigSet,スキップ_選択肢後維持,1]ＯＮ　\__q）\n
+\_l[（__x）,]\![*]
+（when、（スキップ_選択肢後維持）==0、ＯＦＦ、
+\__q[OnSkipConfigSet,スキップ_選択肢後維持,0]ＯＦＦ\__q）
+
+\_l[,（__y）]\n[200]
+\_l[（__x2）,]オート待ち時間\n
+\_l[（__x2）,]\![*]
+（when、（オート_待ち時間）==50、短い　(  50ms)、
+\__q[OnSkipConfigSet,オート_待ち時間,50]短い　(  50ms)\__q）\n
+\_l[（__x2）,]\![*]
+（when、（オート_待ち時間）==250、やや短( 250ms)、
+\__q[OnSkipConfigSet,オート_待ち時間,250]やや短( 250ms)\__q）\n
+\_l[（__x2）,]\![*]
+（when、（オート_待ち時間）==450、中　　( 450ms)、
+\__q[OnSkipConfigSet,オート_待ち時間,450]中　　( 450ms)\__q）\n
+\_l[（__x2）,]\![*]
+（when、（オート_待ち時間）==900、やや長( 900ms)、
+\__q[OnSkipConfigSet,オート_待ち時間,900]やや長( 900ms)\__q）\n
+\_l[（__x2）,]\![*]
+（when、（オート_待ち時間）==1800、長い　(1800ms)、
+\__q[OnSkipConfigSet,オート_待ち時間,1800]長　　(1800ms)\__q）
+\_q
+
+
+
+＊メニュー.コンフィグ.既読設定
+：\_l[（__x）,（__y）]
+\__q[Onメニュー.コンフィグ.SetCurrent,ウェイトの長さ]ウェイト\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,テキストスピード]文字の速さ\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,音声設定]音声\__q
+ \__q[Onメニュー.コンフィグ.SetCurrent,スキップ・オート]スキップ･オート\__q
+ 既読
+
+（メニュー.hr）
+\_l[（__x）,（__y）]\n[200]
+
+\_l[（__x）,]既読文章の文字色変更\n
+\_l[（__x）,]\![*]
+（when、（既読設定_文字色変更）==1、する　、
+\__q[On既読ConfigSet,既読設定_文字色変更,1]する　\__q）\n
+\_l[（__x）,]\![*]
+（when、（既読設定_文字色変更）==0、しない、
+\__q[On既読ConfigSet,既読設定_文字色変更,0]しない\__q）\n[200]
+
+\_l[（__x）,]既読選択肢の色変更\n
+\_l[（__x）,]\![*]
+（when、（既読設定_選択肢色変更）==1、する　、
+\__q[On既読ConfigSet,既読設定_選択肢色変更,1]する　\__q）\n
+\_l[（__x）,]\![*]
+（when、（既読設定_選択肢色変更）==0、しない、
+\__q[On既読ConfigSet,既読設定_選択肢色変更,0]しない\__q）
+
+\_l[,（__y）]\n[200]
+\_l[（__x2）,]既読履歴のリセット\n
+\_l[（__x2）,]\![*]
+\__q[On既読ConfigReSet_Dialog]【危険】実行する\__q
+\_q
+
+
+
+＊OnCompatibleVoiceReadingSet
+＄外部プラグイン読み上げ対応	（R0）
+＞メニュー.コンフィグ.本体
+
+
+
+
+＊On既読ConfigReSet_Dialog
+（__BG）
+：\_q\*
+\_l[（__x）,（__y）]
+本当に既読履歴をリセットしますか？\n[200]
+\_l[（__x）,]\![*]\__q[On既読ConfigReSet_Execute]【危険】リセットする\__q\n
+\_l[（__x）,]\![*]\__q[メニュー.コンフィグ.本体]しない\__q
+
+
+
+＊On既読ConfigReSet_Execute
+＄s_（ゲームID）.既読判定	|
+（__BG）
+：\_q\*
+\_l[（__x）,（__y）]既読履歴をリセットしました。\_q\x
+\![raise,メニュー.コンフィグ.本体]
+
+
+
+＊On既読ConfigSet
+＄（R0）	（R1）
+＄文字色.visited	（when、（compare,（R0）,既読設定_文字色変更）==1、（文字色.normal）、\f[color,（call,存在確認,visited）]）
+＞メニュー.コンフィグ.本体
+
+
+
+＊OnSkipConfigSet
+＄（R0）	（R1）
+＞メニュー.コンフィグ.本体
+
+
+
+＊OnWaitMultiplierSet
+＄ウェイト乗数	（R0）
+＞メニュー.コンフィグ.本体
+
+
+
+＊OnTextSpeedMultiplierSet
+＄テキスピ乗数	（R0）
+＞メニュー.コンフィグ.本体
+
+
+
+＊OnSoundVolumeSet
+＄音量_（R0）	（R1）
+＞OnSoundVolumeSet.現在の音楽を調整する	（compare,（R0）,BGM）==1&&（変数「再生中BGM」の存在）==1
+＞OnSoundVolumeSet.効果音を再生する	（compare,（R0）,SE）==1&&（音量_SE）>0
+＞OnSoundVolumeSet.ボイスを再生する	（compare,（R0）,VOICE）==1&&（音量_VOICE）>0
+＞メニュー.コンフィグ.本体
+
+
+
+＊OnSoundVolumeSet.現在の音楽を調整する
+\![sound,option,（再生中BGM）,--volume=（音量_BGM）]
+＞メニュー.コンフィグ.本体
+
+
+
+＊OnSoundVolumeSet.効果音を再生する
+（効果音,assets/preset/sample_se.wav）
+＞メニュー.コンフィグ.本体
+
+
+
+＊OnSoundVolumeSet.ボイスを再生する
+（ボイス,assets/preset/sample_voice.wav）
+＞メニュー.コンフィグ.本体
+
+
+
+＊Onメニュー.コンフィグ.SetCurrent
+＄__CurrentItem	（R0）
+＞メニュー.コンフィグ.本体
+
+

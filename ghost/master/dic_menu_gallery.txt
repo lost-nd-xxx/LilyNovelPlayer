@@ -1,0 +1,216 @@
+＃ギャラリー
+
+
+
+＊メニュー.ギャラリー
+＄__MenuCurrent	ギャラリー
+＞メニュー.不許可	（メニュー状態.ギャラリー）!=1
+＞（ゲームID）.ギャラリー
+＄__Gallery_CurrentPage	1
+＄__Gallery_ListName	（ゲームID）.（call,存在確認,ギャラリー.リスト名）
+＄__Gallery_OffsetX	（call,存在確認,ギャラリー.offset_x）
+＄__Gallery_OffsetY	（call,存在確認,ギャラリー.offset_y）
+＄__Gallery_ButtonWidth	（call,存在確認,ギャラリー.ボタン_width）
+＄__Gallery_ButtonHeight	（call,存在確認,ギャラリー.ボタン_height）
+＄__Gallery_SpacingWidth	（call,存在確認,ギャラリー.spacing_width）
+＄__Gallery_SpacingHeight	（call,存在確認,ギャラリー.spacing_height）
+＄__Gallery_ButtonCoordinate	（__Gallery_ListButton_Coordinate_CalculateToStoring）
+＄__Gallery_Background	（call,存在確認,ギャラリー.背景）
+＄__Gallery_Background	\p[3]\_l[0,0]\_b["（__Gallery_Background）",inline,--option=foreground,--option=opaque,--option=fixed]
+＄__Gallery_Background2	（call,存在確認,ギャラリー.背景２）
+＄__Gallery_Background2	\_b["（__Gallery_Background2）",inline,--option=background,--option=opaque,--option=fixed]
+＄__Gallery_BackButton	（call,存在確認,ギャラリー.戻るボタン）
+＄__Gallery_BGM	（call,存在確認,ギャラリー.BGM）
+＄__Gallery_DisableButton	\_b["（call,存在確認,ギャラリー.ボタン台.押せない）",inline,--option=opaque,--clipping=0 0 （__Gallery_ButtonWidth） （__Gallery_ButtonHeight）,--option=background]
+＄__Gallery_IsCountHalfWidth	（単語群「（__Gallery_ListName）1」の存在）
+＄__count	1
+＄__Gallery_MaxSectionCount	（while,（calc,（単語群「（__Gallery_ListName）（__count）」の存在）+（単語群「（__Gallery_ListName）（han2zen,（__count））」の存在））>0,1（set,__count,（__count）+1））
+＞OnGallery_NoValidItem	（変数「__Gallery_MaxSectionCount」の存在）==0
+＄__Gallery_MaxSectionCount	（length,（__Gallery_MaxSectionCount））
+＄__Gallery_MaxPageCount	（calc,（__Gallery_MaxSectionCount）/6（when,（calc,（__Gallery_MaxSectionCount）%6）>0,+1））
+＄__Gallery_ImageAll	（for，1，（__Gallery_MaxSectionCount），1，（for，1，（split，（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C1），（han2zen，（C1）））），|，0，0）-1，2，（S（C0））、））
+＄__Gallery_ButtonAll	（for，1，（__Gallery_MaxSectionCount），1，（nop,（split，（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C0），（han2zen，（C0）））），|，0，0））（when、（equal,（substr、（S0）、0、4）,\_b[）==0、（vncall,__Gallery_ListButton_Path,S0）、（S0））、）
+＄__Gallery_FlagNameAll	（for,1,（__Gallery_MaxSectionCount）,1,（for,2,（split，（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C1），（han2zen，（C1）））），|，0，0）-1,2,（S（C0）），）、）
+＄__Gallery_FlagNameAll	（replace,（__Gallery_FlagNameAll）,，、,、）
+＄__Gallery_StatusAll_Split	（call、__Gallery_SummariseStatus、（__Gallery_FlagNameAll））
+＄__Gallery_StatusAll_Joined	（erase,（__Gallery_StatusAll_Split）,、）
+＄__Gallery_MaxImageCount	（length,（__Gallery_StatusAll_Joined））
+＄__Gallery_SectionHeadCount	（set,__count,0）（for,0,（split,（__Gallery_StatusAll_Split）,、,0,0）-1,1,（__count）（set,__count,（calc,（__count）+（length,（S（C0）））））、）
+＞OnGallery_List
+
+
+
+＠__Gallery_SummariseStatus
+（for,0,（Aの数）-1,1,
+（when,（vncall,length,A（C0））>0&&（変数「A（C0）」の存在）==1,
+（call，__Gallery_SummariseStatus_Part，（A（C0）））
+）、
+）
+
+
+
+＠__Gallery_SummariseStatus_Part
+（for,0,（Aの数）-1,1,
+（when,（vncall,length,A（C0））>0&&（変数「A（C0）」の存在）==1&&（vncall,変数読み出しg,ゲームID,A（C0））==1,
+1,
+0
+）
+）
+
+
+
+＊OnGallery_NoValidItem
+（メニュー不可）
+（__Gallery_Background）
+（when,（equal、（__Gallery_BGM）、__nochange__）==0,（音楽,（__Gallery_BGM）））
+：\_q
+（call,__offset,m,0）有効なギャラリー項目を\n
+（call,__offset,m）見つけられませんでした。\_q\x
+\![raise,中断から再開]
+
+
+
+＊OnGallery_List
+＄__Gallery_List_MaxPerPage	（calc,（__Gallery_CurrentPage）*6）
+＄__Gallery_List_EndCountPerPage	（when,（__Gallery_List_MaxPerPage）>（__Gallery_MaxSectionCount）,（__Gallery_MaxSectionCount）,（__Gallery_List_MaxPerPage））
+（__Gallery_Background）
+（when、（equal、（__Gallery_BGM）、__nochange__）==0、（音楽,（__Gallery_BGM）））
+
+：\_q\*
+（__Gallery_BackButton）
+（when,（__Gallery_MaxPageCount）>1,（__Gallery_List_Pager））
+
+\f[align,left]
+（nop,（split,（__Gallery_StatusAll_Split）,、,0,0））
+（for、（__Gallery_List_MaxPerPage）-6、（__Gallery_List_EndCountPerPage）-1、1、（call,__Gallery_ListButton,（call,__Gallery_ListButton_Coordinate,（C0））,（C0）,（S（C0））））
+
+
+
+＊OnGallery_List_Move
+＄__Gallery_CurrentPage	（R0）
+＞OnGallery_List
+
+
+
+＊OnGallery_Detail
+＄__n	（R0）
+＄__stats	（times,（length,（R1））,（when,（at,（R1）,（C0））==1,（C0）、））
+＄__count	0
+＄__start	（call、__Extractor、（__count）、（__stats））
+＄__start	（calc,（__n）-（__start））
+＄__tmp＝（nop,（split_reset）（split,（__Gallery_ImageAll）,、,0,0））
+＞OnGallery_Detail_Core
+
+
+
+＊OnGallery_Detail_Core
+＄__x	0
+＄__y	0
+＄__current	（S（__n））
+＄__tmp	（when（b1）（count（b1）（__current）（b1）:）==2（b1）（__Gallery_Detail_Split））
+（when（b1）（equal（b1）（__Gallery_BGM）（b1）__nochange__）==0（b1）（音楽,（__Gallery_BGM）））
+\_q\*
+\1\c
+\_l[0,0]
+\_b["（__Gallery_Background2）",inline,--option=opaque,--option=foreground]
+：\c\_l[（__x）,（__y）]
+\_b["（__current）",inline,--option=opaque,--option=foreground]
+\_q
+\x[noclear]\![embed,OnGallery_Detail_Next]
+
+
+
+＠__Gallery_Detail_Split
+（set,引数区切り追加,:）φ
+（set（b1）__x（b1）（call:__Extractor:1:（__current）））φ
+（set（b1）__y（b1）（call:__Extractor:2:（__current）））φ
+（set（b1）__current（b1）（call:__Extractor:0:（__current）））φ
+（set,引数区切り削除,:）
+
+
+
+＊OnGallery_Detail_Next
+＄__count＝（__count）+1
+＄__next	（when,（length,（__stats））>2,（call、__Extractor、（__count）、（__stats））,-1）
+＞OnGallery_List	（__next）<0||（変数「__next」の存在）==0
+＄__n	（calc,（__start）+（__next））
+＞OnGallery_Detail_Core
+
+
+
+＠__Gallery_List_Pager
+\_l[0,（__Gallery_OffsetY）]φ
+\f[align,center]φ
+（when、（__Gallery_CurrentPage）>=3、\__q[OnGallery_List_Move,1]φ≪\__q、（文字色.disable）φ≪（文字色.normal））φ
+ （when、（__Gallery_CurrentPage）>=2、\__q[OnGallery_List_Move,（calc,（__Gallery_CurrentPage）-1）]φ＜\__q、（文字色.disable）φ＜（文字色.normal））φ
+（whenlist,（nop,）,（__Gallery_MaxPageCount）<=5,（nop,）,（__Gallery_MaxPageCount）>5&&（__Gallery_CurrentPage）>=4, ..,   ）φ
+（when,（__Gallery_MaxPageCount）>5,（set,__Gallery_PagerStartCount,（calc,（__Gallery_CurrentPage）-2））（set,__Gallery_PagerEndCount,（calc,（__Gallery_CurrentPage）+2））,（set,__Gallery_PagerStartCount,1）（set,__Gallery_PagerEndCount,（__Gallery_MaxPageCount）））φ
+（when,（__Gallery_PagerStartCount）<=0,（set,__Gallery_PagerStartCount,1）（set,__Gallery_PagerEndCount,5））φ
+（when,（__Gallery_PagerEndCount）>（__Gallery_MaxPageCount）,（set,__Gallery_PagerEndCount,（__Gallery_MaxPageCount））（set,__Gallery_PagerStartCount,（calc,（__Gallery_PagerEndCount）-4）））φ
+（for、（__Gallery_PagerStartCount）、（__Gallery_PagerEndCount）、1、（whenlist、（C0）、==（__Gallery_CurrentPage）、 （__Gallery_AlignDigits）、>（__Gallery_MaxPageCount）、、 \__q[OnGallery_List_Move,（C0）]（__Gallery_AlignDigits）\__q））φ
+（whenlist,（nop,）,（__Gallery_MaxPageCount）<=5,（nop,）,（__Gallery_MaxPageCount）>5&&（__Gallery_PagerEndCount）<（__Gallery_MaxPageCount）, ..,   ）φ
+ （when、(（__Gallery_CurrentPage）+1)<=（__Gallery_MaxPageCount）、\__q[OnGallery_List_Move,（calc,（__Gallery_CurrentPage）+1）]φ＞\__q、（文字色.disable）φ＞（文字色.normal））φ
+ （when、(（__Gallery_CurrentPage）+2)<=（__Gallery_MaxPageCount）、\__q[OnGallery_List_Move,（__Gallery_MaxPageCount）]φ≫\__q、（文字色.disable）φ≫（文字色.normal））\n
+
+
+
+＠__Gallery_AlignDigits
+（han2zen,（sprintf,%0（length,（__Gallery_MaxPageCount））d,（C0）））
+
+
+
+＠__Gallery_ListButton
+（set,__tmp,（call、__Extractor、（A2）、（__Gallery_SectionHeadCount）））φ
+（set,__tmp,（calc,（call、__Extractor、0、（times,（length,（A3））,（when,（at,（A3）,（C0））==1,（C0）、）））+（__tmp）））φ
+\_l[（A0）,（A1）]φ
+（when、（count、（A3）、1）>0、（vncall、__Gallery_ListButton_Released、A2、A3、__tmp）、（__Gallery_DisableButton））φ
+（when、（length、（A3））>1、\f[shadowcolor,#666]\f[shadowstyle,outline]\_l[（calc、（A0）+（__Gallery_ButtonWidth））,（calc、（A1）+（__Gallery_ButtonHeight））]\_l[@-3em,@-1.2em]（count,（A3）,1） / （length,（A3）））
+＃a0: 画像グループのカウント　0はじまり
+＃a1: 画像グループ内の解禁状況を0か1で列挙　0はじまり
+＃a2: 配置座標x
+＃a3: 配置座標y
+
+
+
+＠__Gallery_ListButton_Released
+\__q[OnGallery_Detail,（A2）,（A1）]φ
+（call、__Extractor、（A0）、（__Gallery_ButtonAll））φ
+\__q
+
+
+
+＠__Gallery_ListButton_Path
+\_b["（A0）",inline,--option=opaque,--clipping=φ
+（calc,（BalloonWidth）/2-（__Gallery_ButtonWidth）/2） φ
+（calc,（BalloonHeight）/2-（__Gallery_ButtonHeight）/2） φ
+（calc,（BalloonWidth）/2+（__Gallery_ButtonWidth）/2） φ
+（calc,（BalloonHeight）/2+（__Gallery_ButtonHeight）/2） φ
+,--option=background]
+
+
+
+＠__Gallery_ListButton_Coordinate
+（nswitch、（calc,（A0）%6+1）、（__Gallery_ButtonCoordinate））
+
+
+
+＠__Gallery_ListButton_Coordinate_CalculateToStoring
+（__Gallery_OffsetX）,φ
+（calc、（__Gallery_OffsetY）+（__Gallery_SpacingHeight）*2）、φ
+（calc、（__Gallery_OffsetX）+（__Gallery_ButtonWidth）+（__Gallery_SpacingWidth））,φ
+（calc、（__Gallery_OffsetY）+（__Gallery_SpacingHeight）*2）、φ
+（calc、（__Gallery_OffsetX）+（__Gallery_ButtonWidth）*2+（__Gallery_SpacingWidth）*2）,φ
+（calc、（__Gallery_OffsetY）+（__Gallery_SpacingHeight）*2）、φ
+（__Gallery_OffsetX）,φ
+（calc、（__Gallery_OffsetY）+（__Gallery_ButtonHeight）+（__Gallery_SpacingHeight）*3）、φ
+（calc、（__Gallery_OffsetX）+（__Gallery_ButtonWidth）+（__Gallery_SpacingWidth））,φ
+（calc、（__Gallery_OffsetY）+（__Gallery_ButtonHeight）+（__Gallery_SpacingHeight）*3）、φ
+（calc、（__Gallery_OffsetX）+（__Gallery_ButtonWidth）*2+（__Gallery_SpacingWidth）*2）,φ
+（calc、（__Gallery_OffsetY）+（__Gallery_ButtonHeight）+（__Gallery_SpacingHeight）*3）、φ
+
+
+
+＠__Extractor
+（A（calc、（A0）+1））
+
+

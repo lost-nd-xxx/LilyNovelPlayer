@@ -1,0 +1,21 @@
+charset,Shift_JIS
+type,ghost
+shiori,satori.dll
+icon,lnp_icon.ico
+
+name,Lily Novel Player
+id,LilyNovelPlayer
+title,LilyNovelPlayer
+
+craftman,LilyNovelPlayerProductionCommittee
+craftmanw,LilyNovelPlayer»ìˆÏˆõ‰ï
+
+sakura.name,LilyNovelPlayer0
+kero.name,LilyNovelPlayer1
+
+name.allowoverride,0
+
+default.balloon.path,LilyNovelPlayerBallon
+balloon.dontmove,1
+
+seriko.alignmenttodesktop,free

@@ -1,0 +1,336 @@
+＃起動と終了
+
+
+
+＊ゲーム起動準備
+＃────────▼▼ここから里々の特殊変数▼▼────────
+＄NOTIFYの自動保存	有効
+＄SAORI引数の計算	自動
+＄なでられ時実行イベント	なでられ時の反応
+＄トーク中のなでられ反応	有効
+＄ユーザ名	ユーザ
+＄会話時サーフェス戻し	無効
+＄喋り間隔	１０秒
+＄喋り間隔誤差	０％
+＄自動挿入ウェイトの倍率	０％
+＄自動挿入ウェイトタイプ	無効
+＄自動改行挿入	無効
+＄さくらスクリプトによるスコープ切り換え時	
+＄スコープ切り換え時	
+＄選択肢終了時	
+＃────────▲▲ここまで里々の特殊変数▲▲────────
+＃────────▼▼ここからＬＮＰ独自変数▼▼────────
+＄KeyPressCommand_AcceptingInputs	0
+＄Translate有効	0
+＄next接頭辞	シナリオ
+＄next数値	１
+＄オート	0
+＄サーフェス_ウィンドウ	0
+＄スキップ	0
+＄ハイド中	0
+＄バックログ中	0
+＄バックログ状態	0
+＄マウス受付_ころころ	0
+＄マウス受付_つつかれ	0
+＄マウス受付_なでられ	0
+＄マウス受付_クリック	0
+＄メニュー中	0
+＄メニュー状態.オート	0
+＄メニュー状態.ギャラリー	0
+＄メニュー状態.クイックセーブ	0
+＄メニュー状態.クイックロード	0
+＄メニュー状態.コンフィグ	0
+＄メニュー状態.スキップ	0
+＄メニュー状態.セーブ	0
+＄メニュー状態.タイトルに戻る	0
+＄メニュー状態.ハイド	0
+＄メニュー状態.バックログ	0
+＄メニュー状態.ロード	0
+＄ユーザ入力受付中	0
+＄一体化中	0
+＄中断再開中	0
+＄中断箇所	|
+＄再生中BGM	|
+＄再生中SE	|
+＄再生中VOICE	|
+＄描画中1	|
+＄描画中2	|
+＄描画中3	|
+＄__MenuCurrent	
+＄文字色強制	
+＃────────▲▲ここまでＬＮＰ独自変数▲▲────────
+＄辞書フォルダ	.,scenarios/（ゲームID）
+＄スクリプトの一番頭	（一体化_ウェイト）
+\![sound,stop]
+\![embed,OnBalloonSizeGet]
+\![set,tasktrayicon,"（call,存在確認,通知領域アイコン）","（call,存在確認,通知領域アイコンテキスト）"]
+\![raise,ゲーム起動準備２]
+＃辞書フォルダ読み込みの後の状態で処理を進めたいため、いったん区切り
+
+
+
+＊ゲーム起動準備２
+＄バックログ格納	|
+＄文字色.選択肢.visited	（文字色.既読選択肢.取得）
+＄文字色.選択肢.normal	（文字色.選択肢.取得）
+＄文字色.アンカー	（文字色.アンカー.取得）
+＄文字色.disable	\f[color,（call,存在確認,disable）]
+＄文字色.normal	\f[color,（call,存在確認,fontcolor）]
+＄文字色.visited	\f[color,（call,存在確認,visited）]
+＄文字色.current	（文字色.normal）
+＄s_（ゲームID）.シェル情報.updated_before	（when、（変数「s_（ゲームID）.シェル情報.updated_last」の存在）==0、0,0,0,0,0,0、（s_（ゲームID）.シェル情報.updated_last））
+＄s_（ゲームID）.シェル情報.updated_last	（get_property,currentghost.shelllist.current.update_time）
+＄s_（ゲームID）.シェル情報.updated_last	（when、（変数「s_（ゲームID）.シェル情報.updated_last」の存在）==0、0,0,0,0,0,0、（s_（ゲームID）.シェル情報.updated_last））
+＄SAORI引数の計算	無効
+＄notification.shell_updated	（when、（calc_float、（sprintf,%04d%02d%02d%02d%02d%02d,（s_（ゲームID）.シェル情報.updated_last））-（sprintf,%04d%02d%02d%02d%02d%02d,（s_（ゲームID）.シェル情報.updated_before）））>0、1、0）
+＄SAORI引数の計算	自動
+＞ゲーム起動準備２の２	（変数「s_（ゲームID）.グローバルセーブ」の存在）==0
+＞ゲーム起動準備３
+
+
+
+＊ゲーム起動準備２の２
+＄s_（ゲームID）.グローバルセーブ	|
+＄s_（ゲームID）.オートセーブ	|
+＄s_（ゲームID）.既読判定	|
+\![open,readme,shell,（ゲームID）]
+＞ゲーム起動準備３
+＃グローバルセーブが無ければ初期化
+
+
+
+＊ゲーム起動準備３
+＄Translate有効	1
+＞ゲーム起動準備３.シェルに更新があった	（notification.shell_updated）==1
+＄__t	（call,存在確認,推奨バルーン）
+＄__tmp	（when,（変数「__t」の存在）==0,（set,__t, ））
+＞ゲーム起動準備３.推奨バルーン以外を設定中	（vncall,equal,バルーン名,__t）==0
+＞（ゲームID）.起動
+＃推奨バルーン導入済み＆推奨バルーン以外を設定している　の場合、変更
+
+
+
+＊ゲーム終了
+\_q
+（bg,（call,存在確認,メニュー.背景））
+（call,__offset,m,0）終了中です...
+＃▼▼ここから里々の特殊変数▼▼
+＄スクリプトの一番頭	
+＃▲▲ここまで里々の特殊変数▲▲
+＃▼▼ここからLNP独自変数▼▼
+＄BalloonHeight	
+＄BalloonWidth	
+＄KeyPressCommand_AcceptingInputs	
+＄KeyPressCommand_FunctionNameToJump	
+＄TalkPrefix	
+＄Translate有効	
+＄__A0	
+＄__A3	
+＄__BG	
+＄__BackLog_BG	
+＄__BackLog_BackButton	
+＄__BackLog_MaxCount	
+＄__BackLog_Suffix	
+＄__CurrentItem	
+＄__CurrentPage	
+＄__Gallery_BGM	
+＄__Gallery_BackButton	
+＄__Gallery_Background	
+＄__Gallery_ButtonAll	
+＄__Gallery_ButtonCoordinate	
+＄__Gallery_ButtonHeight	
+＄__Gallery_ButtonWidth	
+＄__Gallery_CurrentPage	
+＄__Gallery_DisableButton	
+＄__Gallery_FlagNameAll	
+＄__Gallery_ImageAll	
+＄__Gallery_IsCountHalfWidth	
+＄__Gallery_ListName	
+＄__Gallery_List_EndCountPerPage	
+＄__Gallery_List_MaxPerPage	
+＄__Gallery_MaxImageCount	
+＄__Gallery_MaxPageCount	
+＄__Gallery_MaxSectionCount	
+＄__Gallery_OffsetX	
+＄__Gallery_OffsetY	
+＄__Gallery_PagerEndCount	
+＄__Gallery_PagerStartCount	
+＄__Gallery_SectionHeadCount	
+＄__Gallery_SpacingHeight	
+＄__Gallery_SpacingWidth	
+＄__Gallery_StatusAll_Joined	
+＄__Gallery_StatusAll_Split	
+＄__MaxItemCount	
+＄__MaxPageCount	
+＄__MenuCurrent	
+＄__count	
+＄__current	
+＄__end	
+＄__n	
+＄__start	
+＄__stats	
+＄__t	
+＄__textcolor	
+＄__titlebar	
+＄__tmp	
+＄__x	
+＄__x2	
+＄__x3	
+＄__x4	
+＄__y	
+＄next接頭辞	
+＄next数値	
+＄オート	
+＄サーフェス_ウィンドウ	
+＄スキップ	
+＄バックログ中	
+＄バックログ格納	
+＄バックログ状態	
+＄マウス受付_ころころ	
+＄マウス受付_つつかれ	
+＄マウス受付_なでられ	
+＄マウス受付_クリック	
+＄メニュー中	
+＄メニュー状態.オート	
+＄メニュー状態.ギャラリー	
+＄メニュー状態.クイックセーブ	
+＄メニュー状態.クイックロード	
+＄メニュー状態.コンフィグ	
+＄メニュー状態.スキップ	
+＄メニュー状態.セーブ	
+＄メニュー状態.タイトルに戻る	
+＄メニュー状態.ハイド	
+＄メニュー状態.バックログ	
+＄メニュー状態.ロード	
+＄ユーザ入力受付中	
+＄中断再開中	
+＄中断箇所	
+＄再生中BGM	
+＄再生中SE	
+＄再生中VOISE	
+＄描画中1	
+＄描画中2	
+＄描画中3	
+＄文字色.current	
+＄文字色.disable	
+＄文字色.normal	
+＄文字色.visited	
+＄文字色.アンカー	
+＄文字色.選択肢.normal	
+＄文字色.選択肢.visited	
+＄文字色強制	
+＃▲▲ここまでLNP独自変数▲▲
+\_q\_w[1000]\-
+＃さわり反応（0closeクリック）からもここに来るので\-が必要
+＃\_w[]でウェイトを指定しているので、コンフィグの設定で変化しない
+
+
+
+＊ゲーム起動準備３.シェルに更新があった
+＄__tmp	（get_property,currentghost.shelllist.current.craftmanurl）
+＞ゲーム起動準備３.シェルに更新があった.URL未定義	（変数「__tmp」の存在）==0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）シェル「\_?（シェル名）\_?」に更新がありました。\n
+サプリメントも更新されている可能性があります。\n
+（call,__offset,m）シェルの配布元URLを開きますか？\n[200]\*
+
+（call,__offset,m）\__q[ゲーム起動準備３.シェルの配布元URLを開く]シェル配布元URLを開く\__q\n
+（call,__offset,m）\__q[スプラッシュスクリーン]このまま進む\__q
+\_q
+
+
+
+＊ゲーム起動準備３.シェルに更新があった.URL未定義
+＄notification.shell_updated	0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）シェル「\_?（シェル名）\_?」に更新がありました。\n
+（call,__offset,m）サプリメントも更新されている可能性があります。\n[150]
+（call,__offset,m）シェルの配布元URL情報が未定義のため、このまま進みます。\_q\x
+\![raise,スプラッシュスクリーン]
+
+
+
+＊ゲーム起動準備３.推奨バルーン以外を設定中
+＞ゲーム起動準備３.推奨バルーン以外を設定中.推奨バルーン未導入	（導入済みバルーン「（call,存在確認,推奨バルーン）」の存在）==0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）推奨バルーン「\_?（call,存在確認,推奨バルーン）\_?」以外を設定中です。\n
+（call,__offset,m）推奨バルーンへ変更しますか？\n[200]\*
+
+（call,__offset,m）\__q[ゲーム起動準備３.推奨バルーン以外を設定中.設定する]変更する\__q\n
+（call,__offset,m）\__q[スプラッシュスクリーン]変更せず進む\__q
+\_q
+
+
+
+＊ゲーム起動準備３.推奨バルーン以外を設定中.設定する
+＄__ゴーストによるバルーン変更	1
+\![change,balloon,（call,存在確認,推奨バルーン）]
+
+
+
+＊ゲーム起動準備３.推奨バルーン以外を設定中.推奨バルーン未導入
+＄__tmp	（get_property,currentghost.shelllist.current.craftmanurl）
+＞ゲーム起動準備３.推奨バルーン以外を設定中.推奨バルーン未導入.URL未定義	（変数「__tmp」の存在）==0||（length,（__tmp））<=0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）推奨バルーン「\_?（call,存在確認,推奨バルーン）\_?」が存在しません。\n
+（call,__offset,m）シェルの配布元URLを開きますか？\n[200]\*
+
+（call,__offset,m）\__q[ゲーム起動準備３.推奨バルーン以外を設定中.推奨バルーン未導入.URL開く]シェル配布元URLを開く\__q\n
+（call,__offset,m）\__q[スプラッシュスクリーン]このまま進む\__q
+\_q
+
+
+
+＊ゲーム起動準備３.シェルの配布元URLを開く
+＄notification.shell_updated	0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+\![open,browser,（get_property,currentghost.shelllist.current.craftmanurl）]
+（call,__offset,m,0）シェルの配布元URLを開いています...
+\_q\x
+\![raise,スプラッシュスクリーン]
+
+
+
+＊ゲーム起動準備３.推奨バルーン以外を設定中.推奨バルーン未導入.URL未定義
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）推奨バルーン「\_?（call,存在確認,推奨バルーン）\_?」が存在しません。\n
+（call,__offset,m）シェルの配布元URL情報が未定義のため、このまま進みます。\_q\x
+\![raise,スプラッシュスクリーン]
+
+
+
+＊ゲームを起動できない
+＞ゲームを起動できないしマスターシェルもない	（導入済みシェル「master」の存在）==0
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）「\_?（シェル名）\_?」を起動できませんでした。\n
+（call,__offset,m）シェルをmasterに変更します。
+\_q\x
+\![change,shell,master,--option=raise-event]
+＃起動イベントに飛べなかった場合、masterに戻る
+
+
+
+＊ゲームを起動できないしマスターシェルもない
+（メニュー不可）
+（bg,（call,存在確認,メニュー.背景））
+：\_q
+（call,__offset,m,0）「\_?（シェル名）\_?」を起動できませんでした。\n
+（call,__offset,m）masterシェルがありません。
+\_q
+＃起動イベントに飛べなかったしmasterも検知できなかった
+
+

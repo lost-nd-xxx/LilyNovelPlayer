@@ -1,0 +1,268 @@
+────────────────────────
+●「Lily Novel Player」について
+────────────────────────
+リリー・ノベル・プレイヤー……略して「LNP」！
+これは、ノベルゲームを作れる枠組み的なゴースト＆シェル＆バルーンです。
+LilyNovelPlayer製作委員会がお送りします。
+
+────────────────────────
+◎ゴーストの使用方法
+────────────────────────
+・シェルを切り替えると、ゲームタイトルが切り替わります。
+
+────────────────────────
+◎画面表示が壊れたら
+────────────────────────
+以下のどちらかを行ってください。
+・ゴーストをアイコン化してから戻す
+・右クリックメニューの一番上の項目を実行
+
+また、ゴーストを起動しなおすと、タイトルの初期表示に戻ります。
+
+────────────────────────
+◎masterシェルの使用方法
+────────────────────────
+・上部のタイトルバーの色付きの部分に通常の当たり判定があります。
+　　・ドラッグして位置を動かす、右クリックメニューを出すなど
+・右上の３つのボタンは、それぞれ以下の機能があります。
+　　・左：ゴーストを最小化
+　　・中：シェルのreadmeを開く
+　　・右：ゴーストを終了
+
+────────────────────────
+◎シナリオ制作方法
+────────────────────────
+masterシェルのタイトル画面右、「シナリオ制作の手引」「独自タグ一覧」をお読みください。
+「ghost/master/help」からマニュアルを直接開くこともできます。
+
+────────────────────────
+◎LNP同梱素材のリストと利用条件
+────────────────────────
+〇利用条件
+LNPへの追加ファイルへの使用に限り、以下の条件でご自由にお使いいただけます。
+・著作者表示不要
+・加筆・反転等の加工OK
+・同梱再配布OK
+
+※初期から同梱済みのファイルを改変せずに使う場合、配布ファイルにそれを含める必要はありません。
+　既存のファイルを指定してお使いください。
+　例: （bg、assets/preset/color_light.png）
+
+〇素材リスト
+ghost/master/
+　dic_base_bootend.txt
+　dic_base_event.txt
+　dic_base_resource.txt
+　dic_game_core.txt
+　dic_game_tag.txt
+　dic_menu.txt
+　dic_menu_config.txt
+　dic_menu_gallery.txt
+　dic_menu_saveload.txt
+　dic_settings_default.txt
+
+　assets/
+　　preset/
+　　　batsu_button.png
+　　　button1.png
+　　　button1d.png
+　　　choice_base1.png
+　　　clickwait.png
+　　　color_dark.png
+　　　color_light.png
+　　　gallery_locked.png
+　　　menu_backlog.png
+　　　menu_config.png
+　　　menu_gallery.png
+　　　menu_load.png
+　　　menu_save.png
+　　　messagewindow1.png
+　　　messagewindow2.png
+　　　nowloading.png
+　　　ownerdraw_background.png
+　　　ownerdraw_foreground.png
+　　　ownerdraw_sidebar.png
+　　　resumewindow.png
+　　　osorawo_osampo.mp3
+　　　tanoshii_ukagaka.mp3
+
+　　preset_chara/
+　　　gallery/
+　　　　boy_01_g.png
+　　　　boy_02_g.png
+　　　　boy_03_g.png
+　　　　boy_04_g.png
+　　　　boy_05_g.png
+　　　　boy_06_g.png
+　　　　boy_07_g.png
+　　　　boy_08_g.png
+　　　　boy_ex_g.png
+　　　　girl_01_g.png
+　　　　girl_02_g.png
+　　　　girl_03_g.png
+　　　　girl_04_g.png
+　　　　girl_05_g.png
+　　　　girl_06_g.png
+　　　　girl_07_g.png
+　　　　girl_08_g.png
+　　　　girl_ex_g.png
+
+　　　in_window/
+　　　　boy_01.png
+　　　　boy_02.png
+　　　　boy_03.png
+　　　　boy_04.png
+　　　　boy_05.png
+　　　　boy_06.png
+　　　　boy_07.png
+　　　　boy_08.png
+　　　　girl_01.png
+　　　　girl_02.png
+　　　　girl_03.png
+　　　　girl_04.png
+　　　　girl_05.png
+　　　　girl_06.png
+　　　　girl_07.png
+　　　　girl_08.png
+
+　　　stand_large/
+　　　　boy_01.png
+　　　　boy_02.png
+　　　　boy_03.png
+　　　　boy_04.png
+　　　　boy_05.png
+　　　　boy_06.png
+　　　　boy_07.png
+　　　　boy_08.png
+　　　　boy_ex.png
+　　　　girl_01.png
+　　　　girl_02.png
+　　　　girl_03.png
+　　　　girl_04.png
+　　　　girl_05.png
+　　　　girl_06.png
+　　　　girl_07.png
+　　　　girl_08.png
+　　　　girl_ex.png
+
+　　　stand/
+　　　　boy_01.png
+　　　　boy_02.png
+　　　　boy_03.png
+　　　　boy_04.png
+　　　　boy_05.png
+　　　　boy_06.png
+　　　　boy_07.png
+　　　　boy_08.png
+　　　　boy_ex.png
+　　　　girl_01.png
+　　　　girl_02.png
+　　　　girl_03.png
+　　　　girl_04.png
+　　　　girl_05.png
+　　　　girl_06.png
+　　　　girl_07.png
+　　　　girl_08.png
+　　　　girl_ex.png
+
+　　　voice/
+　　　　chara_voice1.wav
+　　　　chara_voice2.wav
+　　　　chara_voice_douji.wav
+
+　scenarios/master/
+　　dic_gallerylist.txt
+　　dic_keypress.txt
+　　dic_scenario1.txt
+　　dic_scenario2.txt
+　　dic_settings.txt
+　　dic_snippet.txt
+　　dic_title.txt
+
+　　resources/
+　　　Number001.png
+　　　Number002.png
+　　　Number003.png
+　　　Number004.png
+　　　Number005.png
+　　　Number006.png
+　　　Number007.png
+　　　Number008.png
+　　　Number009.png
+　　　Number010.png
+　　　bg_desktop.png
+　　　bg_move1.png
+　　　bg_move2.png
+　　　bg_move3.png
+　　　bg_move4.png
+　　　bg_sky.png
+　　　bg_title.png
+　　　nowloading.png
+
+shell/master/
+　descript.txt
+　surface0.png
+　surface10.png
+　surfaces.txt
+　title1.png
+　titlebar1.png
+　window_reduce.png
+
+LilyNovelPlayerBallon/
+　arrow0.png
+　arrow1.png
+　balloonc0.png
+　balloons0.png
+　balloons1.png
+　balloons2.png
+　balloons3.png
+　cancel_down.png
+　cancel_up.png
+　clickwait.png
+　descript.txt
+　install.txt
+　marker.png
+　ok_down.png
+　ok_up.png
+　online0.png
+　online1.png
+　online2.png
+　online3.png
+　sstp.png
+
+test_supplement/
+　install.txt
+
+　ghost/master/scenarios/LilyNovelPlayer_test/
+　　dic0.txt
+
+　shell/LilyNovelPlayer_test/
+　　descript.txt
+　　readme.txt
+　　surface0.png
+　　surface10.png
+　　surfaces.txt
+　　titlebar1.png
+　　window_reduce.png
+
+　LilyNovelPlayerBallon_test/
+　　arrow0.png
+　　arrow1.png
+　　balloonc0.png
+　　balloons0.png
+　　balloons1.png
+　　balloons2.png
+　　balloons3.png
+　　cancel_down.png
+　　cancel_up.png
+　　clickwait.png
+　　descript.txt
+　　install.txt
+　　marker.png
+　　ok_down.png
+　　ok_up.png
+　　online0.png
+　　online1.png
+　　online2.png
+　　online3.png
+　　sstp.png

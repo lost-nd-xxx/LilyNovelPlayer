@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>LilyNovelPlayer 独自タグ一覧</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="content">
+
+			<div class="side">
+				<ul>
+					<a href="./hint.html">
+						<li class="differentpage">「制作の手引き」頁</li>
+					</a>
+					<a href="#">
+						<li class="returntotop">▲TOP▲</li>
+					</a>
+					<a href="#bg">
+						<li>bg</li>
+					</a>
+					<a href="#image">
+						<li>image</li>
+					</a>
+					<a href="#freeimage">
+						<li>freeimage</li>
+					</a>
+					<a href="#メニュー許可">
+						<li>メニュー許可</li>
+					</a>
+					<a href="#メニュー不可">
+						<li>メニュー不可</li>
+					</a>
+					<a href="#スキップ解除">
+						<li>スキップ解除</li>
+					</a>
+					<a href="#オート解除">
+						<li>オート解除</li>
+					</a>
+					<a href="#変数読み出し">
+						<li>変数読み出し</li>
+					</a>
+					<a href="#変数読み出しg">
+						<li>変数読み出しg</li>
+					</a>
+					<a href="#名札">
+						<li>名札</li>
+					</a>
+					<a href="#メニューボタン">
+						<li>メニューボタン</li>
+					</a>
+					<a href="#next">
+						<li>next</li>
+					</a>
+					<a href="#nextset">
+						<li>nextset</li>
+					</a>
+					<a href="#nextjump">
+						<li>nextjump</li>
+					</a>
+					<a href="#選択肢">
+						<li>選択肢</li>
+					</a>
+					<a href="#音楽">
+						<li>音楽</li>
+					</a>
+					<a href="#効果音">
+						<li>効果音</li>
+					</a>
+					<a href="#ボイス">
+						<li>ボイス</li>
+					</a>
+					<a href="#音停止">
+						<li>音停止</li>
+					</a>
+					<a href="#音ロード">
+						<li>音ロード</li>
+					</a>
+				</ul>
+			</div>
+
+			<div class="main">
+
+				<div class="item" id="凡例">
+					<h2>LilyNovelPlayer　独自タグ一覧</h2>
+					<pre><code>（タグ名,<em>変更すべき箇所</em>）</code></pre>
+					<p>変更すべき箇所は<em>赤い色の太字</em>で表記されます。<br>
+						タグ末尾に「<em>...</em>」という省略がある場合、引数の数を限定しません。</p>
+					<p>当頁にあるタグには、以下のような指定をreplace.txtで行っています。<br>
+						そのためcallを省略でき、バイト値１以外の里々既定の区切り字４種が使えます。<br>
+						使用例は半角カンマで統一しています。</p>
+					<pre><code>（bg,	（call,bg,
+（bg、	（call、bg、
+（bg，	（call，bg，
+（bg､	（call､bg､</code></pre>
+				</div>
+
+				<div class="item" id="bg">
+					<h2>bg</h2>
+					<pre><code>（bg,<em>画像パス</em>）</code></pre>
+					<p>
+						背景を描画します。<br>
+						座標とレイヤ、オプションの指定は固定されています。<br>
+						このタグで描画中の画像と同じ指示がこのタグで来ても、何も起こりません。<br>
+						違う指示が来たら、\p[3]のバルーンをクリアしてから次の画像を描画します。
+					</p>
+					<p>
+						指定済みオプションは以下です。
+					</p>
+					<dl>
+						<dt>inline</dt>
+						<dd>バルーンのテキスト行内に1文字分扱いとして画像を貼り付ける</dd>
+						<dt>--option=foreground</dt>
+						<dd>バルーンよりも画像の透明度を優先して合成表示される</dd>
+						<dt>--option=opaque</dt>
+						<dd>左上の色を透過しないで表示する</dd>
+						<dt>--option=fixed</dt>
+						<dd>スクロールした時に画像を動かさない</dd>
+					</dl>
+				</div>
+
+				<div class="item" id="image">
+					<h2>image</h2>
+					<pre><code>（image,<em>画像パス</em>,<em>x座標</em>,<em>y座標</em>,<em>描画レイヤ</em>）</code></pre>
+					<pre><code>（image,<em>画像パス</em>,<em>x座標</em>,<em>y座標</em>,<em>描画レイヤ</em>,<em>オプション指定</em>,<em>...</em>）</code></pre>
+					<p>
+						指定した画像を描画します。<br>
+						このタグで描画中の画像と同じ指示がこのタグで来ても、何も起こりません。<br>
+						違う指示が来たら、前の画像の手前に次の画像を描画します。
+					</p>
+					<hr>
+					<p>指定できるレイヤは１～３です。（３が奥で１が手前、０は文章が描画されます）</p>
+					<hr>
+					<p>以下の２つのオプションが必ず指定されます。</p>
+					<dl>
+						<dt>--option:fixed</dt>
+						<dd>スクロールした時に画像を動かさない</dd>
+						<dt>--option=foreground</dt>
+						<dd>バルーンよりも画像の透明度を優先して合成表示される</dd>
+					</dl>
+					
+					<hr>
+					<p>指定できるオプションは以下です。</p>
+					<dl>
+						<dt>--option=opaque</dt>
+						<dd>左上の色を透過しないで表示する</dd>
+						<dt>--option=use_self_alpha</dt>
+						<dd>アルファチャンネル付きのPNGを透過して表示する</dd>
+						<dt>---clipping=左 上 右 下</dt>
+						<dd>画像の一部分を矩形に切り抜いて表示する<br>
+							切り抜く範囲は左上右下と数値で指定</dd>
+					</dl>
+					
+				</div>
+
+				<div class="item" id="freeimage">
+					<h2>freeimage</h2>
+					<pre><code>（freeimage,<em>レイヤ番号</em>）</code></pre>
+					<p>
+						例１：指定したスコープ番号（０～３）のバルーンに表示されている画像や文字をすべて消去します。
+					</p>
+					<hr>
+					<pre><code>（freeimage）</code></pre>
+					<p>
+						例２：番号指定を省略すると、０～３全てのバルーンの中身の表示が消去されます。
+					</p>
+				</div>
+
+				<div class="item" id="メニュー許可">
+					<h2>メニュー許可</h2>
+					<pre><code>（メニュー許可）</code></pre>
+					<p>各種メニューが開けるかどうかを一括で制御します。</p>
+					<p>個別に状態を変えたい場合は、以下の変数を直接書き換えてください。<br>
+						変数の中身が「1」ならば、許可していることになります。</p>
+					<ul>
+						<li>メニュー状態.オート</li>
+						<li>メニュー状態.ギャラリー</li>
+						<li>メニュー状態.クイックセーブ</li>
+						<li>メニュー状態.クイックロード</li>
+						<li>メニュー状態.コンフィグ</li>
+						<li>メニュー状態.スキップ</li>
+						<li>メニュー状態.セーブ</li>
+						<li>メニュー状態.タイトルに戻る</li>
+						<li>メニュー状態.ハイド</li>
+						<li>メニュー状態.バックログ</li>
+						<li>メニュー状態.ロード</li>
+					</ul>
+				</div>
+
+				<div class="item" id="メニュー不可">
+					<h2>メニュー不可</h2>
+					<pre><code>（メニュー不可）</code></pre>
+					<p>各種メニューが開けるかどうかを一括で制御します。</p>
+					<p>個別に状態を変えたい場合は、以下の変数を直接書き換えてください。<br>
+						変数の中身が「1」以外ならば、許可していないことになります。</p>
+					<ul>
+						<li>メニュー状態.オート</li>
+						<li>メニュー状態.ギャラリー</li>
+						<li>メニュー状態.クイックセーブ</li>
+						<li>メニュー状態.クイックロード</li>
+						<li>メニュー状態.コンフィグ</li>
+						<li>メニュー状態.スキップ</li>
+						<li>メニュー状態.セーブ</li>
+						<li>メニュー状態.タイトルに戻る</li>
+						<li>メニュー状態.ハイド</li>
+						<li>メニュー状態.バックログ</li>
+						<li>メニュー状態.ロード</li>
+					</ul>
+				</div>
+
+				<div class="item" id="スキップ解除">
+					<h2>スキップ解除</h2>
+					<pre><code>（スキップ解除）</code></pre>
+					<p>このタグがあると、そのセクション(*1)の冒頭でスキップ状態が解除されます。</p>
+					<p>*1: チェックポイント冒頭～<a href="#next">next</a>・<a href="#nextset">nextset</a>・<a href="#nextjump">nextjump</a>・<a
+							href="#選択肢">選択肢</a>のタグまで。<br>
+						またはチェックポイント冒頭から\eまで。</p>
+				</div>
+
+				<div class="item" id="オート解除">
+					<h2>オート解除</h2>
+					<pre><code>（オート解除）</code></pre>
+					<p>このタグがあると、そのセクション(*1)の冒頭でオート状態が解除されます。</p>
+					<p>*1: チェックポイント冒頭～<a href="#next">next</a>・<a href="#nextset">nextset</a>・<a href="#nextjump">nextjump</a>・<a
+							href="#選択肢">選択肢</a>のタグまで。<br>
+						またはチェックポイント冒頭から\eまで。</p>
+				</div>
+
+				<div class="item" id="変数読み出し">
+					<h2>変数読み出し</h2>
+					<pre><code>（変数読み出し,<em>変数名</em>）</code></pre>
+					<p>変数名を渡すと、変数の内容が文字列で返ってきます。<br>
+						変数が存在しない場合、結果は空になります。</p>
+					<p>変数の内容に括弧などの特殊文字が入っていた場合、φでエスケープされて出てくる可能性があります。</p>
+				</div>
+
+				<div class="item" id="変数読み出しg">
+					<h2>変数読み出しg</h2>
+					<pre><code>（変数読み出しg,<em>ゲーム名</em>,<em>変数名</em>）</code></pre>
+					<p>例１：ゲーム名（シェルフォルダ名）と変数名を渡すと、そのゲームのグローバル変数の内容が文字列で返ってきます。<br>
+						変数が存在しない場合、結果は空になります。</p>
+					<p>変数の内容に括弧などの特殊文字が入っていた場合、φでエスケープされて出てくる可能性があります。</p>
+					<hr>
+					<pre><code>（変数読み出しg,,<em>変数名</em>）</code></pre>
+					<p>例２：ゲーム名を省略すると、現在のゲームのグローバル変数を読もうとします。</p>
+				</div>
+
+				<div class="item" id="名札">
+					<h2>名札</h2>
+					<pre><code>（名札,<em>表示する文字</em>）</code></pre>
+					<p>例１：名前表示（太文字表記）を\0バルーンの現在のカーソル位置に出します。</p>
+					<hr>
+					<pre><code>（名札,<em>表示する文字</em>,<em>x座標</em>,<em>y座標</em>）</code></pre>
+					<p>例２：名前表示を\0バルーンの指定した座標に出します。<br>
+						タグ使用後のカーソル位置は文字列の直後に移動します。</p>
+				</div>
+
+				<div class="item" id="メニューボタン">
+					<h2>メニューボタン</h2>
+					<pre><code>（メニューボタン,<em>x座標</em>,<em>y座標</em>,<em>横方向寄せ指定</em>）</code></pre>
+					<p>
+						例：メニューボタンを<a href="./hint.html#設定辞書">設定辞書</a>の設定に従い\0のバルーンへ出します。<br>
+						座標省略時はそれぞれ0となります。<br>
+						横方向寄せ指定はleft（左寄せ）、center（中央揃え）、right（右寄せ）の三種が指定できます。（省略時left）<br>
+						0以外のx座標が指定されている場合、中央揃え指定はX座標分インデント処理された扱いになります。<br>
+						表示は<a href="./hint.html#メニューなどのUI">メニューの許可状態</a>と連動します。
+					</p>
+				</div>
+
+				<div class="item" id="next">
+					<h2>next</h2>
+					<pre><code>（next）</code></pre>
+					<p>例１：設定済みのシナリオ名接頭辞と連番開始値に従い、次のシナリオへ移動するためのクリック待ちを出します。<br>
+						連番は、クリック待ちを進むごとに１ずつ加算されます。</p>
+					<p>初期値はそれぞれ、接頭辞：「シナリオ」、連番開始値：「１」です。<br>
+						この場合のジャンプ先は「<em>【フォルダ名】</em>.<em>シナリオ</em><em>【現在の連番】</em>」となります。</p>
+					<hr>
+					<pre><code>（next,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>変数名2</em>,<em>代入内容2</em>,<em>...</em>）</code></pre>
+					<p>例２：次のシナリオへの移動時、指定したゲーム内変数を操作します。</p>
+					<hr>
+					<pre><code>（next,<em>内容を削除したい変数名</em>,,<em>内容を書き換える変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例３：変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。</p>
+					<hr>
+					<pre><code>（next,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例４：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						記録時、「__global__」は変数名に入りません。</p>
+				</div>
+
+				<div class="item" id="nextset">
+					<h2>nextset</h2>
+					<pre><code>（nextset,<em>シナリオ名接頭辞</em>,<em>連番開始値</em>）</code></pre>
+					<p>例１：nextのシナリオ名接頭辞と連番開始値を設定し、次のシナリオへ移動します。<br>
+						ジャンプ先は「<em>【フォルダ名】</em>.<em>【シナリオ名接頭辞】</em><em>【連番開始値】</em>」です。</p>
+					<hr>
+					<pre><code>（nextset）</code></pre>
+					<p>例２：指定省略時の初期値はそれぞれ、接頭辞：「シナリオ」、連番開始値：「１」です。</p>
+					<hr>
+					<pre><code>（nextset,<em>シナリオ名接頭辞</em>,<em>連番開始値</em>,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>...</em>）</code></pre>
+					<p>例３：nextのシナリオ名接頭辞と連番開始値を設定し、指定したゲーム内変数を操作します。<br>
+						変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。
+					</p>
+					<hr>
+					<pre><code>（nextset,,,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>...</em>）</code></pre>
+					<p>例４：ゲーム内変数を操作しつつシナリオ名接頭辞および連番開始値を省略する時は、このようにしてください。</p>
+					<hr>
+					<pre><code>（nextset,<em>シナリオ名接頭辞</em>,<em>連番開始値</em>,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例５：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						また、変数記録時、「__global__」は変数名に入りません。</p>
+				</div>
+
+				<div class="item" id="nextjump">
+					<h2>nextjump</h2>
+					<pre><code>（nextjump,<em>シナリオ名</em>）</code></pre>
+					<p>例１：クリック待ち無しで次のシナリオへ移動します。<br>
+						ジャンプ先は「<em>【フォルダ名】</em>.<em>【シナリオ名】</em>」です。</p>
+					<hr>
+					<pre><code>（nextjump,<em>シナリオ名</em>,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>...</em>）</code></pre>
+					<p>例２：ゲーム内変数を操作しつつ指定したシナリオへ移動します。<br>
+						変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。</p>
+					<hr>
+					<pre><code>（nextjump,<em>シナリオ名</em>,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例３：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						また、変数記録時、「__global__」は変数名に入りません。</p>
+				</div>
+
+				<div class="item" id="選択肢">
+					<h2>選択肢</h2>
+					<pre><code>（選択肢,<em>表示する文字</em>,<em>ジャンプ先シナリオ名</em>）</code></pre>
+					<p>例１：選択肢を\0のバルーンへ出します。<br>
+						描画できる場所は現在のカーソル位置のみです。</p>
+					<p>出現場所を変えたい場合は「\_l[x,y]（選択肢,...）」のようにしてください。</p>
+					<hr>
+					<pre><code>（選択肢,<em>表示する文字</em>,<em>ジャンプ先シナリオ名</em>,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>変数名2</em>,<em>代入内容2</em>,<em>...</em>）</code></pre>
+					<p>例２：選択肢でのジャンプ後、ゲーム内変数を操作できます。<br>
+						変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。
+					</p>
+					<hr>
+					<pre><code>（選択肢,<em>表示する文字</em>,<em>ジャンプ先シナリオ名</em>,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例３：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						また、変数記録時、「__global__」は変数名に入りません。
+					</p>
+				</div>
+
+				<div class="item" id="音楽">
+					<h2>音楽</h2>
+					<pre><code>（音楽,<em>ファイルパス</em>）</code></pre>
+					<p>例１：指定されたファイルをループ無しで再生します。<br>
+						コンフィグの音楽音量設定が反映されます。<br>
+						現在再生中の音楽と同じものが再度指定された場合、何もしません。<br>
+						音楽再生終了前、またはループ再生中に別の音楽をこのタグで再生指示すると、前の音楽は止まります。</p>
+					<p>※SSPの本体設定で「最小化時に喋らない」が有効になっていると、「メニュー.最小化」を経由しない最小化時(*1)に音が一時停止されません。<br>
+						対応不可能なため、仕様とします。<br>
+						*1: ショートカットキー操作・タスクトレイアイコンのダブルクリック、など</p>
+					<p>※再生失敗した時、およびループ無し指定で１曲を再生終了した時は、再生中の状態変数が自動で解除されます。</p>
+					<hr>
+					<pre><code>（音楽,<em>ファイルパス</em>,loop）</code></pre>
+					<p>例２：ループ再生をしたい場合はこのように指定してください。<br>
+						現在再生中の音楽と同じものが再度指定された場合は、何もしません。</p>
+				</div>
+
+				<div class="item" id="効果音">
+					<h2>効果音</h2>
+					<pre><code>（効果音,<em>ファイルパス</em>）</code></pre>
+					<p>指定されたファイルをループ無しで再生します。<br>
+						コンフィグの効果音音量設定が反映されます。</p>
+					<p>※SSPの本体設定で「最小化時に喋らない」が有効になっていると、「＊メニュー.最小化」を経由しない最小化時(*1)に音が一時停止されません。<br>
+						対応不可能なため、仕様とします。<br>
+						*1: ショートカットキー操作・タスクトレイアイコンのダブルクリック、など</p>
+					<p>※再生失敗した時、およびループ無し指定で１効果音を再生終了した時は、再生中の状態変数が自動で解除されます。</p>
+					<hr>
+					<pre><code>（効果音,<em>ファイルパス</em>,loop）</code></pre>
+					<p>例２：ループ再生をしたい場合はこのように指定してください。</p>
+				</div>
+
+				<div class="item" id="ボイス">
+					<h2>ボイス</h2>
+					<pre><code>（ボイス,<em>ファイルパス</em>）</code></pre>
+					<p>指定されたファイルをループ無しで再生します。<br>
+						コンフィグのボイス音量設定が反映されます。</p>
+					<p>ボイス再生終了前、またはボイスをループ再生中にボイスをこのタグで再生指示すると、前のボイスは止まります。</p>
+					<p>※SSPの本体設定で「最小化時に喋らない」が有効になっていると、「メニュー.最小化」を経由しない最小化時(*1)に音が一時停止されません。<br>
+						対応不可能なため、仕様とします。<br>
+						*1: ショートカットキー操作・タスクトレイアイコンのダブルクリック、など</p>
+					<p>※再生失敗した時、およびループ無し指定で１ボイスを再生終了した時は、再生中の状態変数が自動で解除されます。</p>
+				</div>
+
+				<div class="item" id="音停止">
+					<h2>音停止</h2>
+					<pre><code>（音停止）</code></pre>
+					<p>例１：再生中の音声ファイルを全て停止します。</p>
+					<hr>
+					<pre><code>（音停止,<em>音楽</em>）
+（音停止,<em>効果音</em>）
+（音停止,<em>ボイス</em>）</code></pre>
+					<p>例２：再生中の、指定した種類の音声ファイルを全て停止します。</p>
+					<hr>
+					<pre><code>（音停止,<em>ファイルパス</em>）</code></pre>
+					<p>例３：指定したファイルが再生中であれば停止します。</p>
+				</div>
+
+				<div class="item" id="音ロード">
+					<h2>音ロード</h2>
+					<pre><code>（音ロード,<em>ファイルパス</em>）</code></pre>
+					<p>指定されたファイルをあらかじめ読み込んで、再生開始時すぐに再生できるようにします。<br>
+						音楽・効果音のどちらにも有効です。<br>
+						このタグが無くても音の再生自体は行われます。</p>
+					<p>※チェックポイント(*1)をまたいで指定した場合、セーブデータからの再開時にこのタグの設置地点を通らないかもしれません。<br>
+						その時は読み込み時間が発生します。</p>
+					<p>
+						*1: <a href="#next">next</a>・<a href="#nextset">nextset</a>・<a href="#nextjump">nextjump</a>・<a
+							href="#選択肢">選択肢</a>のタグ実行直後に移動した関数の冒頭
+					</p>
+				</div>
+			</div>
+
+			<div id="page_top"><a href="#">▲</a></div>
+
+		</div>
+	</div>
+
+	<script>
+		// コピーボタン作成用コード
+		(function (d) {
+			const pre = d.querySelectorAll('pre');
+			if (pre.length == 0) {
+				return
+			}
+			for (let i = 0; i < pre.length; i++) {
+				const btn = d.createElement('button');
+				btn.className = 'copy-button';
+				btn.textContent = 'Copy';
+				pre[i].insertBefore(btn, pre[i].firstElementChild);
+				btn.addEventListener('click', copy_code, false)
+			}
+		})(document);
+
+		// コピー機能用コード
+		function copy_code() {
+			const code = this.nextElementSibling.innerText;
+			if (navigator.clipboard) {
+				navigator.clipboard.writeText(code).then(() => {
+					this.textContent = 'コピーしました！';
+					setTimeout(() => {
+						this.textContent = 'Copy'
+					}, 1000)
+				}).catch(e => {
+					alert('コピーできませんでした\nお手数ですが手動でコピーしてください\n\n' + e.message)
+				})
+			} else {
+				alert('このブラウザは Clipboard API 非対応です\nお手数ですが手動でコピーしてください')
+			}
+		};
+
+	window.addEventListener('scroll',() => {
+		const pageTop = document.getElementById('page_top');
+			if(window.pageYOffset >= 100) {
+			pageTop.classList.add('fadein');
+		} else {
+			pageTop.classList.remove('fadein');
+		}
+	});
+
+	</script>
+
+</body>
+
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20543%20543%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22m425%2034h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2034h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2034h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%2051h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m476%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%2068h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%2068h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m476%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%2085h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%2085h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%2085h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2085h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%20102h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20119h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20136h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20136h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20136h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20136h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20136h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20153h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20153h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20153h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20153h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20153h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20170h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20170h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20170h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20170h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20170h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20187h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20187h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20187h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20187h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20187h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m51%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20204h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20204h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20204h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20204h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20204h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20204h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20204h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20204h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20221h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20221h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20221h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20221h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20221h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20221h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20221h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20221h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20221h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20221h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20221h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20238h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20238h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20238h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20238h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20238h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20238h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20238h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20255h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20255h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20255h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20255h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20255h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20255h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20272h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20272h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20272h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20272h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20272h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20272h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20272h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20272h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20289h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20289h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20306h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20306h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20306h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20323h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20323h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20340h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20340h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20340h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20357h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20357h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20357h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20357h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20374h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20374h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20374h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20374h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20374h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20374h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20374h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m51%20391h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20391h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20391h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20391h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20391h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20391h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20391h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20391h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20408h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20408h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20408h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20408h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20408h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20408h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20425h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20425h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20425h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20425h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20442h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20442h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20442h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20442h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20442h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20442h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20442h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20442h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20459h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20476h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20476h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20476h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20476h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20476h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20493h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20493h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20493h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20510h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+		background-attachment: fixed;
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		background-color: #fff;
+		background-size: 20%;
+		color: #222;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		min-width: 400px;
+	}
+
+	h1 {
+		background: #fff;
+		border-radius: 5px;
+		color: #1976D2;
+		padding: 10px;
+		display: block;
+		margin: 0;
+	}
+
+	h2 {
+		background: #1976D2;
+		color: #fff;
+		padding: 10px;
+		display: block;
+		margin: 0;
+		border-radius: 5px;
+	}
+
+	pre {
+		position: relative;
+		margin: 1em 0;
+		padding: 0;
+		line-height: 1;
+		font-size: 15px;
+		background: #eee;
+		border-radius: 5px;
+	}
+
+	pre code {
+		display: block;
+		margin: 0;
+		padding: 2em 1em;
+		max-height: 240px;
+		line-height: 1.4;
+		overflow: auto;
+	}
+
+	.copy-button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		margin: 0 auto;
+		padding: 0 1em;
+		height: 24px;
+		border: none;
+		line-height: 1;
+		font-weight: bold;
+		background: #455A64;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+
+	.copy-button:hover {
+		background: #999
+	}
+
+	em {
+		font-style: normal;
+		font-weight: bold;
+		color: #F44336;
+	}
+
+	.side ul {
+		padding: 0;
+		margin-block-end: 0;
+		margin-block-start: 0;
+		width: 290px;
+	}
+
+	.side ul li {
+		width: auto;
+		color: #222;
+		border-left: solid 6px #2196F3; /*左側の線*/
+		background: #B3E5FC; /*背景色*/
+		margin-bottom: 5px; /*下のバーとの余白*/
+		line-height: 1.5;
+		padding: 0.2em;
+		padding-left: 0.5em;
+		padding-right: 3em;
+		list-style-type: none !important; /*ポチ消す*/
+		vertical-align: middle;
+		box-shadow: 1px 1px 3px #666;
+	}
+
+	.returntotop {
+		border-left: solid 6px #FFC107 !important; /*左側の線*/
+		background: #FFECB3 !important; /*背景色*/
+	}
+
+	.differentpage {
+		border-left: solid 6px #E91E63 !important; /*左側の線*/
+		background: #F8BBD0 !important; /*背景色*/
+	}
+
+	.side ul li:hover {
+		background: #fff !important; /*背景*/
+	}
+
+	.side ul a {
+		text-decoration: none;
+	}
+
+	.container {
+		padding: 0;
+		margin: 0;
+	}
+
+	.header,
+	.footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100px;
+	}
+
+	.content {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.main {
+		line-height: 1.5em;
+		width: 100%;
+		height: 100%;
+		max-width: 600px;
+		min-width: 100px;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.main::before {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.main p {
+		margin: 1em 0;
+	}
+
+	.side {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 5px;/* 追従する */
+		height: 100%;
+		width: 270px;
+		min-width: 270px;
+		margin: 0;
+		margin-right: -2.5em;
+		padding: 0;
+		white-space: nowrap;
+	}
+
+	.item {
+		background: #fff;
+		margin: 0;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		padding: 20px;
+		position: relative;
+		box-shadow: 2px 2px 5px #666;
+	}
+
+	hr {
+		border-width: 0 0 1px;
+		border-style: solid;
+		border-color: #ccc;
+	}
+
+	#page_top {
+		display: block;
+		opacity: 0;
+		transition: opacity 0.4s ease-in ease-out;
+		pointer-events: none;
+	}
+
+	@media screen and (max-height: 800px), screen and (max-width: 850px)  {
+
+	.side {
+		top: auto; /* 追従しない */
+		margin-top: 5px;
+	}
+
+	#page_top {
+		display: block;
+		opacity: 0;
+		transition: opacity 0.4s ease-in;
+		pointer-events: none;
+	}
+
+	#page_top a {
+		text-decoration: none;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		z-index: 100;
+		color: rgb(255, 193, 7);
+		background-color: rgb(255, 236, 179);
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 2em;
+		border-radius: 50%;
+		border: solid 4px rgb(255, 193, 7);
+		text-align: center;
+		overflow: hidden;
+		box-shadow: 1px 1px 5px #666;
+		margin: 0;
+		padding: 0;
+	}
+
+	#page_top a:hover {
+		background-color: #fff;
+		cursor: pointer;
+	}
+
+	#page_top.fadein {
+		opacity: .5;
+		pointer-events: auto;
+	}
+
+}
+
+</style>
+
+</html>
