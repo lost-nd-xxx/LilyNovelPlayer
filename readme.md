@@ -25,3 +25,8 @@
 * [詳細な更新履歴](https://github.com/lost-nd-xxx/LilyNovelPlayer/commits/main/)
 
 
+## web版マニュアル
+* [シナリオ制作の手引き](https://lost-nd-xxx.github.io/LilyNovelPlayer/hint.html)
+* [独自タグ一覧](https://lost-nd-xxx.github.io/LilyNovelPlayer/tags.html)
+
+
