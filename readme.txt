@@ -1,168 +1,175 @@
-„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-œuLily Novel Playerv‚É‚Â‚¢‚Ä
-„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-ƒŠƒŠ[Eƒmƒxƒ‹EƒvƒŒƒCƒ„[cc—ª‚µ‚ÄuLNPvI
-‚±‚ê‚ÍAƒmƒxƒ‹ƒQ[ƒ€‚ðì‚ê‚é˜g‘g‚Ý“I‚È
-ƒS[ƒXƒg•ƒVƒFƒ‹•ƒoƒ‹[ƒ“‚Å‚·B
-LilyNovelPlayer»ìˆÏˆõ‰ï‚ª‚¨‘—‚è‚µ‚Ü‚·B
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â—ã€ŒLily Novel Playerã€ã«ã¤ã„ã¦
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+ãƒªãƒªãƒ¼ãƒ»ãƒŽãƒ™ãƒ«ãƒ»ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼â€¦â€¦ç•¥ã—ã¦ã€ŒLNPã€ï¼
+ã“ã‚Œã¯ã€ãƒŽãƒ™ãƒ«ã‚²ãƒ¼ãƒ ã‚’ä½œã‚Œã‚‹æž çµ„ã¿çš„ãª
+ã‚´ãƒ¼ã‚¹ãƒˆï¼†ã‚·ã‚§ãƒ«ï¼†ãƒãƒ«ãƒ¼ãƒ³ã§ã™ã€‚
+LilyNovelPlayerè£½ä½œå§”å“¡ä¼šãŒãŠé€ã‚Šã—ã¾ã™ã€‚
 
-„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-ƒS[ƒXƒg‚ÌŽg—p•û–@
-„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-EƒVƒFƒ‹‚ðØ‚è‘Ö‚¦‚é‚ÆA
-ƒQ[ƒ€ƒ^ƒCƒgƒ‹‚ªØ‚è‘Ö‚í‚è‚Ü‚·B
-E‚»‚Ì‘¼AÚ‚µ‚­‚ÍmasterƒVƒFƒ‹‚Ìreadme.txt‚ð
-‚¨“Ç‚Ý‚­‚¾‚³‚¢B
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â—Žã‚´ãƒ¼ã‚¹ãƒˆã®ä½¿ç”¨æ–¹æ³•
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+ãƒ»ã‚·ã‚§ãƒ«ã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹ã¨ã€
+ã‚²ãƒ¼ãƒ ã‚¿ã‚¤ãƒˆãƒ«ãŒåˆ‡ã‚Šæ›¿ã‚ã‚Šã¾ã™ã€‚
+ãƒ»ãã®ä»–ã€è©³ã—ãã¯masterã‚·ã‚§ãƒ«ã®readme.txtã‚’
+ãŠèª­ã¿ãã ã•ã„ã€‚
 
-„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-Žg—p‘fÞ‚Æ‚»‚Ìƒ‰ƒCƒZƒ“ƒX‚Ü‚Æ‚ß
-„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-Zƒtƒ@ƒCƒ‹ƒZƒbƒg“à‰æ‘œ‚ÌƒtƒHƒ“ƒg
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â—Žä½¿ç”¨ç´ æã¨ãã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã¾ã¨ã‚
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â—‹é‡Œã€…
+ghost/master/satori.dll
+ä»¥ä¸Šã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯é‡Œã€…/æ•´å‚™ç­ã‚«ã‚¹ã‚¿ãƒ ã§ã™ã€‚
+
+é‡Œã€…/æ•´å‚™ç­ã‚«ã‚¹ã‚¿ãƒ 
+https://github.com/ukatech/satoriya-shiori
+
+ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+ã€‡ãƒ•ã‚¡ã‚¤ãƒ«ã‚»ãƒƒãƒˆå†…ç”»åƒã®ãƒ•ã‚©ãƒ³ãƒˆ
 thumbnail.png
 ghost/master/
-@assets/preset/
-@@clickwait.png
-@@gallery_locked.png
-@@menu_backlog.png
-@@menu_config.png
-@@menu_gallery.png
-@@menu_load.png
-@@menu_save.png
-@@nowloading.png
-@@ownerdraw_sidebar.png
-@@resumewindow.png
-@scenarios/master/resources/
-@@Number001.png
-@@Number002.png
-@@Number003.png
-@@Number004.png
-@@Number005.png
-@@Number006.png
-@@Number007.png
-@@Number008.png
-@@Number009.png
-@@Number010.png
-@@bg_desktop.png
-@@nowloading.png
+ã€€assets/preset/
+ã€€ã€€clickwait.png
+ã€€ã€€gallery_locked.png
+ã€€ã€€menu_backlog.png
+ã€€ã€€menu_config.png
+ã€€ã€€menu_gallery.png
+ã€€ã€€menu_load.png
+ã€€ã€€menu_save.png
+ã€€ã€€nowloading.png
+ã€€ã€€ownerdraw_sidebar.png
+ã€€ã€€resumewindow.png
+ã€€scenarios/master/resources/
+ã€€ã€€Number001.png
+ã€€ã€€Number002.png
+ã€€ã€€Number003.png
+ã€€ã€€Number004.png
+ã€€ã€€Number005.png
+ã€€ã€€Number006.png
+ã€€ã€€Number007.png
+ã€€ã€€Number008.png
+ã€€ã€€Number009.png
+ã€€ã€€Number010.png
+ã€€ã€€bg_desktop.png
+ã€€ã€€nowloading.png
 shell/master/
-@thumbnail.png
-@title1.png
-@title2.png
+ã€€thumbnail.png
+ã€€title1.png
+ã€€title2.png
 LilyNovelPlayerBallon/
-@balloonc0.png
-@balloons2.png
-@balloons3.png
-@cancel_down.png
-@cancel_up.png
-@ok_down.png
-@ok_up.png
-@online.png
+ã€€balloonc0.png
+ã€€balloons2.png
+ã€€balloons3.png
+ã€€cancel_down.png
+ã€€cancel_up.png
+ã€€ok_down.png
+ã€€ok_up.png
+ã€€online.png
 test_supplement/
-@shell/LilyNovelPlayer_test/
-@@thumbnail.png
-@@title1.png
-@LilyNovelPlayerBallon_test/
-@@online.png
-@@balloonc0.png
-@@balloons2.png
-@@balloons3.png
-@@cancel_down.png
-@@cancel_up.png
-@@ok_down.png
-@@ok_up.png
-‚±‚ê‚ç‚Ì•¶Žš‚ÌƒtƒHƒ“ƒg‚É‚Â‚¢‚Ä—ñ‹“‚µ‚Ü‚·B
+ã€€shell/LilyNovelPlayer_test/
+ã€€ã€€title1.png
+ã€€LilyNovelPlayerBallon_test/
+ã€€ã€€online.png
+ã€€ã€€balloonc0.png
+ã€€ã€€balloons2.png
+ã€€ã€€balloons3.png
+ã€€ã€€cancel_down.png
+ã€€ã€€cancel_up.png
+ã€€ã€€ok_down.png
+ã€€ã€€ok_up.png
+ã“ã‚Œã‚‰ã®æ–‡å­—ã®ãƒ•ã‚©ãƒ³ãƒˆã«ã¤ã„ã¦åˆ—æŒ™ã—ã¾ã™ã€‚
 
-EHalimun
+ãƒ»Halimun
 https://creatypestudio.co/halimun/
-ƒtƒHƒ“ƒgƒtƒ@ƒCƒ‹‚ðÄ”z•z‚µ‚È‚¢ê‡A
-ƒNƒŒƒWƒbƒg•\‹L•s—v‚Æ‚³‚ê‚Ä‚¢‚Ü‚·B
+ãƒ•ã‚©ãƒ³ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’å†é…å¸ƒã—ãªã„å ´åˆã€
+ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆè¡¨è¨˜ä¸è¦ã¨ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
-EMS UI Gothic
+ãƒ»MS UI Gothic
 https://learn.microsoft.com/en-us/typography/font-list/ms-gothic#licensing-and-redistribution-info
-ƒtƒHƒ“ƒgƒtƒ@ƒCƒ‹‚ðÄ”z•z‚µ‚È‚¢ê‡A
-ƒNƒŒƒWƒbƒg•\‹L•s—v‚Æ‚³‚ê‚Ä‚¢‚Ü‚·B
+ãƒ•ã‚©ãƒ³ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’å†é…å¸ƒã—ãªã„å ´åˆã€
+ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆè¡¨è¨˜ä¸è¦ã¨ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
-ENoto Serif JP
+ãƒ»Noto Serif JP
 https://fonts.google.com/noto/specimen/Noto+Serif+JP?query=Noto+Serif+JP
-¦Open Font License
+â€»Open Font License
 
-ENoto Sans JP
+ãƒ»Noto Sans JP
 https://fonts.google.com/noto/specimen/Noto+Sans+JP?query=Noto+Sans+JP
-¦Open Font License
+â€»Open Font License
 
-EMurecho
+ãƒ»Murecho
 https://fonts.google.com/specimen/Murecho
-¦Open Font License
+â€»Open Font License
 
-¦Open Font License‚ÌƒtƒHƒ“ƒg‚É‚Â‚¢‚Ä
-ƒtƒHƒ“ƒgƒtƒ@ƒCƒ‹‚ðÄ”z•z‚µ‚È‚¢ê‡A
-ƒNƒŒƒWƒbƒg•\‹L•s—v‚Æ‚³‚ê‚Ä‚¢‚Ü‚·B
+â€»Open Font Licenseã®ãƒ•ã‚©ãƒ³ãƒˆã«ã¤ã„ã¦
+ãƒ•ã‚©ãƒ³ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’å†é…å¸ƒã—ãªã„å ´åˆã€
+ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆè¡¨è¨˜ä¸è¦ã¨ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
-||||||||||||||||||||||||
-Zconfig‚ÌƒTƒ“ƒvƒ‹ƒ{ƒCƒX
+ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+ã€‡configã®ã‚µãƒ³ãƒ—ãƒ«ãƒœã‚¤ã‚¹
 ghost/master/assets/preset/
-@sample_voice.wav
-ˆÈã‚Ìƒtƒ@ƒCƒ‹‚Í‚¸‚ñ‚¾‚à‚ñ‚Ì‰¹ºƒ‰ƒCƒuƒ‰ƒŠ‚ÆA
-VOICEVOX‚ð—p‚¢‚Ä¶¬‚µ‚½‰¹º‚Å‚·B
+ã€€sample_voice.wav
+ä»¥ä¸Šã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯ãšã‚“ã ã‚‚ã‚“ã®éŸ³å£°ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¨ã€
+VOICEVOXã‚’ç”¨ã„ã¦ç”Ÿæˆã—ãŸéŸ³å£°ã§ã™ã€‚
 
-E¤—p—˜—p@‰Â
-EƒNƒŒƒWƒbƒg•\‹L@•K—v (VOICEVOX:‚¸‚ñ‚¾‚à‚ñ)
+ãƒ»å•†ç”¨åˆ©ç”¨ã€€å¯
+ãƒ»ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆè¡¨è¨˜ã€€å¿…è¦ (VOICEVOX:ãšã‚“ã ã‚‚ã‚“)
 
-—˜—p‹K–ñƒy[ƒW
+åˆ©ç”¨è¦ç´„ãƒšãƒ¼ã‚¸
 https://zunko.jp/con_ongen_kiyaku.html
 
 VOICEVOX
 https://voicevox.hiroshiba.jp/
 
-“Œ–k‚¸‚ñŽqE‚¸‚ñ‚¾‚à‚ñPJ ŒöŽ®ƒTƒCƒg
+æ±åŒ—ãšã‚“å­ãƒ»ãšã‚“ã ã‚‚ã‚“PJ å…¬å¼ã‚µã‚¤ãƒˆ
 https://zunko.jp/
 
-||||||||||||||||||||||||
-ZmasterƒVƒiƒŠƒI‚ÌBGM
+ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+ã€‡masterã‚·ãƒŠãƒªã‚ªã®BGM
 ghost/master/assets/preset/
-@osorawo_osampo.mp3
-@tanoshii_ukagaka.mp3
-ˆÈã‚Ìƒtƒ@ƒCƒ‹‚ÍCREEVO‚Å¶¬‚µ‚½Šy‹È‚Å‚·B
-ƒ_ƒEƒ“ƒ~ƒbƒNƒXE‹ó”’ƒJƒbƒg“™‚ÍA
-LilyNovelPlayer»ìˆÏˆõ‰ï‚ªs‚¢‚Ü‚µ‚½B
+ã€€osorawo_osampo.mp3
+ã€€tanoshii_ukagaka.mp3
+ä»¥ä¸Šã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯CREEVOã§ç”Ÿæˆã—ãŸæ¥½æ›²ã§ã™ã€‚
+ãƒ€ã‚¦ãƒ³ãƒŸãƒƒã‚¯ã‚¹ãƒ»ç©ºç™½ã‚«ãƒƒãƒˆç­‰ã¯ã€
+LilyNovelPlayerè£½ä½œå§”å“¡ä¼šãŒè¡Œã„ã¾ã—ãŸã€‚
 
-E¤—p—˜—p@‰Â
-EƒNƒŒƒWƒbƒg•\‹L@•s—v
-¦‰Ìº‚Ì“ü‚Á‚Ä‚¢‚È‚¢ƒf[ƒ^‚Ìê‡
+ãƒ»å•†ç”¨åˆ©ç”¨ã€€å¯
+ãƒ»ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆè¡¨è¨˜ã€€ä¸è¦
+â€»æ­Œå£°ã®å…¥ã£ã¦ã„ãªã„ãƒ‡ãƒ¼ã‚¿ã®å ´åˆ
 
-> CREEVO‚Å¶¬‚³‚ê‚½ƒƒƒfƒB[‚â”º‘t‚ÍA
-> ƒpƒuƒŠƒbƒNƒhƒƒCƒ“i’˜ìŒ ‚È‚µj‚Ìƒf[ƒ^‚Æ‚µ‚Ä
-> ˆµ‚í‚ê‚Ü‚·B
+> CREEVOã§ç”Ÿæˆã•ã‚ŒãŸãƒ¡ãƒ­ãƒ‡ã‚£ãƒ¼ã‚„ä¼´å¥ã¯ã€
+> ãƒ‘ãƒ–ãƒªãƒƒã‚¯ãƒ‰ãƒ¡ã‚¤ãƒ³ï¼ˆè‘—ä½œæ¨©ãªã—ï¼‰ã®ãƒ‡ãƒ¼ã‚¿ã¨ã—ã¦
+> æ‰±ã‚ã‚Œã¾ã™ã€‚
 https://creevo-music.com/usage#copyright
 
-—˜—p‹K–ñƒy[ƒW
+åˆ©ç”¨è¦ç´„ãƒšãƒ¼ã‚¸
 https://creevo-music.com/terms-and-conditions/
 
 CREEVO
 https://creevo-music.com/
 
-||||||||||||||||||||||||
-Zƒ{ƒCƒX•—Œø‰Ê‰¹Econfig‚ÌƒTƒ“ƒvƒ‹Œø‰Ê‰¹
+ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+ã€‡ãƒœã‚¤ã‚¹é¢¨åŠ¹æžœéŸ³ãƒ»configã®ã‚µãƒ³ãƒ—ãƒ«åŠ¹æžœéŸ³
 ghost/master/assets/
-@preset/
-@@sample_se.wav
-@preset_chara/voice/
-@@chara_voice1.wav
-@@chara_voice2.wav
-@@chara_voice_douji.wav
-ˆÈã‚Ìƒtƒ@ƒCƒ‹‚ÍChipTone‚É‚Ä¶¬‚µ‚½‰¹º‚Å‚·B
+ã€€preset/
+ã€€ã€€sample_se.wav
+ã€€preset_chara/voice/
+ã€€ã€€chara_voice1.wav
+ã€€ã€€chara_voice2.wav
+ã€€ã€€chara_voice_douji.wav
+ä»¥ä¸Šã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯ChipToneã«ã¦ç”Ÿæˆã—ãŸéŸ³å£°ã§ã™ã€‚
 
-E¤—p—˜—p@‰Â
-EƒNƒŒƒWƒbƒg•\‹L@•s—v
+ãƒ»å•†ç”¨åˆ©ç”¨ã€€å¯
+ãƒ»ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆè¡¨è¨˜ã€€ä¸è¦
 
-ChipTone‚ðŽg—p‚µ‚Äì¬‚³‚ê‚½ƒTƒEƒ“ƒh‚ÍA
-CC0ƒ‰ƒCƒZƒ“ƒX‚Åƒ‰ƒCƒZƒ“ƒX‚³‚ê‚Ä‚¢‚Ü‚·B
+ChipToneã‚’ä½¿ç”¨ã—ã¦ä½œæˆã•ã‚ŒãŸã‚µã‚¦ãƒ³ãƒ‰ã¯ã€
+CC0ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã§ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã•ã‚Œã¦ã„ã¾ã™ã€‚
 https://creativecommons.org/publicdomain/zero/1.0/deed.ja
 
 ChipTone
 https://sfbgames.itch.io/chiptone
 
-||||||||||||||||||||||||
-Zã‹L‚ÉŠY“–‚µ‚È‚¢ƒS[ƒXƒgEƒVƒFƒ‹Eƒoƒ‹[ƒ“‰æ‘œ
-LilyNovelPlayer»ìˆÏˆõ‰ï‚Ìì‚Á‚½‚à‚Ì‚Å‚·B
-¦’Ç‰ÁƒVƒiƒŠƒI‚â’Ç‰ÁƒAƒZƒbƒg‚È‚Ç‚ÍŠY“–‚µ‚Ü‚¹‚ñB
+ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+ã€‡ä¸Šè¨˜ã«è©²å½“ã—ãªã„ã‚´ãƒ¼ã‚¹ãƒˆãƒ»ã‚·ã‚§ãƒ«ãƒ»ãƒãƒ«ãƒ¼ãƒ³ç”»åƒ
+LilyNovelPlayerè£½ä½œå§”å“¡ä¼šã®ä½œã£ãŸã‚‚ã®ã§ã™ã€‚
+â€»è¿½åŠ ã‚·ãƒŠãƒªã‚ªã‚„è¿½åŠ ã‚¢ã‚»ãƒƒãƒˆãªã©ã¯è©²å½“ã—ã¾ã›ã‚“ã€‚

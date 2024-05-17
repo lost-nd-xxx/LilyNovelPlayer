@@ -1,113 +1,113 @@
-”‚æ‚­g‚¤ƒ^ƒO‚È‚Ç‚ğÈ—ª•\‹L‚Å‚«‚é‚æ‚¤‚É‚µ‚Ä‚¢‚é
+ï¼ƒã‚ˆãä½¿ã†ã‚¿ã‚°ãªã©ã‚’çœç•¥è¡¨è¨˜ã§ãã‚‹ã‚ˆã†ã«ã—ã¦ã„ã‚‹
 
-—”wŒiˆÃ
-ibg,assets/preset/color_dark.pngj
+ï¼ èƒŒæ™¯æš—
+ï¼ˆbg,assets/preset/color_dark.pngï¼‰
 
-—”wŒi–¾
-ibg,assets/preset/color_light.pngj
+ï¼ èƒŒæ™¯æ˜
+ï¼ˆbg,assets/preset/color_light.pngï¼‰
 
-—”wŒi‚P
-ibg,scenarios/master/resources/bg_desktop.pngj
+ï¼ èƒŒæ™¯ï¼‘
+ï¼ˆbg,scenarios/master/resources/bg_desktop.pngï¼‰
 
-—”wŒi‚Q
-ibg,scenarios/master/resources/bg_sky.pngj
+ï¼ èƒŒæ™¯ï¼’
+ï¼ˆbg,scenarios/master/resources/bg_sky.pngï¼‰
 
-—”wŒi‚R
-ibg,scenarios/master/resources/bg_title.pngj
+ï¼ èƒŒæ™¯ï¼“
+ï¼ˆbg,scenarios/master/resources/bg_title.pngï¼‰
 
-—ˆÚ“®”wŒi‚P
-ibg,scenarios/master/resources/bg_move1.pngj
+ï¼ ç§»å‹•èƒŒæ™¯ï¼‘
+ï¼ˆbg,scenarios/master/resources/bg_move1.pngï¼‰
 
-—ˆÚ“®”wŒi‚Q
-ibg,scenarios/master/resources/bg_move2.pngj
+ï¼ ç§»å‹•èƒŒæ™¯ï¼’
+ï¼ˆbg,scenarios/master/resources/bg_move2.pngï¼‰
 
-—ˆÚ“®”wŒi‚R
-ibg,scenarios/master/resources/bg_move3.pngj
+ï¼ ç§»å‹•èƒŒæ™¯ï¼“
+ï¼ˆbg,scenarios/master/resources/bg_move3.pngï¼‰
 
-—ˆÚ“®”wŒi‚S
-ibg,scenarios/master/resources/bg_move4.pngj
+ï¼ ç§»å‹•èƒŒæ™¯ï¼”
+ï¼ˆbg,scenarios/master/resources/bg_move4.pngï¼‰
 
-——q‚`‚P
-iimage,assets/preset_chara/stand/girl_01.png,370,86,2,--option=use_self_alphaj
-””÷Î‚İ
+ï¼ å¥³å­ï¼¡ï¼‘
+ï¼ˆimage,assets/preset_chara/stand/girl_01.png,370,86,2,--option=use_self_alphaï¼‰
+ï¼ƒå¾®ç¬‘ã¿
 
-——q‚`‚V
-iimage,assets/preset_chara/stand/girl_07.png,370,86,2,--option=use_self_alphaj
-”ÎŠç
+ï¼ å¥³å­ï¼¡ï¼—
+ï¼ˆimage,assets/preset_chara/stand/girl_07.png,370,86,2,--option=use_self_alphaï¼‰
+ï¼ƒç¬‘é¡”
 
-——q‚a‚P
-iimage,assets/preset_chara/stand/girl_01.png,370,86,2,--option=use_self_alpha,--clipping=0 0 102 277j
-””÷Î‚İAƒ^ƒXƒNƒo[l—¶
+ï¼ å¥³å­ï¼¢ï¼‘
+ï¼ˆimage,assets/preset_chara/stand/girl_01.png,370,86,2,--option=use_self_alpha,--clipping=0 0 102 277ï¼‰
+ï¼ƒå¾®ç¬‘ã¿ã€ã‚¿ã‚¹ã‚¯ãƒãƒ¼è€ƒæ…®
 
-——q‚a‚V
-iimage,assets/preset_chara/stand/girl_07.png,370,86,2,--option=use_self_alpha,--clipping=0 0 102 277j
-””÷Î‚İAƒ^ƒXƒNƒo[l—¶
+ï¼ å¥³å­ï¼¢ï¼—
+ï¼ˆimage,assets/preset_chara/stand/girl_07.png,370,86,2,--option=use_self_alpha,--clipping=0 0 102 277ï¼‰
+ï¼ƒå¾®ç¬‘ã¿ã€ã‚¿ã‚¹ã‚¯ãƒãƒ¼è€ƒæ…®
 
-——q‚b‚P
-iimage,assets/preset_chara/in_window/girl_01.png,13,213,0,--option=use_self_alphaj
-””÷Î‚İAƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚Ì’†
+ï¼ å¥³å­ï¼£ï¼‘
+ï¼ˆimage,assets/preset_chara/stand_large/girl_01.png,30,225,0,--option=use_self_alpha,--clipping=0 0 144 161ï¼‰
+ï¼ƒå¾®ç¬‘ã¿ã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ä¸­
 
-——q‚c
-iimage,assets/preset_chara/stand/girl_ex.png,370,86,2,--option=use_self_alphaj
-”ƒVƒ‹ƒGƒbƒg
+ï¼ å¥³å­ï¼¤
+ï¼ˆimage,assets/preset_chara/stand/girl_ex.png,370,86,2,--option=use_self_alphaï¼‰
+ï¼ƒã‚·ãƒ«ã‚¨ãƒƒãƒˆ
 
-—’jq‚`‚P
-iimage,assets/preset_chara/stand/boy_01.png,54,21,2,--option=use_self_alphaj
-”‘f‚Ì”÷Î‚İ
+ï¼ ç”·å­ï¼¡ï¼‘
+ï¼ˆimage,assets/preset_chara/stand/boy_01.png,54,21,2,--option=use_self_alphaï¼‰
+ï¼ƒç´ ã®å¾®ç¬‘ã¿
 
-—’jq‚`‚T
-iimage,assets/preset_chara/stand/boy_05.png,54,21,2,--option=use_self_alphaj
-”–Ú•Â‚¶–³•\î
+ï¼ ç”·å­ï¼¡ï¼•
+ï¼ˆimage,assets/preset_chara/stand/boy_05.png,54,21,2,--option=use_self_alphaï¼‰
+ï¼ƒç›®é–‰ã˜ç„¡è¡¨æƒ…
 
-—’jq‚a‚P
-iimage,assets/preset_chara/stand/boy_01.png,54,21,2,--option=use_self_alpha,--clipping=0 0 216 342j
-””÷Î‚İAƒ^ƒXƒNƒo[l—¶
+ï¼ ç”·å­ï¼¢ï¼‘
+ï¼ˆimage,assets/preset_chara/stand/boy_01.png,54,21,2,--option=use_self_alpha,--clipping=0 0 216 342ï¼‰
+ï¼ƒå¾®ç¬‘ã¿ã€ã‚¿ã‚¹ã‚¯ãƒãƒ¼è€ƒæ…®
 
-—’jq‚a‚R
-iimage,assets/preset_chara/stand/boy_03.png,54,21,2,--option=use_self_alpha,--clipping=0 0 216 342j
-”‹Á‚«ŠçAƒ^ƒXƒNƒo[l—¶
+ï¼ ç”·å­ï¼¢ï¼“
+ï¼ˆimage,assets/preset_chara/stand/boy_03.png,54,21,2,--option=use_self_alpha,--clipping=0 0 216 342ï¼‰
+ï¼ƒé©šãé¡”ã€ã‚¿ã‚¹ã‚¯ãƒãƒ¼è€ƒæ…®
 
-—’jq‚a‚V
-iimage,assets/preset_chara/stand/boy_07.png,54,21,2,--option=use_self_alpha,--clipping=0 0 216 342j
-”ÎŠçAƒ^ƒXƒNƒo[l—¶
+ï¼ ç”·å­ï¼¢ï¼—
+ï¼ˆimage,assets/preset_chara/stand/boy_07.png,54,21,2,--option=use_self_alpha,--clipping=0 0 216 342ï¼‰
+ï¼ƒç¬‘é¡”ã€ã‚¿ã‚¹ã‚¯ãƒãƒ¼è€ƒæ…®
 
-—’jq‚b‚P
-iimage,assets/preset_chara/in_window/boy_01.png,13,213,0,--option=use_self_alphaj
-””÷Î‚İAƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚Ì’†
+ï¼ ç”·å­ï¼£ï¼‘
+ï¼ˆimage,assets/preset_chara/stand_large/boy_01.png,13,213,0,--option=use_self_alpha,--clipping=90 0 268 173ï¼‰
+ï¼ƒå¾®ç¬‘ã¿ã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ä¸­
 
-—’jq‚c
-iimage,assets/preset_chara/stand/boy_ex.png,54,21,2,--option=use_self_alphaj
-”ƒVƒ‹ƒGƒbƒg
+ï¼ ç”·å­ï¼¤
+ï¼ˆimage,assets/preset_chara/stand/boy_ex.png,54,21,2,--option=use_self_alphaï¼‰
+ï¼ƒã‚·ãƒ«ã‚¨ãƒƒãƒˆ
 
-—š˜g‚P
-iimage,assets/preset/messagewindow1.png,10,210,1,--option=use_self_alphajƒÓ
-iƒƒjƒ…[ƒ{ƒ^ƒ“A0A220ArightjƒÓ
-isetAmaster.ƒNƒŠƒbƒN‘Ò‚¿ƒ}[ƒJ[İ’èAiƒNƒŠƒbƒN‘Ò‚¿‚Pjj
+ï¼ å­—æ ï¼‘
+ï¼ˆimage,assets/preset/messagewindow1.png,10,210,1,--option=use_self_alphaï¼‰Ï†
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³ã€0ã€220ã€rightï¼‰Ï†
+ï¼ˆsetã€master.ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ãƒãƒ¼ã‚«ãƒ¼è¨­å®šã€ï¼ˆã‚¯ãƒªãƒƒã‚¯å¾…ã¡ï¼‘ï¼‰ï¼‰
 
-—š˜g‚Q
-iimage,assets/preset/messagewindow2.png,0,0,1,--option=use_self_alphajƒÓ
-iƒƒjƒ…[ƒ{ƒ^ƒ“A0A380ArightjƒÓ
-isetAmaster.ƒNƒŠƒbƒN‘Ò‚¿ƒ}[ƒJ[İ’èAiƒNƒŠƒbƒN‘Ò‚¿‚Qjj
+ï¼ å­—æ ï¼’
+ï¼ˆimage,assets/preset/messagewindow2.png,0,0,1,--option=use_self_alphaï¼‰Ï†
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³ã€0ã€380ã€rightï¼‰Ï†
+ï¼ˆsetã€master.ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ãƒãƒ¼ã‚«ãƒ¼è¨­å®šã€ï¼ˆã‚¯ãƒªãƒƒã‚¯å¾…ã¡ï¼’ï¼‰ï¼‰
 
-—ƒNƒŠƒbƒN‘Ò‚¿‚P
-assets/preset/clickwait.png,552,329
+ï¼ ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ï¼‘
+assets/preset/clickwait.png,552,349
 
-—ƒNƒŠƒbƒN‘Ò‚¿‚Q
+ï¼ ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ï¼’
 assets/preset/clickwait.png,552,339
 
-—‰¹Šy‚P
-i‰¹Šy,assets/preset/tanoshii_ukagaka.mp3,loopj
+ï¼ éŸ³æ¥½ï¼‘
+ï¼ˆéŸ³æ¥½,assets/preset/tanoshii_ukagaka.mp3,loopï¼‰
 
-—‰¹Šy‚Q
-i‰¹Šy,assets/preset/osorawo_osampo.mp3,loopj
+ï¼ éŸ³æ¥½ï¼’
+ï¼ˆéŸ³æ¥½,assets/preset/osorawo_osampo.mp3,loopï¼‰
 
-—ƒ{ƒCƒX‚P
-iƒ{ƒCƒX,assets/preset_chara/voice/chara_voice1.wavj
+ï¼ ãƒœã‚¤ã‚¹ï¼‘
+ï¼ˆãƒœã‚¤ã‚¹,assets/preset_chara/voice/chara_voice1.wavï¼‰
 
-—ƒ{ƒCƒX‚Q
-iƒ{ƒCƒX,assets/preset_chara/voice/chara_voice2.wavj
+ï¼ ãƒœã‚¤ã‚¹ï¼’
+ï¼ˆãƒœã‚¤ã‚¹,assets/preset_chara/voice/chara_voice2.wavï¼‰
 
-—ƒ{ƒCƒX“¯
-iƒ{ƒCƒX,assets/preset_chara/voice/chara_voice_douji.wavj
+ï¼ ãƒœã‚¤ã‚¹åŒæ™‚
+ï¼ˆãƒœã‚¤ã‚¹,assets/preset_chara/voice/chara_voice_douji.wavï¼‰
 
 

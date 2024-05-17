@@ -1,333 +1,336 @@
-charset,Shift_JIS
-//[�K�v�ɉ����ĕύX]����txt�̕����R�[�h
+charset,UTF-8
+//[必要に応じて変更]このtxtの文字コード
 
-//�������牺�͈ȉ�URL���Q�Ƃ̂���
+//ここから下は以下URLも参照のこと
 // https://ssp.shillest.net/ukadoc/manual/descript_balloon.html
 
 type,balloon
-//[�ύX�s��]���̃t�@�C���Z�b�g�̎��
+//[変更不可]このファイルセットの種別
 
-name,LilyNovelPlayer�p�o���[��
-//[�K���ύX]���̃o���[���̖��O
+name,LilyNovelPlayer用バルーン
+//[必ず変更]このバルーンの名前
 
 craftman,LilyNovelPlayerProductionCommittee
-//[�K���ύX]���̃o���[���̍�Җ��i���p�p�����̂݁j
+//[必ず変更]このバルーンの作者名（半角英数字のみ）
 
-craftmanw,LilyNovelPlayer����ψ���
-//[�K���ύX]���̃o���[���̍�Җ��i�S�p�����g�p�\�j
+craftmanw,LilyNovelPlayer製作委員会
+//[必ず変更]このバルーンの作者名（全角文字使用可能）
 
-//craftmanurl,�قɂ���
-//[�K�v�ɉ����ĕύX]��҂�URL
+//craftmanurl,ほにゃらら
+//[必要に応じて変更]作者のURL
 
-//homeurl,�قɂ���
-//[�K�v�ɉ����ĕύX]�l�b�g���[�N�X�V�p��URL
-//�V�F���ɍX�V�������craftmanurl���J�����ǂ������[�U�ɐu�˂�
-//�T�v�������g�̍X�V�𑣂��Ƃ��Ȃǂ�
+//homeurl,ほにゃらら
+//[必要に応じて変更]ネットワーク更新用のURL
+//シェルに更新があるとcraftmanurlを開くかどうかユーザに訊ねる
+//サプリメントの更新を促すときなどに
 
 recommended.ghost,Lily Novel Player
-//[�ύX�̕K�v�Ȃ�]�����g�p�S�[�X�g��
+//[変更の必要なし]推奨使用ゴースト名
 
 recommended.ghost.path,LilyNovelPlayer
-//[�ύX�̕K�v�Ȃ�]�����g�p�S�[�X�g�̑��΃p�X
+//[変更の必要なし]推奨使用ゴーストの相対パス
+
+readme.charset,UTF-8
+//[必要に応じて変更]readme.txtの文字コード
 
 use_self_alpha,1
-//[�K�v�ɉ����ĕύX]
-//���l��1�������ꍇ��pna�łȂ��o���[���̃T�[�t�F�X���̂̃A���t�@�`�����l���𓧖��x�Ƃ��Ďg�p����
-//�uLilyNovelPlayer�p�o���[���v�ł�balloons0.png�`balloons3.png��32bitPNG
-//�����ȗ̈悪����Ɖ摜������background�ōs�����������x�̉e�����󂯂�
+//[必要に応じて変更]
+//数値が1だった場合はpnaでなくバルーンのサーフェス自体のアルファチャンネルを透明度として使用する
+//「LilyNovelPlayer用バルーン」ではballoons0.png～balloons3.pngが32bitPNG
+//透明な領域があると画像合成をbackgroundで行った時透明度の影響を受ける
 
 use_input_alpha,1
-//[�K�v�ɉ����ĕύX]
-//���l��1�������ꍇ�͓��̓{�b�N�X�n�̃o���[����������������
-//���������̓{�b�N�X�̘g���̂��͔̂������ɂ͂ł��Ȃ�
-//�uLilyNovelPlayer�p�o���[���v�ł�balloonc0.png���S�ʕs������32bitPNG
+//[必要に応じて変更]
+//数値が1だった場合は入力ボックス系のバルーンも半透明化する
+//ただし入力ボックスの枠そのものは半透明にはできない
+//「LilyNovelPlayer用バルーン」ではballoonc0.pngが全面不透明の32bitPNG
 
 overlay_outside_balloon,1
-//[�K�v�ɉ����ĕύX]
-//���l��1�������ꍇ�́A�I�����C���\���ESSTP�}�[�J�[���̉摜�p�[�c���o���[���̊O�ɂ��`��ł���悤�ɂ���
-//���o���[���y��̃L�����o�X�T�C�Y�̊O�ɂ͕`��ł��Ȃ����A�y��̒��̊��S�ȓ����̏�ɂ͕`��ł���
+//[必要に応じて変更]
+//数値が1だった場合は、オンライン表示・SSTPマーカー等の画像パーツをバルーンの外にも描画できるようにする
+//※バルーン土台のキャンバスサイズの外には描画できないが、土台の中の完全な透明の上には描画できる
 
 windowposition.x,0
 windowposition.y,0
-//[�K�v�ɉ����ĕύX]
-//�o���[���̊�{�ʒu����̈ʒu����
+//[必要に応じて変更]
+//バルーンの基本位置からの位置調整
 
 windowposition.limit,0
-//[�ύX�s��]
-//�o���[���������I�ɉ�ʓ��Ɉێ����邩�ǂ���
-//1�ňێ��A0�ňێ����Ȃ�(��ʂ���o�����ł�����)
+//[変更不可]
+//バルーンを強制的に画面内に維持するかどうか
+//1で維持、0で維持しない(画面から出そうでも無視)
 
 origin.x,6
 origin.y,27
-//[�K�v�ɉ����ĕύX]
-//�e�L�X�g�J�n�ʒu
+//[必要に応じて変更]
+//テキスト開始位置
 
 validrect.left,6
 validrect.top,27
 validrect.right,606
 validrect.bottom,427
-//[�K�v�ɉ����ĕύX]
-//�e�L�X�g�`��͈�
+//[必要に応じて変更]
+//テキスト描画範囲
 
 wordwrappoint.x,-31
 wordwrappoint.y,0
-//[�K�v�ɉ����ĕύX]
-//�������s�Ő܂�Ԃ����W
+//[必要に応じて変更]
+//自動改行で折り返す座標
 
-//font.name,�l�r �S�V�b�N
-//[�K�v�ɉ����ĕύX]
-//�g�p����t�H���g
+//font.name,ＭＳ ゴシック
+//[必要に応じて変更]
+//使用するフォント
 
 font.height,24
-//[�K�v�ɉ����ĕύX]
-//�g�p����t�H���g�̍��������̑傫���B�P�ʂ̓s�N�Z��
+//[必要に応じて変更]
+//使用するフォントの高さ方向の大きさ。単位はピクセル
 
 font.color.r,255
 font.color.g,255
 font.color.b,255
-//[�K�v�ɉ����ĕύX]
-//�t�H���g�F
+//[必要に応じて変更]
+//フォント色
 
 font.shadowcolor.r,none
 font.shadowcolor.g,none
 font.shadowcolor.b,none
-//[�K�v�ɉ����ĕύX]
-//�t�H���g�̉A�����F�Bnone�Ŗ�����
+//[必要に応じて変更]
+//フォントの陰落ち色。noneで無効化
 
 disable.font.color.r,127
 disable.font.color.g,127
 disable.font.color.b,127
-//[�K�v�ɉ����ĕύX]
-//���얳�����Ӗ����锖���F�̕����̐F
+//[必要に応じて変更]
+//操作無効を意味する薄い色の文字の色
 
 cursor.style,none
-//[�K�v�ɉ����ĕύX]
-//�I�𒆑I�����̌`��B
+//[必要に応じて変更]
+//選択中選択肢の形状。
 
 cursor.blendmethod,nop
-//[�K�v�ɉ����ĕύX]
-//�I�𒆑I�����̃��X�^�I�y���[�V�����R�}���h
+//[必要に応じて変更]
+//選択中選択肢のラスタオペレーションコマンド
 
 cursor.font.color.r,102
 cursor.font.color.g,217
 cursor.font.color.b,239
-//�I�𒆑I�����̃t�H���g�F
+//選択中選択肢のフォント色
 
 cursor.pen.color.r,102
 cursor.pen.color.g,217
 cursor.pen.color.b,239
-//[�K�v�ɉ����ĕύX]
-//�I�𒆑I�����̋�`�g����щ����̐F
+//[必要に応じて変更]
+//選択中選択肢の矩形枠および下線の色
 
 cursor.brush.color.r,127
 cursor.brush.color.g,127
 cursor.brush.color.b,127
-//[�K�v�ɉ����ĕύX]
-//�I�𒆑I�����̋�`���̐F
+//[必要に応じて変更]
+//選択中選択肢の矩形内の色
 
 cursor.notselect.style,none
-//[�K�v�ɉ����ĕύX]
-//��I�𒆑I�����̌`��B
+//[必要に応じて変更]
+//非選択中選択肢の形状。
 
 cursor.notselect.blendmethod,nop
-//[�K�v�ɉ����ĕύX]
-//��I�𒆑I�����̃��X�^�I�y���[�V�����R�}���h
+//[必要に応じて変更]
+//非選択中選択肢のラスタオペレーションコマンド
 
 cursor.notselect.font.color.r,102
 cursor.notselect.font.color.g,217
 cursor.notselect.font.color.b,239
-//[�K�v�ɉ����ĕύX]
-//��I�𒆂̑I�����̃t�H���g�F
+//[必要に応じて変更]
+//非選択中の選択肢のフォント色
 
 cursor.notselect.pen.color.r,102
 cursor.notselect.pen.color.g,217
 cursor.notselect.pen.color.b,239
-//[�K�v�ɉ����ĕύX]
-//��I�𒆂̑I�����̋�`�g����щ����̐F
+//[必要に応じて変更]
+//非選択中の選択肢の矩形枠および下線の色
 
 cursor.notselect.brush.color.r,127
 cursor.notselect.brush.color.g,127
 cursor.notselect.brush.color.b,127
-//[�K�v�ɉ����ĕύX]
-//��I�𒆑I�����̋�`���̐F
+//[必要に応じて変更]
+//非選択中選択肢の矩形内の色
 
 anchor.font.color.r,255
 anchor.font.color.g,152
 anchor.font.color.b,0
-//�I�𒆃A���J�[�t�H���g�F(0�`255)
+//選択中アンカーフォント色(0～255)
 
 anchor.font.shadowcolor.r,0
 anchor.font.shadowcolor.g,0
 anchor.font.shadowcolor.b,0
-//�I�𒆃A���J�[�̉e�F(0�`255)
+//選択中アンカーの影色(0～255)
 
 anchor.font.shadowstyle,outline
-//�I�𒆃A���J�[�̉e�\���`�ԁBoffset�ŉE���Aoutline�ŉ����B
+//選択中アンカーの影表示形態。offsetで右下、outlineで縁取り。
 
 anchor.style,underline
-//�I�𒆃A���J�[�̌`��B
-//square�ŋ�`��\���Bunderline�ŉ�����\���B
-//square+underline�ŋ�`�Ɖ�����\���B
+//選択中アンカーの形状。
+//squareで矩形を表示。underlineで下線を表示。
+//square+underlineで矩形と下線を表示。
 
 anchor.blendmethod,copypen
-//�I�𒆃A���J�[�̃��X�^�I�y���[�V�����R�}���h�B
+//選択中アンカーのラスタオペレーションコマンド。
 
 anchor.pen.color.r,255
 anchor.pen.color.g,152
 anchor.pen.color.b,0
-//�I�𒆃A���J�[�̋�`�g����щ����̐F(0�`255)
+//選択中アンカーの矩形枠および下線の色(0～255)
 
 anchor.brush.color.r,127
 anchor.brush.color.g,127
 anchor.brush.color.b,127
-//�I�𒆃A���J�[�̋�`���̐F(0�`255)
+//選択中アンカーの矩形内の色(0～255)
 
 anchor.notselect.font.color.r,255
 anchor.notselect.font.color.g,152
 anchor.notselect.font.color.b,0
-//��I�𒆃A���J�[�t�H���g�F(0�`255)
+//非選択中アンカーフォント色(0～255)
 
 anchor.notselect.font.shadowcolor.r,0
 anchor.notselect.font.shadowcolor.g,0
 anchor.notselect.font.shadowcolor.b,0
-//��I�𒆃A���J�[�̉e�F(0�`255)
+//非選択中アンカーの影色(0～255)
 
 anchor.notselect.font.shadowstyle,outline
-//��I�𒆃A���J�[�̉e�\���`�ԁBoffset�ŉE���Aoutline�ŉ����B
+//非選択中アンカーの影表示形態。offsetで右下、outlineで縁取り。
 
 anchor.notselect.style,none
-//��I�𒆃A���J�[�̌`��B
-//square�ŋ�`��\���Bunderline�ŉ�����\���B
-//square+underline�ŋ�`�Ɖ�����\���B
+//非選択中アンカーの形状。
+//squareで矩形を表示。underlineで下線を表示。
+//square+underlineで矩形と下線を表示。
 
 anchor.notselect.blendmethod,copypen
-//��I�𒆃A���J�[�̃��X�^�I�y���[�V�����R�}���h�B
+//非選択中アンカーのラスタオペレーションコマンド。
 
 anchor.notselect.pen.color.r,255
 anchor.notselect.pen.color.g,152
 anchor.notselect.pen.color.b,0
-//��I�𒆃A���J�[�̋�`�g����щ����̐F(0�`255)
+//非選択中アンカーの矩形枠および下線の色(0～255)
 
 anchor.notselect.brush.color.r,127
 anchor.notselect.brush.color.g,127
 anchor.notselect.brush.color.b,127
-//��I�𒆃A���J�[�̋�`���̐F(0�`255)
+//非選択中アンカーの矩形内の色(0～255)
 
 anchor.visited.font.color.r,255
 anchor.visited.font.color.g,152
 anchor.visited.font.color.b,0
-//�K��ς݃A���J�[�t�H���g�F(0�`255)
+//訪問済みアンカーフォント色(0～255)
 
 anchor.visited.font.shadowcolor.r,0
 anchor.visited.font.shadowcolor.g,0
 anchor.visited.font.shadowcolor.b,0
-//�K��ς݃A���J�[�̉e�F(0�`255)
+//訪問済みアンカーの影色(0～255)
 
 anchor.visited.font.shadowstyle,outline
-//�K��ς݃A���J�[�̉e�\���`�ԁBoffset�ŉE���Aoutline�ŉ����B
+//訪問済みアンカーの影表示形態。offsetで右下、outlineで縁取り。
 
 anchor.visited.style,none
-//�K��ς݃A���J�[�̌`��B
-//square�ŋ�`��\���Bunderline�ŉ�����\���B
-//square+underline�ŋ�`�Ɖ�����\���B
+//訪問済みアンカーの形状。
+//squareで矩形を表示。underlineで下線を表示。
+//square+underlineで矩形と下線を表示。
 
 anchor.visited.blendmethod,copypen
-//�K��ς݃A���J�[�̃��X�^�I�y���[�V�����R�}���h�B
+//訪問済みアンカーのラスタオペレーションコマンド。
 
 anchor.visited.pen.color.r,255
 anchor.visited.pen.color.g,152
 anchor.visited.pen.color.b,0
-//�K��ς݃A���J�[�̋�`�g����щ����̐F(0�`255)
+//訪問済みアンカーの矩形枠および下線の色(0～255)
 
 anchor.visited.brush.color.r,127
 anchor.visited.brush.color.g,127
 anchor.visited.brush.color.b,127
-//�K��ς݃A���J�[�̋�`���̐F(0�`255)
+//訪問済みアンカーの矩形内の色(0～255)
 
 clickwaitmarker.x,-10
 clickwaitmarker.y,-10
-//[�K�v�ɉ����ĕύX]
-//�N���b�N�҂��}�[�J�[�̍��W
+//[必要に応じて変更]
+//クリック待ちマーカーの座標
 
 sstpmarker.x,8
 sstpmarker.y,-20
-//[�K�v�ɉ����ĕύX]
-//SSTP�}�[�J�[���W
+//[必要に応じて変更]
+//SSTPマーカー座標
 
 sstpmessage.x,22
 sstpmessage.y,-20
-//[�K�v�ɉ����ĕύX]
-//SSTP���b�Z�[�W�̕\���J�n�ʒu
+//[必要に応じて変更]
+//SSTPメッセージの表示開始位置
 
 onlinemarker.x,262
 onlinemarker.y,-29
-//[�K�v�ɉ����ĕύX]
-//�I�����C���\���̍��W
+//[必要に応じて変更]
+//オンライン表示の座標
 
-//sstpmessage.font.name,�l�r �S�V�b�N
-//[�K�v�ɉ����ĕύX]
-//SSTP���b�Z�[�W�Ɏg�p����t�H���g
+//sstpmessage.font.name,ＭＳ ゴシック
+//[必要に応じて変更]
+//SSTPメッセージに使用するフォント
 
 sstpmessage.font.height,12
-//[�K�v�ɉ����ĕύX]
-//SSTP���b�Z�[�W�̍��������̑傫��(�P�ʂ̓s�N�Z��)
+//[必要に応じて変更]
+//SSTPメッセージの高さ方向の大きさ(単位はピクセル)
 
 sstpmessage.font.color.r,255
 sstpmessage.font.color.g,255
 sstpmessage.font.color.b,255
-//[�K�v�ɉ����ĕύX]
-//SSTP���b�Z�[�W�t�H���g�F
+//[必要に応じて変更]
+//SSTPメッセージフォント色
 
-//number.font.name,�l�r �S�V�b�N
-//[�K�v�ɉ����ĕύX]
-//�J�E���^���l�Ɏg�p����t�H���g
+//number.font.name,ＭＳ ゴシック
+//[必要に応じて変更]
+//カウンタ数値に使用するフォント
 
 number.font.height,12
-//[�K�v�ɉ����ĕύX]
-//�J�E���^���l�̍��������̑傫��(�P�ʂ̓s�N�Z��)
+//[必要に応じて変更]
+//カウンタ数値の高さ方向の大きさ(単位はピクセル)
 
 number.font.color.r,255
 number.font.color.g,255
 number.font.color.b,255
-//[�K�v�ɉ����ĕύX]
-//�J�E���^���l�̃t�H���g�F
+//[必要に応じて変更]
+//カウンタ数値のフォント色
 
 number.xr,-20
-//[�K�v�ɉ����ĕύX]
-//�J�E���^���l��X���W�B�E�N�_
+//[必要に応じて変更]
+//カウンタ数値のX座標。右起点
 number.y,-20
-//[�K�v�ɉ����ĕύX]
-//�J�E���^���l��Y���W
+//[必要に応じて変更]
+//カウンタ数値のY座標
 
 arrow0.x,-20
 arrow0.y,29
 arrow1.x,-20
 arrow1.y,-20
-//[�K�v�ɉ����ĕύX]
-//�X�N���[���}�[�J���̍��W
+//[必要に応じて変更]
+//スクロールマーカ矢印の座標
 
-//communicatebox.font.name,�l�r �S�V�b�N
-//[�K�v�ɉ����ĕύX]
-//���̓{�b�N�X�Ɏg�p����t�H���g
+//communicatebox.font.name,ＭＳ ゴシック
+//[必要に応じて変更]
+//入力ボックスに使用するフォント
 
 communicatebox.font.color.r,255
 communicatebox.font.color.g,255
 communicatebox.font.color.b,255
-//[�K�v�ɉ����ĕύX]
-//���̓{�b�N�X�̃t�H���g�F
+//[必要に応じて変更]
+//入力ボックスのフォント色
 
 communicatebox.background.color.r,0
 communicatebox.background.color.g,0
 communicatebox.background.color.b,0
-//[�K�v�ɉ����ĕύX]
-//���̓{�b�N�X�̔w�i�F
+//[必要に応じて変更]
+//入力ボックスの背景色
 
 communicatebox.x,6
 communicatebox.y,27
-//[�K�v�ɉ����ĕύX]
-//���͉\��n�_�̍��W
+//[必要に応じて変更]
+//入力可能域始点の座標
 
 communicatebox.width,599
 communicatebox.height,24
-//[�K�v�ɉ����ĕύX]
-//���͉\��̑傫��
+//[必要に応じて変更]
+//入力可能域の大きさ

@@ -1,4 +1,4 @@
-charset,Shift_JIS
+charset,UTF-8
 type,ghost
 shiori,satori.dll
 icon,lnp_icon.ico
@@ -7,8 +7,8 @@ name,Lily Novel Player
 id,LilyNovelPlayer
 title,LilyNovelPlayer
 
-craftman,LilyNovelPlayerProductionCommittee
-craftmanw,LilyNovelPlayer»ìˆÏˆõ‰ï
+craftman,lost_nd_xxx & omochi-yoichi
+craftmanw,ã‚ã™ãˆã‚“ï¼†ãŠã‚‚ã¡ã‚ˆã„ã¡
 
 sakura.name,LilyNovelPlayer0
 kero.name,LilyNovelPlayer1
@@ -19,3 +19,4 @@ default.balloon.path,LilyNovelPlayerBallon
 balloon.dontmove,1
 
 seriko.alignmenttodesktop,free
+readme.charset,UTF-8

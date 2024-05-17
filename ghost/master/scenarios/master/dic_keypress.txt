@@ -1,33 +1,33 @@
-”ƒL[‚ª‰Ÿ‚³‚ê‚½”½‰ž
+ï¼ƒã‚­ãƒ¼ãŒæŠ¼ã•ã‚ŒãŸåå¿œ
 
 
 
-–master.a‚ª‰Ÿ‚³‚ê‚½	iƒƒjƒ…[ó‘Ô.ƒI[ƒgj==1
-„ƒƒjƒ…[.ƒI[ƒg
+ï¼Šmaster.aãŒæŠ¼ã•ã‚ŒãŸ	ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚ªãƒ¼ãƒˆï¼‰==1
+ï¼žãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚ªãƒ¼ãƒˆ
 
 
 
-–master.s‚ª‰Ÿ‚³‚ê‚½	iƒƒjƒ…[ó‘Ô.ƒXƒLƒbƒvj==1
-„ƒƒjƒ…[.ƒXƒLƒbƒv
+ï¼Šmaster.sãŒæŠ¼ã•ã‚ŒãŸ	ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¹ã‚­ãƒƒãƒ—ï¼‰==1
+ï¼žãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚¹ã‚­ãƒƒãƒ—
 
 
 
-–master.t‚ª‰Ÿ‚³‚ê‚½	iƒƒjƒ…[ó‘Ô.ƒ^ƒCƒgƒ‹‚É–ß‚éj==1
-„ƒƒjƒ…[.ƒ^ƒCƒgƒ‹‚É–ß‚é
+ï¼Šmaster.tãŒæŠ¼ã•ã‚ŒãŸ	ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹ï¼‰==1
+ï¼žãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹
 
 
 
-–master.c‚ª‰Ÿ‚³‚ê‚½	iƒƒjƒ…[ó‘Ô.ƒRƒ“ƒtƒBƒOj==1
-„ƒƒjƒ…[.ƒRƒ“ƒtƒBƒO
+ï¼Šmaster.cãŒæŠ¼ã•ã‚ŒãŸ	ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚³ãƒ³ãƒ•ã‚£ã‚°ï¼‰==1
+ï¼žãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚³ãƒ³ãƒ•ã‚£ã‚°
 
 
 
-–master.l‚ª‰Ÿ‚³‚ê‚½	iƒƒjƒ…[ó‘Ô.ƒoƒbƒNƒƒOj==1&&iƒoƒbƒNƒƒO’†j!=1
-„ƒƒjƒ…[.ƒoƒbƒNƒƒO
+ï¼Šmaster.lãŒæŠ¼ã•ã‚ŒãŸ	ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒãƒƒã‚¯ãƒ­ã‚°ï¼‰==1&&ï¼ˆãƒãƒƒã‚¯ãƒ­ã‚°ä¸­ï¼‰!=1
+ï¼žãƒ¡ãƒ‹ãƒ¥ãƒ¼.ãƒãƒƒã‚¯ãƒ­ã‚°
 
 
 
-–master.r‚ª‰Ÿ‚³‚ê‚½
+ï¼Šmaster.rãŒæŠ¼ã•ã‚ŒãŸ
 \![change,ghost,"Lily Novel Player",--option=raise-event]
 
 

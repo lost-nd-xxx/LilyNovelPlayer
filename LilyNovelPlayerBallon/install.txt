@@ -1,18 +1,18 @@
-charset,Shift_JIS
-//[�K�v�ɉ����ĕύX]����txt�̕����R�[�h
+charset,UTF-8
+//[必要に応じて変更]このtxtの文字コード
 
-//�������牺�͈ȉ�URL���Q�Ƃ̂���
+//ここから下は以下URLも参照のこと
 // https://ssp.shillest.net/ukadoc/manual/descript_install.html
 
 type,balloon
-//[�ύX�s��]���̃t�@�C���Z�b�g�̎��
+//[変更不可]このファイルセットの種類
 
-name,LilyNovelPlayer�p�o���[��
-//[�K���ύX]���̃t�@�C���Z�b�g�̖��O
+name,LilyNovelPlayer用バルーン
+//[必ず変更]このファイルセットの名前
 
 accept,LilyNovelPlayer0
-//[�ύX�s��]�󂯎���S�[�X�g�́��O��
+//[変更不可]受け取れるゴーストの￥０名
 
 reflesh,1
-//[�K�v�ɉ����ĕύX]�t�H���_���̊����̃t�@�C�����������ǂ���
-//1�ŏ��� 0�ŏ����Ȃ�
+//[必要に応じて変更]フォルダ内の既存のファイルを消すかどうか
+//1で消す 0で消さない

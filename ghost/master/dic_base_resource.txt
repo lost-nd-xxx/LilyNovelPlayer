@@ -1,86 +1,94 @@
-”‰EƒNƒŠƒbƒNƒƒjƒ…[—p‚Ì€–Ú‚È‚Ç
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ç”¨ã®é …ç›®ãªã©
 
 
 
-—username
-iƒ†[ƒUj
+ï¼ username
+ï¼ˆãƒ¦ãƒ¼ã‚¶ï¼‰
 
 
 
-—kero.popupmenu.type
+ï¼ kero.popupmenu.type
 0
-—char2.popupmenu.type
+ï¼ char2.popupmenu.type
 0
-—char3.popupmenu.type
+ï¼ char3.popupmenu.type
 0
-”\0‚Æ“¯‚¶ƒƒjƒ…[‚ğo‚·
+ï¼ƒ\0ã¨åŒã˜ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’å‡ºã™
 
 
 
-—recommendrootbutton.caption
-‰æ–Ê•\¦‚ª‰ó‚ê‚½—p
-”‰EƒNƒŠƒbƒNƒƒjƒ…[‚Å‚Ì‘€ì—p€–Ú‚Ì•\¦–¼
-—recommendrootbutton.visible
+ï¼ recommendrootbutton.caption
+ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹ï¼ç”»é¢å¾©å…ƒ
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã§ã®æ“ä½œç”¨é …ç›®ã®è¡¨ç¤ºå
+ï¼ recommendrootbutton.visible
 1
 
-—portalrootbutton.caption
-ƒ^ƒCƒgƒ‹‚É–ß‚é
-”‰EƒNƒŠƒbƒNƒƒjƒ…[‚Å‚Ìƒ|[ƒ^ƒ‹ƒTƒCƒg—“‚Ì•\¦–¼
-—portalrootbutton.visible
+ï¼ portalrootbutton.caption
+åˆ¶ä½œç”¨ãƒãƒ‹ãƒ¥ã‚¢ãƒ«
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã§ã®ãƒãƒ¼ã‚¿ãƒ«ã‚µã‚¤ãƒˆæ¬„ã®è¡¨ç¤ºå
+ï¼ portalrootbutton.visible
 1
 
 
 
-–sakura.recommendsites
-‰æ–Ê‚Ìó‘Ô‚ğ•œ‹A‚³‚¹‚é
+ï¼Šsakura.recommendsites
+ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹
+script:ï¼ˆwhenã€ï¼ˆæ–‡ã€Œï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.èµ·å‹•ã€ã®å­˜åœ¨ï¼‰==1ã€\![raise,ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.èµ·å‹•]ã€\![raise,ã‚²ãƒ¼ãƒ ã‚’èµ·å‹•ã§ããªã„]ï¼‰
+
+ï¼Šsakura.recommendsites
+ç”»é¢å¾©å…ƒ
 script:\![raise,OnUnstacking]
 
 
 
-–sakura.portalsites
-ƒ^ƒCƒgƒ‹‚É–ß‚é
-script:iwhenAi•¶uiƒQ[ƒ€IDj.‹N“®v‚Ì‘¶İj==1A\![raise,iƒQ[ƒ€IDj.‹N“®]A\![raise,ƒQ[ƒ€‚ğ‹N“®‚Å‚«‚È‚¢]j
+ï¼Šsakura.portalsites
+ã‚·ãƒŠãƒªã‚ªåˆ¶ä½œã®æ‰‹å¼•
+script:\![open,browser,file:///help/hint.html]\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
+
+ï¼Šsakura.portalsites
+ç‹¬è‡ªã‚¿ã‚°ä¸€è¦§
+script:\![open,browser,file:///help/tags.html]\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-—menu.sidebar.bitmap.filename
-icall,‘¶İŠm”F,menu.sidebar.bitmap.filenamej
-—menu.background.bitmap.filename
-icall,‘¶İŠm”F,menu.background.bitmap.filenamej
-—menu.foreground.bitmap.filename
-icall,‘¶İŠm”F,menu.foreground.bitmap.filenamej
+ï¼ menu.sidebar.bitmap.filename
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.sidebar.bitmap.filenameï¼‰
+ï¼ menu.background.bitmap.filename
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.background.bitmap.filenameï¼‰
+ï¼ menu.foreground.bitmap.filename
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.foreground.bitmap.filenameï¼‰
 
 
 
-—menu.background.font.color.r
-icall,‘¶İŠm”F,menu.background.font.color.rj
-—menu.background.font.color.g
-icall,‘¶İŠm”F,menu.background.font.color.gj
-—menu.background.font.color.b
-icall,‘¶İŠm”F,menu.background.font.color.bj
-—menu.foreground.font.color.r
-icall,‘¶İŠm”F,menu.foreground.font.color.rj
-—menu.foreground.font.color.g
-icall,‘¶İŠm”F,menu.foreground.font.color.gj
-—menu.foreground.font.color.b
-icall,‘¶İŠm”F,menu.foreground.font.color.bj
-—menu.separator.color.r
-icall,‘¶İŠm”F,menu.separator.color.rj
-—menu.separator.color.g
-icall,‘¶İŠm”F,menu.separator.color.gj
-—menu.separator.color.b
-icall,‘¶İŠm”F,menu.separator.color.bj
-—menu.frame.color.r
-icall,‘¶İŠm”F,menu.frame.color.rj
-—menu.frame.color.g
-icall,‘¶İŠm”F,menu.frame.color.gj
-—menu.frame.color.b
-icall,‘¶İŠm”F,menu.frame.color.bj
-—menu.disable.font.color.r
-icall,‘¶İŠm”F,menu.disable.font.color.rj
-—menu.disable.font.color.g
-icall,‘¶İŠm”F,menu.disable.font.color.gj
-—menu.disable.font.color.b
-icall,‘¶İŠm”F,menu.disable.font.color.bj
+ï¼ menu.background.font.color.r
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.background.font.color.rï¼‰
+ï¼ menu.background.font.color.g
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.background.font.color.gï¼‰
+ï¼ menu.background.font.color.b
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.background.font.color.bï¼‰
+ï¼ menu.foreground.font.color.r
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.foreground.font.color.rï¼‰
+ï¼ menu.foreground.font.color.g
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.foreground.font.color.gï¼‰
+ï¼ menu.foreground.font.color.b
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.foreground.font.color.bï¼‰
+ï¼ menu.separator.color.r
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.separator.color.rï¼‰
+ï¼ menu.separator.color.g
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.separator.color.gï¼‰
+ï¼ menu.separator.color.b
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.separator.color.bï¼‰
+ï¼ menu.frame.color.r
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.frame.color.rï¼‰
+ï¼ menu.frame.color.g
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.frame.color.gï¼‰
+ï¼ menu.frame.color.b
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.frame.color.bï¼‰
+ï¼ menu.disable.font.color.r
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.disable.font.color.rï¼‰
+ï¼ menu.disable.font.color.g
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.disable.font.color.gï¼‰
+ï¼ menu.disable.font.color.b
+ï¼ˆcall,å­˜åœ¨ç¢ºèª,menu.disable.font.color.bï¼‰
 
 

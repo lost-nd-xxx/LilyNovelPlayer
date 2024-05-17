@@ -1,7 +1,7 @@
-charset,Shift_JIS
-//[•K—v‚É‰‚¶‚Ä•ÏX]‚±‚Ìtxt‚Ì•¶šƒR[ƒh
+charset,UTF-8
+//[å¿…è¦ã«å¿œã˜ã¦å¤‰æ›´]ã“ã®txtã®æ–‡å­—ã‚³ãƒ¼ãƒ‰
 
-//‚±‚±‚©‚ç‰º‚ÍˆÈ‰ºURL‚àQÆ‚Ì‚±‚Æ
+//ã“ã“ã‹ã‚‰ä¸‹ã¯ä»¥ä¸‹URLã‚‚å‚ç…§ã®ã“ã¨
 // https://ssp.shillest.net/ukadoc/manual/descript_shell_surfaces.html
 
 descript
@@ -12,39 +12,39 @@ version,1
 surface0-3
 {
 element0,base,surface0.png,0,0
-//“y‘ä‚ÌƒEƒBƒ“ƒhƒE
+//åœŸå°ã®ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦
 
 collision0,554,6,569,19,minimize
 collision1,572,6,587,19,readme
 collision2,590,6,605,19,close
 collision3,6,27,605,426,unstack
-//“–‚½‚è”»’è‚ğ’è‹`
+//å½“ãŸã‚Šåˆ¤å®šã‚’å®šç¾©
 }
 
 surface.append0
 {
 element1,overlay,title1.png,0,0
-//ƒ^ƒCƒgƒ‹ƒo[‚»‚Ì‚P
+//ã‚¿ã‚¤ãƒˆãƒ«ãƒãƒ¼ãã®ï¼‘
 }
 
 surface.append1
 {
 element1,overlay,title1.png,0,0
 element2,reduce,window_reduce.png,0,0
-//•œ‹A—pƒT[ƒtƒFƒX
+//å¾©å¸°ç”¨ã‚µãƒ¼ãƒ•ã‚§ã‚¹
 }
 
 surface.append2
 {
 element1,overlay,title2.png,0,0
-//ƒ^ƒCƒgƒ‹ƒo[‚»‚Ì‚Q
+//ã‚¿ã‚¤ãƒˆãƒ«ãƒãƒ¼ãã®ï¼’
 }
 
 surface.append3
 {
 element1,overlay,titlebar1.png,0,0
 element2,overlay,title2.png,0,0
-//ƒ^ƒCƒgƒ‹ƒo[‚»‚Ì‚R
+//ã‚¿ã‚¤ãƒˆãƒ«ãƒãƒ¼ãã®ï¼“
 }
 
 sakura.cursor
@@ -53,13 +53,13 @@ mouseup0,minimize,system:finger
 mouseup1,readme,system:finger
 mouseup2,close,system:finger
 mouseup3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Éæ‚Á‚½•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«ä¹—ã£ãŸæ™‚è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 
 mousedown0,minimize,system:finger
 mousedown1,readme,system:finger
 mousedown2,close,system:finger
 mousedown3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½‚É•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã§ãƒã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 }
 
 kero.cursor
@@ -68,13 +68,13 @@ mouseup0,minimize,system:finger
 mouseup1,readme,system:finger
 mouseup2,close,system:finger
 mouseup3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Éæ‚Á‚½•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«ä¹—ã£ãŸæ™‚è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 
 mousedown0,minimize,system:finger
 mousedown1,readme,system:finger
 mousedown2,close,system:finger
 mousedown3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½‚É•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã§ãƒã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 }
 
 char2.cursor
@@ -83,13 +83,13 @@ mouseup0,minimize,system:finger
 mouseup1,readme,system:finger
 mouseup2,close,system:finger
 mouseup3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Éæ‚Á‚½•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«ä¹—ã£ãŸæ™‚è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 
 mousedown0,minimize,system:finger
 mousedown1,readme,system:finger
 mousedown2,close,system:finger
 mousedown3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½‚É•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã§ãƒã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 }
 
 char3.cursor
@@ -98,45 +98,45 @@ mouseup0,minimize,system:finger
 mouseup1,readme,system:finger
 mouseup2,close,system:finger
 mouseup3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Éæ‚Á‚½•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«ä¹—ã£ãŸæ™‚è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 
 mousedown0,minimize,system:finger
 mousedown1,readme,system:finger
 mousedown2,close,system:finger
 mousedown3,unstack,system:arrow
-//“–‚½‚è”»’è‚Ìã‚Åƒ}ƒEƒXƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½‚É•\¦‚·‚éƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã§ãƒã‚¦ã‚¹ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«
 }
 
 sakura.tooltips
 {
-minimize,Å¬‰»
-readme,readme‚ğŠJ‚­
-close,I—¹
+minimize,æœ€å°åŒ–
+readme,readmeã‚’é–‹ã
+close,çµ‚äº†
 }
-//“–‚½‚è”»’è‚Ìã‚É—ˆ‚½‚É•\¦‚·‚éƒc[ƒ‹ƒ`ƒbƒv‚ÌƒeƒLƒXƒg
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«æ¥ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ãƒ„ãƒ¼ãƒ«ãƒãƒƒãƒ—ã®ãƒ†ã‚­ã‚¹ãƒˆ
 
 kero.tooltips
 {
-minimize,Å¬‰»
-readme,readme‚ğŠJ‚­
-close,I—¹
+minimize,æœ€å°åŒ–
+readme,readmeã‚’é–‹ã
+close,çµ‚äº†
 }
-//“–‚½‚è”»’è‚Ìã‚É—ˆ‚½‚É•\¦‚·‚éƒc[ƒ‹ƒ`ƒbƒv‚ÌƒeƒLƒXƒg
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«æ¥ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ãƒ„ãƒ¼ãƒ«ãƒãƒƒãƒ—ã®ãƒ†ã‚­ã‚¹ãƒˆ
 
 char2.tooltips
 {
-minimize,Å¬‰»
-readme,readme‚ğŠJ‚­
-close,I—¹
+minimize,æœ€å°åŒ–
+readme,readmeã‚’é–‹ã
+close,çµ‚äº†
 }
-//“–‚½‚è”»’è‚Ìã‚É—ˆ‚½‚É•\¦‚·‚éƒc[ƒ‹ƒ`ƒbƒv‚ÌƒeƒLƒXƒg
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«æ¥ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ãƒ„ãƒ¼ãƒ«ãƒãƒƒãƒ—ã®ãƒ†ã‚­ã‚¹ãƒˆ
 
 char3.tooltips
 {
-minimize,Å¬‰»
-readme,readme‚ğŠJ‚­
-close,I—¹
+minimize,æœ€å°åŒ–
+readme,readmeã‚’é–‹ã
+close,çµ‚äº†
 }
-//“–‚½‚è”»’è‚Ìã‚É—ˆ‚½‚É•\¦‚·‚éƒc[ƒ‹ƒ`ƒbƒv‚ÌƒeƒLƒXƒg
+//å½“ãŸã‚Šåˆ¤å®šã®ä¸Šã«æ¥ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ãƒ„ãƒ¼ãƒ«ãƒãƒƒãƒ—ã®ãƒ†ã‚­ã‚¹ãƒˆ
 
 

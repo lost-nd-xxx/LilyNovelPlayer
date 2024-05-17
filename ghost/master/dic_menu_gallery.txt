@@ -1,216 +1,216 @@
-”ƒMƒƒƒ‰ƒŠ[
+ï¼ƒã‚®ãƒ£ãƒ©ãƒªãƒ¼
 
 
 
-–ƒƒjƒ…[.ƒMƒƒƒ‰ƒŠ[
-__MenuCurrent	ƒMƒƒƒ‰ƒŠ[
-„ƒƒjƒ…[.•s‹–‰Â	iƒƒjƒ…[ó‘Ô.ƒMƒƒƒ‰ƒŠ[j!=1
-„iƒQ[ƒ€IDj.ƒMƒƒƒ‰ƒŠ[
-__Gallery_CurrentPage	1
-__Gallery_ListName	iƒQ[ƒ€IDj.icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.ƒŠƒXƒg–¼j
-__Gallery_OffsetX	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.offset_xj
-__Gallery_OffsetY	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.offset_yj
-__Gallery_ButtonWidth	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.ƒ{ƒ^ƒ“_widthj
-__Gallery_ButtonHeight	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.ƒ{ƒ^ƒ“_heightj
-__Gallery_SpacingWidth	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.spacing_widthj
-__Gallery_SpacingHeight	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.spacing_heightj
-__Gallery_ButtonCoordinate	i__Gallery_ListButton_Coordinate_CalculateToStoringj
-__Gallery_Background	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.”wŒij
-__Gallery_Background	\p[3]\_l[0,0]\_b["i__Gallery_Backgroundj",inline,--option=foreground,--option=opaque,--option=fixed]
-__Gallery_Background2	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.”wŒi‚Qj
-__Gallery_Background2	\_b["i__Gallery_Background2j",inline,--option=background,--option=opaque,--option=fixed]
-__Gallery_BackButton	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.–ß‚éƒ{ƒ^ƒ“j
-__Gallery_BGM	icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.BGMj
-__Gallery_DisableButton	\_b["icall,‘¶İŠm”F,ƒMƒƒƒ‰ƒŠ[.ƒ{ƒ^ƒ“‘ä.‰Ÿ‚¹‚È‚¢j",inline,--option=opaque,--clipping=0 0 i__Gallery_ButtonWidthj i__Gallery_ButtonHeightj,--option=background]
-__Gallery_IsCountHalfWidth	i’PŒêŒQui__Gallery_ListNamej1v‚Ì‘¶İj
-__count	1
-__Gallery_MaxSectionCount	iwhile,icalc,i’PŒêŒQui__Gallery_ListNameji__countjv‚Ì‘¶İj+i’PŒêŒQui__Gallery_ListNamejihan2zen,i__countjjv‚Ì‘¶İjj>0,1iset,__count,i__countj+1jj
-„OnGallery_NoValidItem	i•Ï”u__Gallery_MaxSectionCountv‚Ì‘¶İj==0
-__Gallery_MaxSectionCount	ilength,i__Gallery_MaxSectionCountjj
-__Gallery_MaxPageCount	icalc,i__Gallery_MaxSectionCountj/6iwhen,icalc,i__Gallery_MaxSectionCountj%6j>0,+1jj
-__Gallery_ImageAll	iforC1Ci__Gallery_MaxSectionCountjC1CiforC1CisplitCii__Gallery_ListNamejiwhenCi__Gallery_IsCountHalfWidthj==1CiC1jCihan2zenCiC1jjjjC|C0C0j-1C2CiSiC0jjAjj
-__Gallery_ButtonAll	iforC1Ci__Gallery_MaxSectionCountjC1Cinop,isplitCii__Gallery_ListNamejiwhenCi__Gallery_IsCountHalfWidthj==1CiC0jCihan2zenCiC0jjjjC|C0C0jjiwhenAiequal,isubstrAiS0jA0A4j,\_b[j==0Aivncall,__Gallery_ListButton_Path,S0jAiS0jjAj
-__Gallery_FlagNameAll	ifor,1,i__Gallery_MaxSectionCountj,1,ifor,2,isplitCii__Gallery_ListNamejiwhenCi__Gallery_IsCountHalfWidthj==1CiC1jCihan2zenCiC1jjjjC|C0C0j-1,2,iSiC0jjCjAj
-__Gallery_FlagNameAll	ireplace,i__Gallery_FlagNameAllj,CA,Aj
-__Gallery_StatusAll_Split	icallA__Gallery_SummariseStatusAi__Gallery_FlagNameAlljj
-__Gallery_StatusAll_Joined	ierase,i__Gallery_StatusAll_Splitj,Aj
-__Gallery_MaxImageCount	ilength,i__Gallery_StatusAll_Joinedjj
-__Gallery_SectionHeadCount	iset,__count,0jifor,0,isplit,i__Gallery_StatusAll_Splitj,A,0,0j-1,1,i__countjiset,__count,icalc,i__countj+ilength,iSiC0jjjjjAj
-„OnGallery_List
+ï¼Šãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚®ãƒ£ãƒ©ãƒªãƒ¼
+ï¼„__MenuCurrent	ã‚®ãƒ£ãƒ©ãƒªãƒ¼
+ï¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ä¸è¨±å¯	ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‰!=1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚®ãƒ£ãƒ©ãƒªãƒ¼
+ï¼„__Gallery_CurrentPage	1
+ï¼„__Gallery_ListName	ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒªã‚¹ãƒˆåï¼‰
+ï¼„__Gallery_OffsetX	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.offset_xï¼‰
+ï¼„__Gallery_OffsetY	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.offset_yï¼‰
+ï¼„__Gallery_ButtonWidth	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒœã‚¿ãƒ³_widthï¼‰
+ï¼„__Gallery_ButtonHeight	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒœã‚¿ãƒ³_heightï¼‰
+ï¼„__Gallery_SpacingWidth	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.spacing_widthï¼‰
+ï¼„__Gallery_SpacingHeight	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.spacing_heightï¼‰
+ï¼„__Gallery_ButtonCoordinate	ï¼ˆ__Gallery_ListButton_Coordinate_CalculateToStoringï¼‰
+ï¼„__Gallery_Background	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.èƒŒæ™¯ï¼‰
+ï¼„__Gallery_Background	\p[3]\_l[0,0]\_b["ï¼ˆ__Gallery_Backgroundï¼‰",inline,--option=foreground,--option=opaque,--option=fixed]
+ï¼„__Gallery_Background2	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.èƒŒæ™¯ï¼’ï¼‰
+ï¼„__Gallery_Background2	\_b["ï¼ˆ__Gallery_Background2ï¼‰",inline,--option=background,--option=opaque,--option=fixed]
+ï¼„__Gallery_BackButton	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.æˆ»ã‚‹ãƒœã‚¿ãƒ³ï¼‰
+ï¼„__Gallery_BGM	ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.BGMï¼‰
+ï¼„__Gallery_DisableButton	\_b["ï¼ˆcall,å­˜åœ¨ç¢ºèª,ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒœã‚¿ãƒ³å°.æŠ¼ã›ãªã„ï¼‰",inline,--option=opaque,--clipping=0 0 ï¼ˆ__Gallery_ButtonWidthï¼‰ ï¼ˆ__Gallery_ButtonHeightï¼‰,--option=background]
+ï¼„__Gallery_IsCountHalfWidth	ï¼ˆå˜èªç¾¤ã€Œï¼ˆ__Gallery_ListNameï¼‰1ã€ã®å­˜åœ¨ï¼‰
+ï¼„__count	1
+ï¼„__Gallery_MaxSectionCount	ï¼ˆwhile,ï¼ˆcalc,ï¼ˆå˜èªç¾¤ã€Œï¼ˆ__Gallery_ListNameï¼‰ï¼ˆ__countï¼‰ã€ã®å­˜åœ¨ï¼‰+ï¼ˆå˜èªç¾¤ã€Œï¼ˆ__Gallery_ListNameï¼‰ï¼ˆhan2zen,ï¼ˆ__countï¼‰ï¼‰ã€ã®å­˜åœ¨ï¼‰ï¼‰>0,1ï¼ˆset,__count,ï¼ˆ__countï¼‰+1ï¼‰ï¼‰
+ï¼OnGallery_NoValidItem	ï¼ˆå¤‰æ•°ã€Œ__Gallery_MaxSectionCountã€ã®å­˜åœ¨ï¼‰==0
+ï¼„__Gallery_MaxSectionCount	ï¼ˆlength,ï¼ˆ__Gallery_MaxSectionCountï¼‰ï¼‰
+ï¼„__Gallery_MaxPageCount	ï¼ˆcalc,ï¼ˆ__Gallery_MaxSectionCountï¼‰/6ï¼ˆwhen,ï¼ˆcalc,ï¼ˆ__Gallery_MaxSectionCountï¼‰%6ï¼‰>0,+1ï¼‰ï¼‰
+ï¼„__Gallery_ImageAll	ï¼ˆforï¼Œ1ï¼Œï¼ˆ__Gallery_MaxSectionCountï¼‰ï¼Œ1ï¼Œï¼ˆforï¼Œ1ï¼Œï¼ˆsplitï¼Œï¼ˆï¼ˆ__Gallery_ListNameï¼‰ï¼ˆwhenï¼Œï¼ˆ__Gallery_IsCountHalfWidthï¼‰==1ï¼Œï¼ˆC1ï¼‰ï¼Œï¼ˆhan2zenï¼Œï¼ˆC1ï¼‰ï¼‰ï¼‰ï¼‰ï¼Œ|ï¼Œ0ï¼Œ0ï¼‰-1ï¼Œ2ï¼Œï¼ˆSï¼ˆC0ï¼‰ï¼‰ã€ï¼‰ï¼‰
+ï¼„__Gallery_ButtonAll	ï¼ˆforï¼Œ1ï¼Œï¼ˆ__Gallery_MaxSectionCountï¼‰ï¼Œ1ï¼Œï¼ˆnop,ï¼ˆsplitï¼Œï¼ˆï¼ˆ__Gallery_ListNameï¼‰ï¼ˆwhenï¼Œï¼ˆ__Gallery_IsCountHalfWidthï¼‰==1ï¼Œï¼ˆC0ï¼‰ï¼Œï¼ˆhan2zenï¼Œï¼ˆC0ï¼‰ï¼‰ï¼‰ï¼‰ï¼Œ|ï¼Œ0ï¼Œ0ï¼‰ï¼‰ï¼ˆwhenã€ï¼ˆequal,ï¼ˆsubstrã€ï¼ˆS0ï¼‰ã€0ã€4ï¼‰,\_b[ï¼‰==0ã€ï¼ˆvncall,__Gallery_ListButton_Path,S0ï¼‰ã€ï¼ˆS0ï¼‰ï¼‰ã€ï¼‰
+ï¼„__Gallery_FlagNameAll	ï¼ˆfor,1,ï¼ˆ__Gallery_MaxSectionCountï¼‰,1,ï¼ˆfor,2,ï¼ˆsplitï¼Œï¼ˆï¼ˆ__Gallery_ListNameï¼‰ï¼ˆwhenï¼Œï¼ˆ__Gallery_IsCountHalfWidthï¼‰==1ï¼Œï¼ˆC1ï¼‰ï¼Œï¼ˆhan2zenï¼Œï¼ˆC1ï¼‰ï¼‰ï¼‰ï¼‰ï¼Œ|ï¼Œ0ï¼Œ0ï¼‰-1,2,ï¼ˆSï¼ˆC0ï¼‰ï¼‰ï¼Œï¼‰ã€ï¼‰
+ï¼„__Gallery_FlagNameAll	ï¼ˆreplace,ï¼ˆ__Gallery_FlagNameAllï¼‰,ï¼Œã€,ã€ï¼‰
+ï¼„__Gallery_StatusAll_Split	ï¼ˆcallã€__Gallery_SummariseStatusã€ï¼ˆ__Gallery_FlagNameAllï¼‰ï¼‰
+ï¼„__Gallery_StatusAll_Joined	ï¼ˆerase,ï¼ˆ__Gallery_StatusAll_Splitï¼‰,ã€ï¼‰
+ï¼„__Gallery_MaxImageCount	ï¼ˆlength,ï¼ˆ__Gallery_StatusAll_Joinedï¼‰ï¼‰
+ï¼„__Gallery_SectionHeadCount	ï¼ˆset,__count,0ï¼‰ï¼ˆfor,0,ï¼ˆsplit,ï¼ˆ__Gallery_StatusAll_Splitï¼‰,ã€,0,0ï¼‰-1,1,ï¼ˆ__countï¼‰ï¼ˆset,__count,ï¼ˆcalc,ï¼ˆ__countï¼‰+ï¼ˆlength,ï¼ˆSï¼ˆC0ï¼‰ï¼‰ï¼‰ï¼‰ï¼‰ã€ï¼‰
+ï¼OnGallery_List
 
 
 
-—__Gallery_SummariseStatus
-ifor,0,iA‚Ì”j-1,1,
-iwhen,ivncall,length,AiC0jj>0&&i•Ï”uAiC0jv‚Ì‘¶İj==1,
-icallC__Gallery_SummariseStatus_PartCiAiC0jjj
-jA
-j
+ï¼ __Gallery_SummariseStatus
+ï¼ˆfor,0,ï¼ˆAã®æ•°ï¼‰-1,1,
+ï¼ˆwhen,ï¼ˆvncall,length,Aï¼ˆC0ï¼‰ï¼‰>0&&ï¼ˆå¤‰æ•°ã€ŒAï¼ˆC0ï¼‰ã€ã®å­˜åœ¨ï¼‰==1,
+ï¼ˆcallï¼Œ__Gallery_SummariseStatus_Partï¼Œï¼ˆAï¼ˆC0ï¼‰ï¼‰ï¼‰
+ï¼‰ã€
+ï¼‰
 
 
 
-—__Gallery_SummariseStatus_Part
-ifor,0,iA‚Ì”j-1,1,
-iwhen,ivncall,length,AiC0jj>0&&i•Ï”uAiC0jv‚Ì‘¶İj==1&&ivncall,•Ï”“Ç‚İo‚µg,ƒQ[ƒ€ID,AiC0jj==1,
+ï¼ __Gallery_SummariseStatus_Part
+ï¼ˆfor,0,ï¼ˆAã®æ•°ï¼‰-1,1,
+ï¼ˆwhen,ï¼ˆvncall,length,Aï¼ˆC0ï¼‰ï¼‰>0&&ï¼ˆå¤‰æ•°ã€ŒAï¼ˆC0ï¼‰ã€ã®å­˜åœ¨ï¼‰==1&&ï¼ˆvncall,å¤‰æ•°èª­ã¿å‡ºã—g,ã‚²ãƒ¼ãƒ ID,Aï¼ˆC0ï¼‰ï¼‰==1,
 1,
 0
-j
-j
+ï¼‰
+ï¼‰
 
 
 
-–OnGallery_NoValidItem
-iƒƒjƒ…[•s‰Âj
-i__Gallery_Backgroundj
-iwhen,iequalAi__Gallery_BGMjA__nochange__j==0,i‰¹Šy,i__Gallery_BGMjjj
-F\_q
-icall,__offset,m,0j—LŒø‚ÈƒMƒƒƒ‰ƒŠ[€–Ú‚ğ\n
-icall,__offset,mjŒ©‚Â‚¯‚ç‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B\_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+ï¼ŠOnGallery_NoValidItem
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆ__Gallery_Backgroundï¼‰
+ï¼ˆwhen,ï¼ˆequalã€ï¼ˆ__Gallery_BGMï¼‰ã€__nochange__ï¼‰==0,ï¼ˆéŸ³æ¥½,ï¼ˆ__Gallery_BGMï¼‰ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰æœ‰åŠ¹ãªã‚®ãƒ£ãƒ©ãƒªãƒ¼é …ç›®ã‚’\n
+ï¼ˆcall,__offset,mï¼‰è¦‹ã¤ã‘ã‚‰ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚\_q\x
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnGallery_List
-__Gallery_List_MaxPerPage	icalc,i__Gallery_CurrentPagej*6j
-__Gallery_List_EndCountPerPage	iwhen,i__Gallery_List_MaxPerPagej>i__Gallery_MaxSectionCountj,i__Gallery_MaxSectionCountj,i__Gallery_List_MaxPerPagejj
-i__Gallery_Backgroundj
-iwhenAiequalAi__Gallery_BGMjA__nochange__j==0Ai‰¹Šy,i__Gallery_BGMjjj
+ï¼ŠOnGallery_List
+ï¼„__Gallery_List_MaxPerPage	ï¼ˆcalc,ï¼ˆ__Gallery_CurrentPageï¼‰*6ï¼‰
+ï¼„__Gallery_List_EndCountPerPage	ï¼ˆwhen,ï¼ˆ__Gallery_List_MaxPerPageï¼‰>ï¼ˆ__Gallery_MaxSectionCountï¼‰,ï¼ˆ__Gallery_MaxSectionCountï¼‰,ï¼ˆ__Gallery_List_MaxPerPageï¼‰ï¼‰
+ï¼ˆ__Gallery_Backgroundï¼‰
+ï¼ˆwhenã€ï¼ˆequalã€ï¼ˆ__Gallery_BGMï¼‰ã€__nochange__ï¼‰==0ã€ï¼ˆéŸ³æ¥½,ï¼ˆ__Gallery_BGMï¼‰ï¼‰ï¼‰
 
-F\_q\*
-i__Gallery_BackButtonj
-iwhen,i__Gallery_MaxPageCountj>1,i__Gallery_List_Pagerjj
+ï¼š\_q\*
+ï¼ˆ__Gallery_BackButtonï¼‰
+ï¼ˆwhen,ï¼ˆ__Gallery_MaxPageCountï¼‰>1,ï¼ˆ__Gallery_List_Pagerï¼‰ï¼‰
 
 \f[align,left]
-inop,isplit,i__Gallery_StatusAll_Splitj,A,0,0jj
-iforAi__Gallery_List_MaxPerPagej-6Ai__Gallery_List_EndCountPerPagej-1A1Aicall,__Gallery_ListButton,icall,__Gallery_ListButton_Coordinate,iC0jj,iC0j,iSiC0jjjj
+ï¼ˆnop,ï¼ˆsplit,ï¼ˆ__Gallery_StatusAll_Splitï¼‰,ã€,0,0ï¼‰ï¼‰
+ï¼ˆforã€ï¼ˆ__Gallery_List_MaxPerPageï¼‰-6ã€ï¼ˆ__Gallery_List_EndCountPerPageï¼‰-1ã€1ã€ï¼ˆcall,__Gallery_ListButton,ï¼ˆcall,__Gallery_ListButton_Coordinate,ï¼ˆC0ï¼‰ï¼‰,ï¼ˆC0ï¼‰,ï¼ˆSï¼ˆC0ï¼‰ï¼‰ï¼‰ï¼‰
 
 
 
-–OnGallery_List_Move
-__Gallery_CurrentPage	iR0j
-„OnGallery_List
+ï¼ŠOnGallery_List_Move
+ï¼„__Gallery_CurrentPage	ï¼ˆR0ï¼‰
+ï¼OnGallery_List
 
 
 
-–OnGallery_Detail
-__n	iR0j
-__stats	itimes,ilength,iR1jj,iwhen,iat,iR1j,iC0jj==1,iC0jAjj
-__count	0
-__start	icallA__ExtractorAi__countjAi__statsjj
-__start	icalc,i__nj-i__startjj
-__tmpinop,isplit_resetjisplit,i__Gallery_ImageAllj,A,0,0jj
-„OnGallery_Detail_Core
+ï¼ŠOnGallery_Detail
+ï¼„__n	ï¼ˆR0ï¼‰
+ï¼„__stats	ï¼ˆtimes,ï¼ˆlength,ï¼ˆR1ï¼‰ï¼‰,ï¼ˆwhen,ï¼ˆat,ï¼ˆR1ï¼‰,ï¼ˆC0ï¼‰ï¼‰==1,ï¼ˆC0ï¼‰ã€ï¼‰ï¼‰
+ï¼„__count	0
+ï¼„__start	ï¼ˆcallã€__Extractorã€ï¼ˆ__countï¼‰ã€ï¼ˆ__statsï¼‰ï¼‰
+ï¼„__start	ï¼ˆcalc,ï¼ˆ__nï¼‰-ï¼ˆ__startï¼‰ï¼‰
+ï¼„__tmpï¼ï¼ˆnop,ï¼ˆsplit_resetï¼‰ï¼ˆsplit,ï¼ˆ__Gallery_ImageAllï¼‰,ã€,0,0ï¼‰ï¼‰
+ï¼OnGallery_Detail_Core
 
 
 
-–OnGallery_Detail_Core
-__x	0
-__y	0
-__current	iSi__njj
-__tmp	iwhenib1jicountib1ji__currentjib1j:j==2ib1ji__Gallery_Detail_Splitjj
-iwhenib1jiequalib1ji__Gallery_BGMjib1j__nochange__j==0ib1ji‰¹Šy,i__Gallery_BGMjjj
+ï¼ŠOnGallery_Detail_Core
+ï¼„__x	0
+ï¼„__y	0
+ï¼„__current	ï¼ˆSï¼ˆ__nï¼‰ï¼‰
+ï¼„__tmp	ï¼ˆwhenï¼ˆb1ï¼‰ï¼ˆcountï¼ˆb1ï¼‰ï¼ˆ__currentï¼‰ï¼ˆb1ï¼‰:ï¼‰==2ï¼ˆb1ï¼‰ï¼ˆ__Gallery_Detail_Splitï¼‰ï¼‰
+ï¼ˆwhenï¼ˆb1ï¼‰ï¼ˆequalï¼ˆb1ï¼‰ï¼ˆ__Gallery_BGMï¼‰ï¼ˆb1ï¼‰__nochange__ï¼‰==0ï¼ˆb1ï¼‰ï¼ˆéŸ³æ¥½,ï¼ˆ__Gallery_BGMï¼‰ï¼‰ï¼‰
 \_q\*
 \1\c
 \_l[0,0]
-\_b["i__Gallery_Background2j",inline,--option=opaque,--option=foreground]
-F\c\_l[i__xj,i__yj]
-\_b["i__currentj",inline,--option=opaque,--option=foreground]
+\_b["ï¼ˆ__Gallery_Background2ï¼‰",inline,--option=opaque,--option=foreground]
+ï¼š\c\_l[ï¼ˆ__xï¼‰,ï¼ˆ__yï¼‰]
+\_b["ï¼ˆ__currentï¼‰",inline,--option=opaque,--option=foreground]
 \_q
 \x[noclear]\![embed,OnGallery_Detail_Next]
 
 
 
-—__Gallery_Detail_Split
-iset,ˆø”‹æØ‚è’Ç‰Á,:jƒÓ
-isetib1j__xib1jicall:__Extractor:1:i__currentjjjƒÓ
-isetib1j__yib1jicall:__Extractor:2:i__currentjjjƒÓ
-isetib1j__currentib1jicall:__Extractor:0:i__currentjjjƒÓ
-iset,ˆø”‹æØ‚èíœ,:j
+ï¼ __Gallery_Detail_Split
+ï¼ˆset,å¼•æ•°åŒºåˆ‡ã‚Šè¿½åŠ ,:ï¼‰Ï†
+ï¼ˆsetï¼ˆb1ï¼‰__xï¼ˆb1ï¼‰ï¼ˆcall:__Extractor:1:ï¼ˆ__currentï¼‰ï¼‰ï¼‰Ï†
+ï¼ˆsetï¼ˆb1ï¼‰__yï¼ˆb1ï¼‰ï¼ˆcall:__Extractor:2:ï¼ˆ__currentï¼‰ï¼‰ï¼‰Ï†
+ï¼ˆsetï¼ˆb1ï¼‰__currentï¼ˆb1ï¼‰ï¼ˆcall:__Extractor:0:ï¼ˆ__currentï¼‰ï¼‰ï¼‰Ï†
+ï¼ˆset,å¼•æ•°åŒºåˆ‡ã‚Šå‰Šé™¤,:ï¼‰
 
 
 
-–OnGallery_Detail_Next
-__counti__countj+1
-__next	iwhen,ilength,i__statsjj>2,icallA__ExtractorAi__countjAi__statsjj,-1j
-„OnGallery_List	i__nextj<0||i•Ï”u__nextv‚Ì‘¶İj==0
-__n	icalc,i__startj+i__nextjj
-„OnGallery_Detail_Core
+ï¼ŠOnGallery_Detail_Next
+ï¼„__countï¼ï¼ˆ__countï¼‰+1
+ï¼„__next	ï¼ˆwhen,ï¼ˆlength,ï¼ˆ__statsï¼‰ï¼‰>2,ï¼ˆcallã€__Extractorã€ï¼ˆ__countï¼‰ã€ï¼ˆ__statsï¼‰ï¼‰,-1ï¼‰
+ï¼OnGallery_List	ï¼ˆ__nextï¼‰<0||ï¼ˆå¤‰æ•°ã€Œ__nextã€ã®å­˜åœ¨ï¼‰==0
+ï¼„__n	ï¼ˆcalc,ï¼ˆ__startï¼‰+ï¼ˆ__nextï¼‰ï¼‰
+ï¼OnGallery_Detail_Core
 
 
 
-—__Gallery_List_Pager
-\_l[0,i__Gallery_OffsetYj]ƒÓ
-\f[align,center]ƒÓ
-iwhenAi__Gallery_CurrentPagej>=3A\__q[OnGallery_List_Move,1]ƒÓá\__qAi•¶šF.disablejƒÓái•¶šF.normaljjƒÓ
- iwhenAi__Gallery_CurrentPagej>=2A\__q[OnGallery_List_Move,icalc,i__Gallery_CurrentPagej-1j]ƒÓƒ\__qAi•¶šF.disablejƒÓƒi•¶šF.normaljjƒÓ
-iwhenlist,inop,j,i__Gallery_MaxPageCountj<=5,inop,j,i__Gallery_MaxPageCountj>5&&i__Gallery_CurrentPagej>=4, ..,   jƒÓ
-iwhen,i__Gallery_MaxPageCountj>5,iset,__Gallery_PagerStartCount,icalc,i__Gallery_CurrentPagej-2jjiset,__Gallery_PagerEndCount,icalc,i__Gallery_CurrentPagej+2jj,iset,__Gallery_PagerStartCount,1jiset,__Gallery_PagerEndCount,i__Gallery_MaxPageCountjjjƒÓ
-iwhen,i__Gallery_PagerStartCountj<=0,iset,__Gallery_PagerStartCount,1jiset,__Gallery_PagerEndCount,5jjƒÓ
-iwhen,i__Gallery_PagerEndCountj>i__Gallery_MaxPageCountj,iset,__Gallery_PagerEndCount,i__Gallery_MaxPageCountjjiset,__Gallery_PagerStartCount,icalc,i__Gallery_PagerEndCountj-4jjjƒÓ
-iforAi__Gallery_PagerStartCountjAi__Gallery_PagerEndCountjA1AiwhenlistAiC0jA==i__Gallery_CurrentPagejA i__Gallery_AlignDigitsjA>i__Gallery_MaxPageCountjAA \__q[OnGallery_List_Move,iC0j]i__Gallery_AlignDigitsj\__qjjƒÓ
-iwhenlist,inop,j,i__Gallery_MaxPageCountj<=5,inop,j,i__Gallery_MaxPageCountj>5&&i__Gallery_PagerEndCountj<i__Gallery_MaxPageCountj, ..,   jƒÓ
- iwhenA(i__Gallery_CurrentPagej+1)<=i__Gallery_MaxPageCountjA\__q[OnGallery_List_Move,icalc,i__Gallery_CurrentPagej+1j]ƒÓ„\__qAi•¶šF.disablejƒÓ„i•¶šF.normaljjƒÓ
- iwhenA(i__Gallery_CurrentPagej+2)<=i__Gallery_MaxPageCountjA\__q[OnGallery_List_Move,i__Gallery_MaxPageCountj]ƒÓâ\__qAi•¶šF.disablejƒÓâi•¶šF.normaljj\n
+ï¼ __Gallery_List_Pager
+\_l[0,ï¼ˆ__Gallery_OffsetYï¼‰]Ï†
+\f[align,center]Ï†
+ï¼ˆwhenã€ï¼ˆ__Gallery_CurrentPageï¼‰>=3ã€\__q[OnGallery_List_Move,1]Ï†â‰ª\__qã€ï¼ˆæ–‡å­—è‰².disableï¼‰Ï†â‰ªï¼ˆæ–‡å­—è‰².normalï¼‰ï¼‰Ï†
+ ï¼ˆwhenã€ï¼ˆ__Gallery_CurrentPageï¼‰>=2ã€\__q[OnGallery_List_Move,ï¼ˆcalc,ï¼ˆ__Gallery_CurrentPageï¼‰-1ï¼‰]Ï†ï¼œ\__qã€ï¼ˆæ–‡å­—è‰².disableï¼‰Ï†ï¼œï¼ˆæ–‡å­—è‰².normalï¼‰ï¼‰Ï†
+ï¼ˆwhenlist,ï¼ˆnop,ï¼‰,ï¼ˆ__Gallery_MaxPageCountï¼‰<=5,ï¼ˆnop,ï¼‰,ï¼ˆ__Gallery_MaxPageCountï¼‰>5&&ï¼ˆ__Gallery_CurrentPageï¼‰>=4, ..,   ï¼‰Ï†
+ï¼ˆwhen,ï¼ˆ__Gallery_MaxPageCountï¼‰>5,ï¼ˆset,__Gallery_PagerStartCount,ï¼ˆcalc,ï¼ˆ__Gallery_CurrentPageï¼‰-2ï¼‰ï¼‰ï¼ˆset,__Gallery_PagerEndCount,ï¼ˆcalc,ï¼ˆ__Gallery_CurrentPageï¼‰+2ï¼‰ï¼‰,ï¼ˆset,__Gallery_PagerStartCount,1ï¼‰ï¼ˆset,__Gallery_PagerEndCount,ï¼ˆ__Gallery_MaxPageCountï¼‰ï¼‰ï¼‰Ï†
+ï¼ˆwhen,ï¼ˆ__Gallery_PagerStartCountï¼‰<=0,ï¼ˆset,__Gallery_PagerStartCount,1ï¼‰ï¼ˆset,__Gallery_PagerEndCount,5ï¼‰ï¼‰Ï†
+ï¼ˆwhen,ï¼ˆ__Gallery_PagerEndCountï¼‰>ï¼ˆ__Gallery_MaxPageCountï¼‰,ï¼ˆset,__Gallery_PagerEndCount,ï¼ˆ__Gallery_MaxPageCountï¼‰ï¼‰ï¼ˆset,__Gallery_PagerStartCount,ï¼ˆcalc,ï¼ˆ__Gallery_PagerEndCountï¼‰-4ï¼‰ï¼‰ï¼‰Ï†
+ï¼ˆforã€ï¼ˆ__Gallery_PagerStartCountï¼‰ã€ï¼ˆ__Gallery_PagerEndCountï¼‰ã€1ã€ï¼ˆwhenlistã€ï¼ˆC0ï¼‰ã€==ï¼ˆ__Gallery_CurrentPageï¼‰ã€ ï¼ˆ__Gallery_AlignDigitsï¼‰ã€>ï¼ˆ__Gallery_MaxPageCountï¼‰ã€ã€ \__q[OnGallery_List_Move,ï¼ˆC0ï¼‰]ï¼ˆ__Gallery_AlignDigitsï¼‰\__qï¼‰ï¼‰Ï†
+ï¼ˆwhenlist,ï¼ˆnop,ï¼‰,ï¼ˆ__Gallery_MaxPageCountï¼‰<=5,ï¼ˆnop,ï¼‰,ï¼ˆ__Gallery_MaxPageCountï¼‰>5&&ï¼ˆ__Gallery_PagerEndCountï¼‰<ï¼ˆ__Gallery_MaxPageCountï¼‰, ..,   ï¼‰Ï†
+ ï¼ˆwhenã€(ï¼ˆ__Gallery_CurrentPageï¼‰+1)<=ï¼ˆ__Gallery_MaxPageCountï¼‰ã€\__q[OnGallery_List_Move,ï¼ˆcalc,ï¼ˆ__Gallery_CurrentPageï¼‰+1ï¼‰]Ï†ï¼\__qã€ï¼ˆæ–‡å­—è‰².disableï¼‰Ï†ï¼ï¼ˆæ–‡å­—è‰².normalï¼‰ï¼‰Ï†
+ ï¼ˆwhenã€(ï¼ˆ__Gallery_CurrentPageï¼‰+2)<=ï¼ˆ__Gallery_MaxPageCountï¼‰ã€\__q[OnGallery_List_Move,ï¼ˆ__Gallery_MaxPageCountï¼‰]Ï†â‰«\__qã€ï¼ˆæ–‡å­—è‰².disableï¼‰Ï†â‰«ï¼ˆæ–‡å­—è‰².normalï¼‰ï¼‰\n
 
 
 
-—__Gallery_AlignDigits
-ihan2zen,isprintf,%0ilength,i__Gallery_MaxPageCountjjd,iC0jjj
+ï¼ __Gallery_AlignDigits
+ï¼ˆhan2zen,ï¼ˆsprintf,%0ï¼ˆlength,ï¼ˆ__Gallery_MaxPageCountï¼‰ï¼‰d,ï¼ˆC0ï¼‰ï¼‰ï¼‰
 
 
 
-—__Gallery_ListButton
-iset,__tmp,icallA__ExtractorAiA2jAi__Gallery_SectionHeadCountjjjƒÓ
-iset,__tmp,icalc,icallA__ExtractorA0Aitimes,ilength,iA3jj,iwhen,iat,iA3j,iC0jj==1,iC0jAjjj+i__tmpjjjƒÓ
-\_l[iA0j,iA1j]ƒÓ
-iwhenAicountAiA3jA1j>0AivncallA__Gallery_ListButton_ReleasedAA2AA3A__tmpjAi__Gallery_DisableButtonjjƒÓ
-iwhenAilengthAiA3jj>1A\f[shadowcolor,#666]\f[shadowstyle,outline]\_l[icalcAiA0j+i__Gallery_ButtonWidthjj,icalcAiA1j+i__Gallery_ButtonHeightjj]\_l[@-3em,@-1.2em]icount,iA3j,1j / ilength,iA3jjj
-”a0: ‰æ‘œƒOƒ‹[ƒv‚ÌƒJƒEƒ“ƒg@0‚Í‚¶‚Ü‚è
-”a1: ‰æ‘œƒOƒ‹[ƒv“à‚Ì‰ğ‹Öó‹µ‚ğ0‚©1‚Å—ñ‹“@0‚Í‚¶‚Ü‚è
-”a2: ”z’uÀ•Wx
-”a3: ”z’uÀ•Wy
+ï¼ __Gallery_ListButton
+ï¼ˆset,__tmp,ï¼ˆcallã€__Extractorã€ï¼ˆA2ï¼‰ã€ï¼ˆ__Gallery_SectionHeadCountï¼‰ï¼‰ï¼‰Ï†
+ï¼ˆset,__tmp,ï¼ˆcalc,ï¼ˆcallã€__Extractorã€0ã€ï¼ˆtimes,ï¼ˆlength,ï¼ˆA3ï¼‰ï¼‰,ï¼ˆwhen,ï¼ˆat,ï¼ˆA3ï¼‰,ï¼ˆC0ï¼‰ï¼‰==1,ï¼ˆC0ï¼‰ã€ï¼‰ï¼‰ï¼‰+ï¼ˆ__tmpï¼‰ï¼‰ï¼‰Ï†
+\_l[ï¼ˆA0ï¼‰,ï¼ˆA1ï¼‰]Ï†
+ï¼ˆwhenã€ï¼ˆcountã€ï¼ˆA3ï¼‰ã€1ï¼‰>0ã€ï¼ˆvncallã€__Gallery_ListButton_Releasedã€A2ã€A3ã€__tmpï¼‰ã€ï¼ˆ__Gallery_DisableButtonï¼‰ï¼‰Ï†
+ï¼ˆwhenã€ï¼ˆlengthã€ï¼ˆA3ï¼‰ï¼‰>1ã€\f[shadowcolor,#666]\f[shadowstyle,outline]\_l[ï¼ˆcalcã€ï¼ˆA0ï¼‰+ï¼ˆ__Gallery_ButtonWidthï¼‰ï¼‰,ï¼ˆcalcã€ï¼ˆA1ï¼‰+ï¼ˆ__Gallery_ButtonHeightï¼‰ï¼‰]\_l[@-3em,@-1.2em]ï¼ˆcount,ï¼ˆA3ï¼‰,1ï¼‰ / ï¼ˆlength,ï¼ˆA3ï¼‰ï¼‰ï¼‰
+ï¼ƒa0: ç”»åƒã‚°ãƒ«ãƒ¼ãƒ—ã®ã‚«ã‚¦ãƒ³ãƒˆã€€0ã¯ã˜ã¾ã‚Š
+ï¼ƒa1: ç”»åƒã‚°ãƒ«ãƒ¼ãƒ—å†…ã®è§£ç¦çŠ¶æ³ã‚’0ã‹1ã§åˆ—æŒ™ã€€0ã¯ã˜ã¾ã‚Š
+ï¼ƒa2: é…ç½®åº§æ¨™x
+ï¼ƒa3: é…ç½®åº§æ¨™y
 
 
 
-—__Gallery_ListButton_Released
-\__q[OnGallery_Detail,iA2j,iA1j]ƒÓ
-icallA__ExtractorAiA0jAi__Gallery_ButtonAlljjƒÓ
+ï¼ __Gallery_ListButton_Released
+\__q[OnGallery_Detail,ï¼ˆA2ï¼‰,ï¼ˆA1ï¼‰]Ï†
+ï¼ˆcallã€__Extractorã€ï¼ˆA0ï¼‰ã€ï¼ˆ__Gallery_ButtonAllï¼‰ï¼‰Ï†
 \__q
 
 
 
-—__Gallery_ListButton_Path
-\_b["iA0j",inline,--option=opaque,--clipping=ƒÓ
-icalc,iBalloonWidthj/2-i__Gallery_ButtonWidthj/2j ƒÓ
-icalc,iBalloonHeightj/2-i__Gallery_ButtonHeightj/2j ƒÓ
-icalc,iBalloonWidthj/2+i__Gallery_ButtonWidthj/2j ƒÓ
-icalc,iBalloonHeightj/2+i__Gallery_ButtonHeightj/2j ƒÓ
+ï¼ __Gallery_ListButton_Path
+\_b["ï¼ˆA0ï¼‰",inline,--option=opaque,--clipping=Ï†
+ï¼ˆcalc,ï¼ˆBalloonWidthï¼‰/2-ï¼ˆ__Gallery_ButtonWidthï¼‰/2ï¼‰ Ï†
+ï¼ˆcalc,ï¼ˆBalloonHeightï¼‰/2-ï¼ˆ__Gallery_ButtonHeightï¼‰/2ï¼‰ Ï†
+ï¼ˆcalc,ï¼ˆBalloonWidthï¼‰/2+ï¼ˆ__Gallery_ButtonWidthï¼‰/2ï¼‰ Ï†
+ï¼ˆcalc,ï¼ˆBalloonHeightï¼‰/2+ï¼ˆ__Gallery_ButtonHeightï¼‰/2ï¼‰ Ï†
 ,--option=background]
 
 
 
-—__Gallery_ListButton_Coordinate
-inswitchAicalc,iA0j%6+1jAi__Gallery_ButtonCoordinatejj
+ï¼ __Gallery_ListButton_Coordinate
+ï¼ˆnswitchã€ï¼ˆcalc,ï¼ˆA0ï¼‰%6+1ï¼‰ã€ï¼ˆ__Gallery_ButtonCoordinateï¼‰ï¼‰
 
 
 
-—__Gallery_ListButton_Coordinate_CalculateToStoring
-i__Gallery_OffsetXj,ƒÓ
-icalcAi__Gallery_OffsetYj+i__Gallery_SpacingHeightj*2jAƒÓ
-icalcAi__Gallery_OffsetXj+i__Gallery_ButtonWidthj+i__Gallery_SpacingWidthjj,ƒÓ
-icalcAi__Gallery_OffsetYj+i__Gallery_SpacingHeightj*2jAƒÓ
-icalcAi__Gallery_OffsetXj+i__Gallery_ButtonWidthj*2+i__Gallery_SpacingWidthj*2j,ƒÓ
-icalcAi__Gallery_OffsetYj+i__Gallery_SpacingHeightj*2jAƒÓ
-i__Gallery_OffsetXj,ƒÓ
-icalcAi__Gallery_OffsetYj+i__Gallery_ButtonHeightj+i__Gallery_SpacingHeightj*3jAƒÓ
-icalcAi__Gallery_OffsetXj+i__Gallery_ButtonWidthj+i__Gallery_SpacingWidthjj,ƒÓ
-icalcAi__Gallery_OffsetYj+i__Gallery_ButtonHeightj+i__Gallery_SpacingHeightj*3jAƒÓ
-icalcAi__Gallery_OffsetXj+i__Gallery_ButtonWidthj*2+i__Gallery_SpacingWidthj*2j,ƒÓ
-icalcAi__Gallery_OffsetYj+i__Gallery_ButtonHeightj+i__Gallery_SpacingHeightj*3jAƒÓ
+ï¼ __Gallery_ListButton_Coordinate_CalculateToStoring
+ï¼ˆ__Gallery_OffsetXï¼‰,Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetYï¼‰+ï¼ˆ__Gallery_SpacingHeightï¼‰*2ï¼‰ã€Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetXï¼‰+ï¼ˆ__Gallery_ButtonWidthï¼‰+ï¼ˆ__Gallery_SpacingWidthï¼‰ï¼‰,Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetYï¼‰+ï¼ˆ__Gallery_SpacingHeightï¼‰*2ï¼‰ã€Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetXï¼‰+ï¼ˆ__Gallery_ButtonWidthï¼‰*2+ï¼ˆ__Gallery_SpacingWidthï¼‰*2ï¼‰,Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetYï¼‰+ï¼ˆ__Gallery_SpacingHeightï¼‰*2ï¼‰ã€Ï†
+ï¼ˆ__Gallery_OffsetXï¼‰,Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetYï¼‰+ï¼ˆ__Gallery_ButtonHeightï¼‰+ï¼ˆ__Gallery_SpacingHeightï¼‰*3ï¼‰ã€Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetXï¼‰+ï¼ˆ__Gallery_ButtonWidthï¼‰+ï¼ˆ__Gallery_SpacingWidthï¼‰ï¼‰,Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetYï¼‰+ï¼ˆ__Gallery_ButtonHeightï¼‰+ï¼ˆ__Gallery_SpacingHeightï¼‰*3ï¼‰ã€Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetXï¼‰+ï¼ˆ__Gallery_ButtonWidthï¼‰*2+ï¼ˆ__Gallery_SpacingWidthï¼‰*2ï¼‰,Ï†
+ï¼ˆcalcã€ï¼ˆ__Gallery_OffsetYï¼‰+ï¼ˆ__Gallery_ButtonHeightï¼‰+ï¼ˆ__Gallery_SpacingHeightï¼‰*3ï¼‰ã€Ï†
 
 
 
-—__Extractor
-iAicalcAiA0j+1jj
+ï¼ __Extractor
+ï¼ˆAï¼ˆcalcã€ï¼ˆA0ï¼‰+1ï¼‰ï¼‰
 
 

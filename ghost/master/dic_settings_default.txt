@@ -1,579 +1,579 @@
-”İ’è«‘
-”‚È‚¢€–Ú‚Íghost/master/dic_settings_default.txt‚Ì‚à‚Ì‚ªg‚í‚ê‚é
-”g‚í‚È‚¢€–Ú‚ÍAÁ‚·‚©ƒRƒƒ“ƒgƒAƒEƒgi—‚ğŠÜ‚ß‚ÄÁ‚·‚±‚Æj
+ï¼ƒè¨­å®šè¾æ›¸
+ï¼ƒãªã„é …ç›®ã¯ghost/master/dic_settings_default.txtã®ã‚‚ã®ãŒä½¿ã‚ã‚Œã‚‹
+ï¼ƒä½¿ã‚ãªã„é …ç›®ã¯ã€æ¶ˆã™ã‹ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆï¼ˆï¼ ã‚’å«ã‚ã¦æ¶ˆã™ã“ã¨ï¼‰
 
 
 
 
 
-—__default.„§ƒoƒ‹[ƒ“
-LilyNovelPlayer—pƒoƒ‹[ƒ“
-”g‚¤ƒoƒ‹[ƒ“w’è
+ï¼ __default.æ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³
+LilyNovelPlayerç”¨ãƒãƒ«ãƒ¼ãƒ³
+ï¼ƒä½¿ã†ãƒãƒ«ãƒ¼ãƒ³æŒ‡å®š
 
 
 
 
 
-—__default.’Ê’m—ÌˆæƒAƒCƒRƒ“
+ï¼ __default.é€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³
 lnp_icon.ico
-”w’è‚µ‚½ƒAƒCƒRƒ“ƒtƒ@ƒCƒ‹‚ª’Ê’m—Ìˆæiƒ^ƒXƒNƒgƒŒƒCj‚ÌƒAƒCƒRƒ“‚É‚È‚é
-”ƒtƒ@ƒCƒ‹–¼‚É‚ÍA[Às‚µ‚½ƒS[ƒXƒg‚ÌƒtƒHƒ‹ƒ_]‚©‚çA‚Ü‚½‚Í[Às‚µ‚½ƒS[ƒXƒg‚ÌƒtƒHƒ‹ƒ_]/ghost/master/‚©‚ç‚Ì‘Š‘ÎƒpƒX‚ªg—p‰Â”\
+ï¼ƒæŒ‡å®šã—ãŸã‚¢ã‚¤ã‚³ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«ãŒé€šçŸ¥é ˜åŸŸï¼ˆã‚¿ã‚¹ã‚¯ãƒˆãƒ¬ã‚¤ï¼‰ã®ã‚¢ã‚¤ã‚³ãƒ³ã«ãªã‚‹
+ï¼ƒãƒ•ã‚¡ã‚¤ãƒ«åã«ã¯ã€[å®Ÿè¡Œã—ãŸã‚´ãƒ¼ã‚¹ãƒˆã®ãƒ•ã‚©ãƒ«ãƒ€]ã‹ã‚‰ã€ã¾ãŸã¯[å®Ÿè¡Œã—ãŸã‚´ãƒ¼ã‚¹ãƒˆã®ãƒ•ã‚©ãƒ«ãƒ€]/ghost/master/ã‹ã‚‰ã®ç›¸å¯¾ãƒ‘ã‚¹ãŒä½¿ç”¨å¯èƒ½
 
-—__default.’Ê’m—ÌˆæƒAƒCƒRƒ“ƒeƒLƒXƒg
+ï¼ __default.é€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆ
 Lily Novel Player
-”’Ê’m—ÌˆæƒAƒCƒRƒ“‚Éƒ}ƒEƒX‚ğd‚Ë‚½‚Æ‚«‚Ì•\¦
+ï¼ƒé€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³ã«ãƒã‚¦ã‚¹ã‚’é‡ã­ãŸã¨ãã®è¡¨ç¤º
 
 
 
 
 
-—__default.Å‘åƒZ[ƒuƒXƒƒbƒg”
+ï¼ __default.æœ€å¤§ã‚»ãƒ¼ãƒ–ã‚¹ãƒ­ãƒƒãƒˆæ•°
 20
-”‘½‚¢‚Ù‚Çƒy[ƒW”‚à‘‚¦‚é@”ãŒÀ100@’´‚¦‚Ä‚à100‚É•ÏX‚³‚ê‚é
-”LNPŠù’èUI‚ğg‚¤ê‡‚Ì‚İƒXƒƒbƒg”İ’è‚ªŠÖŒW‚ ‚è‚Ü‚·
-”Šù’èUI‚ğg‚í‚¸©—Í‚ÅƒZ[ƒu‰æ–Ê‚ğÀ‘•‚µ‚½ê‡A‚±‚Ìİ’è‚Í‰e‹¿‚µ‚Ü‚¹‚ñ
-””ƒ†[ƒU‚ÌˆÓv‚Å‚ÌƒZ[ƒu‚ğ‚³‚¹‚½‚­‚È‚¢‚ÍA‚±‚±‚Ì”’l‚ğ‚O‚É‚·‚é‚Ì‚Å‚Í‚È‚­A
-””ƒ^ƒOuiƒƒjƒ…[•s‰Âjv‚È‚Ç‚ÅƒZ[ƒuEƒ[ƒh‰æ–Ê©‘Ì‚ğo‚³‚¹‚È‚¢‚æ‚¤‚É‚·‚é
+ï¼ƒå¤šã„ã»ã©ãƒšãƒ¼ã‚¸æ•°ã‚‚å¢—ãˆã‚‹ã€€ï¼ƒä¸Šé™100ã€€è¶…ãˆã¦ã‚‚100ã«å¤‰æ›´ã•ã‚Œã‚‹
+ï¼ƒLNPæ—¢å®šUIã‚’ä½¿ã†å ´åˆã®ã¿ã‚¹ãƒ­ãƒƒãƒˆæ•°è¨­å®šãŒé–¢ä¿‚ã‚ã‚Šã¾ã™
+ï¼ƒæ—¢å®šUIã‚’ä½¿ã‚ãšè‡ªåŠ›ã§ã‚»ãƒ¼ãƒ–ç”»é¢ã‚’å®Ÿè£…ã—ãŸå ´åˆã€ã“ã®è¨­å®šã¯å½±éŸ¿ã—ã¾ã›ã‚“
+ï¼ƒï¼ƒãƒ¦ãƒ¼ã‚¶ã®æ„æ€ã§ã®ã‚»ãƒ¼ãƒ–ã‚’ã•ã›ãŸããªã„æ™‚ã¯ã€ã“ã“ã®æ•°å€¤ã‚’ï¼ã«ã™ã‚‹ã®ã§ã¯ãªãã€
+ï¼ƒï¼ƒã‚¿ã‚°ã€Œï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰ã€ãªã©ã§ã‚»ãƒ¼ãƒ–ãƒ»ãƒ­ãƒ¼ãƒ‰ç”»é¢è‡ªä½“ã‚’å‡ºã•ã›ãªã„ã‚ˆã†ã«ã™ã‚‹
 
 
 
 
 
-—__default.ƒNƒŠƒbƒN‘Ò‚¿ƒ}[ƒJ[
+ï¼ __default.ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ãƒãƒ¼ã‚«ãƒ¼
 assets/preset/clickwait.png,567,364
-”‰æ‘œ‘Š‘ÎƒpƒXAxÀ•WAyÀ•W‚ğ”¼ŠpƒJƒ“ƒ}‹æØ‚è‚Å
+ï¼ƒç”»åƒç›¸å¯¾ãƒ‘ã‚¹ã€xåº§æ¨™ã€yåº§æ¨™ã‚’åŠè§’ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Šã§
 
 
 
 
 
-—__default.ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“
+ï¼ __default.ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³
 \_b["assets/preset/nowloading.png",inline,--option=fixed,--option=foreground]
-”‰æ–Ê\’z’†iƒiƒEƒ[ƒfƒBƒ“ƒOj‚Ì•¶Œ¾‚â‰æ‘œ‚È‚Ç
+ï¼ƒç”»é¢æ§‹ç¯‰ä¸­ï¼ˆãƒŠã‚¦ãƒ­ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ï¼‰ã®æ–‡è¨€ã‚„ç”»åƒãªã©
 
 
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“”z’u.€–Ú‚Æ‡”Ô
-ƒoƒbƒNƒƒO|ƒnƒCƒh|ƒI[ƒg|ƒXƒLƒbƒv|ƒZ[ƒu|ƒ[ƒh|ƒNƒCƒbƒNƒZ[ƒu|ƒNƒCƒbƒNƒ[ƒh|ƒRƒ“ƒtƒBƒO|ƒ^ƒCƒgƒ‹‚É–ß‚é
-””z’u‚µ‚½‚¢‚à‚Ì‚ğ¶‚©‚ç‡‚É|‹æØ‚è‚Å
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“”z’u.ŠÔŠu
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³é…ç½®.é …ç›®ã¨é †ç•ª
+ãƒãƒƒã‚¯ãƒ­ã‚°|ãƒã‚¤ãƒ‰|ã‚ªãƒ¼ãƒˆ|ã‚¹ã‚­ãƒƒãƒ—|ã‚»ãƒ¼ãƒ–|ãƒ­ãƒ¼ãƒ‰|ã‚¯ã‚¤ãƒƒã‚¯ã‚»ãƒ¼ãƒ–|ã‚¯ã‚¤ãƒƒã‚¯ãƒ­ãƒ¼ãƒ‰|ã‚³ãƒ³ãƒ•ã‚£ã‚°|ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹
+ï¼ƒé…ç½®ã—ãŸã„ã‚‚ã®ã‚’å·¦ã‹ã‚‰é †ã«|åŒºåˆ‡ã‚Šã§
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³é…ç½®.é–“éš”
 \f[height,12] \f[height,default]
-”u\_l[@6,]v‚È‚Ç‚ğw’è‚µ‚Ä‚µ‚Ü‚¤‚Æ\f[align,‚Ù‚É‚á‚ç‚ç]‚ÌŒø‰Ê‚ªØ‚ê‚é
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒI[ƒg
+ï¼ƒã€Œ\_l[@6,]ã€ãªã©ã‚’æŒ‡å®šã—ã¦ã—ã¾ã†ã¨\f[align,ã»ã«ã‚ƒã‚‰ã‚‰]ã®åŠ¹æœãŒåˆ‡ã‚Œã‚‹
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚ªãƒ¼ãƒˆ
 \f[height,12]AUTO\f[height,default]
-”‰æ‘œ‚ğ”z’u‚·‚éÛ‚Íinlinew’è‚Å
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒI[ƒg.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejAUTOi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒMƒƒƒ‰ƒŠ[
+ï¼ƒç”»åƒã‚’é…ç½®ã™ã‚‹éš›ã¯inlineæŒ‡å®šã§
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚ªãƒ¼ãƒˆ.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰AUTOï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚®ãƒ£ãƒ©ãƒªãƒ¼
 \f[height,12]GALLERY\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒMƒƒƒ‰ƒŠ[.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejGALLERYi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒNƒCƒbƒNƒZ[ƒu
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰GALLERYï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¯ã‚¤ãƒƒã‚¯ã‚»ãƒ¼ãƒ–
 \f[height,12]Q.SAVE\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒNƒCƒbƒNƒZ[ƒu.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejQ.SAVEi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒNƒCƒbƒNƒ[ƒh
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¯ã‚¤ãƒƒã‚¯ã‚»ãƒ¼ãƒ–.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰Q.SAVEï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¯ã‚¤ãƒƒã‚¯ãƒ­ãƒ¼ãƒ‰
 \f[height,12]Q.LOAD\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒNƒCƒbƒNƒ[ƒh.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejQ.LOADi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒRƒ“ƒtƒBƒO
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¯ã‚¤ãƒƒã‚¯ãƒ­ãƒ¼ãƒ‰.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰Q.LOADï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚³ãƒ³ãƒ•ã‚£ã‚°
 \f[height,12]CONFIG\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒRƒ“ƒtƒBƒO.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejCONFIGi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒXƒLƒbƒv
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚³ãƒ³ãƒ•ã‚£ã‚°.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰CONFIGï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¹ã‚­ãƒƒãƒ—
 \f[height,12]SKIP\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒXƒLƒbƒv.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejSKIPi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒZ[ƒu
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¹ã‚­ãƒƒãƒ—.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰SKIPï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚»ãƒ¼ãƒ–
 \f[height,12]SAVE\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒZ[ƒu.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejSAVEi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒ^ƒCƒgƒ‹‚É–ß‚é
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚»ãƒ¼ãƒ–.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰SAVEï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹
 \f[height,12]TITLE\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒ^ƒCƒgƒ‹‚É–ß‚é.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejTITLEi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒnƒCƒh
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰TITLEï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ãƒã‚¤ãƒ‰
 \f[height,12]HIDE\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒnƒCƒh.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejHIDEi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒoƒbƒNƒƒO
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ãƒã‚¤ãƒ‰.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰HIDEï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ãƒãƒƒã‚¯ãƒ­ã‚°
 \f[height,12]LOG\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒoƒbƒNƒƒO.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejLOGi•¶šF.currentj\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒ[ƒh
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ãƒãƒƒã‚¯ãƒ­ã‚°.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰LOGï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ãƒ­ãƒ¼ãƒ‰
 \f[height,12]LOAD\f[height,default]
-—__default.ƒƒjƒ…[ƒ{ƒ^ƒ“.ƒ[ƒh.‰Ÿ‚¹‚È‚¢
-\f[height,12]i•¶šF.disablejLOADi•¶šF.currentj\f[height,default]
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³.ãƒ­ãƒ¼ãƒ‰.æŠ¼ã›ãªã„
+\f[height,12]ï¼ˆæ–‡å­—è‰².disableï¼‰LOADï¼ˆæ–‡å­—è‰².currentï¼‰\f[height,default]
 
 
 
-—__default.ƒƒjƒ…[.”wŒi
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯
 assets/preset/color_dark.png
-”ƒƒjƒ…[‹y‚ÑƒVƒXƒeƒ€ƒƒbƒZ[ƒW‚Ì”wŒiw’è
+ï¼ƒãƒ¡ãƒ‹ãƒ¥ãƒ¼åŠã³ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®èƒŒæ™¯æŒ‡å®š
 
-—__default.ƒƒjƒ…[.offset_x
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼.offset_x
 10
-”ƒƒjƒ…[‚âƒVƒXƒeƒ€ƒƒbƒZ[ƒW‚ÌƒeƒLƒXƒg•`‰æŠJnˆÊ’u¶ãÀ•W
+ï¼ƒãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚„ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ãƒ†ã‚­ã‚¹ãƒˆæç”»é–‹å§‹ä½ç½®å·¦ä¸Šåº§æ¨™
 
-—__default.ƒƒjƒ…[.offset_y
+ï¼ __default.ãƒ¡ãƒ‹ãƒ¥ãƒ¼.offset_y
 10
-”ƒƒjƒ…[‚âƒVƒXƒeƒ€ƒƒbƒZ[ƒW‚ÌƒeƒLƒXƒg•`‰æŠJnˆÊ’u¶ãÀ•W
+ï¼ƒãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚„ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ãƒ†ã‚­ã‚¹ãƒˆæç”»é–‹å§‹ä½ç½®å·¦ä¸Šåº§æ¨™
 
 
 
 
 
-—__default.ƒoƒbƒNƒƒO.”wŒi
+ï¼ __default.ãƒãƒƒã‚¯ãƒ­ã‚°.èƒŒæ™¯
 assets/preset/menu_backlog.png
-”ƒoƒbƒNƒƒO‰{——’†‚Ì”wŒi
+ï¼ƒãƒãƒƒã‚¯ãƒ­ã‚°é–²è¦§ä¸­ã®èƒŒæ™¯
 
-—__default.ƒoƒbƒNƒƒO.offset_x
+ï¼ __default.ãƒãƒƒã‚¯ãƒ­ã‚°.offset_x
 10
-”UI‚ğ”z’uŠJn‚·‚éXÀ•W
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Xåº§æ¨™
 
-—__default.ƒoƒbƒNƒƒO.offset_y
+ï¼ __default.ãƒãƒƒã‚¯ãƒ­ã‚°.offset_y
 10
-”UI‚ğ”z’uŠJn‚·‚éYÀ•W
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Yåº§æ¨™
 
-—__default.ƒoƒbƒNƒƒO.Ú”ö«
-ƒƒO
-”ƒoƒbƒNƒƒO•¶Í‚ğŠi”[‚·‚éŠÖ”‚ÌÚ”ö«
+ï¼ __default.ãƒãƒƒã‚¯ãƒ­ã‚°.æ¥å°¾è¾
+ãƒ­ã‚°
+ï¼ƒãƒãƒƒã‚¯ãƒ­ã‚°æ–‡ç« ã‚’æ ¼ç´ã™ã‚‹é–¢æ•°ã®æ¥å°¾è¾
 
-—__default.ƒoƒbƒNƒƒO.—š—ğÅ‘å”
+ï¼ __default.ãƒãƒƒã‚¯ãƒ­ã‚°.å±¥æ­´æœ€å¤§æ•°
 20
-”ƒoƒbƒNƒƒO‚ğŠi”[‚·‚éÅ‘å‚Ì”
+ï¼ƒãƒãƒƒã‚¯ãƒ­ã‚°ã‚’æ ¼ç´ã™ã‚‹æœ€å¤§ã®æ•°
 
-—__default.ƒoƒbƒNƒƒO.–ß‚éƒ{ƒ^ƒ“
-\_l[0,0]\n\f[align,right]\__q[ƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹]–ß‚é\__q@\n
-”ƒoƒbƒNƒƒO‰æ–Ê‚Ì–ß‚éƒ{ƒ^ƒ“‚ğ”z’u‚·‚é
-””ò‚Ñæ‚Íuƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹vAÀ•W‚ğ©—Í‚Åw’è‚·‚é‚±‚Æ
+ï¼ __default.ãƒãƒƒã‚¯ãƒ­ã‚°.æˆ»ã‚‹ãƒœã‚¿ãƒ³
+\_l[0,0]\n\f[align,right]\__q[ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«]æˆ»ã‚‹\__qã€€\n
+ï¼ƒãƒãƒƒã‚¯ãƒ­ã‚°ç”»é¢ã®æˆ»ã‚‹ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹
+ï¼ƒé£›ã³å…ˆã¯ã€Œãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã€ã€åº§æ¨™ã‚’è‡ªåŠ›ã§æŒ‡å®šã™ã‚‹ã“ã¨
 
-—__default.ƒoƒbƒNƒƒO.…•½ü
-i•¶šF.disablej„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿi•¶šF.normalj
-”ƒoƒbƒNƒƒO‚ÉdØ‚è‚ğ“ü‚ê‚é—p
-”‚Í‚İo‚µ‚½•”•ª‚ÍÜ‚è•Ô‚³‚ê‚¸”ñ•\¦‚É‚È‚é
-
-
+ï¼ __default.ãƒãƒƒã‚¯ãƒ­ã‚°.æ°´å¹³ç·š
+ï¼ˆæ–‡å­—è‰².disableï¼‰â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ï¼ˆæ–‡å­—è‰².normalï¼‰
+ï¼ƒãƒãƒƒã‚¯ãƒ­ã‚°ã«ä»•åˆ‡ã‚Šã‚’å…¥ã‚Œã‚‹æ™‚ç”¨
+ï¼ƒã¯ã¿å‡ºã—ãŸéƒ¨åˆ†ã¯æŠ˜ã‚Šè¿”ã•ã‚Œãšéè¡¨ç¤ºã«ãªã‚‹
 
 
 
-—__default.ƒZ[ƒu.”wŒi
+
+
+ï¼ __default.ã‚»ãƒ¼ãƒ–.èƒŒæ™¯
 assets/preset/menu_save.png
-”ƒZ[ƒuƒƒjƒ…[‚ğg‚¤‚Ì”wŒiw’è
+ï¼ƒã‚»ãƒ¼ãƒ–ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯æŒ‡å®š
 
-—__default.ƒZ[ƒu.offset_x
+ï¼ __default.ã‚»ãƒ¼ãƒ–.offset_x
 26
-”UI‚ğ”z’uŠJn‚·‚éXÀ•W
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚ÍuƒZ[ƒu.spacing_width/heightv‚Å’è‹`‚·‚é
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Xåº§æ¨™
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã¯ã€Œã‚»ãƒ¼ãƒ–.spacing_width/heightã€ã§å®šç¾©ã™ã‚‹
 
-—__default.ƒZ[ƒu.offset_y
+ï¼ __default.ã‚»ãƒ¼ãƒ–.offset_y
 70
-”UI‚ğ”z’uŠJn‚·‚éYÀ•W
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚ÍuƒZ[ƒu.spacing_width/heightv‚Å’è‹`‚·‚é
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Yåº§æ¨™
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã¯ã€Œã‚»ãƒ¼ãƒ–.spacing_width/heightã€ã§å®šç¾©ã™ã‚‹
 
-—__default.ƒZ[ƒu.ƒ{ƒ^ƒ“‘ä
+ï¼ __default.ã‚»ãƒ¼ãƒ–.ãƒœã‚¿ãƒ³å°
 assets/preset/button1
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚Ìƒ{ƒ^ƒ“‘ä‰æ‘œ
-”button1.png‚ª‰Ÿ‚¹‚éAbutton1d.png‚ª‰Ÿ‚¹‚È‚¢
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®ãƒœã‚¿ãƒ³å°ç”»åƒ
+ï¼ƒbutton1.pngãŒæŠ¼ã›ã‚‹æ™‚ã€button1d.pngãŒæŠ¼ã›ãªã„æ™‚
 
-—__default.ƒZ[ƒu.ƒ{ƒ^ƒ“‘ä_width
+ï¼ __default.ã‚»ãƒ¼ãƒ–.ãƒœã‚¿ãƒ³å°_width
 270
-”ƒ{ƒ^ƒ“‘ä‰æ‘œ‚Ì‰¡‚Ì‘å‚«‚³‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³å°ç”»åƒã®æ¨ªã®å¤§ãã•ã‚’pxã§
 
-—__default.ƒZ[ƒu.ƒ{ƒ^ƒ“‘ä_height
+ï¼ __default.ã‚»ãƒ¼ãƒ–.ãƒœã‚¿ãƒ³å°_height
 80
-”ƒ{ƒ^ƒ“‘ä‰æ‘œ‚Ìc‚Ì‘å‚«‚³‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³å°ç”»åƒã®ç¸¦ã®å¤§ãã•ã‚’pxã§
 
-—__default.ƒZ[ƒu.íœƒ{ƒ^ƒ“
+ï¼ __default.ã‚»ãƒ¼ãƒ–.å‰Šé™¤ãƒœã‚¿ãƒ³
 \_b["assets/preset/batsu_button.png",inline,--option=foreground,--option=use_self_alpha]
-”’P‚È‚é•¶š‚Å‚à‹@”\‚·‚é@‚í‚©‚ê‚Î‚æ‚¢
+ï¼ƒå˜ãªã‚‹æ–‡å­—ã§ã‚‚æ©Ÿèƒ½ã™ã‚‹ã€€ã‚ã‹ã‚Œã°ã‚ˆã„
 
-—__default.ƒZ[ƒu.íœƒ{ƒ^ƒ“_offset_x
+ï¼ __default.ã‚»ãƒ¼ãƒ–.å‰Šé™¤ãƒœã‚¿ãƒ³_offset_x
 240
-”íœƒ{ƒ^ƒ“‚ğ”z’u‚·‚é‘Š‘Î“I‚ÈXÀ•W
-”Šî€“_‚Íƒ{ƒ^ƒ“‚Ì¶ãA‚»‚±‚©‚ç‰E‚Æ‰º•ûŒü‚ªƒvƒ‰ƒX’l
+ï¼ƒå‰Šé™¤ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹ç›¸å¯¾çš„ãªXåº§æ¨™
+ï¼ƒåŸºæº–ç‚¹ã¯ãƒœã‚¿ãƒ³ã®å·¦ä¸Šã€ãã“ã‹ã‚‰å³ã¨ä¸‹æ–¹å‘ãŒãƒ—ãƒ©ã‚¹å€¤
 
-—__default.ƒZ[ƒu.íœƒ{ƒ^ƒ“_offset_y
+ï¼ __default.ã‚»ãƒ¼ãƒ–.å‰Šé™¤ãƒœã‚¿ãƒ³_offset_y
 6
-”íœƒ{ƒ^ƒ“‚ğ”z’u‚·‚é‘Š‘Î“I‚ÈYÀ•W
-”Šî€“_‚Íƒ{ƒ^ƒ“‚Ì¶ãA‚»‚±‚©‚ç‰E‚Æ‰º•ûŒü‚ªƒvƒ‰ƒX’l
+ï¼ƒå‰Šé™¤ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹ç›¸å¯¾çš„ãªYåº§æ¨™
+ï¼ƒåŸºæº–ç‚¹ã¯ãƒœã‚¿ãƒ³ã®å·¦ä¸Šã€ãã“ã‹ã‚‰å³ã¨ä¸‹æ–¹å‘ãŒãƒ—ãƒ©ã‚¹å€¤
 
-—__default.ƒZ[ƒu.spacing_width
+ï¼ __default.ã‚»ãƒ¼ãƒ–.spacing_width
 20
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Ì‰¡‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã®æ¨ªã‚’pxã§
 
-—__default.ƒZ[ƒu.spacing_height
+ï¼ __default.ã‚»ãƒ¼ãƒ–.spacing_height
 18
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Ìc‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã®ç¸¦ã‚’pxã§
 
-—__default.ƒZ[ƒu.–ß‚éƒ{ƒ^ƒ“
-\_l[0,0]\n\f[align,right]\__q[ƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹]–ß‚é\__q@\n
-”ƒZ[ƒu‰æ–Ê‚Ì–ß‚éƒ{ƒ^ƒ“‚ğ”z’u‚·‚é
-””ò‚Ñæ‚Íuƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹vAÀ•W‚ğ©—Í‚Åw’è‚·‚é‚±‚Æ
-
-
+ï¼ __default.ã‚»ãƒ¼ãƒ–.æˆ»ã‚‹ãƒœã‚¿ãƒ³
+\_l[0,0]\n\f[align,right]\__q[ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«]æˆ»ã‚‹\__qã€€\n
+ï¼ƒã‚»ãƒ¼ãƒ–ç”»é¢ã®æˆ»ã‚‹ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹
+ï¼ƒé£›ã³å…ˆã¯ã€Œãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã€ã€åº§æ¨™ã‚’è‡ªåŠ›ã§æŒ‡å®šã™ã‚‹ã“ã¨
 
 
 
-—__default.ƒMƒƒƒ‰ƒŠ[.”wŒi
+
+
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.èƒŒæ™¯
 assets/preset/menu_gallery.png
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚Ì”wŒi
-”‚±‚ê‚Íˆê——‰æ–Ê—p
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯
+ï¼ƒã“ã‚Œã¯ä¸€è¦§ç”»é¢ç”¨
 
-—__default.ƒMƒƒƒ‰ƒŠ[.”wŒi‚Q
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.èƒŒæ™¯ï¼’
 assets/preset/color_dark.png
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚Ì”wŒi
-”‚±‚ê‚ÍŒÂ•Ê•\¦‚Å‰æ–Ê‚¢‚Á‚Ï‚¢‚æ‚è¬‚³‚¢‘å‚«‚³‚Ì‰æ‘œ‚ğo‚µ‚½‚Æ‚«‚ÉŒ©‚¦‚é‚à‚Ì
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯
+ï¼ƒã“ã‚Œã¯å€‹åˆ¥è¡¨ç¤ºã§ç”»é¢ã„ã£ã±ã„ã‚ˆã‚Šå°ã•ã„å¤§ãã•ã®ç”»åƒã‚’å‡ºã—ãŸã¨ãã«è¦‹ãˆã‚‹ã‚‚ã®
 
-—__default.ƒMƒƒƒ‰ƒŠ[.offset_x
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.offset_x
 26
-”UI‚ğ”z’uŠJn‚·‚éXÀ•W
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚ÍuƒMƒƒƒ‰ƒŠ[.spacing_width/heightv‚Å’è‹`‚·‚é
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Xåº§æ¨™
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã¯ã€Œã‚®ãƒ£ãƒ©ãƒªãƒ¼.spacing_width/heightã€ã§å®šç¾©ã™ã‚‹
 
-—__default.ƒMƒƒƒ‰ƒŠ[.offset_y
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.offset_y
 70
-”UI‚ğ”z’uŠJn‚·‚éYÀ•W
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚ÍuƒMƒƒƒ‰ƒŠ[.spacing_width/heightv‚Å’è‹`‚·‚é
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Yåº§æ¨™
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã¯ã€Œã‚®ãƒ£ãƒ©ãƒªãƒ¼.spacing_width/heightã€ã§å®šç¾©ã™ã‚‹
 
-—__default.ƒMƒƒƒ‰ƒŠ[.ƒ{ƒ^ƒ“‘ä.‰Ÿ‚¹‚È‚¢
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒœã‚¿ãƒ³å°.æŠ¼ã›ãªã„
 assets/preset/gallery_locked.png
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚Ìƒ{ƒ^ƒ“‘ä‰æ‘œ
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®ãƒœã‚¿ãƒ³å°ç”»åƒ
 
-—__default.ƒMƒƒƒ‰ƒŠ[.ƒ{ƒ^ƒ“_width
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒœã‚¿ãƒ³_width
 160
-”ƒ{ƒ^ƒ“‰æ‘œ‚Ì‰¡‚Ì‘å‚«‚³‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³ç”»åƒã®æ¨ªã®å¤§ãã•ã‚’pxã§
 
-—__default.ƒMƒƒƒ‰ƒŠ[.ƒ{ƒ^ƒ“_height
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒœã‚¿ãƒ³_height
 120
-”ƒ{ƒ^ƒ“‰æ‘œ‚Ìc‚Ì‘å‚«‚³‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³ç”»åƒã®ç¸¦ã®å¤§ãã•ã‚’pxã§
 
-—__default.ƒMƒƒƒ‰ƒŠ[.spacing_width
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.spacing_width
 20
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Ì‰¡‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã®æ¨ªã‚’pxã§
 
-—__default.ƒMƒƒƒ‰ƒŠ[.spacing_height
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.spacing_height
 20
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Ìc‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã®ç¸¦ã‚’pxã§
 
-—__default.ƒMƒƒƒ‰ƒŠ[.ƒŠƒXƒg–¼
-ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚ÌƒŠƒXƒg’PŒêŒQ–¼
-”uyƒtƒHƒ‹ƒ_–¼z.yİ’è‚µ‚½•¶š—ñzy‚P‚©‚çn‚Ü‚é˜A”Ôzv‚ªŒÄ‚Î‚ê‚é
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.ãƒªã‚¹ãƒˆå
+ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆ
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®ãƒªã‚¹ãƒˆå˜èªç¾¤å
+ï¼ƒã€Œã€ãƒ•ã‚©ãƒ«ãƒ€åã€‘.ã€è¨­å®šã—ãŸæ–‡å­—åˆ—ã€‘ã€ï¼‘ã‹ã‚‰å§‹ã¾ã‚‹é€£ç•ªã€‘ã€ãŒå‘¼ã°ã‚Œã‚‹
 
-—__default.ƒMƒƒƒ‰ƒŠ[.BGM
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.BGM
 assets/preset/osorawo_osampo.mp3,loop
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚ÌƒMƒƒƒ‰ƒŠ[‚Ì‰¹Šy
-”~‚ß‚é‚È‚çu__stop__v‚ğw’è
-”‘O‚Ì‰æ–Ê‚©‚ç•Ï‚¦‚È‚¢‚È‚çu__nochange__v‚ğw’è‚·‚é
-”u‰¹Šyvƒ^ƒO‚ÅÄ¶’†BGM‚Æ“¯‚¶ƒtƒ@ƒCƒ‹‚ªw’è‚³‚ê‚½AÄ“xÅ‰‚©‚çÄ¶‚³‚ê‚é‚±‚Æ‚Í‚È‚¢
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®ã‚®ãƒ£ãƒ©ãƒªãƒ¼ã®éŸ³æ¥½
+ï¼ƒæ­¢ã‚ã‚‹ãªã‚‰ã€Œ__stop__ã€ã‚’æŒ‡å®š
+ï¼ƒå‰ã®ç”»é¢ã‹ã‚‰å¤‰ãˆãªã„ãªã‚‰ã€Œ__nochange__ã€ã‚’æŒ‡å®šã™ã‚‹
+ï¼ƒã€ŒéŸ³æ¥½ã€ã‚¿ã‚°ã§å†ç”Ÿä¸­BGMã¨åŒã˜ãƒ•ã‚¡ã‚¤ãƒ«ãŒæŒ‡å®šã•ã‚ŒãŸæ™‚ã€å†åº¦æœ€åˆã‹ã‚‰å†ç”Ÿã•ã‚Œã‚‹ã“ã¨ã¯ãªã„
 
-—__default.ƒMƒƒƒ‰ƒŠ[.–ß‚éƒ{ƒ^ƒ“
-\_l[0,0]\n\f[align,right]\__q[ƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹]–ß‚é\__q@\n
-”ƒMƒƒƒ‰ƒŠ[‰æ–Ê‚Ì–ß‚éƒ{ƒ^ƒ“‚ğ”z’u‚·‚é
-””ò‚Ñæ‚Íuƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹vAÀ•W‚ğ©—Í‚Åw’è‚·‚é‚±‚Æ
-
-
+ï¼ __default.ã‚®ãƒ£ãƒ©ãƒªãƒ¼.æˆ»ã‚‹ãƒœã‚¿ãƒ³
+\_l[0,0]\n\f[align,right]\__q[ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«]æˆ»ã‚‹\__qã€€\n
+ï¼ƒã‚®ãƒ£ãƒ©ãƒªãƒ¼ç”»é¢ã®æˆ»ã‚‹ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹
+ï¼ƒé£›ã³å…ˆã¯ã€Œãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã€ã€åº§æ¨™ã‚’è‡ªåŠ›ã§æŒ‡å®šã™ã‚‹ã“ã¨
 
 
 
-—__default.ƒ[ƒh.”wŒi
+
+
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.èƒŒæ™¯
 assets/preset/menu_load.png
-”ƒ[ƒhƒƒjƒ…[‚ğg‚¤‚Ì”wŒiw’è
+ï¼ƒãƒ­ãƒ¼ãƒ‰ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯æŒ‡å®š
 
-—__default.ƒ[ƒh.offset_x
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.offset_x
 26
-”UI‚ğ”z’uŠJn‚·‚éXÀ•W
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Íuƒ[ƒh.spacing_width/heightv‚Å’è‹`‚·‚é
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Xåº§æ¨™
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã¯ã€Œãƒ­ãƒ¼ãƒ‰.spacing_width/heightã€ã§å®šç¾©ã™ã‚‹
 
-—__default.ƒ[ƒh.offset_y
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.offset_y
 70
-”UI‚ğ”z’uŠJn‚·‚éYÀ•W
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Íuƒ[ƒh.spacing_width/heightv‚Å’è‹`‚·‚é
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Yåº§æ¨™
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã¯ã€Œãƒ­ãƒ¼ãƒ‰.spacing_width/heightã€ã§å®šç¾©ã™ã‚‹
 
-—__default.ƒ[ƒh.ƒ{ƒ^ƒ“‘ä
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.ãƒœã‚¿ãƒ³å°
 assets/preset/button1
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚Ìƒ{ƒ^ƒ“‘ä‰æ‘œ
-”button1.png‚ª‰Ÿ‚¹‚éAbutton1d.png‚ª‰Ÿ‚¹‚È‚¢
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®ãƒœã‚¿ãƒ³å°ç”»åƒ
+ï¼ƒbutton1.pngãŒæŠ¼ã›ã‚‹æ™‚ã€button1d.pngãŒæŠ¼ã›ãªã„æ™‚
 
-—__default.ƒ[ƒh.ƒ{ƒ^ƒ“‘ä_width
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.ãƒœã‚¿ãƒ³å°_width
 270
-”ƒ{ƒ^ƒ“‘ä‰æ‘œ‚Ì‰¡‚Ì‘å‚«‚³‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³å°ç”»åƒã®æ¨ªã®å¤§ãã•ã‚’pxã§
 
-—__default.ƒ[ƒh.ƒ{ƒ^ƒ“‘ä_height
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.ãƒœã‚¿ãƒ³å°_height
 80
-”ƒ{ƒ^ƒ“‘ä‰æ‘œ‚Ìc‚Ì‘å‚«‚³‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³å°ç”»åƒã®ç¸¦ã®å¤§ãã•ã‚’pxã§
 
-—__default.ƒ[ƒh.íœƒ{ƒ^ƒ“
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.å‰Šé™¤ãƒœã‚¿ãƒ³
 \_b["assets/preset/batsu_button.png",inline,--option=foreground,--option=use_self_alpha]
-”’P‚È‚é•¶š‚Å‚à‹@”\‚·‚é@‚í‚©‚ê‚Î‚æ‚¢
+ï¼ƒå˜ãªã‚‹æ–‡å­—ã§ã‚‚æ©Ÿèƒ½ã™ã‚‹ã€€ã‚ã‹ã‚Œã°ã‚ˆã„
 
-—__default.ƒ[ƒh.íœƒ{ƒ^ƒ“_offset_x
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.å‰Šé™¤ãƒœã‚¿ãƒ³_offset_x
 240
-”íœƒ{ƒ^ƒ“‚ğ”z’u‚·‚é‘Š‘Î“I‚ÈXÀ•W
-”Šî€“_‚Íƒ{ƒ^ƒ“‚Ì¶ãA‚»‚±‚©‚ç‰E‚Æ‰º•ûŒü‚ªƒvƒ‰ƒX’l
+ï¼ƒå‰Šé™¤ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹ç›¸å¯¾çš„ãªXåº§æ¨™
+ï¼ƒåŸºæº–ç‚¹ã¯ãƒœã‚¿ãƒ³ã®å·¦ä¸Šã€ãã“ã‹ã‚‰å³ã¨ä¸‹æ–¹å‘ãŒãƒ—ãƒ©ã‚¹å€¤
 
-—__default.ƒ[ƒh.íœƒ{ƒ^ƒ“_offset_y
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.å‰Šé™¤ãƒœã‚¿ãƒ³_offset_y
 6
-”íœƒ{ƒ^ƒ“‚ğ”z’u‚·‚é‘Š‘Î“I‚ÈYÀ•W
-”Šî€“_‚Íƒ{ƒ^ƒ“‚Ì¶ãA‚»‚±‚©‚ç‰E‚Æ‰º•ûŒü‚ªƒvƒ‰ƒX’l
+ï¼ƒå‰Šé™¤ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹ç›¸å¯¾çš„ãªYåº§æ¨™
+ï¼ƒåŸºæº–ç‚¹ã¯ãƒœã‚¿ãƒ³ã®å·¦ä¸Šã€ãã“ã‹ã‚‰å³ã¨ä¸‹æ–¹å‘ãŒãƒ—ãƒ©ã‚¹å€¤
 
-—__default.ƒ[ƒh.spacing_width
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.spacing_width
 20
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Ì‰¡‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã®æ¨ªã‚’pxã§
 
-—__default.ƒ[ƒh.spacing_height
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.spacing_height
 18
-”ƒ{ƒ^ƒ““¯m‚Ì‹óŠÔ‚Ìc‚ğpx‚Å
+ï¼ƒãƒœã‚¿ãƒ³åŒå£«ã®ç©ºé–“ã®ç¸¦ã‚’pxã§
 
-—__default.ƒ[ƒh.–ß‚éƒ{ƒ^ƒ“
-\_l[0,0]\n\f[align,right]\__q[ƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹]–ß‚é\__q@\n
-”ƒ[ƒh‰æ–Ê‚Ì–ß‚éƒ{ƒ^ƒ“‚ğ”z’u‚·‚é
-””ò‚Ñæ‚Íuƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹vAÀ•W‚ğ©—Í‚Åw’è‚·‚é‚±‚Æ
-
-
+ï¼ __default.ãƒ­ãƒ¼ãƒ‰.æˆ»ã‚‹ãƒœã‚¿ãƒ³
+\_l[0,0]\n\f[align,right]\__q[ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«]æˆ»ã‚‹\__qã€€\n
+ï¼ƒãƒ­ãƒ¼ãƒ‰ç”»é¢ã®æˆ»ã‚‹ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹
+ï¼ƒé£›ã³å…ˆã¯ã€Œãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã€ã€åº§æ¨™ã‚’è‡ªåŠ›ã§æŒ‡å®šã™ã‚‹ã“ã¨
 
 
 
-—__default.ƒRƒ“ƒtƒBƒO.”wŒi
+
+
+ï¼ __default.ã‚³ãƒ³ãƒ•ã‚£ã‚°.èƒŒæ™¯
 assets/preset/menu_config.png
-”ƒRƒ“ƒtƒBƒOƒƒjƒ…[‚ğg‚¤‚Ì”wŒiw’è
+ï¼ƒã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯æŒ‡å®š
 
-—__default.ƒRƒ“ƒtƒBƒO.offset_x
+ï¼ __default.ã‚³ãƒ³ãƒ•ã‚£ã‚°.offset_x
 26
-”UI‚ğ”z’uŠJn‚·‚éXÀ•W
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Xåº§æ¨™
 
-—__default.ƒRƒ“ƒtƒBƒO.offset_y
+ï¼ __default.ã‚³ãƒ³ãƒ•ã‚£ã‚°.offset_y
 80
-”UI‚ğ”z’uŠJn‚·‚éYÀ•W
+ï¼ƒUIã‚’é…ç½®é–‹å§‹ã™ã‚‹Yåº§æ¨™
 
-—__default.ƒRƒ“ƒtƒBƒO.”z’u‰Â”\‹óŠÔ_width
+ï¼ __default.ã‚³ãƒ³ãƒ•ã‚£ã‚°.é…ç½®å¯èƒ½ç©ºé–“_width
 560
-”UI‚ğ”z’u‚Å‚«‚é‰¡‚Ì‘å‚«‚³
-”Ü‚è•Ô‚µ‚³‚ê‚½‚è‚Í‚µ‚È‚¢
+ï¼ƒUIã‚’é…ç½®ã§ãã‚‹æ¨ªã®å¤§ãã•
+ï¼ƒæŠ˜ã‚Šè¿”ã—ã•ã‚ŒãŸã‚Šã¯ã—ãªã„
 
-—__default.ƒRƒ“ƒtƒBƒO.ƒ{ƒ^ƒ“‘ä
+ï¼ __default.ã‚³ãƒ³ãƒ•ã‚£ã‚°.ãƒœã‚¿ãƒ³å°
 assets/preset/button1
-”ƒfƒtƒHƒ‹ƒgUI‚ğg‚¤‚Ìƒ{ƒ^ƒ“‘ä‰æ‘œ
-”button1.png‚ª‰Ÿ‚¹‚éAbutton1d.png‚ª‰Ÿ‚¹‚È‚¢
+ï¼ƒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆUIã‚’ä½¿ã†æ™‚ã®ãƒœã‚¿ãƒ³å°ç”»åƒ
+ï¼ƒbutton1.pngãŒæŠ¼ã›ã‚‹æ™‚ã€button1d.pngãŒæŠ¼ã›ãªã„æ™‚
 
-—__default.ƒRƒ“ƒtƒBƒO.–ß‚éƒ{ƒ^ƒ“
-\_l[0,0]\n\f[align,right]\__q[ƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹]–ß‚é\__q@\n
-”ƒRƒ“ƒtƒBƒO‰æ–Ê‚Ì–ß‚éƒ{ƒ^ƒ“‚ğ”z’u‚·‚é
-””ò‚Ñæ‚Íuƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹vAÀ•W‚ğ©—Í‚Åw’è‚·‚é‚±‚Æ
-”‰æ‘œ‚ğƒ{ƒ^ƒ“‚É‚·‚é—á«
-”\_l[0,0]\n\f[align,right]\__q[ƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹]\_b["assets/preset/batsu_button.png",inline,--option=use_self_alpha,--option=foreground]\__q@
-
-
+ï¼ __default.ã‚³ãƒ³ãƒ•ã‚£ã‚°.æˆ»ã‚‹ãƒœã‚¿ãƒ³
+\_l[0,0]\n\f[align,right]\__q[ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«]æˆ»ã‚‹\__qã€€\n
+ï¼ƒã‚³ãƒ³ãƒ•ã‚£ã‚°ç”»é¢ã®æˆ»ã‚‹ãƒœã‚¿ãƒ³ã‚’é…ç½®ã™ã‚‹
+ï¼ƒé£›ã³å…ˆã¯ã€Œãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã€ã€åº§æ¨™ã‚’è‡ªåŠ›ã§æŒ‡å®šã™ã‚‹ã“ã¨
+ï¼ƒç”»åƒã‚’ãƒœã‚¿ãƒ³ã«ã™ã‚‹ä¾‹â†“
+ï¼ƒ\_l[0,0]\n\f[align,right]\__q[ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«]\_b["assets/preset/batsu_button.png",inline,--option=use_self_alpha,--option=foreground]\__qã€€
 
 
 
-—__default.menu.sidebar.bitmap.filename
+
+
+ï¼ __default.menu.sidebar.bitmap.filename
 assets/preset/ownerdraw_sidebar.png
-”ƒTƒCƒhƒo[•\¦‰æ‘œƒtƒ@ƒCƒ‹–¼
-—__default.menu.background.bitmap.filename
+ï¼ƒã‚µã‚¤ãƒ‰ãƒãƒ¼è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å
+ï¼ __default.menu.background.bitmap.filename
 assets/preset/ownerdraw_background.png
-”ƒoƒbƒNƒOƒ‰ƒEƒ“ƒh•\¦‰æ‘œƒtƒ@ƒCƒ‹–¼
-—__default.menu.foreground.bitmap.filename
+ï¼ƒãƒãƒƒã‚¯ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å
+ï¼ __default.menu.foreground.bitmap.filename
 assets/preset/ownerdraw_foreground.png
-”ƒtƒHƒAƒOƒ‰ƒEƒ“ƒh•\¦‰æ‘œƒtƒ@ƒCƒ‹–¼
+ï¼ƒãƒ•ã‚©ã‚¢ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å
 
 
 
-—__default.menu.background.font.color.r
+ï¼ __default.menu.background.font.color.r
 255
-”ƒoƒbƒNƒOƒ‰ƒEƒ“ƒh•¶šFÔ(0`255)
-—__default.menu.background.font.color.g
+ï¼ƒãƒãƒƒã‚¯ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰æ–‡å­—è‰²èµ¤(0ï½255)
+ï¼ __default.menu.background.font.color.g
 255
-”ƒoƒbƒNƒOƒ‰ƒEƒ“ƒh•¶šF—Î(0`255)
-—__default.menu.background.font.color.b
+ï¼ƒãƒãƒƒã‚¯ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰æ–‡å­—è‰²ç·‘(0ï½255)
+ï¼ __default.menu.background.font.color.b
 255
-”ƒoƒbƒNƒOƒ‰ƒEƒ“ƒh•¶šFÂ(0`255)
+ï¼ƒãƒãƒƒã‚¯ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰æ–‡å­—è‰²é’(0ï½255)
 
 
 
-—__default.menu.foreground.font.color.r
+ï¼ __default.menu.foreground.font.color.r
 255
-”ƒtƒHƒAƒOƒ‰ƒEƒ“ƒh•¶šFÔ(0`255)
-—__default.menu.foreground.font.color.g
+ï¼ƒãƒ•ã‚©ã‚¢ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰æ–‡å­—è‰²èµ¤(0ï½255)
+ï¼ __default.menu.foreground.font.color.g
 255
-”ƒtƒHƒAƒOƒ‰ƒEƒ“ƒh•¶šF—Î(0`255)
-—__default.menu.foreground.font.color.b
+ï¼ƒãƒ•ã‚©ã‚¢ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰æ–‡å­—è‰²ç·‘(0ï½255)
+ï¼ __default.menu.foreground.font.color.b
 255
-”ƒtƒHƒAƒOƒ‰ƒEƒ“ƒh•¶šFÂ(0`255)
+ï¼ƒãƒ•ã‚©ã‚¢ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰æ–‡å­—è‰²é’(0ï½255)
 
 
 
-—__default.menu.separator.color.r
+ï¼ __default.menu.separator.color.r
 0
-”ƒZƒpƒŒ[ƒ^FÔ(0`255)
-—__default.menu.separator.color.g
+ï¼ƒã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿è‰²èµ¤(0ï½255)
+ï¼ __default.menu.separator.color.g
 0
-”ƒZƒpƒŒ[ƒ^F—Î(0`255)
-—__default.menu.separator.color.b
+ï¼ƒã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿è‰²ç·‘(0ï½255)
+ï¼ __default.menu.separator.color.b
 0
-”ƒZƒpƒŒ[ƒ^FÂ(0`255)
+ï¼ƒã‚»ãƒ‘ãƒ¬ãƒ¼ã‚¿è‰²é’(0ï½255)
 
 
 
-—__default.menu.frame.color.r
+ï¼ __default.menu.frame.color.r
 0
-”˜g‚ÌFÔ(0`255)
-—__default.menu.frame.color.g
+ï¼ƒæ ã®è‰²èµ¤(0ï½255)
+ï¼ __default.menu.frame.color.g
 0
-”˜g‚ÌF—Î(0`255)
-—__default.menu.frame.color.b
+ï¼ƒæ ã®è‰²ç·‘(0ï½255)
+ï¼ __default.menu.frame.color.b
 0
-”˜g‚ÌFÂ(0`255)
+ï¼ƒæ ã®è‰²é’(0ï½255)
 
 
 
-—__default.menu.disable.font.color.r
+ï¼ __default.menu.disable.font.color.r
 127
-”‘I‘ğ•s‰Â•¶šFÔ(0`255)
-—__default.menu.disable.font.color.g
+ï¼ƒé¸æŠä¸å¯æ–‡å­—è‰²èµ¤(0ï½255)
+ï¼ __default.menu.disable.font.color.g
 127
-”‘I‘ğ•s‰Â•¶šF—Î(0`255)
-—__default.menu.disable.font.color.b
+ï¼ƒé¸æŠä¸å¯æ–‡å­—è‰²ç·‘(0ï½255)
+ï¼ __default.menu.disable.font.color.b
 127
-”‘I‘ğ•s‰Â•¶šFÂ(0`255)
+ï¼ƒé¸æŠä¸å¯æ–‡å­—è‰²é’(0ï½255)
 
 
 
 
 
-—__default.fontcolor
+ï¼ __default.fontcolor
 #FFFFFF
-”•’Ê‚Ì•¶š‚ÌF
-—__default.visited
+ï¼ƒæ™®é€šã®æ–‡å­—ã®è‰²
+ï¼ __default.visited
 #D1C4E9
-”Šù“Ç‚Ì•¶š‚ÌF
-—__default.disable
+ï¼ƒæ—¢èª­ã®æ–‡å­—ã®è‰²
+ï¼ __default.disable
 #75715E
-”–Ú—§‚½‚¹‚È‚¢•¶š‚ÌF
+ï¼ƒç›®ç«‹ãŸã›ãªã„æ–‡å­—ã®è‰²
 
 
 
-—__default.cursorvisitedstyle
+ï¼ __default.cursorvisitedstyle
 square
-”Šù“Ç‚Ì‘I‘ğˆ‚ÌŒ`ó
-—__default.cursorvisitedmethod
+ï¼ƒæ—¢èª­ã®é¸æŠè‚¢ã®å½¢çŠ¶
+ï¼ __default.cursorvisitedmethod
 copypen
-”Šù“Ç‘I‘ğˆ‚Ìƒ‰ƒXƒ^ƒIƒyƒŒ[ƒVƒ‡ƒ“ƒRƒ}ƒ“ƒh
-—__default.cursorvisitedfontcolor
+ï¼ƒæ—¢èª­é¸æŠè‚¢ã®ãƒ©ã‚¹ã‚¿ã‚ªãƒšãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚³ãƒãƒ³ãƒ‰
+ï¼ __default.cursorvisitedfontcolor
 #3d7ce6
-”Šù“Ç‘I‘ğˆ‚Ì•¶šF
-—__default.cursorvisitedpencolor
+ï¼ƒæ—¢èª­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ __default.cursorvisitedpencolor
 #3d7ce6
-”Šù“Ç‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—__default.cursorvisitedbrushcolor
+ï¼ƒæ—¢èª­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ __default.cursorvisitedbrushcolor
 #272822
-”Šù“Ç‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒæ—¢èª­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—__default.cursorvisitednotselectstyle
+ï¼ __default.cursorvisitednotselectstyle
 underline
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚ÌŒ`óBunderline‚Å‰ºü‚ğ•\¦
-—__default.cursorvisitednotselectmethod
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®å½¢çŠ¶ã€‚underlineã§ä¸‹ç·šã‚’è¡¨ç¤º
+ï¼ __default.cursorvisitednotselectmethod
 copypen
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚Ìƒ‰ƒXƒ^ƒIƒyƒŒ[ƒVƒ‡ƒ“ƒRƒ}ƒ“ƒh
-—__default.cursorvisitednotselectfontcolor
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®ãƒ©ã‚¹ã‚¿ã‚ªãƒšãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚³ãƒãƒ³ãƒ‰
+ï¼ __default.cursorvisitednotselectfontcolor
 #3d7ce6
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚Ì•¶šF
-—__default.cursorvisitednotselectpencolor
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ __default.cursorvisitednotselectpencolor
 #3d7ce6
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—__default.cursorvisitednotselectbrushcolor
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ __default.cursorvisitednotselectbrushcolor
 #272822
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—__default.cursorstyle
+ï¼ __default.cursorstyle
 square
-”‘I‘ğ’†‚Ì‘I‘ğˆ‚ÌŒ`óBsquare‚Å‹éŒ`‚ğ•\¦
-—__default.cursormethod
+ï¼ƒé¸æŠä¸­ã®é¸æŠè‚¢ã®å½¢çŠ¶ã€‚squareã§çŸ©å½¢ã‚’è¡¨ç¤º
+ï¼ __default.cursormethod
 copypen
-”‘I‘ğ’†‘I‘ğˆ‚Ìƒ‰ƒXƒ^ƒIƒyƒŒ[ƒVƒ‡ƒ“ƒRƒ}ƒ“ƒh
-—__default.cursorfontcolor
+ï¼ƒé¸æŠä¸­é¸æŠè‚¢ã®ãƒ©ã‚¹ã‚¿ã‚ªãƒšãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚³ãƒãƒ³ãƒ‰
+ï¼ __default.cursorfontcolor
 #66d9ef
-”‘I‘ğ’†‘I‘ğˆ‚Ì•¶šF
-—__default.cursorpencolor
+ï¼ƒé¸æŠä¸­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ __default.cursorpencolor
 #66d9ef
-”‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—__default.cursorbrushcolor
+ï¼ƒé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ __default.cursorbrushcolor
 #272822
-”‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—__default.cursornotselectstyle
+ï¼ __default.cursornotselectstyle
 underline
-””ñ‘I‘ğ’†‘I‘ğˆ‚ÌŒ`óBunderline‚Å‰ºü‚ğ•\¦
-—__default.cursornotselectmethod
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®å½¢çŠ¶ã€‚underlineã§ä¸‹ç·šã‚’è¡¨ç¤º
+ï¼ __default.cursornotselectmethod
 copypen
-””ñ‘I‘ğ’†‘I‘ğˆ‚Ìƒ‰ƒXƒ^ƒIƒyƒŒ[ƒVƒ‡ƒ“ƒRƒ}ƒ“ƒh
-—__default.cursornotselectfontcolor
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®ãƒ©ã‚¹ã‚¿ã‚ªãƒšãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚³ãƒãƒ³ãƒ‰
+ï¼ __default.cursornotselectfontcolor
 #66d9ef
-””ñ‘I‘ğ’†‘I‘ğˆ‚Ì•¶šF
-—__default.cursornotselectpencolor
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ __default.cursornotselectpencolor
 #66d9ef
-””ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—__default.cursornotselectbrushcolor
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ __default.cursornotselectbrushcolor
 #272822
-””ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—__default.anchorstyle
+ï¼ __default.anchorstyle
 underline
-”‘I‘ğ’†ƒAƒ“ƒJ[‚ÌŒ`ó
-—__default.anchormethod
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®å½¢çŠ¶
+ï¼ __default.anchormethod
 copypen
-”‘I‘ğ’†ƒAƒ“ƒJ[‚Ì•`‰æƒƒ\ƒbƒh
-—__default.anchorfontcolor
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®æç”»ãƒ¡ã‚½ãƒƒãƒ‰
+ï¼ __default.anchorfontcolor
 #66d9ef
-”‘I‘ğ’†ƒAƒ“ƒJ[‚Ì•¶šF
-—__default.anchorpencolor
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®æ–‡å­—è‰²
+ï¼ __default.anchorpencolor
 #66d9ef
-”‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—__default.anchorbrushcolor
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ __default.anchorbrushcolor
 #272822
-”‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`“à‚ÌF
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—__default.anchornotselectstyle
+ï¼ __default.anchornotselectstyle
 none
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚ÌŒ`ó
-—__default.anchornotselectmethod
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®å½¢çŠ¶
+ï¼ __default.anchornotselectmethod
 copypen
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚Ì•`‰æƒƒ\ƒbƒh
-—__default.anchornotselectfontcolor
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®æç”»ãƒ¡ã‚½ãƒƒãƒ‰
+ï¼ __default.anchornotselectfontcolor
 #66d9ef
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚Ì•¶šF
-—__default.anchornotselectpencolor
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®æ–‡å­—è‰²
+ï¼ __default.anchornotselectpencolor
 #66d9ef
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—__default.anchornotselectbrushcolor
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ __default.anchornotselectbrushcolor
 #272822
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`“à‚ÌF
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—__default.anchorvisitedstyle
+ï¼ __default.anchorvisitedstyle
 none
-”–K–âÏ‚İƒAƒ“ƒJ[‚ÌŒ`ó
-—__default.anchorvisitedmethod
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®å½¢çŠ¶
+ï¼ __default.anchorvisitedmethod
 copypen
-”–K–âÏ‚İƒAƒ“ƒJ[‚Ì•`‰æƒƒ\ƒbƒh
-—__default.anchorvisitedfontcolor
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®æç”»ãƒ¡ã‚½ãƒƒãƒ‰
+ï¼ __default.anchorvisitedfontcolor
 #66d9ef
-”–K–âÏ‚İƒAƒ“ƒJ[‚Ì•¶šF
-—__default.anchorvisitedpencolor
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®æ–‡å­—è‰²
+ï¼ __default.anchorvisitedpencolor
 #66d9ef
-”–K–âÏ‚İƒAƒ“ƒJ[‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—__default.anchorvisitedbrushcolor
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ __default.anchorvisitedbrushcolor
 #272822
-”–K–âÏ‚İƒAƒ“ƒJ[‚Ì‹éŒ`“à‚ÌF
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢å†…ã®è‰²
 
 

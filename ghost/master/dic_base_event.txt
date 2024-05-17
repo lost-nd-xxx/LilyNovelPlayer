@@ -1,37 +1,37 @@
-”SSP‚ÌƒCƒxƒ“ƒg‚Æ‚»‚Ìü•Ó
+ï¼ƒSSPã®ã‚¤ãƒ™ãƒ³ãƒˆã¨ãã®å‘¨è¾º
 
 
 
-–OnNotifyShellInfo
-ƒVƒFƒ‹–¼	iR0j
-__t	isplit_resetj
-ƒQ[ƒ€ID	iSicalc,isplitib1jiR1jib1j/ib1j0ib1j0j-1jj
-”ƒVƒFƒ‹ƒtƒHƒ‹ƒ_–¼‚ğƒ†ƒj[ƒN‚È‰p”š•¶š—ñ‚Æ‚İ‚È‚·
-”‚»‚Ì‚½‚ßA–¼‘O‚©‚Ô‚è‚Å•ÏX‚³‚ê‚é‚Æ»ìˆÏˆõ‚ª‹ƒ‚­
+ï¼ŠOnNotifyShellInfo
+ï¼„ã‚·ã‚§ãƒ«å	ï¼ˆR0ï¼‰
+ï¼„__t	ï¼ˆsplit_resetï¼‰
+ï¼„ã‚²ãƒ¼ãƒ ID	ï¼ˆSï¼ˆcalc,ï¼ˆsplitï¼ˆb1ï¼‰ï¼ˆR1ï¼‰ï¼ˆb1ï¼‰/ï¼ˆb1ï¼‰0ï¼ˆb1ï¼‰0ï¼‰-1ï¼‰ï¼‰
+ï¼ƒã‚·ã‚§ãƒ«ãƒ•ã‚©ãƒ«ãƒ€åã‚’ãƒ¦ãƒ‹ãƒ¼ã‚¯ãªè‹±æ•°å­—æ–‡å­—åˆ—ã¨ã¿ãªã™
+ï¼ƒãã®ãŸã‚ã€åå‰ã‹ã¶ã‚Šã§å¤‰æ›´ã•ã‚Œã‚‹ã¨è£½ä½œå§”å“¡ãŒæ³£ã
 
 
 
-–OnNotifyBalloonInfo
-ƒoƒ‹[ƒ“–¼	iR0j
+ï¼ŠOnNotifyBalloonInfo
+ï¼„ãƒãƒ«ãƒ¼ãƒ³å	ï¼ˆR0ï¼‰
 
 
 
-–OnBalloonChange
-BalloonWidth	iget_property,currentghost.balloon.scope(0).validwidth.initialj
-BalloonHeight	iget_property,currentghost.balloon.scope(0).validheight.initialj
-„’†’f‚©‚çÄŠJ	i•Ï”u__ƒS[ƒXƒg‚É‚æ‚éƒoƒ‹[ƒ“•ÏXv‚Ì‘¶İj==0
-__ƒS[ƒXƒg‚É‚æ‚éƒoƒ‹[ƒ“•ÏX	
-iˆê‘Ì‰»_ƒEƒFƒCƒgj\![raise,iƒQ[ƒ€IDj.‹N“®]
+ï¼ŠOnBalloonChange
+ï¼„BalloonWidth	ï¼ˆget_property,currentghost.balloon.scope(0).validwidth.initialï¼‰
+ï¼„BalloonHeight	ï¼ˆget_property,currentghost.balloon.scope(0).validheight.initialï¼‰
+ï¼ä¸­æ–­ã‹ã‚‰å†é–‹	ï¼ˆå¤‰æ•°ã€Œ__ã‚´ãƒ¼ã‚¹ãƒˆã«ã‚ˆã‚‹ãƒãƒ«ãƒ¼ãƒ³å¤‰æ›´ã€ã®å­˜åœ¨ï¼‰==0
+ï¼„__ã‚´ãƒ¼ã‚¹ãƒˆã«ã‚ˆã‚‹ãƒãƒ«ãƒ¼ãƒ³å¤‰æ›´	
+ï¼ˆä¸€ä½“åŒ–_ã‚¦ã‚§ã‚¤ãƒˆï¼‰\![raise,ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.èµ·å‹•]
 
 
 
-–OnBalloonSizeGet
-BalloonWidth	iget_property,currentghost.balloon.scope(0).validwidth.initialj
-BalloonHeight	iget_property,currentghost.balloon.scope(0).validheight.initialj
+ï¼ŠOnBalloonSizeGet
+ï¼„BalloonWidth	ï¼ˆget_property,currentghost.balloon.scope(0).validwidth.initialï¼‰
+ï¼„BalloonHeight	ï¼ˆget_property,currentghost.balloon.scope(0).validheight.initialï¼‰
 
 
 
-–OnTalk	icountAiStatusjAtalkingj==0&&icountAiStatusjApassivej==0&&icountAiStatusjAinductionj==0&&icountAiStatusjAtimecriticalj==0&&icountAiStatusjAonlinej==0&&icountAiStatusjAchoosingj==0&&icountAiStatusjAminimizingj==0
+ï¼ŠOnTalk	ï¼ˆcountã€ï¼ˆStatusï¼‰ã€talkingï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€passiveï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€inductionï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€timecriticalï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€onlineï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€choosingï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€minimizingï¼‰==0
 \_q
 \0\s[1]\b[2]\_l[0,0]
 \_b["assets/preset/resumewindow.png",inline,--option=foreground,--option=fixed]
@@ -47,353 +47,353 @@
 
 
 
-–OnBoot
-iƒQ[ƒ€‹N“®€”õj
+ï¼ŠOnBoot
+ï¼ˆã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼‰
 
 
 
-–OnClose
-iƒQ[ƒ€I—¹j
+ï¼ŠOnClose
+ï¼ˆã‚²ãƒ¼ãƒ çµ‚äº†ï¼‰
 
 
 
-–OnShellChanging
-__tmp	iwhen,iƒXƒLƒbƒvj==1,iƒƒjƒ…[.ƒXƒLƒbƒv’â~.•Ï”–ß‚·jj
-__tmp	iwhen,iƒI[ƒgj==1,iƒI[ƒg‰ğœ.•Ï”–ß‚·jj
-iˆê‘Ì‰»‰ğœj
+ï¼ŠOnShellChanging
+ï¼„__tmp	ï¼ˆwhen,ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1,ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚¹ã‚­ãƒƒãƒ—åœæ­¢.å¤‰æ•°æˆ»ã™ï¼‰ï¼‰
+ï¼„__tmp	ï¼ˆwhen,ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1,ï¼ˆã‚ªãƒ¼ãƒˆè§£é™¤.å¤‰æ•°æˆ»ã™ï¼‰ï¼‰
+ï¼ˆä¸€ä½“åŒ–è§£é™¤ï¼‰
 
 
 
-–OnShellChanged
-iƒQ[ƒ€‹N“®€”õj
+ï¼ŠOnShellChanged
+ï¼ˆã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼‰
 
 
 
-–OnWindowStateMinimize
-Translate—LŒø	0
-__tmp	iwhen,iƒXƒLƒbƒvj==1,iƒƒjƒ…[.ƒXƒLƒbƒv’â~.•Ï”–ß‚·jj
-__tmp	iwhen,iƒI[ƒgj==1,iƒI[ƒg‰ğœ.•Ï”–ß‚·jj
-iˆê‘Ì‰»‰ğœj\![sound,pause]
+ï¼ŠOnWindowStateMinimize
+ï¼„Translateæœ‰åŠ¹	0
+ï¼„__tmp	ï¼ˆwhen,ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1,ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚¹ã‚­ãƒƒãƒ—åœæ­¢.å¤‰æ•°æˆ»ã™ï¼‰ï¼‰
+ï¼„__tmp	ï¼ˆwhen,ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1,ï¼ˆã‚ªãƒ¼ãƒˆè§£é™¤.å¤‰æ•°æˆ»ã™ï¼‰ï¼‰
+ï¼ˆä¸€ä½“åŒ–è§£é™¤ï¼‰\![sound,pause]
 
 
 
-–OnWindowStateRestore
-Translate—LŒø	0
-__tmp	iwhen,iƒXƒLƒbƒvj==1,iƒƒjƒ…[.ƒXƒLƒbƒv’â~.•Ï”–ß‚·jj
-__tmp	iwhen,iƒI[ƒgj==1,iƒI[ƒg‰ğœ.•Ï”–ß‚·jj
-ƒXƒNƒŠƒvƒg‚Ìˆê”Ô“ª	iˆê‘Ì‰»_ƒNƒŠƒbƒNj
+ï¼ŠOnWindowStateRestore
+ï¼„Translateæœ‰åŠ¹	0
+ï¼„__tmp	ï¼ˆwhen,ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1,ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚¹ã‚­ãƒƒãƒ—åœæ­¢.å¤‰æ•°æˆ»ã™ï¼‰ï¼‰
+ï¼„__tmp	ï¼ˆwhen,ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1,ï¼ˆã‚ªãƒ¼ãƒˆè§£é™¤.å¤‰æ•°æˆ»ã™ï¼‰ï¼‰
+ï¼„ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®ä¸€ç•ªé ­	ï¼ˆä¸€ä½“åŒ–_ã‚¯ãƒªãƒƒã‚¯ï¼‰
 \![sound,resume]
-\![raise,’†’f‚©‚çÄŠJ]
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnUserInput	iƒ†[ƒU“ü—Íó•t’†j==1
-„OnUserInputCancel	i•Ï”uR1v‚Ì‘¶İj==0||ivncall,length,R1j==0
-__t	ivncall,‹æØ‚èšÁ‚µ,R1j
-ƒ†[ƒU“ü—Íó•t’†	0
-__tmp	iwhenib1ji•Ï”uR3v‚Ì‘¶İj==0ib1jinextÚ“ª«jinext”’ljib1jiR3jj
-\![raise,OnGamePlayCore,i__tmpj,iR0j,i__tj]
+ï¼ŠOnUserInput	ï¼ˆãƒ¦ãƒ¼ã‚¶å…¥åŠ›å—ä»˜ä¸­ï¼‰==1
+ï¼OnUserInputCancel	ï¼ˆå¤‰æ•°ã€ŒR1ã€ã®å­˜åœ¨ï¼‰==0||ï¼ˆvncall,length,R1ï¼‰==0
+ï¼„__t	ï¼ˆvncall,åŒºåˆ‡ã‚Šå­—æ¶ˆã—,R1ï¼‰
+ï¼„ãƒ¦ãƒ¼ã‚¶å…¥åŠ›å—ä»˜ä¸­	0
+ï¼„__tmp	ï¼ˆwhenï¼ˆb1ï¼‰ï¼ˆå¤‰æ•°ã€ŒR3ã€ã®å­˜åœ¨ï¼‰==0ï¼ˆb1ï¼‰ï¼ˆnextæ¥é ­è¾ï¼‰ï¼ˆnextæ•°å€¤ï¼‰ï¼ˆb1ï¼‰ï¼ˆR3ï¼‰ï¼‰
+\![raise,OnGamePlayCore,ï¼ˆ__tmpï¼‰,ï¼ˆR0ï¼‰,ï¼ˆ__tï¼‰]
 
 
 
-–OnUserInputCancel.‘±‚«
-ƒ†[ƒU“ü—Íó•t’†	0
-__tmp	iwhenib1ji•Ï”uR3v‚Ì‘¶İj==0ib1jinextÚ“ª«jinext”’ljib1jiR3jj
-\![raise,OnGamePlayCore,i__tmpj,iR0j,]
+ï¼ŠOnUserInputCancel.ç¶šã
+ï¼„ãƒ¦ãƒ¼ã‚¶å…¥åŠ›å—ä»˜ä¸­	0
+ï¼„__tmp	ï¼ˆwhenï¼ˆb1ï¼‰ï¼ˆå¤‰æ•°ã€ŒR3ã€ã®å­˜åœ¨ï¼‰==0ï¼ˆb1ï¼‰ï¼ˆnextæ¥é ­è¾ï¼‰ï¼ˆnextæ•°å€¤ï¼‰ï¼ˆb1ï¼‰ï¼ˆR3ï¼‰ï¼‰
+\![raise,OnGamePlayCore,ï¼ˆ__tmpï¼‰,ï¼ˆR0ï¼‰,]
 
 
 
-–OnUserInputCancel
-„OniR0jCancel
-„OnUserInputCancel.‘±‚«	iƒ†[ƒU“ü—Íó•t’†j==1
+ï¼ŠOnUserInputCancel
+ï¼Onï¼ˆR0ï¼‰Cancel
+ï¼OnUserInputCancel.ç¶šã	ï¼ˆãƒ¦ãƒ¼ã‚¶å…¥åŠ›å—ä»˜ä¸­ï¼‰==1
 
 
 
-—‹æØ‚èšÁ‚µ
-iset,’PŒêŒQu‹æØ‚èšÁ‚µ.ƒŠƒXƒgv‚Ìd•¡‰ñ”ğ,~‡A‹N“®’†jƒÓ
-ivncall,set,‹æØ‚èšÁ‚µ.ˆê•Ï”–¼,A0jƒÓ
-itimes,i’PŒêŒQu‹æØ‚èšÁ‚µ.ƒŠƒXƒgv‚Ì”j,ivncall,set,‹æØ‚èšÁ‚µ.ˆê•Ï”–¼,‹æØ‚èšÁ‚µ.•”•ijjƒÓ
-i__tmpjƒÓ
-iset,__tmp,jƒÓ
-iset,’PŒêŒQu‹æØ‚èšÁ‚µ.ƒŠƒXƒgv‚Ìd•¡‰ñ”ğ,j
+ï¼ åŒºåˆ‡ã‚Šå­—æ¶ˆã—
+ï¼ˆset,å˜èªç¾¤ã€ŒåŒºåˆ‡ã‚Šå­—æ¶ˆã—.ãƒªã‚¹ãƒˆã€ã®é‡è¤‡å›é¿,é™é †ã€èµ·å‹•ä¸­ï¼‰Ï†
+ï¼ˆvncall,set,åŒºåˆ‡ã‚Šå­—æ¶ˆã—.ä¸€æ™‚å¤‰æ•°å,A0ï¼‰Ï†
+ï¼ˆtimes,ï¼ˆå˜èªç¾¤ã€ŒåŒºåˆ‡ã‚Šå­—æ¶ˆã—.ãƒªã‚¹ãƒˆã€ã®æ•°ï¼‰,ï¼ˆvncall,set,åŒºåˆ‡ã‚Šå­—æ¶ˆã—.ä¸€æ™‚å¤‰æ•°å,åŒºåˆ‡ã‚Šå­—æ¶ˆã—.éƒ¨å“ï¼‰ï¼‰Ï†
+ï¼ˆ__tmpï¼‰Ï†
+ï¼ˆset,__tmp,ï¼‰Ï†
+ï¼ˆset,å˜èªç¾¤ã€ŒåŒºåˆ‡ã‚Šå­—æ¶ˆã—.ãƒªã‚¹ãƒˆã€ã®é‡è¤‡å›é¿,ï¼‰
 
 
 
-—‹æØ‚èšÁ‚µ.ˆê•Ï”–¼
+ï¼ åŒºåˆ‡ã‚Šå­—æ¶ˆã—.ä¸€æ™‚å¤‰æ•°å
 __tmp
 
 
 
-—‹æØ‚èšÁ‚µ.•”•i
-ivncall,erase,__tmp,‹æØ‚èšÁ‚µ.ƒŠƒXƒgj
+ï¼ åŒºåˆ‡ã‚Šå­—æ¶ˆã—.éƒ¨å“
+ï¼ˆvncall,erase,__tmp,åŒºåˆ‡ã‚Šå­—æ¶ˆã—.ãƒªã‚¹ãƒˆï¼‰
 
 
 
-—‹æØ‚èšÁ‚µ.ƒŠƒXƒg
-A
-¤
-C
+ï¼ åŒºåˆ‡ã‚Šå­—æ¶ˆã—.ãƒªã‚¹ãƒˆ
+ã€
+ï½¤
+ï¼Œ
 ,
 |
 :
 
 
 
-–OnInstallComplete
-iƒƒjƒ…[•s‰Âj
-iˆê‘Ì‰»_ƒEƒFƒCƒgj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0jƒCƒ“ƒXƒg[ƒ‹Š®—¹\n
-\_?[iR0j]iR1j\_?
+ï¼ŠOnInstallComplete
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆä¸€ä½“åŒ–_ã‚¦ã‚§ã‚¤ãƒˆï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å®Œäº†\n
+\_?[ï¼ˆR0ï¼‰]ï¼ˆR1ï¼‰\_?
 \_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnInstallFailure
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0jƒCƒ“ƒXƒg[ƒ‹¸”sB\n
-icall,__offset,mjŒ´ˆö:u\_?iR0j\_?v
+ï¼ŠOnInstallFailure
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¤±æ•—ã€‚\n
+ï¼ˆcall,__offset,mï¼‰åŸå› :ã€Œ\_?ï¼ˆR0ï¼‰\_?ã€
 \_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnInstallRefuse
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0jƒCƒ“ƒXƒg[ƒ‹¸”sB\n
-icall,__offset,mju\_?iR0j\_?v—p‚Ìƒtƒ@ƒCƒ‹‚Å‚·B
+ï¼ŠOnInstallRefuse
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¤±æ•—ã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã€Œ\_?ï¼ˆR0ï¼‰\_?ã€ç”¨ã®ãƒ•ã‚¡ã‚¤ãƒ«ã§ã™ã€‚
 \_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnUpdateComplete	iR0j==changed&&iR3j==ghost
-iƒƒjƒ…[•s‰Âj
-iˆê‘Ì‰»_ƒEƒFƒCƒgj
-F\_q
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
+ï¼ŠOnUpdateComplete	ï¼ˆR0ï¼‰==changed&&ï¼ˆR3ï¼‰==ghost
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆä¸€ä½“åŒ–_ã‚¦ã‚§ã‚¤ãƒˆï¼‰
+ï¼š\_q
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
 \_q
-icall,__offset,m,0jƒS[ƒXƒg‚ÌXV‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+ï¼ˆcall,__offset,m,0ï¼‰ã‚´ãƒ¼ã‚¹ãƒˆã®æ›´æ–°ãŒå®Œäº†ã—ã¾ã—ãŸã€‚
 \_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnUpdateComplete	iR0j==changed&&iR3j==shell
-__tmp	iget_property,currentghost.shelllist.current.craftmanurlj
-„OnUpdateComplete.UndefShellURL	i•Ï”u__tmpv‚Ì‘¶İj==0
-iƒƒjƒ…[•s‰Âj
-iˆê‘Ì‰»_ƒEƒFƒCƒgj
-F\_q\*
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-icall,__offset,m,0jƒVƒFƒ‹‚ÌXV‚ªŠ®—¹‚µ‚Ü‚µ‚½B\n
-icall,__offset,mjƒTƒvƒŠƒƒ“ƒg‚àXV‚³‚ê‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B\n
-icall,__offset,mjƒVƒFƒ‹‚Ì”z•zŒ³URL‚ğŠJ‚«‚Ü‚·‚©H\n[200]
+ï¼ŠOnUpdateComplete	ï¼ˆR0ï¼‰==changed&&ï¼ˆR3ï¼‰==shell
+ï¼„__tmp	ï¼ˆget_property,currentghost.shelllist.current.craftmanurlï¼‰
+ï¼OnUpdateComplete.UndefShellURL	ï¼ˆå¤‰æ•°ã€Œ__tmpã€ã®å­˜åœ¨ï¼‰==0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆä¸€ä½“åŒ–_ã‚¦ã‚§ã‚¤ãƒˆï¼‰
+ï¼š\_q\*
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼ˆcall,__offset,m,0ï¼‰ã‚·ã‚§ãƒ«ã®æ›´æ–°ãŒå®Œäº†ã—ã¾ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚µãƒ—ãƒªãƒ¡ãƒ³ãƒˆã‚‚æ›´æ–°ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLã‚’é–‹ãã¾ã™ã‹ï¼Ÿ\n[200]
 
-icall,__offset,mj\__q[OnUpdateComplete.OpenURL]URL‚ğŠJ‚­\__q\n
-icall,__offset,mj\__q[ƒƒjƒ…[.ƒLƒƒƒ“ƒZƒ‹]URL‚ğŠJ‚©‚¸‚É–ß‚é\__q
+ï¼ˆcall,__offset,mï¼‰\__q[OnUpdateComplete.OpenURL]URLã‚’é–‹ã\__q\n
+ï¼ˆcall,__offset,mï¼‰\__q[ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚­ãƒ£ãƒ³ã‚»ãƒ«]URLã‚’é–‹ã‹ãšã«æˆ»ã‚‹\__q
 \_q
 
 
 
-–OnUpdateComplete.UndefShellURL
-iƒƒjƒ…[•s‰Âj
-iˆê‘Ì‰»_ƒEƒFƒCƒgj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q\*
-icall,__offset,m,0jƒVƒFƒ‹‚ÌXV‚ªŠ®—¹‚µ‚Ü‚µ‚½B\n
-icall,__offset,mjƒTƒvƒŠƒƒ“ƒg‚àXV‚³‚ê‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B\n
-icall,__offset,mjƒVƒFƒ‹‚Ì”z•zŒ³URL‚ª–¢’è‹`‚Ì‚½‚ßA’†’f’n“_‚É–ß‚è‚Ü‚·B\_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+ï¼ŠOnUpdateComplete.UndefShellURL
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆä¸€ä½“åŒ–_ã‚¦ã‚§ã‚¤ãƒˆï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q\*
+ï¼ˆcall,__offset,m,0ï¼‰ã‚·ã‚§ãƒ«ã®æ›´æ–°ãŒå®Œäº†ã—ã¾ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚µãƒ—ãƒªãƒ¡ãƒ³ãƒˆã‚‚æ›´æ–°ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLãŒæœªå®šç¾©ã®ãŸã‚ã€ä¸­æ–­åœ°ç‚¹ã«æˆ»ã‚Šã¾ã™ã€‚\_q\x
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnUpdateComplete.OpenURL
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-\![open,browser,iget_property,currentghost.shelllist.current.craftmanurlj]
-icall,__offset,m,0jƒVƒFƒ‹‚Ì”z•zŒ³URL‚ğŠJ‚¢‚Ä‚¢‚Ü‚·...
+ï¼ŠOnUpdateComplete.OpenURL
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+\![open,browser,ï¼ˆget_property,currentghost.shelllist.current.craftmanurlï¼‰]
+ï¼ˆcall,__offset,m,0ï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLã‚’é–‹ã„ã¦ã„ã¾ã™...
 \_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnNarCreating
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0jnar‚ğì‚Á‚Ä‚¢‚Ü‚·...
+ï¼ŠOnNarCreating
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰narã‚’ä½œã£ã¦ã„ã¾ã™...
 
 
 
-–OnNarCreated
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0jnar‚ğì‚è‚Ü‚µ‚½B\n[150]
-icall,__offset,mjƒtƒ@ƒCƒ‹‚ÌŠİ:\n
-icall,__offset,mj\_?iR1j\_?
+ï¼ŠOnNarCreated
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰narã‚’ä½œã‚Šã¾ã—ãŸã€‚\n[150]
+ï¼ˆcall,__offset,mï¼‰ãƒ•ã‚¡ã‚¤ãƒ«ã®æ‰€åœ¨:\n
+ï¼ˆcall,__offset,mï¼‰\_?ï¼ˆR1ï¼‰\_?
 \_q\x
-\![raise,’†’f‚©‚çÄŠJ]
+\![raise,ä¸­æ–­ã‹ã‚‰å†é–‹]
 
 
 
-–OnKeyPress
-„‘€ì‚ÅƒXƒLƒbƒv‹y‚ÑƒI[ƒg‰ğœ	iƒXƒLƒbƒvj==1||iƒI[ƒgj==1
-„KeyPressCommand_Check_Pre	iKeyPressCommand_AcceptingInputsj==1
-„iƒQ[ƒ€IDj.i‚q‚Oj‚ª‰Ÿ‚³‚ê‚½
-”’PŒêŒQuyƒtƒHƒ‹ƒ_–¼z.KeyPressCommandv‚ÉŒŸ’m‚µ‚½‚¢ƒRƒ}ƒ“ƒh‚ÆŒŸ’mŒã‚ÌƒWƒƒƒ“ƒvæƒVƒiƒŠƒI–¼‚ğ‹Lq‚·‚é@”¼ŠpƒJƒ“ƒ}‹æØ‚è
-”’PŒêŒQ“à‚Ì¶‚©‚ç‚P‚Â‚¸‚ÂŒŸØ‚µA‡’v‚µ‚½‚çŒŸØI—¹‚µ‚Ü‚·
+ï¼ŠOnKeyPress
+ï¼æ“ä½œã§ã‚¹ã‚­ãƒƒãƒ—åŠã³ã‚ªãƒ¼ãƒˆè§£é™¤	ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1||ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1
+ï¼KeyPressCommand_Check_Pre	ï¼ˆKeyPressCommand_AcceptingInputsï¼‰==1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼ï¼‰ãŒæŠ¼ã•ã‚ŒãŸ
+ï¼ƒå˜èªç¾¤ã€Œã€ãƒ•ã‚©ãƒ«ãƒ€åã€‘.KeyPressCommandã€ã«æ¤œçŸ¥ã—ãŸã„ã‚³ãƒãƒ³ãƒ‰ã¨æ¤œçŸ¥å¾Œã®ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã‚·ãƒŠãƒªã‚ªåã‚’è¨˜è¿°ã™ã‚‹ã€€åŠè§’ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Š
+ï¼ƒå˜èªç¾¤å†…ã®å·¦ã‹ã‚‰ï¼‘ã¤ãšã¤æ¤œè¨¼ã—ã€åˆè‡´ã—ãŸã‚‰æ¤œè¨¼çµ‚äº†ã—ã¾ã™
 
-”y—áz¦–`“ª‚Ì‘SŠp”‚Í‹Lq‚É‚Íæ‚é‚±‚Æ
-”—yƒtƒHƒ‹ƒ_–¼z.KeyPressCommand
-”command1,ƒVƒiƒŠƒI–¼‚P,command2,ƒVƒiƒŠƒI–¼‚Q
-”‡’vŒã‚É”ò‚ÔŠÖ”–¼FuyƒtƒHƒ‹ƒ_–¼z.ƒVƒiƒŠƒI–¼v
-”ƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg‚ªƒZ[ƒuƒf[ƒ^‚Éc‚ç‚È‚¢”ò‚Ñ•û‚ğ‚·‚é‚½‚ßA“K‹X‘Î‰‚·‚é‚±‚Æ
+ï¼ƒã€ä¾‹ã€‘â€»å†’é ­ã®å…¨è§’ï¼ƒã¯è¨˜è¿°æ™‚ã«ã¯å–ã‚‹ã“ã¨
+ï¼ƒï¼ ã€ãƒ•ã‚©ãƒ«ãƒ€åã€‘.KeyPressCommand
+ï¼ƒcommand1,ã‚·ãƒŠãƒªã‚ªåï¼‘,command2,ã‚·ãƒŠãƒªã‚ªåï¼’
+ï¼ƒåˆè‡´å¾Œã«é£›ã¶é–¢æ•°åï¼šã€Œã€ãƒ•ã‚©ãƒ«ãƒ€åã€‘.ã‚·ãƒŠãƒªã‚ªåã€
+ï¼ƒãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆãŒã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿ã«æ®‹ã‚‰ãªã„é£›ã³æ–¹ã‚’ã™ã‚‹ãŸã‚ã€é©å®œå¯¾å¿œã™ã‚‹ã“ã¨
 
 
 
-—KeyPressCommand_VarName
+ï¼ KeyPressCommand_VarName
 KeyPressCommand_FunctionNameToJump
 
 
 
-—KeyPressCommand_Initialize
-inop,iset,KeyPressCommand_InputedReverse,itimes,20,ib1jjjj
+ï¼ KeyPressCommand_Initialize
+ï¼ˆnop,ï¼ˆset,KeyPressCommand_InputedReverse,ï¼ˆtimes,20,ï¼ˆb1ï¼‰ï¼‰ï¼‰ï¼‰
 
 
 
-–KeyPressCommand_Check_Pre
-„KeyPressCommand_NoMatched	i’PŒêŒQuiƒQ[ƒ€IDj.KeyPressCommand_Listv‚Ì‘¶İj==0||ivncall,length,iƒQ[ƒ€IDj.KeyPressCommand_Listj==0
-KeyPressCommand_ThisVariableWillBeClearediwhen,i•Ï”uKeyPressCommand_InputedReversev‚Ì‘¶İj==0,iKeyPressCommand_Initializejj
-KeyPressCommand_InputedReverse	ivncall,at,R0,calcA0jivncall,substr,KeyPressCommand_InputedReverse,calcA0,calcA19j
-KeyPressCommand_InputedReverse	ivncall,erase,KeyPressCommand_InputedReverse,ƒoƒCƒg’lA1j
-KeyPressCommand_InputedForward	ivncall,reverse,KeyPressCommand_InputedReversej
-KeyPressCommand_Check	iiƒQ[ƒ€IDj.KeyPressCommand_Listj
-__tmp	isplit_resetj
-KeyPressCommand_EndCount	isplitib1jiKeyPressCommand_Checkjib1j,ib1j0ib1j0j
-„KeyPressCommand_NoMatched	iKeyPressCommand_EndCountj<=1
-KeyPressCommand_EndCount	icalc,iKeyPressCommand_EndCountj-1j
-KeyPressCommand_Count	0
-iKeyPressCommand_VarNamej	
-„KeyPressCommand_Check_Main
+ï¼ŠKeyPressCommand_Check_Pre
+ï¼KeyPressCommand_NoMatched	ï¼ˆå˜èªç¾¤ã€Œï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.KeyPressCommand_Listã€ã®å­˜åœ¨ï¼‰==0||ï¼ˆvncall,length,ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.KeyPressCommand_Listï¼‰==0
+ï¼„KeyPressCommand_ThisVariableWillBeClearedï¼ï¼ˆwhen,ï¼ˆå¤‰æ•°ã€ŒKeyPressCommand_InputedReverseã€ã®å­˜åœ¨ï¼‰==0,ï¼ˆKeyPressCommand_Initializeï¼‰ï¼‰
+ï¼„KeyPressCommand_InputedReverse	ï¼ˆvncall,at,R0,calcã€0ï¼‰ï¼ˆvncall,substr,KeyPressCommand_InputedReverse,calcã€0,calcã€19ï¼‰
+ï¼„KeyPressCommand_InputedReverse	ï¼ˆvncall,erase,KeyPressCommand_InputedReverse,ãƒã‚¤ãƒˆå€¤ã€1ï¼‰
+ï¼„KeyPressCommand_InputedForward	ï¼ˆvncall,reverse,KeyPressCommand_InputedReverseï¼‰
+ï¼„KeyPressCommand_Check	ï¼ˆï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.KeyPressCommand_Listï¼‰
+ï¼„__tmp	ï¼ˆsplit_resetï¼‰
+ï¼„KeyPressCommand_EndCount	ï¼ˆsplitï¼ˆb1ï¼‰ï¼ˆKeyPressCommand_Checkï¼‰ï¼ˆb1ï¼‰,ï¼ˆb1ï¼‰0ï¼ˆb1ï¼‰0ï¼‰
+ï¼KeyPressCommand_NoMatched	ï¼ˆKeyPressCommand_EndCountï¼‰<=1
+ï¼„KeyPressCommand_EndCount	ï¼ˆcalc,ï¼ˆKeyPressCommand_EndCountï¼‰-1ï¼‰
+ï¼„KeyPressCommand_Count	0
+ï¼„ï¼ˆKeyPressCommand_VarNameï¼‰	
+ï¼KeyPressCommand_Check_Main
 
 
 
-–KeyPressCommand_Check_Main
-KeyPressCommand_Searchivncall,count,KeyPressCommand_InputedForward,SiKeyPressCommand_Countjj>=1
-KeyPressCommand_Count	icalc,iKeyPressCommand_Countj+1j
-KeyPressCommand_ThisVariableWillBeCleared	iwhen,iKeyPressCommand_Searchj==1,ivncall,set,KeyPressCommand_VarName,SiKeyPressCommand_Countjjj
-„KeyPressCommand_Matchedi•Ï”uiKeyPressCommand_VarNamejv‚Ì‘¶İj==1&&ivncall,length,iKeyPressCommand_VarNamejj>0
-KeyPressCommand_Count	icalc,iKeyPressCommand_Countj+1j
-„KeyPressCommand_NoMatchediKeyPressCommand_EndCountj<iKeyPressCommand_Countj
-„KeyPressCommand_Check_Main
+ï¼ŠKeyPressCommand_Check_Main
+ï¼„KeyPressCommand_Searchï¼ï¼ˆvncall,count,KeyPressCommand_InputedForward,Sï¼ˆKeyPressCommand_Countï¼‰ï¼‰>=1
+ï¼„KeyPressCommand_Count	ï¼ˆcalc,ï¼ˆKeyPressCommand_Countï¼‰+1ï¼‰
+ï¼„KeyPressCommand_ThisVariableWillBeCleared	ï¼ˆwhen,ï¼ˆKeyPressCommand_Searchï¼‰==1,ï¼ˆvncall,set,KeyPressCommand_VarName,Sï¼ˆKeyPressCommand_Countï¼‰ï¼‰ï¼‰
+ï¼KeyPressCommand_Matchedï¼ï¼ˆå¤‰æ•°ã€Œï¼ˆKeyPressCommand_VarNameï¼‰ã€ã®å­˜åœ¨ï¼‰==1&&ï¼ˆvncall,length,ï¼ˆKeyPressCommand_VarNameï¼‰ï¼‰>0
+ï¼„KeyPressCommand_Count	ï¼ˆcalc,ï¼ˆKeyPressCommand_Countï¼‰+1ï¼‰
+ï¼KeyPressCommand_NoMatchedï¼ï¼ˆKeyPressCommand_EndCountï¼‰<ï¼ˆKeyPressCommand_Countï¼‰
+ï¼KeyPressCommand_Check_Main
 
 
 
-–KeyPressCommand_NoMatched
-KeyPressCommand_Check	
-KeyPressCommand_Count	
-KeyPressCommand_EndCount	
-KeyPressCommand_InputedForward	
-KeyPressCommand_Search	
-iKeyPressCommand_VarNamej	
+ï¼ŠKeyPressCommand_NoMatched
+ï¼„KeyPressCommand_Check	
+ï¼„KeyPressCommand_Count	
+ï¼„KeyPressCommand_EndCount	
+ï¼„KeyPressCommand_InputedForward	
+ï¼„KeyPressCommand_Search	
+ï¼„ï¼ˆKeyPressCommand_VarNameï¼‰	
 
 
 
-–KeyPressCommand_Matched
-KeyPressCommand_AcceptingInputs	
-KeyPressCommand_Check	
-KeyPressCommand_Count	
-KeyPressCommand_EndCount	
-KeyPressCommand_InputedForward	
-KeyPressCommand_InputedReverse	
-KeyPressCommand_Search	
-„iƒQ[ƒ€IDj.iiKeyPressCommand_VarNamejj
+ï¼ŠKeyPressCommand_Matched
+ï¼„KeyPressCommand_AcceptingInputs	
+ï¼„KeyPressCommand_Check	
+ï¼„KeyPressCommand_Count	
+ï¼„KeyPressCommand_EndCount	
+ï¼„KeyPressCommand_InputedForward	
+ï¼„KeyPressCommand_InputedReverse	
+ï¼„KeyPressCommand_Search	
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼ˆKeyPressCommand_VarNameï¼‰ï¼‰
 
 
 
-–OnMouseClick
-„OnUnstacking	icompare,i‚q‚Sj,unstackj==1&&i‚q‚Tj==0&&icountAiStatusjAtalkingj==0&&icountAiStatusjApassivej==0&&icountAiStatusjAinductionj==0&&icountAiStatusjAtimecriticalj==0&&icountAiStatusjAonlinej==0&&icountAiStatusjAchoosingj==0&&icountAiStatusjAminimizingj==0
-„‘€ì‚ÅƒXƒLƒbƒv‹y‚ÑƒI[ƒg‰ğœ	iƒXƒLƒbƒvj==1||iƒI[ƒgj==1
-„ƒƒjƒ…[.I—¹ƒ_ƒCƒAƒƒO	icompare,i‚q‚Sj,closej==1&&i‚q‚Tj==0
-„ƒƒjƒ…[.Å¬‰»	icompare,i‚q‚Sj,minimizej==1&&i‚q‚Tj==0
-„ƒƒjƒ…[.‚ê‚ ‚Ç‚ß	icompare,i‚q‚Sj,readmej==1&&i‚q‚Tj==0
-„iƒQ[ƒ€IDj.i‚q‚Sj¶ƒNƒŠƒbƒN	i‚q‚Tj==0&&iƒ}ƒEƒXó•t_ƒNƒŠƒbƒNj==1
-„iƒQ[ƒ€IDj.i‚q‚Sj‰EƒNƒŠƒbƒN	i‚q‚Tj==1&&iƒ}ƒEƒXó•t_ƒNƒŠƒbƒNj==1
+ï¼ŠOnMouseClick
+ï¼OnUnstacking	ï¼ˆcompare,ï¼ˆï¼²ï¼”ï¼‰,unstackï¼‰==1&&ï¼ˆï¼²ï¼•ï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€talkingï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€passiveï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€inductionï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€timecriticalï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€onlineï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€choosingï¼‰==0&&ï¼ˆcountã€ï¼ˆStatusï¼‰ã€minimizingï¼‰==0
+ï¼æ“ä½œã§ã‚¹ã‚­ãƒƒãƒ—åŠã³ã‚ªãƒ¼ãƒˆè§£é™¤	ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1||ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1
+ï¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼.çµ‚äº†ãƒ€ã‚¤ã‚¢ãƒ­ã‚°	ï¼ˆcompare,ï¼ˆï¼²ï¼”ï¼‰,closeï¼‰==1&&ï¼ˆï¼²ï¼•ï¼‰==0
+ï¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼.æœ€å°åŒ–	ï¼ˆcompare,ï¼ˆï¼²ï¼”ï¼‰,minimizeï¼‰==1&&ï¼ˆï¼²ï¼•ï¼‰==0
+ï¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼.ã‚Œã‚ã©ã‚	ï¼ˆcompare,ï¼ˆï¼²ï¼”ï¼‰,readmeï¼‰==1&&ï¼ˆï¼²ï¼•ï¼‰==0
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼”ï¼‰å·¦ã‚¯ãƒªãƒƒã‚¯	ï¼ˆï¼²ï¼•ï¼‰==0&&ï¼ˆãƒã‚¦ã‚¹å—ä»˜_ã‚¯ãƒªãƒƒã‚¯ï¼‰==1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼”ï¼‰å³ã‚¯ãƒªãƒƒã‚¯	ï¼ˆï¼²ï¼•ï¼‰==1&&ï¼ˆãƒã‚¦ã‚¹å—ä»˜_ã‚¯ãƒªãƒƒã‚¯ï¼‰==1
 
 
 
-–OnMouseDoubleClick
-„‘€ì‚ÅƒXƒLƒbƒv‹y‚ÑƒI[ƒg‰ğœ	iƒXƒLƒbƒvj==1||iƒI[ƒgj==1
-„iƒQ[ƒ€IDj.i‚q‚Sj‚Â‚Â‚©‚ê	iƒ}ƒEƒXó•t_‚Â‚Â‚©‚êj==1
+ï¼ŠOnMouseDoubleClick
+ï¼æ“ä½œã§ã‚¹ã‚­ãƒƒãƒ—åŠã³ã‚ªãƒ¼ãƒˆè§£é™¤	ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1||ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼”ï¼‰ã¤ã¤ã‹ã‚Œ	ï¼ˆãƒã‚¦ã‚¹å—ä»˜_ã¤ã¤ã‹ã‚Œï¼‰==1
 
 
 
-–‚È‚Å‚ç‚ê‚Ì”½‰
-„‘€ì‚ÅƒXƒLƒbƒv‹y‚ÑƒI[ƒg‰ğœ	iƒXƒLƒbƒvj==1||iƒI[ƒgj==1
-„iƒQ[ƒ€IDj.i‚q‚Sj‚È‚Å‚ç‚ê	iƒ}ƒEƒXó•t_‚È‚Å‚ç‚êj==1
+ï¼Šãªã§ã‚‰ã‚Œæ™‚ã®åå¿œ
+ï¼æ“ä½œã§ã‚¹ã‚­ãƒƒãƒ—åŠã³ã‚ªãƒ¼ãƒˆè§£é™¤	ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1||ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼”ï¼‰ãªã§ã‚‰ã‚Œ	ï¼ˆãƒã‚¦ã‚¹å—ä»˜_ãªã§ã‚‰ã‚Œï¼‰==1
 
 
 
-–OnMouseWheel	icountib1jiStatusjib1jtalkingj==0
-„‘€ì‚ÅƒXƒLƒbƒv‹y‚ÑƒI[ƒg‰ğœ	iƒXƒLƒbƒvj==1||iƒI[ƒgj==1
-„iƒQ[ƒ€IDj.i‚q‚Sj‚±‚ë‚±‚ëã	i‚q‚Qj>0&&iƒ}ƒEƒXó•t_‚±‚ë‚±‚ëj==1
-„iƒQ[ƒ€IDj.i‚q‚Sj‚±‚ë‚±‚ë‰º	iƒ}ƒEƒXó•t_‚±‚ë‚±‚ëj==1
-„iƒQ[ƒ€IDj.i‚q‚Sj‚±‚ë‚±‚ë	iƒ}ƒEƒXó•t_‚±‚ë‚±‚ëj==1
+ï¼ŠOnMouseWheel	ï¼ˆcountï¼ˆb1ï¼‰ï¼ˆStatusï¼‰ï¼ˆb1ï¼‰talkingï¼‰==0
+ï¼æ“ä½œã§ã‚¹ã‚­ãƒƒãƒ—åŠã³ã‚ªãƒ¼ãƒˆè§£é™¤	ï¼ˆã‚¹ã‚­ãƒƒãƒ—ï¼‰==1||ï¼ˆã‚ªãƒ¼ãƒˆï¼‰==1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼”ï¼‰ã“ã‚ã“ã‚ä¸Š	ï¼ˆï¼²ï¼’ï¼‰>0&&ï¼ˆãƒã‚¦ã‚¹å—ä»˜_ã“ã‚ã“ã‚ï¼‰==1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼”ï¼‰ã“ã‚ã“ã‚ä¸‹	ï¼ˆãƒã‚¦ã‚¹å—ä»˜_ã“ã‚ã“ã‚ï¼‰==1
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ï¼ˆï¼²ï¼”ï¼‰ã“ã‚ã“ã‚	ï¼ˆãƒã‚¦ã‚¹å—ä»˜_ã“ã‚ã“ã‚ï¼‰==1
 
 
 
-–OnUpdateOtherComplete
-•`‰æ’†1	|
-•`‰æ’†2	|
-•`‰æ’†3	|
-ƒXƒNƒŠƒvƒg‚Ìˆê”Ô“ª	iˆê‘Ì‰»_ƒEƒFƒCƒgj
-„i’†’f‰ÓŠj
-„iƒQ[ƒ€IDj.‹N“®
-„master.‹N“®
+ï¼ŠOnUpdateOtherComplete
+ï¼„æç”»ä¸­1	|
+ï¼„æç”»ä¸­2	|
+ï¼„æç”»ä¸­3	|
+ï¼„ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®ä¸€ç•ªé ­	ï¼ˆä¸€ä½“åŒ–_ã‚¦ã‚§ã‚¤ãƒˆï¼‰
+ï¼ï¼ˆä¸­æ–­ç®‡æ‰€ï¼‰
+ï¼ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.èµ·å‹•
+ï¼master.èµ·å‹•
 
 
 
-–OnChoiceSelect
-„iR0j
-„ƒWƒƒƒ“ƒvæ‚ª–³‚¢
+ï¼ŠOnChoiceSelect
+ï¼ï¼ˆR0ï¼‰
+ï¼ã‚¸ãƒ£ãƒ³ãƒ—å…ˆãŒç„¡ã„
 
 
 
-–OnAnchorSelect
-„iR0j
-„ƒWƒƒƒ“ƒvæ‚ª–³‚¢
+ï¼ŠOnAnchorSelect
+ï¼ï¼ˆR0ï¼‰
+ï¼ã‚¸ãƒ£ãƒ³ãƒ—å…ˆãŒç„¡ã„
 
 
 
-–ƒWƒƒƒ“ƒvæ‚ª–³‚¢
-„ƒWƒƒƒ“ƒvæ‚ª–³‚¢‚µƒQ[ƒ€ID‚Ì‹N“®‚à‚È‚¢	i•¶uiƒQ[ƒ€IDj.‹N“®v‚Ì‘¶İj==0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0j’†’f‰ÓŠ‚©‚ç‚ÌÄŠJ‚É¸”s‚µ‚Ü‚µ‚½B\n
-icall,__offset,mjƒ^ƒCƒgƒ‹‚É–ß‚è‚Ü‚·B
+ï¼Šã‚¸ãƒ£ãƒ³ãƒ—å…ˆãŒç„¡ã„
+ï¼ã‚¸ãƒ£ãƒ³ãƒ—å…ˆãŒç„¡ã„ã—ã‚²ãƒ¼ãƒ IDã®èµ·å‹•ã‚‚ãªã„	ï¼ˆæ–‡ã€Œï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.èµ·å‹•ã€ã®å­˜åœ¨ï¼‰==0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ä¸­æ–­ç®‡æ‰€ã‹ã‚‰ã®å†é–‹ã«å¤±æ•—ã—ã¾ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚Šã¾ã™ã€‚
 \_q\x
-\![raise,iƒQ[ƒ€IDj.‹N“®]
+\![raise,ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.èµ·å‹•]
 
 
 
-–ƒWƒƒƒ“ƒvæ‚ª–³‚¢‚µƒQ[ƒ€ID‚Ì‹N“®‚à‚È‚¢
-„ƒQ[ƒ€‚ğ‹N“®‚Å‚«‚È‚¢‚µƒ}ƒXƒ^[ƒVƒFƒ‹‚à‚È‚¢	i“±“üÏ‚İƒVƒFƒ‹umasterv‚Ì‘¶İj==0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶İŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0j’†’f‰ÓŠ‚©‚ç‚ÌÄŠJ‚É¸”s‚µ‚Ü‚µ‚½B\n
-icall,__offset,mj‹N“®ƒCƒxƒ“ƒg‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B\n
-icall,__offset,mjƒVƒFƒ‹‚ğmaster‚É•ÏX‚µ‚Ü‚·B
+ï¼Šã‚¸ãƒ£ãƒ³ãƒ—å…ˆãŒç„¡ã„ã—ã‚²ãƒ¼ãƒ IDã®èµ·å‹•ã‚‚ãªã„
+ï¼ã‚²ãƒ¼ãƒ ã‚’èµ·å‹•ã§ããªã„ã—ãƒã‚¹ã‚¿ãƒ¼ã‚·ã‚§ãƒ«ã‚‚ãªã„	ï¼ˆå°å…¥æ¸ˆã¿ã‚·ã‚§ãƒ«ã€Œmasterã€ã®å­˜åœ¨ï¼‰==0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ä¸­æ–­ç®‡æ‰€ã‹ã‚‰ã®å†é–‹ã«å¤±æ•—ã—ã¾ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰èµ·å‹•ã‚¤ãƒ™ãƒ³ãƒˆãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã‚’masterã«å¤‰æ›´ã—ã¾ã™ã€‚
 \_q\x
 \![change,shell,master,--option=raise-event]
 

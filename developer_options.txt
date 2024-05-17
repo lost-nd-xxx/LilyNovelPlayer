@@ -1,2 +1,4 @@
-LilyNovelPlayerBallon,noupdate
+LilyNovelPlayerBallon/,noupdate
+html/,nonar,noupdate
+readme.md,nonar,noupdate
 //developer_options.txt,nonar,noupdate

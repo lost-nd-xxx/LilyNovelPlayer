@@ -1,197 +1,197 @@
-”İ’è«‘
-”‚È‚¢€–Ú‚Íghost/master/dic_settings_default.txt‚Ì‚à‚Ì‚ªg‚í‚ê‚é
-”g‚í‚È‚¢€–Ú‚ÍAÁ‚·‚©ƒRƒƒ“ƒgƒAƒEƒgi—‚ğŠÜ‚ß‚ÄÁ‚·‚±‚Æj
+ï¼ƒè¨­å®šè¾æ›¸
+ï¼ƒãªã„é …ç›®ã¯ghost/master/dic_settings_default.txtã®ã‚‚ã®ãŒä½¿ã‚ã‚Œã‚‹
+ï¼ƒä½¿ã‚ãªã„é …ç›®ã¯ã€æ¶ˆã™ã‹ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆï¼ˆï¼ ã‚’å«ã‚ã¦æ¶ˆã™ã“ã¨ï¼‰
 
 
 
-”—master.„§ƒoƒ‹[ƒ“
-”LilyNovelPlayer—pƒoƒ‹[ƒ“
-”g‚¤ƒoƒ‹[ƒ“w’è
+ï¼ƒï¼ master.æ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³
+ï¼ƒLilyNovelPlayerç”¨ãƒãƒ«ãƒ¼ãƒ³
+ï¼ƒä½¿ã†ãƒãƒ«ãƒ¼ãƒ³æŒ‡å®š
 
 
 
-—master.’Ê’m—ÌˆæƒAƒCƒRƒ“
+ï¼ master.é€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³
 lnp_icon.ico
-”w’è‚µ‚½ƒAƒCƒRƒ“ƒtƒ@ƒCƒ‹‚ª’Ê’m—Ìˆæiƒ^ƒXƒNƒgƒŒƒCj‚ÌƒAƒCƒRƒ“‚É‚È‚é
-”ƒtƒ@ƒCƒ‹–¼‚É‚ÍA[Às‚µ‚½ƒS[ƒXƒg‚ÌƒtƒHƒ‹ƒ_]‚©‚çA‚Ü‚½‚Í[Às‚µ‚½ƒS[ƒXƒg‚ÌƒtƒHƒ‹ƒ_]/ghost/master‚©‚ç‚Ì‘Š‘ÎƒpƒX‚ªg—p‰Â”\
+ï¼ƒæŒ‡å®šã—ãŸã‚¢ã‚¤ã‚³ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«ãŒé€šçŸ¥é ˜åŸŸï¼ˆã‚¿ã‚¹ã‚¯ãƒˆãƒ¬ã‚¤ï¼‰ã®ã‚¢ã‚¤ã‚³ãƒ³ã«ãªã‚‹
+ï¼ƒãƒ•ã‚¡ã‚¤ãƒ«åã«ã¯ã€[å®Ÿè¡Œã—ãŸã‚´ãƒ¼ã‚¹ãƒˆã®ãƒ•ã‚©ãƒ«ãƒ€]ã‹ã‚‰ã€ã¾ãŸã¯[å®Ÿè¡Œã—ãŸã‚´ãƒ¼ã‚¹ãƒˆã®ãƒ•ã‚©ãƒ«ãƒ€]/ghost/masterã‹ã‚‰ã®ç›¸å¯¾ãƒ‘ã‚¹ãŒä½¿ç”¨å¯èƒ½
 
-—master.’Ê’m—ÌˆæƒAƒCƒRƒ“ƒeƒLƒXƒg
-master‚Ì‚³‚ñ‚Õ‚é‚°[‚Ş/Lily Novel Player
-”’Ê’m—ÌˆæƒAƒCƒRƒ“‚Éƒ}ƒEƒX‚ğd‚Ë‚½‚Æ‚«‚Ì•\¦
-
-
-
-—master.ƒNƒŠƒbƒN‘Ò‚¿ƒ}[ƒJ[
-iwhenAƒÓ
-iƒnƒCƒh’†j!=1&&iƒoƒbƒNƒƒO’†j!=1&&iƒƒjƒ…[’†j!=1&&i•Ï”umaster.ƒNƒŠƒbƒN‘Ò‚¿ƒ}[ƒJ[İ’èv‚Ì‘¶İj==1AƒÓ
-imaster.ƒNƒŠƒbƒN‘Ò‚¿ƒ}[ƒJ[İ’èjAƒÓ
-i__default.ƒNƒŠƒbƒN‘Ò‚¿ƒ}[ƒJ[jƒÓ
-j
-”•Ï”‚âó‘Ô‚É‰‚¶‚Ä’†g‚ğ•Ï‚¦‚½‚¢
-”‚±‚ê‚Í“Áê‚Èó‘Ô‚ÌˆÈŠO••Ï”‚ª‘¶İ‚·‚éA‚ğ–‚½‚¹‚Î‚»‚¿‚ç‚ğg‚¤A‚Æ‚¢‚¤—á
+ï¼ master.é€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆ
+masterã®ã•ã‚“ã·ã‚‹ã’ãƒ¼ã‚€/Lily Novel Player
+ï¼ƒé€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³ã«ãƒã‚¦ã‚¹ã‚’é‡ã­ãŸã¨ãã®è¡¨ç¤º
 
 
 
-—master.ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“
+ï¼ master.ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ãƒãƒ¼ã‚«ãƒ¼
+ï¼ˆwhenã€Ï†
+ï¼ˆãƒã‚¤ãƒ‰ä¸­ï¼‰!=1&&ï¼ˆãƒãƒƒã‚¯ãƒ­ã‚°ä¸­ï¼‰!=1&&ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸­ï¼‰!=1&&ï¼ˆå¤‰æ•°ã€Œmaster.ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ãƒãƒ¼ã‚«ãƒ¼è¨­å®šã€ã®å­˜åœ¨ï¼‰==1ã€Ï†
+ï¼ˆmaster.ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ãƒãƒ¼ã‚«ãƒ¼è¨­å®šï¼‰ã€Ï†
+ï¼ˆ__default.ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ãƒãƒ¼ã‚«ãƒ¼ï¼‰Ï†
+ï¼‰
+ï¼ƒå¤‰æ•°ã‚„çŠ¶æ…‹ã«å¿œã˜ã¦ä¸­èº«ã‚’å¤‰ãˆãŸã„
+ï¼ƒã“ã‚Œã¯ç‰¹æ®ŠãªçŠ¶æ…‹ã®æ™‚ä»¥å¤–ï¼†å¤‰æ•°ãŒå­˜åœ¨ã™ã‚‹ã€ã‚’æº€ãŸã›ã°ãã¡ã‚‰ã‚’ä½¿ã†ã€ã¨ã„ã†ä¾‹
+
+
+
+ï¼ master.ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³
 \_b["scenarios/master/resources/nowloading.png",inline,--option=fixed,--option=foreground]
-”ƒ[ƒfƒBƒ“ƒO‚Ì•\¦
+ï¼ƒãƒ­ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°æ™‚ã®è¡¨ç¤º
 
 
 
-—master.Å‘åƒZ[ƒuƒXƒƒbƒg”
+ï¼ master.æœ€å¤§ã‚»ãƒ¼ãƒ–ã‚¹ãƒ­ãƒƒãƒˆæ•°
 20
-”‘½‚¢‚Ù‚Çƒy[ƒW”‚à‘‚¦‚é
-”ãŒÀ100@’´‚¦‚Ä‚à100‚É•ÏX‚³‚ê‚é
-”Šî–{ƒŒƒCƒAƒEƒg‚ğg‚¤ê‡‚Ì‚İƒXƒƒbƒg”İ’è‚ªŠÖŒW‚ ‚è‚Ü‚·
-”ƒŒƒCƒAƒEƒg‚ğ‰ü‘¢‚·‚éê‡‚ÍƒXƒƒbƒg”‚Ìİ’è‚ªŠÖŒW‚È‚¢‚©‚çãŒÀ‚ÌˆÓ–¡‚ª‚È‚¢
-”ƒ†[ƒU‚ÌˆÓv‚Å‚ÌƒZ[ƒu‚ğ‚³‚¹‚½‚­‚È‚¢‚ÍA
-”ƒ^ƒOuiƒƒjƒ…[•s‰Âjv‚È‚Ç‚ÅƒZ[ƒu‚¨‚æ‚Ñƒ[ƒh©‘Ì‚ğ–³Œø‚É‚·‚é
+ï¼ƒå¤šã„ã»ã©ãƒšãƒ¼ã‚¸æ•°ã‚‚å¢—ãˆã‚‹
+ï¼ƒä¸Šé™100ã€€è¶…ãˆã¦ã‚‚100ã«å¤‰æ›´ã•ã‚Œã‚‹
+ï¼ƒåŸºæœ¬ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã‚’ä½¿ã†å ´åˆã®ã¿ã‚¹ãƒ­ãƒƒãƒˆæ•°è¨­å®šãŒé–¢ä¿‚ã‚ã‚Šã¾ã™
+ï¼ƒãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã‚’æ”¹é€ ã™ã‚‹å ´åˆã¯ã‚¹ãƒ­ãƒƒãƒˆæ•°ã®è¨­å®šãŒé–¢ä¿‚ãªã„ã‹ã‚‰ä¸Šé™ã®æ„å‘³ãŒãªã„
+ï¼ƒãƒ¦ãƒ¼ã‚¶ã®æ„æ€ã§ã®ã‚»ãƒ¼ãƒ–ã‚’ã•ã›ãŸããªã„æ™‚ã¯ã€
+ï¼ƒã‚¿ã‚°ã€Œï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰ã€ãªã©ã§ã‚»ãƒ¼ãƒ–ãŠã‚ˆã³ãƒ­ãƒ¼ãƒ‰è‡ªä½“ã‚’ç„¡åŠ¹ã«ã™ã‚‹
 
 
 
-—master.ƒƒjƒ…[”wŒi
+ï¼ master.ãƒ¡ãƒ‹ãƒ¥ãƒ¼èƒŒæ™¯
 assets/preset/color_dark.png
-”LNPŠù’èUI‚Ì”X‚Ìƒƒjƒ…[‹y‚ÑƒVƒXƒeƒ€ƒƒbƒZ[ƒW‚Ì”wŒiw’è
-—master.ƒZ[ƒu”wŒi
+ï¼ƒLNPæ—¢å®šUIã®è«¸ã€…ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼åŠã³ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®èƒŒæ™¯æŒ‡å®š
+ï¼ master.ã‚»ãƒ¼ãƒ–èƒŒæ™¯
 assets/preset/menu_save.png
-”LNPŠù’èUI‚ğg‚¤‚ÌAƒZ[ƒuƒƒjƒ…[‚ğg‚¤‚Ì”wŒiw’è
-—master.ƒ[ƒh”wŒi
+ï¼ƒLNPæ—¢å®šUIã‚’ä½¿ã†æ™‚ã®ã€ã‚»ãƒ¼ãƒ–ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯æŒ‡å®š
+ï¼ master.ãƒ­ãƒ¼ãƒ‰èƒŒæ™¯
 assets/preset/menu_load.png
-”LNPŠù’èUI‚ğg‚¤‚ÌAƒ[ƒhƒƒjƒ…[‚ğg‚¤‚Ì”wŒiw’è
-—master.ƒRƒ“ƒtƒBƒO”wŒi
+ï¼ƒLNPæ—¢å®šUIã‚’ä½¿ã†æ™‚ã®ã€ãƒ­ãƒ¼ãƒ‰ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯æŒ‡å®š
+ï¼ master.ã‚³ãƒ³ãƒ•ã‚£ã‚°èƒŒæ™¯
 assets/preset/menu_config.png
-”LNPŠù’èUI‚ğg‚¤‚ÌAƒRƒ“ƒtƒBƒOƒƒjƒ…[‚ğg‚¤‚Ì”wŒiw’è
+ï¼ƒLNPæ—¢å®šUIã‚’ä½¿ã†æ™‚ã®ã€ã‚³ãƒ³ãƒ•ã‚£ã‚°ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†æ™‚ã®èƒŒæ™¯æŒ‡å®š
 
 
 
-—master.menu.sidebar.bitmap.filename
+ï¼ master.menu.sidebar.bitmap.filename
 assets/preset/ownerdraw_sidebar.png
-”ƒTƒCƒhƒo[•\¦‰æ‘œƒtƒ@ƒCƒ‹–¼
-—master.menu.background.bitmap.filename
+ï¼ƒã‚µã‚¤ãƒ‰ãƒãƒ¼è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å
+ï¼ master.menu.background.bitmap.filename
 assets/preset/ownerdraw_background.png
-”ƒoƒbƒNƒOƒ‰ƒEƒ“ƒh•\¦‰æ‘œƒtƒ@ƒCƒ‹–¼
-—master.menu.foreground.bitmap.filename
+ï¼ƒãƒãƒƒã‚¯ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å
+ï¼ master.menu.foreground.bitmap.filename
 assets/preset/ownerdraw_foreground.png
-”ƒtƒHƒAƒOƒ‰ƒEƒ“ƒh•\¦‰æ‘œƒtƒ@ƒCƒ‹–¼
+ï¼ƒãƒ•ã‚©ã‚¢ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å
 
 
 
-—master.menu.background.font.color.r
+ï¼ master.menu.background.font.color.r
 255
-”‰EƒNƒŠƒbƒNƒƒjƒ…[@”ñ‘I‘ğ’†•¶šFÔ(0`255)
-—master.menu.background.font.color.g
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã€€éé¸æŠä¸­æ–‡å­—è‰²èµ¤(0ï½255)
+ï¼ master.menu.background.font.color.g
 255
-”‰EƒNƒŠƒbƒNƒƒjƒ…[@”ñ‘I‘ğ’†•¶šF—Î(0`255)
-—master.menu.background.font.color.b
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã€€éé¸æŠä¸­æ–‡å­—è‰²ç·‘(0ï½255)
+ï¼ master.menu.background.font.color.b
 255
-”‰EƒNƒŠƒbƒNƒƒjƒ…[@”ñ‘I‘ğ’†•¶šFÂ(0`255)
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã€€éé¸æŠä¸­æ–‡å­—è‰²é’(0ï½255)
 
 
 
-—master.menu.foreground.font.color.r
+ï¼ master.menu.foreground.font.color.r
 255
-”‰EƒNƒŠƒbƒNƒƒjƒ…[@‘I‘ğ’†•¶šFÔ(0`255)
-—master.menu.foreground.font.color.g
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã€€é¸æŠä¸­æ–‡å­—è‰²èµ¤(0ï½255)
+ï¼ master.menu.foreground.font.color.g
 255
-”‰EƒNƒŠƒbƒNƒƒjƒ…[@‘I‘ğ’†•¶šF—Î(0`255)
-—master.menu.foreground.font.color.b
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã€€é¸æŠä¸­æ–‡å­—è‰²ç·‘(0ï½255)
+ï¼ master.menu.foreground.font.color.b
 255
-”‰EƒNƒŠƒbƒNƒƒjƒ…[@‘I‘ğ’†•¶šFÂ(0`255)
+ï¼ƒå³ã‚¯ãƒªãƒƒã‚¯ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã€€é¸æŠä¸­æ–‡å­—è‰²é’(0ï½255)
 
 
 
-—master.fontcolor
+ï¼ master.fontcolor
 #FFFFFF
-”•’Ê‚Ì•¶š‚ÌF
-—master.visited
+ï¼ƒæ™®é€šã®æ–‡å­—ã®è‰²
+ï¼ master.visited
 #D1C4E9
-”Šù“Ç‚Ì•¶š‚ÌF
-—master.disable
+ï¼ƒæ—¢èª­ã®æ–‡å­—ã®è‰²
+ï¼ master.disable
 #75715E
-”–Ú—§‚½‚¹‚È‚¢•¶š‚ÌF
+ï¼ƒç›®ç«‹ãŸã›ãªã„æ–‡å­—ã®è‰²
 
 
 
-—master.cursorfontcolor
+ï¼ master.cursorfontcolor
 #fd971f
-”‘I‘ğ’†‘I‘ğˆ‚Ì•¶šF
-—master.cursorpencolor
+ï¼ƒé¸æŠä¸­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ master.cursorpencolor
 #fd971f
-”‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—master.cursorbrushcolor
+ï¼ƒé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ master.cursorbrushcolor
 #272822
-”‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—master.cursornotselectfontcolor
+ï¼ master.cursornotselectfontcolor
 #fd971f
-””ñ‘I‘ğ’†‘I‘ğˆ‚Ì•¶šF
-—master.cursornotselectpencolor
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ master.cursornotselectpencolor
 #fd971f
-””ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—master.cursornotselectbrushcolor
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ master.cursornotselectbrushcolor
 #272822
-””ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒéé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—master.cursorvisitedfontcolor
+ï¼ master.cursorvisitedfontcolor
 #b85d00
-”Šù“Ç‘I‘ğˆ‚Ì•¶šF
-—master.cursorvisitedpencolor
+ï¼ƒæ—¢èª­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ master.cursorvisitedpencolor
 #b85d00
-”Šù“Ç‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—master.cursorvisitedbrushcolor
+ï¼ƒæ—¢èª­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ master.cursorvisitedbrushcolor
 #272822
-”Šù“Ç‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒæ—¢èª­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—master.cursorvisitednotselectfontcolor
+ï¼ master.cursorvisitednotselectfontcolor
 #b85d00
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚Ì•¶šF
-—master.cursorvisitednotselectpencolor
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®æ–‡å­—è‰²
+ï¼ master.cursorvisitednotselectpencolor
 #b85d00
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—master.cursorvisitednotselectbrushcolor
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ master.cursorvisitednotselectbrushcolor
 #272822
-”Šù“Ç”ñ‘I‘ğ’†‘I‘ğˆ‚Ì‹éŒ`“à‚ÌF
+ï¼ƒæ—¢èª­éé¸æŠä¸­é¸æŠè‚¢ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—master.anchorfontcolor
+ï¼ master.anchorfontcolor
 #FD971F
-”‘I‘ğ’†ƒAƒ“ƒJ[‚Ì•¶šF
-—master.anchorpencolor
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®æ–‡å­—è‰²
+ï¼ master.anchorpencolor
 #FD971F
-”‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—master.anchorbrushcolor
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ master.anchorbrushcolor
 #272822
-”‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`“à‚ÌF
+ï¼ƒé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—master.anchornotselectfontcolor
+ï¼ master.anchornotselectfontcolor
 #FD971F
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚Ì•¶šF
-—master.anchornotselectpencolor
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®æ–‡å­—è‰²
+ï¼ master.anchornotselectpencolor
 #FD971F
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—master.anchornotselectbrushcolor
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ master.anchornotselectbrushcolor
 #272822
-””ñ‘I‘ğ’†ƒAƒ“ƒJ[‚Ì‹éŒ`“à‚ÌF
+ï¼ƒéé¸æŠä¸­ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢å†…ã®è‰²
 
 
 
-—master.anchorvisitedfontcolor
+ï¼ master.anchorvisitedfontcolor
 #FD971F
-”–K–âÏ‚İƒAƒ“ƒJ[‚Ì•¶šF
-—master.anchorvisitedpencolor
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®æ–‡å­—è‰²
+ï¼ master.anchorvisitedpencolor
 #FD971F
-”–K–âÏ‚İƒAƒ“ƒJ[‚Ì‹éŒ`˜g‚¨‚æ‚Ñ‰ºü‚ÌF
-—master.anchorvisitedbrushcolor
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢æ ãŠã‚ˆã³ä¸‹ç·šã®è‰²
+ï¼ master.anchorvisitedbrushcolor
 #272822
-”–K–âÏ‚İƒAƒ“ƒJ[‚Ì‹éŒ`“à‚ÌF
+ï¼ƒè¨ªå•æ¸ˆã¿ã‚¢ãƒ³ã‚«ãƒ¼ã®çŸ©å½¢å†…ã®è‰²
 
 

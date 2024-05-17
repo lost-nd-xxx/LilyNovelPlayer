@@ -1,336 +1,338 @@
-”‹N“®‚ÆI—¹
+ï¼ƒèµ·å‹•ã¨çµ‚äº†
 
 
 
-–ƒQ[ƒ€‹N“®€”õ
-”„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ¥¥‚±‚±‚©‚ç—¢X‚Ì“ÁŽê•Ï”¥¥„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-NOTIFY‚ÌŽ©“®•Û‘¶	—LŒø
-SAORIˆø”‚ÌŒvŽZ	Ž©“®
-‚È‚Å‚ç‚êŽžŽÀsƒCƒxƒ“ƒg	‚È‚Å‚ç‚êŽž‚Ì”½‰ž
-ƒg[ƒN’†‚Ì‚È‚Å‚ç‚ê”½‰ž	—LŒø
-ƒ†[ƒU–¼	ƒ†[ƒU
-‰ï˜bŽžƒT[ƒtƒFƒX–ß‚µ	–³Œø
-’‚èŠÔŠu	‚P‚O•b
-’‚èŠÔŠuŒë·	‚O“
-Ž©“®‘}“üƒEƒFƒCƒg‚Ì”{—¦	‚O“
-Ž©“®‘}“üƒEƒFƒCƒgƒ^ƒCƒv	–³Œø
-Ž©“®‰üs‘}“ü	–³Œø
-‚³‚­‚çƒXƒNƒŠƒvƒg‚É‚æ‚éƒXƒR[ƒvØ‚èŠ·‚¦Žž	
-ƒXƒR[ƒvØ‚èŠ·‚¦Žž	
-‘I‘ðŽˆI—¹Žž	
-”„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ££‚±‚±‚Ü‚Å—¢X‚Ì“ÁŽê•Ï”££„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-”„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ¥¥‚±‚±‚©‚ç‚k‚m‚o“ÆŽ©•Ï”¥¥„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-KeyPressCommand_AcceptingInputs	0
-Translate—LŒø	0
-nextÚ“ªŽ«	ƒVƒiƒŠƒI
-next”’l	‚P
-ƒI[ƒg	0
-ƒT[ƒtƒFƒX_ƒEƒBƒ“ƒhƒE	0
-ƒXƒLƒbƒv	0
-ƒnƒCƒh’†	0
-ƒoƒbƒNƒƒO’†	0
-ƒoƒbƒNƒƒOó‘Ô	0
-ƒ}ƒEƒXŽó•t_‚±‚ë‚±‚ë	0
-ƒ}ƒEƒXŽó•t_‚Â‚Â‚©‚ê	0
-ƒ}ƒEƒXŽó•t_‚È‚Å‚ç‚ê	0
-ƒ}ƒEƒXŽó•t_ƒNƒŠƒbƒN	0
-ƒƒjƒ…[’†	0
-ƒƒjƒ…[ó‘Ô.ƒI[ƒg	0
-ƒƒjƒ…[ó‘Ô.ƒMƒƒƒ‰ƒŠ[	0
-ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒZ[ƒu	0
-ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒ[ƒh	0
-ƒƒjƒ…[ó‘Ô.ƒRƒ“ƒtƒBƒO	0
-ƒƒjƒ…[ó‘Ô.ƒXƒLƒbƒv	0
-ƒƒjƒ…[ó‘Ô.ƒZ[ƒu	0
-ƒƒjƒ…[ó‘Ô.ƒ^ƒCƒgƒ‹‚É–ß‚é	0
-ƒƒjƒ…[ó‘Ô.ƒnƒCƒh	0
-ƒƒjƒ…[ó‘Ô.ƒoƒbƒNƒƒO	0
-ƒƒjƒ…[ó‘Ô.ƒ[ƒh	0
-ƒ†[ƒU“ü—ÍŽó•t’†	0
-ˆê‘Ì‰»’†	0
-’†’fÄŠJ’†	0
-’†’f‰ÓŠ	|
-Ä¶’†BGM	|
-Ä¶’†SE	|
-Ä¶’†VOICE	|
-•`‰æ’†1	|
-•`‰æ’†2	|
-•`‰æ’†3	|
-__MenuCurrent	
-•¶ŽšF‹­§	
-”„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ££‚±‚±‚Ü‚Å‚k‚m‚o“ÆŽ©•Ï”££„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
-Ž«‘ƒtƒHƒ‹ƒ_	.,scenarios/iƒQ[ƒ€IDj
-ƒXƒNƒŠƒvƒg‚Ìˆê”Ô“ª	iˆê‘Ì‰»_ƒEƒFƒCƒgj
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™
+ï¼ƒâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â–¼ã“ã“ã‹ã‚‰é‡Œã€…ã®ç‰¹æ®Šå¤‰æ•°â–¼â–¼â”€â”€â”€â”€â”€â”€â”€â”€
+ï¼„NOTIFYã®è‡ªå‹•ä¿å­˜	æœ‰åŠ¹
+ï¼„SAORIå¼•æ•°ã®è¨ˆç®—	è‡ªå‹•
+ï¼„ãªã§ã‚‰ã‚Œæ™‚å®Ÿè¡Œã‚¤ãƒ™ãƒ³ãƒˆ	ãªã§ã‚‰ã‚Œæ™‚ã®åå¿œ
+ï¼„ãƒˆãƒ¼ã‚¯ä¸­ã®ãªã§ã‚‰ã‚Œåå¿œ	æœ‰åŠ¹
+ï¼„ãƒ¦ãƒ¼ã‚¶å	ãƒ¦ãƒ¼ã‚¶
+ï¼„ä¼šè©±æ™‚ã‚µãƒ¼ãƒ•ã‚§ã‚¹æˆ»ã—	ç„¡åŠ¹
+ï¼„å–‹ã‚Šé–“éš”	ï¼‘ï¼ç§’
+ï¼„å–‹ã‚Šé–“éš”èª¤å·®	ï¼ï¼…
+ï¼„è‡ªå‹•æŒ¿å…¥ã‚¦ã‚§ã‚¤ãƒˆã®å€çŽ‡	ï¼ï¼…
+ï¼„è‡ªå‹•æŒ¿å…¥ã‚¦ã‚§ã‚¤ãƒˆã‚¿ã‚¤ãƒ—	ç„¡åŠ¹
+ï¼„è‡ªå‹•æ”¹è¡ŒæŒ¿å…¥	ç„¡åŠ¹
+ï¼„ã•ãã‚‰ã‚¹ã‚¯ãƒªãƒ—ãƒˆã«ã‚ˆã‚‹ã‚¹ã‚³ãƒ¼ãƒ—åˆ‡ã‚Šæ›ãˆæ™‚	
+ï¼„ã‚¹ã‚³ãƒ¼ãƒ—åˆ‡ã‚Šæ›ãˆæ™‚	
+ï¼„é¸æŠžè‚¢çµ‚äº†æ™‚	
+ï¼ƒâ”€â”€â”€â”€â”€â”€â”€â”€â–²â–²ã“ã“ã¾ã§é‡Œã€…ã®ç‰¹æ®Šå¤‰æ•°â–²â–²â”€â”€â”€â”€â”€â”€â”€â”€
+ï¼ƒâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â–¼ã“ã“ã‹ã‚‰ï¼¬ï¼®ï¼°ç‹¬è‡ªå¤‰æ•°â–¼â–¼â”€â”€â”€â”€â”€â”€â”€â”€
+ï¼„KeyPressCommand_AcceptingInputs	0
+ï¼„Translateæœ‰åŠ¹	0
+ï¼„nextæŽ¥é ­è¾ž	ã‚·ãƒŠãƒªã‚ª
+ï¼„nextæ•°å€¤	ï¼‘
+ï¼„ã‚ªãƒ¼ãƒˆ	0
+ï¼„ã‚µãƒ¼ãƒ•ã‚§ã‚¹_ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦	0
+ï¼„ã‚¹ã‚­ãƒƒãƒ—	0
+ï¼„ãƒã‚¤ãƒ‰ä¸­	0
+ï¼„ãƒãƒƒã‚¯ãƒ­ã‚°ä¸­	0
+ï¼„ãƒãƒƒã‚¯ãƒ­ã‚°çŠ¶æ…‹	0
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ã“ã‚ã“ã‚	0
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ã¤ã¤ã‹ã‚Œ	0
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ãªã§ã‚‰ã‚Œ	0
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ã‚¯ãƒªãƒƒã‚¯	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸­	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚ªãƒ¼ãƒˆ	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚®ãƒ£ãƒ©ãƒªãƒ¼	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ã‚»ãƒ¼ãƒ–	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ãƒ­ãƒ¼ãƒ‰	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚³ãƒ³ãƒ•ã‚£ã‚°	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¹ã‚­ãƒƒãƒ—	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚»ãƒ¼ãƒ–	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒã‚¤ãƒ‰	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒãƒƒã‚¯ãƒ­ã‚°	0
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒ­ãƒ¼ãƒ‰	0
+ï¼„ãƒ¦ãƒ¼ã‚¶å…¥åŠ›å—ä»˜ä¸­	0
+ï¼„ä¸€ä½“åŒ–ä¸­	0
+ï¼„ä¸­æ–­å†é–‹ä¸­	0
+ï¼„ä¸­æ–­ç®‡æ‰€	|
+ï¼„å†ç”Ÿä¸­BGM	|
+ï¼„å†ç”Ÿä¸­SE	|
+ï¼„å†ç”Ÿä¸­VOICE	|
+ï¼„æç”»ä¸­1	|
+ï¼„æç”»ä¸­2	|
+ï¼„æç”»ä¸­3	|
+ï¼„__MenuCurrent	
+ï¼„æ–‡å­—è‰²å¼·åˆ¶	
+ï¼ƒâ”€â”€â”€â”€â”€â”€â”€â”€â–²â–²ã“ã“ã¾ã§ï¼¬ï¼®ï¼°ç‹¬è‡ªå¤‰æ•°â–²â–²â”€â”€â”€â”€â”€â”€â”€â”€
+ï¼ƒâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â–¼ ã€€ãƒãƒ«ãƒ¼ãƒ³æƒ…å ±å–å¾—ã€€ â–¼â–¼â”€â”€â”€â”€â”€â”€â”€â”€
+ï¼„__tmp	ï¼ˆnop,ï¼ˆOnBalloonSizeGetï¼‰ï¼‰
+ï¼ƒâ”€â”€â”€â”€â”€â”€â”€â”€â–²â–² ã€€ãƒãƒ«ãƒ¼ãƒ³æƒ…å ±å–å¾—ã€€ â–²â–²â”€â”€â”€â”€â”€â”€â”€â”€
+ï¼„è¾žæ›¸ãƒ•ã‚©ãƒ«ãƒ€	.,scenarios/ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰
+ï¼„ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®ä¸€ç•ªé ­	ï¼ˆä¸€ä½“åŒ–_ã‚¦ã‚§ã‚¤ãƒˆï¼‰
 \![sound,stop]
-\![embed,OnBalloonSizeGet]
-\![set,tasktrayicon,"icall,‘¶ÝŠm”F,’Ê’m—ÌˆæƒAƒCƒRƒ“j","icall,‘¶ÝŠm”F,’Ê’m—ÌˆæƒAƒCƒRƒ“ƒeƒLƒXƒgj"]
-\![raise,ƒQ[ƒ€‹N“®€”õ‚Q]
-”Ž«‘ƒtƒHƒ‹ƒ_“Ç‚Ýž‚Ý‚ÌŒã‚Ìó‘Ô‚Åˆ—‚ði‚ß‚½‚¢‚½‚ßA‚¢‚Á‚½‚ñ‹æØ‚è
+\![set,tasktrayicon,"ï¼ˆcall,å­˜åœ¨ç¢ºèª,é€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³ï¼‰","ï¼ˆcall,å­˜åœ¨ç¢ºèª,é€šçŸ¥é ˜åŸŸã‚¢ã‚¤ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆï¼‰"]
+\![raise,ã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼’]
+ï¼ƒè¾žæ›¸ãƒ•ã‚©ãƒ«ãƒ€èª­ã¿è¾¼ã¿ã®å¾Œã®çŠ¶æ…‹ã§å‡¦ç†ã‚’é€²ã‚ãŸã„ãŸã‚ã€ã„ã£ãŸã‚“åŒºåˆ‡ã‚Š
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚Q
-ƒoƒbƒNƒƒOŠi”[	|
-•¶ŽšF.‘I‘ðŽˆ.visited	i•¶ŽšF.Šù“Ç‘I‘ðŽˆ.Žæ“¾j
-•¶ŽšF.‘I‘ðŽˆ.normal	i•¶ŽšF.‘I‘ðŽˆ.Žæ“¾j
-•¶ŽšF.ƒAƒ“ƒJ[	i•¶ŽšF.ƒAƒ“ƒJ[.Žæ“¾j
-•¶ŽšF.disable	\f[color,icall,‘¶ÝŠm”F,disablej]
-•¶ŽšF.normal	\f[color,icall,‘¶ÝŠm”F,fontcolorj]
-•¶ŽšF.visited	\f[color,icall,‘¶ÝŠm”F,visitedj]
-•¶ŽšF.current	i•¶ŽšF.normalj
-s_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_before	iwhenAi•Ï”us_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_lastv‚Ì‘¶Ýj==0A0,0,0,0,0,0Ais_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_lastjj
-s_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_last	iget_property,currentghost.shelllist.current.update_timej
-s_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_last	iwhenAi•Ï”us_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_lastv‚Ì‘¶Ýj==0A0,0,0,0,0,0Ais_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_lastjj
-SAORIˆø”‚ÌŒvŽZ	–³Œø
-notification.shell_updated	iwhenAicalc_floatAisprintf,%04d%02d%02d%02d%02d%02d,is_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_lastjj-isprintf,%04d%02d%02d%02d%02d%02d,is_iƒQ[ƒ€IDj.ƒVƒFƒ‹î•ñ.updated_beforejjj>0A1A0j
-SAORIˆø”‚ÌŒvŽZ	Ž©“®
-„ƒQ[ƒ€‹N“®€”õ‚Q‚Ì‚Q	i•Ï”us_iƒQ[ƒ€IDj.ƒOƒ[ƒoƒ‹ƒZ[ƒuv‚Ì‘¶Ýj==0
-„ƒQ[ƒ€‹N“®€”õ‚R
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼’
+ï¼„ãƒãƒƒã‚¯ãƒ­ã‚°æ ¼ç´	|
+ï¼„æ–‡å­—è‰².é¸æŠžè‚¢.visited	ï¼ˆæ–‡å­—è‰².æ—¢èª­é¸æŠžè‚¢.å–å¾—ï¼‰
+ï¼„æ–‡å­—è‰².é¸æŠžè‚¢.normal	ï¼ˆæ–‡å­—è‰².é¸æŠžè‚¢.å–å¾—ï¼‰
+ï¼„æ–‡å­—è‰².ã‚¢ãƒ³ã‚«ãƒ¼	ï¼ˆæ–‡å­—è‰².ã‚¢ãƒ³ã‚«ãƒ¼.å–å¾—ï¼‰
+ï¼„æ–‡å­—è‰².disable	\f[color,ï¼ˆcall,å­˜åœ¨ç¢ºèª,disableï¼‰]
+ï¼„æ–‡å­—è‰².normal	\f[color,ï¼ˆcall,å­˜åœ¨ç¢ºèª,fontcolorï¼‰]
+ï¼„æ–‡å­—è‰².visited	\f[color,ï¼ˆcall,å­˜åœ¨ç¢ºèª,visitedï¼‰]
+ï¼„æ–‡å­—è‰².current	ï¼ˆæ–‡å­—è‰².normalï¼‰
+ï¼„s_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_before	ï¼ˆwhenã€ï¼ˆå¤‰æ•°ã€Œs_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_lastã€ã®å­˜åœ¨ï¼‰==0ã€0,0,0,0,0,0ã€ï¼ˆs_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_lastï¼‰ï¼‰
+ï¼„s_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_last	ï¼ˆget_property,currentghost.shelllist.current.update_timeï¼‰
+ï¼„s_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_last	ï¼ˆwhenã€ï¼ˆå¤‰æ•°ã€Œs_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_lastã€ã®å­˜åœ¨ï¼‰==0ã€0,0,0,0,0,0ã€ï¼ˆs_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_lastï¼‰ï¼‰
+ï¼„SAORIå¼•æ•°ã®è¨ˆç®—	ç„¡åŠ¹
+ï¼„notification.shell_updated	ï¼ˆwhenã€ï¼ˆcalc_floatã€ï¼ˆsprintf,%04d%02d%02d%02d%02d%02d,ï¼ˆs_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_lastï¼‰ï¼‰-ï¼ˆsprintf,%04d%02d%02d%02d%02d%02d,ï¼ˆs_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚·ã‚§ãƒ«æƒ…å ±.updated_beforeï¼‰ï¼‰ï¼‰>0ã€1ã€0ï¼‰
+ï¼„SAORIå¼•æ•°ã®è¨ˆç®—	è‡ªå‹•
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼’ã®ï¼’	ï¼ˆå¤‰æ•°ã€Œs_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚°ãƒ­ãƒ¼ãƒãƒ«ã‚»ãƒ¼ãƒ–ã€ã®å­˜åœ¨ï¼‰==0
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚Q‚Ì‚Q
-s_iƒQ[ƒ€IDj.ƒOƒ[ƒoƒ‹ƒZ[ƒu	|
-s_iƒQ[ƒ€IDj.ƒI[ƒgƒZ[ƒu	|
-s_iƒQ[ƒ€IDj.Šù“Ç”»’è	|
-\![open,readme,shell,iƒQ[ƒ€IDj]
-„ƒQ[ƒ€‹N“®€”õ‚R
-”ƒOƒ[ƒoƒ‹ƒZ[ƒu‚ª–³‚¯‚ê‚Î‰Šú‰»
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼’ã®ï¼’
+ï¼„s_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚°ãƒ­ãƒ¼ãƒãƒ«ã‚»ãƒ¼ãƒ–	|
+ï¼„s_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.ã‚ªãƒ¼ãƒˆã‚»ãƒ¼ãƒ–	|
+ï¼„s_ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.æ—¢èª­åˆ¤å®š	|
+\![open,readme,shell,ï¼ˆã‚²ãƒ¼ãƒ IDï¼‰]
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“
+ï¼ƒã‚°ãƒ­ãƒ¼ãƒãƒ«ã‚»ãƒ¼ãƒ–ãŒç„¡ã‘ã‚Œã°åˆæœŸåŒ–
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R
-Translate—LŒø	1
-„ƒQ[ƒ€‹N“®€”õ‚R.ƒVƒFƒ‹‚ÉXV‚ª‚ ‚Á‚½	inotification.shell_updatedj==1
-__t	icall,‘¶ÝŠm”F,„§ƒoƒ‹[ƒ“j
-__tmp	iwhen,i•Ï”u__tv‚Ì‘¶Ýj==0,iset,__t, jj
-„ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†	ivncall,equal,ƒoƒ‹[ƒ“–¼,__tj==0
-„iƒQ[ƒ€IDj.‹N“®
-”„§ƒoƒ‹[ƒ““±“üÏ‚Ý•„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è‚µ‚Ä‚¢‚é@‚Ìê‡A•ÏX
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“
+ï¼„Translateæœ‰åŠ¹	1
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.ã‚·ã‚§ãƒ«ã«æ›´æ–°ãŒã‚ã£ãŸ	ï¼ˆnotification.shell_updatedï¼‰==1
+ï¼„__t	ï¼ˆcall,å­˜åœ¨ç¢ºèª,æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ï¼‰
+ï¼„__tmp	ï¼ˆwhen,ï¼ˆå¤‰æ•°ã€Œ__tã€ã®å­˜åœ¨ï¼‰==0,ï¼ˆset,__t, ï¼‰ï¼‰
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­	ï¼ˆvncall,equal,ãƒãƒ«ãƒ¼ãƒ³å,__tï¼‰==0
+ï¼žï¼ˆã‚²ãƒ¼ãƒ IDï¼‰.èµ·å‹•
+ï¼ƒæŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³å°Žå…¥æ¸ˆã¿ï¼†æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šã—ã¦ã„ã‚‹ã€€ã®å ´åˆã€å¤‰æ›´
 
 
 
-–ƒQ[ƒ€I—¹
+ï¼Šã‚²ãƒ¼ãƒ çµ‚äº†
 \_q
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-icall,__offset,m,0jI—¹’†‚Å‚·...
-”¥¥‚±‚±‚©‚ç—¢X‚Ì“ÁŽê•Ï”¥¥
-ƒXƒNƒŠƒvƒg‚Ìˆê”Ô“ª	
-”££‚±‚±‚Ü‚Å—¢X‚Ì“ÁŽê•Ï”££
-”¥¥‚±‚±‚©‚çLNP“ÆŽ©•Ï”¥¥
-BalloonHeight	
-BalloonWidth	
-KeyPressCommand_AcceptingInputs	
-KeyPressCommand_FunctionNameToJump	
-TalkPrefix	
-Translate—LŒø	
-__A0	
-__A3	
-__BG	
-__BackLog_BG	
-__BackLog_BackButton	
-__BackLog_MaxCount	
-__BackLog_Suffix	
-__CurrentItem	
-__CurrentPage	
-__Gallery_BGM	
-__Gallery_BackButton	
-__Gallery_Background	
-__Gallery_ButtonAll	
-__Gallery_ButtonCoordinate	
-__Gallery_ButtonHeight	
-__Gallery_ButtonWidth	
-__Gallery_CurrentPage	
-__Gallery_DisableButton	
-__Gallery_FlagNameAll	
-__Gallery_ImageAll	
-__Gallery_IsCountHalfWidth	
-__Gallery_ListName	
-__Gallery_List_EndCountPerPage	
-__Gallery_List_MaxPerPage	
-__Gallery_MaxImageCount	
-__Gallery_MaxPageCount	
-__Gallery_MaxSectionCount	
-__Gallery_OffsetX	
-__Gallery_OffsetY	
-__Gallery_PagerEndCount	
-__Gallery_PagerStartCount	
-__Gallery_SectionHeadCount	
-__Gallery_SpacingHeight	
-__Gallery_SpacingWidth	
-__Gallery_StatusAll_Joined	
-__Gallery_StatusAll_Split	
-__MaxItemCount	
-__MaxPageCount	
-__MenuCurrent	
-__count	
-__current	
-__end	
-__n	
-__start	
-__stats	
-__t	
-__textcolor	
-__titlebar	
-__tmp	
-__x	
-__x2	
-__x3	
-__x4	
-__y	
-nextÚ“ªŽ«	
-next”’l	
-ƒI[ƒg	
-ƒT[ƒtƒFƒX_ƒEƒBƒ“ƒhƒE	
-ƒXƒLƒbƒv	
-ƒoƒbƒNƒƒO’†	
-ƒoƒbƒNƒƒOŠi”[	
-ƒoƒbƒNƒƒOó‘Ô	
-ƒ}ƒEƒXŽó•t_‚±‚ë‚±‚ë	
-ƒ}ƒEƒXŽó•t_‚Â‚Â‚©‚ê	
-ƒ}ƒEƒXŽó•t_‚È‚Å‚ç‚ê	
-ƒ}ƒEƒXŽó•t_ƒNƒŠƒbƒN	
-ƒƒjƒ…[’†	
-ƒƒjƒ…[ó‘Ô.ƒI[ƒg	
-ƒƒjƒ…[ó‘Ô.ƒMƒƒƒ‰ƒŠ[	
-ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒZ[ƒu	
-ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒ[ƒh	
-ƒƒjƒ…[ó‘Ô.ƒRƒ“ƒtƒBƒO	
-ƒƒjƒ…[ó‘Ô.ƒXƒLƒbƒv	
-ƒƒjƒ…[ó‘Ô.ƒZ[ƒu	
-ƒƒjƒ…[ó‘Ô.ƒ^ƒCƒgƒ‹‚É–ß‚é	
-ƒƒjƒ…[ó‘Ô.ƒnƒCƒh	
-ƒƒjƒ…[ó‘Ô.ƒoƒbƒNƒƒO	
-ƒƒjƒ…[ó‘Ô.ƒ[ƒh	
-ƒ†[ƒU“ü—ÍŽó•t’†	
-’†’fÄŠJ’†	
-’†’f‰ÓŠ	
-Ä¶’†BGM	
-Ä¶’†SE	
-Ä¶’†VOISE	
-•`‰æ’†1	
-•`‰æ’†2	
-•`‰æ’†3	
-•¶ŽšF.current	
-•¶ŽšF.disable	
-•¶ŽšF.normal	
-•¶ŽšF.visited	
-•¶ŽšF.ƒAƒ“ƒJ[	
-•¶ŽšF.‘I‘ðŽˆ.normal	
-•¶ŽšF.‘I‘ðŽˆ.visited	
-•¶ŽšF‹­§	
-”££‚±‚±‚Ü‚ÅLNP“ÆŽ©•Ï”££
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼ˆcall,__offset,m,0ï¼‰çµ‚äº†ä¸­ã§ã™...
+ï¼ƒâ–¼â–¼ã“ã“ã‹ã‚‰é‡Œã€…ã®ç‰¹æ®Šå¤‰æ•°â–¼â–¼
+ï¼„ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®ä¸€ç•ªé ­	
+ï¼ƒâ–²â–²ã“ã“ã¾ã§é‡Œã€…ã®ç‰¹æ®Šå¤‰æ•°â–²â–²
+ï¼ƒâ–¼â–¼ã“ã“ã‹ã‚‰LNPç‹¬è‡ªå¤‰æ•°â–¼â–¼
+ï¼„BalloonHeight	
+ï¼„BalloonWidth	
+ï¼„KeyPressCommand_AcceptingInputs	
+ï¼„KeyPressCommand_FunctionNameToJump	
+ï¼„TalkPrefix	
+ï¼„Translateæœ‰åŠ¹	
+ï¼„__A0	
+ï¼„__A3	
+ï¼„__BG	
+ï¼„__BackLog_BG	
+ï¼„__BackLog_BackButton	
+ï¼„__BackLog_MaxCount	
+ï¼„__BackLog_Suffix	
+ï¼„__CurrentItem	
+ï¼„__CurrentPage	
+ï¼„__Gallery_BGM	
+ï¼„__Gallery_BackButton	
+ï¼„__Gallery_Background	
+ï¼„__Gallery_ButtonAll	
+ï¼„__Gallery_ButtonCoordinate	
+ï¼„__Gallery_ButtonHeight	
+ï¼„__Gallery_ButtonWidth	
+ï¼„__Gallery_CurrentPage	
+ï¼„__Gallery_DisableButton	
+ï¼„__Gallery_FlagNameAll	
+ï¼„__Gallery_ImageAll	
+ï¼„__Gallery_IsCountHalfWidth	
+ï¼„__Gallery_ListName	
+ï¼„__Gallery_List_EndCountPerPage	
+ï¼„__Gallery_List_MaxPerPage	
+ï¼„__Gallery_MaxImageCount	
+ï¼„__Gallery_MaxPageCount	
+ï¼„__Gallery_MaxSectionCount	
+ï¼„__Gallery_OffsetX	
+ï¼„__Gallery_OffsetY	
+ï¼„__Gallery_PagerEndCount	
+ï¼„__Gallery_PagerStartCount	
+ï¼„__Gallery_SectionHeadCount	
+ï¼„__Gallery_SpacingHeight	
+ï¼„__Gallery_SpacingWidth	
+ï¼„__Gallery_StatusAll_Joined	
+ï¼„__Gallery_StatusAll_Split	
+ï¼„__MaxItemCount	
+ï¼„__MaxPageCount	
+ï¼„__MenuCurrent	
+ï¼„__count	
+ï¼„__current	
+ï¼„__end	
+ï¼„__n	
+ï¼„__start	
+ï¼„__stats	
+ï¼„__t	
+ï¼„__textcolor	
+ï¼„__titlebar	
+ï¼„__tmp	
+ï¼„__x	
+ï¼„__x2	
+ï¼„__x3	
+ï¼„__x4	
+ï¼„__y	
+ï¼„nextæŽ¥é ­è¾ž	
+ï¼„nextæ•°å€¤	
+ï¼„ã‚ªãƒ¼ãƒˆ	
+ï¼„ã‚µãƒ¼ãƒ•ã‚§ã‚¹_ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦	
+ï¼„ã‚¹ã‚­ãƒƒãƒ—	
+ï¼„ãƒãƒƒã‚¯ãƒ­ã‚°ä¸­	
+ï¼„ãƒãƒƒã‚¯ãƒ­ã‚°æ ¼ç´	
+ï¼„ãƒãƒƒã‚¯ãƒ­ã‚°çŠ¶æ…‹	
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ã“ã‚ã“ã‚	
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ã¤ã¤ã‹ã‚Œ	
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ãªã§ã‚‰ã‚Œ	
+ï¼„ãƒžã‚¦ã‚¹å—ä»˜_ã‚¯ãƒªãƒƒã‚¯	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸­	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚ªãƒ¼ãƒˆ	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚®ãƒ£ãƒ©ãƒªãƒ¼	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ã‚»ãƒ¼ãƒ–	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ãƒ­ãƒ¼ãƒ‰	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚³ãƒ³ãƒ•ã‚£ã‚°	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¹ã‚­ãƒƒãƒ—	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚»ãƒ¼ãƒ–	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒã‚¤ãƒ‰	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒãƒƒã‚¯ãƒ­ã‚°	
+ï¼„ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒ­ãƒ¼ãƒ‰	
+ï¼„ãƒ¦ãƒ¼ã‚¶å…¥åŠ›å—ä»˜ä¸­	
+ï¼„ä¸­æ–­å†é–‹ä¸­	
+ï¼„ä¸­æ–­ç®‡æ‰€	
+ï¼„å†ç”Ÿä¸­BGM	
+ï¼„å†ç”Ÿä¸­SE	
+ï¼„å†ç”Ÿä¸­VOISE	
+ï¼„æç”»ä¸­1	
+ï¼„æç”»ä¸­2	
+ï¼„æç”»ä¸­3	
+ï¼„æ–‡å­—è‰².current	
+ï¼„æ–‡å­—è‰².disable	
+ï¼„æ–‡å­—è‰².normal	
+ï¼„æ–‡å­—è‰².visited	
+ï¼„æ–‡å­—è‰².ã‚¢ãƒ³ã‚«ãƒ¼	
+ï¼„æ–‡å­—è‰².é¸æŠžè‚¢.normal	
+ï¼„æ–‡å­—è‰².é¸æŠžè‚¢.visited	
+ï¼„æ–‡å­—è‰²å¼·åˆ¶	
+ï¼ƒâ–²â–²ã“ã“ã¾ã§LNPç‹¬è‡ªå¤‰æ•°â–²â–²
 \_q\_w[1000]\-
-”‚³‚í‚è”½‰ži0closeƒNƒŠƒbƒNj‚©‚ç‚à‚±‚±‚É—ˆ‚é‚Ì‚Å\-‚ª•K—v
-”\_w[]‚ÅƒEƒFƒCƒg‚ðŽw’è‚µ‚Ä‚¢‚é‚Ì‚ÅAƒRƒ“ƒtƒBƒO‚ÌÝ’è‚Å•Ï‰»‚µ‚È‚¢
+ï¼ƒã•ã‚ã‚Šåå¿œï¼ˆ0closeã‚¯ãƒªãƒƒã‚¯ï¼‰ã‹ã‚‰ã‚‚ã“ã“ã«æ¥ã‚‹ã®ã§\-ãŒå¿…è¦
+ï¼ƒ\_w[]ã§ã‚¦ã‚§ã‚¤ãƒˆã‚’æŒ‡å®šã—ã¦ã„ã‚‹ã®ã§ã€ã‚³ãƒ³ãƒ•ã‚£ã‚°ã®è¨­å®šã§å¤‰åŒ–ã—ãªã„
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R.ƒVƒFƒ‹‚ÉXV‚ª‚ ‚Á‚½
-__tmp	iget_property,currentghost.shelllist.current.craftmanurlj
-„ƒQ[ƒ€‹N“®€”õ‚R.ƒVƒFƒ‹‚ÉXV‚ª‚ ‚Á‚½.URL–¢’è‹`	i•Ï”u__tmpv‚Ì‘¶Ýj==0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0jƒVƒFƒ‹u\_?iƒVƒFƒ‹–¼j\_?v‚ÉXV‚ª‚ ‚è‚Ü‚µ‚½B\n
-ƒTƒvƒŠƒƒ“ƒg‚àXV‚³‚ê‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B\n
-icall,__offset,mjƒVƒFƒ‹‚Ì”z•zŒ³URL‚ðŠJ‚«‚Ü‚·‚©H\n[200]\*
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.ã‚·ã‚§ãƒ«ã«æ›´æ–°ãŒã‚ã£ãŸ
+ï¼„__tmp	ï¼ˆget_property,currentghost.shelllist.current.craftmanurlï¼‰
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.ã‚·ã‚§ãƒ«ã«æ›´æ–°ãŒã‚ã£ãŸ.URLæœªå®šç¾©	ï¼ˆå¤‰æ•°ã€Œ__tmpã€ã®å­˜åœ¨ï¼‰==0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ã‚·ã‚§ãƒ«ã€Œ\_?ï¼ˆã‚·ã‚§ãƒ«åï¼‰\_?ã€ã«æ›´æ–°ãŒã‚ã‚Šã¾ã—ãŸã€‚\n
+ã‚µãƒ—ãƒªãƒ¡ãƒ³ãƒˆã‚‚æ›´æ–°ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLã‚’é–‹ãã¾ã™ã‹ï¼Ÿ\n[200]\*
 
-icall,__offset,mj\__q[ƒQ[ƒ€‹N“®€”õ‚R.ƒVƒFƒ‹‚Ì”z•zŒ³URL‚ðŠJ‚­]ƒVƒFƒ‹”z•zŒ³URL‚ðŠJ‚­\__q\n
-icall,__offset,mj\__q[ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“]‚±‚Ì‚Ü‚Üi‚Þ\__q
+ï¼ˆcall,__offset,mï¼‰\__q[ã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLã‚’é–‹ã]ã‚·ã‚§ãƒ«é…å¸ƒå…ƒURLã‚’é–‹ã\__q\n
+ï¼ˆcall,__offset,mï¼‰\__q[ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³]ã“ã®ã¾ã¾é€²ã‚€\__q
 \_q
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R.ƒVƒFƒ‹‚ÉXV‚ª‚ ‚Á‚½.URL–¢’è‹`
-notification.shell_updated	0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0jƒVƒFƒ‹u\_?iƒVƒFƒ‹–¼j\_?v‚ÉXV‚ª‚ ‚è‚Ü‚µ‚½B\n
-icall,__offset,mjƒTƒvƒŠƒƒ“ƒg‚àXV‚³‚ê‚Ä‚¢‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B\n[150]
-icall,__offset,mjƒVƒFƒ‹‚Ì”z•zŒ³URLî•ñ‚ª–¢’è‹`‚Ì‚½‚ßA‚±‚Ì‚Ü‚Üi‚Ý‚Ü‚·B\_q\x
-\![raise,ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“]
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.ã‚·ã‚§ãƒ«ã«æ›´æ–°ãŒã‚ã£ãŸ.URLæœªå®šç¾©
+ï¼„notification.shell_updated	0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ã‚·ã‚§ãƒ«ã€Œ\_?ï¼ˆã‚·ã‚§ãƒ«åï¼‰\_?ã€ã«æ›´æ–°ãŒã‚ã‚Šã¾ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚µãƒ—ãƒªãƒ¡ãƒ³ãƒˆã‚‚æ›´æ–°ã•ã‚Œã¦ã„ã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚\n[150]
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLæƒ…å ±ãŒæœªå®šç¾©ã®ãŸã‚ã€ã“ã®ã¾ã¾é€²ã¿ã¾ã™ã€‚\_q\x
+\![raise,ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³]
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†
-„ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†.„§ƒoƒ‹[ƒ“–¢“±“ü	i“±“üÏ‚Ýƒoƒ‹[ƒ“uicall,‘¶ÝŠm”F,„§ƒoƒ‹[ƒ“jv‚Ì‘¶Ýj==0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0j„§ƒoƒ‹[ƒ“u\_?icall,‘¶ÝŠm”F,„§ƒoƒ‹[ƒ“j\_?vˆÈŠO‚ðÝ’è’†‚Å‚·B\n
-icall,__offset,mj„§ƒoƒ‹[ƒ“‚Ö•ÏX‚µ‚Ü‚·‚©H\n[200]\*
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³æœªå°Žå…¥	ï¼ˆå°Žå…¥æ¸ˆã¿ãƒãƒ«ãƒ¼ãƒ³ã€Œï¼ˆcall,å­˜åœ¨ç¢ºèª,æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ï¼‰ã€ã®å­˜åœ¨ï¼‰==0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ã€Œ\_?ï¼ˆcall,å­˜åœ¨ç¢ºèª,æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ï¼‰\_?ã€ä»¥å¤–ã‚’è¨­å®šä¸­ã§ã™ã€‚\n
+ï¼ˆcall,__offset,mï¼‰æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ã¸å¤‰æ›´ã—ã¾ã™ã‹ï¼Ÿ\n[200]\*
 
-icall,__offset,mj\__q[ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†.Ý’è‚·‚é]•ÏX‚·‚é\__q\n
-icall,__offset,mj\__q[ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“]•ÏX‚¹‚¸i‚Þ\__q
+ï¼ˆcall,__offset,mï¼‰\__q[ã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­.è¨­å®šã™ã‚‹]å¤‰æ›´ã™ã‚‹\__q\n
+ï¼ˆcall,__offset,mï¼‰\__q[ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³]å¤‰æ›´ã›ãšé€²ã‚€\__q
 \_q
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†.Ý’è‚·‚é
-__ƒS[ƒXƒg‚É‚æ‚éƒoƒ‹[ƒ“•ÏX	1
-\![change,balloon,icall,‘¶ÝŠm”F,„§ƒoƒ‹[ƒ“j]
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­.è¨­å®šã™ã‚‹
+ï¼„__ã‚´ãƒ¼ã‚¹ãƒˆã«ã‚ˆã‚‹ãƒãƒ«ãƒ¼ãƒ³å¤‰æ›´	1
+\![change,balloon,ï¼ˆcall,å­˜åœ¨ç¢ºèª,æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ï¼‰]
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†.„§ƒoƒ‹[ƒ“–¢“±“ü
-__tmp	iget_property,currentghost.shelllist.current.craftmanurlj
-„ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†.„§ƒoƒ‹[ƒ“–¢“±“ü.URL–¢’è‹`	i•Ï”u__tmpv‚Ì‘¶Ýj==0||ilength,i__tmpjj<=0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0j„§ƒoƒ‹[ƒ“u\_?icall,‘¶ÝŠm”F,„§ƒoƒ‹[ƒ“j\_?v‚ª‘¶Ý‚µ‚Ü‚¹‚ñB\n
-icall,__offset,mjƒVƒFƒ‹‚Ì”z•zŒ³URL‚ðŠJ‚«‚Ü‚·‚©H\n[200]\*
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³æœªå°Žå…¥
+ï¼„__tmp	ï¼ˆget_property,currentghost.shelllist.current.craftmanurlï¼‰
+ï¼žã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³æœªå°Žå…¥.URLæœªå®šç¾©	ï¼ˆå¤‰æ•°ã€Œ__tmpã€ã®å­˜åœ¨ï¼‰==0||ï¼ˆlength,ï¼ˆ__tmpï¼‰ï¼‰<=0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ã€Œ\_?ï¼ˆcall,å­˜åœ¨ç¢ºèª,æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ï¼‰\_?ã€ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLã‚’é–‹ãã¾ã™ã‹ï¼Ÿ\n[200]\*
 
-icall,__offset,mj\__q[ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†.„§ƒoƒ‹[ƒ“–¢“±“ü.URLŠJ‚­]ƒVƒFƒ‹”z•zŒ³URL‚ðŠJ‚­\__q\n
-icall,__offset,mj\__q[ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“]‚±‚Ì‚Ü‚Üi‚Þ\__q
+ï¼ˆcall,__offset,mï¼‰\__q[ã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³æœªå°Žå…¥.URLé–‹ã]ã‚·ã‚§ãƒ«é…å¸ƒå…ƒURLã‚’é–‹ã\__q\n
+ï¼ˆcall,__offset,mï¼‰\__q[ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³]ã“ã®ã¾ã¾é€²ã‚€\__q
 \_q
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R.ƒVƒFƒ‹‚Ì”z•zŒ³URL‚ðŠJ‚­
-notification.shell_updated	0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-\![open,browser,iget_property,currentghost.shelllist.current.craftmanurlj]
-icall,__offset,m,0jƒVƒFƒ‹‚Ì”z•zŒ³URL‚ðŠJ‚¢‚Ä‚¢‚Ü‚·...
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLã‚’é–‹ã
+ï¼„notification.shell_updated	0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+\![open,browser,ï¼ˆget_property,currentghost.shelllist.current.craftmanurlï¼‰]
+ï¼ˆcall,__offset,m,0ï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLã‚’é–‹ã„ã¦ã„ã¾ã™...
 \_q\x
-\![raise,ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“]
+\![raise,ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³]
 
 
 
-–ƒQ[ƒ€‹N“®€”õ‚R.„§ƒoƒ‹[ƒ“ˆÈŠO‚ðÝ’è’†.„§ƒoƒ‹[ƒ“–¢“±“ü.URL–¢’è‹`
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0j„§ƒoƒ‹[ƒ“u\_?icall,‘¶ÝŠm”F,„§ƒoƒ‹[ƒ“j\_?v‚ª‘¶Ý‚µ‚Ü‚¹‚ñB\n
-icall,__offset,mjƒVƒFƒ‹‚Ì”z•zŒ³URLî•ñ‚ª–¢’è‹`‚Ì‚½‚ßA‚±‚Ì‚Ü‚Üi‚Ý‚Ü‚·B\_q\x
-\![raise,ƒXƒvƒ‰ƒbƒVƒ…ƒXƒNƒŠ[ƒ“]
+ï¼Šã‚²ãƒ¼ãƒ èµ·å‹•æº–å‚™ï¼“.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ä»¥å¤–ã‚’è¨­å®šä¸­.æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³æœªå°Žå…¥.URLæœªå®šç¾©
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ã€Œ\_?ï¼ˆcall,å­˜åœ¨ç¢ºèª,æŽ¨å¥¨ãƒãƒ«ãƒ¼ãƒ³ï¼‰\_?ã€ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã®é…å¸ƒå…ƒURLæƒ…å ±ãŒæœªå®šç¾©ã®ãŸã‚ã€ã“ã®ã¾ã¾é€²ã¿ã¾ã™ã€‚\_q\x
+\![raise,ã‚¹ãƒ—ãƒ©ãƒƒã‚·ãƒ¥ã‚¹ã‚¯ãƒªãƒ¼ãƒ³]
 
 
 
-–ƒQ[ƒ€‚ð‹N“®‚Å‚«‚È‚¢
-„ƒQ[ƒ€‚ð‹N“®‚Å‚«‚È‚¢‚µƒ}ƒXƒ^[ƒVƒFƒ‹‚à‚È‚¢	i“±“üÏ‚ÝƒVƒFƒ‹umasterv‚Ì‘¶Ýj==0
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0ju\_?iƒVƒFƒ‹–¼j\_?v‚ð‹N“®‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B\n
-icall,__offset,mjƒVƒFƒ‹‚ðmaster‚É•ÏX‚µ‚Ü‚·B
+ï¼Šã‚²ãƒ¼ãƒ ã‚’èµ·å‹•ã§ããªã„
+ï¼žã‚²ãƒ¼ãƒ ã‚’èµ·å‹•ã§ããªã„ã—ãƒžã‚¹ã‚¿ãƒ¼ã‚·ã‚§ãƒ«ã‚‚ãªã„	ï¼ˆå°Žå…¥æ¸ˆã¿ã‚·ã‚§ãƒ«ã€Œmasterã€ã®å­˜åœ¨ï¼‰==0
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ã€Œ\_?ï¼ˆã‚·ã‚§ãƒ«åï¼‰\_?ã€ã‚’èµ·å‹•ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰ã‚·ã‚§ãƒ«ã‚’masterã«å¤‰æ›´ã—ã¾ã™ã€‚
 \_q\x
 \![change,shell,master,--option=raise-event]
-”‹N“®ƒCƒxƒ“ƒg‚É”ò‚×‚È‚©‚Á‚½ê‡Amaster‚É–ß‚é
+ï¼ƒèµ·å‹•ã‚¤ãƒ™ãƒ³ãƒˆã«é£›ã¹ãªã‹ã£ãŸå ´åˆã€masterã«æˆ»ã‚‹
 
 
 
-–ƒQ[ƒ€‚ð‹N“®‚Å‚«‚È‚¢‚µƒ}ƒXƒ^[ƒVƒFƒ‹‚à‚È‚¢
-iƒƒjƒ…[•s‰Âj
-ibg,icall,‘¶ÝŠm”F,ƒƒjƒ…[.”wŒijj
-F\_q
-icall,__offset,m,0ju\_?iƒVƒFƒ‹–¼j\_?v‚ð‹N“®‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B\n
-icall,__offset,mjmasterƒVƒFƒ‹‚ª‚ ‚è‚Ü‚¹‚ñB
+ï¼Šã‚²ãƒ¼ãƒ ã‚’èµ·å‹•ã§ããªã„ã—ãƒžã‚¹ã‚¿ãƒ¼ã‚·ã‚§ãƒ«ã‚‚ãªã„
+ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰
+ï¼ˆbg,ï¼ˆcall,å­˜åœ¨ç¢ºèª,ãƒ¡ãƒ‹ãƒ¥ãƒ¼.èƒŒæ™¯ï¼‰ï¼‰
+ï¼š\_q
+ï¼ˆcall,__offset,m,0ï¼‰ã€Œ\_?ï¼ˆã‚·ã‚§ãƒ«åï¼‰\_?ã€ã‚’èµ·å‹•ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚\n
+ï¼ˆcall,__offset,mï¼‰masterã‚·ã‚§ãƒ«ãŒã‚ã‚Šã¾ã›ã‚“ã€‚
 \_q
-”‹N“®ƒCƒxƒ“ƒg‚É”ò‚×‚È‚©‚Á‚½‚µmaster‚àŒŸ’m‚Å‚«‚È‚©‚Á‚½
+ï¼ƒèµ·å‹•ã‚¤ãƒ™ãƒ³ãƒˆã«é£›ã¹ãªã‹ã£ãŸã—masterã‚‚æ¤œçŸ¥ã§ããªã‹ã£ãŸ
 
 

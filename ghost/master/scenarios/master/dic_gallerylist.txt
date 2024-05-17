@@ -1,53 +1,53 @@
 
-”Ÿ·•ª‚ª–³‚¢ê‡
-”Œ©o‚µ—p‰æ‘œi‰æ‘œ‚Ì‘Š‘ÎƒpƒXA‚Ü‚½‚Í\_bƒ^ƒO‚ğinline‚Åj|ŒÂ•Ê•\¦‰æ‘œƒtƒ@ƒCƒ‹ƒpƒX|‰ğ‹Ö”»’è•Ï”–¼(ƒOƒ[ƒoƒ‹•Ï”)
+ï¼ƒâ—†å·®åˆ†ãŒç„¡ã„å ´åˆ
+ï¼ƒè¦‹å‡ºã—ç”¨ç”»åƒï¼ˆç”»åƒã®ç›¸å¯¾ãƒ‘ã‚¹ã€ã¾ãŸã¯\_bã‚¿ã‚°ã‚’inlineã§ï¼‰|å€‹åˆ¥è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹|è§£ç¦åˆ¤å®šå¤‰æ•°å(ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°)
 
-”Ÿ·•ª‚ª‚ ‚éê‡
-”Œ©o‚µ—p‰æ‘œi‰æ‘œ‚Ì‘Š‘ÎƒpƒXA‚Ü‚½‚Í\_bƒ^ƒO‚ğinline‚Åj|ŒÂ•Ê•\¦‰æ‘œƒtƒ@ƒCƒ‹ƒpƒX|‰ğ‹Ö”»’è•Ï”–¼(ƒOƒ[ƒoƒ‹•Ï”)|ŒÂ•Ê•\¦‰æ‘œƒtƒ@ƒCƒ‹ƒpƒX|‰ğ‹Ö”»’è•Ï”–¼(ƒOƒ[ƒoƒ‹•Ï”)|...
+ï¼ƒâ—†å·®åˆ†ãŒã‚ã‚‹å ´åˆ
+ï¼ƒè¦‹å‡ºã—ç”¨ç”»åƒï¼ˆç”»åƒã®ç›¸å¯¾ãƒ‘ã‚¹ã€ã¾ãŸã¯\_bã‚¿ã‚°ã‚’inlineã§ï¼‰|å€‹åˆ¥è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹|è§£ç¦åˆ¤å®šå¤‰æ•°å(ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°)|å€‹åˆ¥è¡¨ç¤ºç”»åƒãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹|è§£ç¦åˆ¤å®šå¤‰æ•°å(ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°)|...
 
-”ŸŒÂ•Ê•\¦‰æ‘œ‚ÌÀ•Ww’è
-”ƒoƒ‹[ƒ““à‚ÌƒeƒLƒXƒg•\¦‰Â”\—Ìˆæ‚Ì¶ã‚©‚ç”‚¦‚½À•W‚ğˆÈ‰º‚ÌŒ`®‚Åw’è‚·‚é‚ÆAˆÊ’u‚ğ’²®‚Å‚«‚Ü‚·
-”uy‰æ‘œƒpƒXv:yxÀ•W(”¼Šp”š)z:yyÀ•W(”¼Šp”š)zv
-”w’è‚ª–³‚¯‚ê‚Î¶ãi0:0j‚É”z’u‚³‚ê‚Ü‚·
-
-
-
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P
-\_b["scenarios/master/resources/nowloading.png",inline,--option=opaque,--clipping=440 280 599 399,--option=background]|scenarios/master/resources/nowloading.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚Q
-\_b["assets/preset_chara/gallery/boy_01_g.png",inline,--option=opaque,--clipping=131 9 290 128,--option=background]|assets/preset_chara/gallery/boy_01_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_02_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_03_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_04_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_05_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_06_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_07_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_08_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/boy_ex_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚R
-\_b["assets/preset_chara/gallery/girl_01_g.png",inline,--option=opaque,--clipping=110 60 269 179,--option=background]|assets/preset_chara/gallery/girl_01_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_02_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_03_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_04_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_05_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_06_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_07_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_08_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|assets/preset_chara/gallery/girl_ex_g.png:105:5|ƒMƒƒƒ‰ƒŠ[‚P|
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚S
-scenarios/master/resources/bg_desktop.png|scenarios/master/resources/bg_desktop.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚T
-\_b["scenarios/master/resources/bg_move1.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/bg_move1.png|ƒMƒƒƒ‰ƒŠ[‚Q‚Ì‚P|scenarios/master/resources/bg_move2.png|ƒMƒƒƒ‰ƒŠ[‚Q‚Ì‚Q|scenarios/master/resources/bg_move3.png|ƒMƒƒƒ‰ƒŠ[‚Q‚Ì‚R|scenarios/master/resources/bg_move4.png|ƒMƒƒƒ‰ƒŠ[‚Q‚Ì‚S
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚U
-\_b["scenarios/master/resources/bg_sky.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/bg_sky.png|ƒMƒƒƒ‰ƒŠ[‚R
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚V
-\_b["scenarios/master/resources/bg_title.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/bg_title.png|ƒMƒƒƒ‰ƒŠ[‚S
+ï¼ƒâ—†å€‹åˆ¥è¡¨ç¤ºç”»åƒã®åº§æ¨™æŒ‡å®š
+ï¼ƒãƒãƒ«ãƒ¼ãƒ³å†…ã®ãƒ†ã‚­ã‚¹ãƒˆè¡¨ç¤ºå¯èƒ½é ˜åŸŸã®å·¦ä¸Šã‹ã‚‰æ•°ãˆãŸåº§æ¨™ã‚’ä»¥ä¸‹ã®å½¢å¼ã§æŒ‡å®šã™ã‚‹ã¨ã€ä½ç½®ã‚’èª¿æ•´ã§ãã¾ã™
+ï¼ƒã€Œã€ç”»åƒãƒ‘ã‚¹ã€:ã€xåº§æ¨™(åŠè§’æ•°å­—)ã€‘:ã€yåº§æ¨™(åŠè§’æ•°å­—)ã€‘ã€
+ï¼ƒæŒ‡å®šãŒç„¡ã‘ã‚Œã°å·¦ä¸Šï¼ˆ0:0ï¼‰ã«é…ç½®ã•ã‚Œã¾ã™
 
 
 
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚W
-\_b["scenarios/master/resources/number001.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number001.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚X
-\_b["scenarios/master/resources/number002.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number002.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚O
-\_b["scenarios/master/resources/number003.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number003.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚P
-\_b["scenarios/master/resources/number004.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number004.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚Q
-\_b["scenarios/master/resources/number005.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number005.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚R
-\_b["scenarios/master/resources/number006.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number006.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚S
-\_b["scenarios/master/resources/number007.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number007.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚T
-\_b["scenarios/master/resources/number008.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number008.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚U
-\_b["scenarios/master/resources/number009.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number009.png|ƒMƒƒƒ‰ƒŠ[‚P
-—master.ƒMƒƒƒ‰ƒŠ[ƒŠƒXƒg‚P‚V
-\_b["scenarios/master/resources/number010.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number010.png|ƒMƒƒƒ‰ƒŠ[‚P
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘
+\_b["scenarios/master/resources/nowloading.png",inline,--option=opaque,--clipping=440 280 599 399,--option=background]|scenarios/master/resources/nowloading.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼’
+\_b["assets/preset_chara/gallery/boy_01_g.png",inline,--option=opaque,--clipping=131 9 290 128,--option=background]|assets/preset_chara/gallery/boy_01_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_02_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_03_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_04_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_05_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_06_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_07_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_08_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/boy_ex_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼“
+\_b["assets/preset_chara/gallery/girl_01_g.png",inline,--option=opaque,--clipping=110 60 269 179,--option=background]|assets/preset_chara/gallery/girl_01_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_02_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_03_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_04_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_05_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_06_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_07_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_08_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|assets/preset_chara/gallery/girl_ex_g.png:105:5|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘|
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼”
+scenarios/master/resources/bg_desktop.png|scenarios/master/resources/bg_desktop.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼•
+\_b["scenarios/master/resources/bg_move1.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/bg_move1.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼’ã®ï¼‘|scenarios/master/resources/bg_move2.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼’ã®ï¼’|scenarios/master/resources/bg_move3.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼’ã®ï¼“|scenarios/master/resources/bg_move4.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼’ã®ï¼”
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼–
+\_b["scenarios/master/resources/bg_sky.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/bg_sky.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼“
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼—
+\_b["scenarios/master/resources/bg_title.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/bg_title.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼”
+
+
+
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼˜
+\_b["scenarios/master/resources/number001.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number001.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼™
+\_b["scenarios/master/resources/number002.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number002.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼
+\_b["scenarios/master/resources/number003.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number003.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼‘
+\_b["scenarios/master/resources/number004.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number004.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼’
+\_b["scenarios/master/resources/number005.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number005.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼“
+\_b["scenarios/master/resources/number006.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number006.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼”
+\_b["scenarios/master/resources/number007.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number007.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼•
+\_b["scenarios/master/resources/number008.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number008.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼–
+\_b["scenarios/master/resources/number009.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number009.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
+ï¼ master.ã‚®ãƒ£ãƒ©ãƒªãƒ¼ãƒªã‚¹ãƒˆï¼‘ï¼—
+\_b["scenarios/master/resources/number010.png",inline,--option=opaque,--clipping=220 140 380 260,--option=background]|scenarios/master/resources/number010.png|ã‚®ãƒ£ãƒ©ãƒªãƒ¼ï¼‘
 
 

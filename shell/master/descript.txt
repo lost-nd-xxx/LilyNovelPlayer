@@ -1,78 +1,81 @@
-charset,Shift_JIS
-//[�K�v�ɉ����ĕύX]����txt�̕����R�[�h
+charset,UTF-8
+//[必要に応じて変更]このtxtの文字コード
 
-//���̃t�@�C���ɂ��ďڂ����́�URL���Q�Ƃ̂���
+//このファイルについて詳しくは↓URLも参照のこと
 // https://ssp.shillest.net/ukadoc/manual/descript_shell.html
 
 type,shell
-//[�ύX�s��]���̃t�@�C���Z�b�g�̎��
+//[変更不可]このファイルセットの種類
 
 name,master
-//[�K���ύX]���̃V�F���̖��O
+//[必ず変更]このシェルの名前
 
 craftman,LilyNovelPlayerProductionCommittee
-//[�K���ύX]���̃o���[���̍�Җ��i���p�p�����̂݁j
+//[必ず変更]このバルーンの作者名（半角英数字のみ）
 
-craftmanw,LilyNovelPlayer����ψ���
-//[�K���ύX]���̃t�@�C���Z�b�g�̖��O�i�S�p�����g�p�\�j
+craftmanw,LilyNovelPlayer製作委員会
+//[必ず変更]このファイルセットの名前（全角文字使用可能）
 
-//craftmanurl,�قɂ���
-//homeurl,�قɂ���
-//[�K�v�ɉ����ĕύX]
-//�V�F���̃l�b�g���[�N�X�V�ɑΉ����Ă���ƁA
-//�V�F���̍X�V������������craftmanurl���J�����ǂ������[�U�ɐu�˂܂�
-//�T�v�������g�̍X�V�𑣂��Ƃ��Ȃǂ�
-//�ڂ����́�
+//craftmanurl,ほにゃらら
+//homeurl,ほにゃらら
+//[必要に応じて変更]
+//シェルのネットワーク更新に対応していると、
+//シェルの更新があった時にcraftmanurlを開くかどうかユーザに訊ねます
+//サプリメントの更新を促すときなどに
+//詳しくは↓
 //https://ssp.shillest.net/ukadoc/manual/dev_update.html
 
+readme.charset,UTF-8
+//[必要に応じて変更]readme.txtの文字コード
+
 seriko.alignmenttodesktop,free
-//[�ύX�̕K�v�Ȃ�]
-//�S�̂̃T�[�t�F�X�̃f�t�H���g�\���ʒu���
-//free�Ŏ��R�ړ�
+//[変更の必要なし]
+//全体のサーフェスのデフォルト表示位置情報
+//freeで自由移動
 
 seriko.use_self_alpha,1
-//[�K�v�ɉ����ĕύX]
-//���l��1�������ꍇ�́A
-//pna�łȂ��摜���́i32bitPNG�j�̃A���t�@�`�����l���𓧖��x�Ƃ��Ďg�p����B
-//�Ȃ��A1�̏ꍇ�ł��A���t�@�`�����l���������Ȃ��摜�ɂ��Ă�pna���L���B
-//master�V�F����surface0�ł́A32bitPNG��S�ʕs�����Ŏg���Ă���
+//[必要に応じて変更]
+//数値が1だった場合は、
+//pnaでなく画像自体（32bitPNG）のアルファチャンネルを透明度として使用する。
+//なお、1の場合でもアルファチャンネルを持たない画像についてはpnaが有効。
+//masterシェルのsurface0では、32bitPNGを全面不透明で使っている
 
 sakura.balloon.offsetx,612
 sakura.balloon.offsety,0
-//[�K�v�ɉ����ĕύX]
-//�{�̑��̃o���[������{�ʒu����ǂꂾ�����炷��
+//[必要に応じて変更]
+//本体側のバルーンを基本位置からどれだけずらすか
 
 kero.balloon.offsetx,612
 kero.balloon.offsety,0
-//[�K�v�ɉ����ĕύX]
-//�������̃o���[������{�ʒu����ǂꂾ�����炷��
+//[必要に応じて変更]
+//相方側のバルーンを基本位置からどれだけずらすか
 
 char2.balloon.offsetx,612
 char2.balloon.offsety,0
-//[�K�v�ɉ����ĕύX]
-//2�l�ڂ̃o���[������{�ʒu����ǂꂾ�����炷��
+//[必要に応じて変更]
+//2人目のバルーンを基本位置からどれだけずらすか
 
 char3.balloon.offsetx,612
 char3.balloon.offsety,0
-//[�K�v�ɉ����ĕύX]
-//3�l�ڂ̃o���[������{�ʒu����ǂꂾ�����炷��
+//[必要に応じて変更]
+//3人目のバルーンを基本位置からどれだけずらすか
 
 sakura.balloon.alignment,left
-//[�ύX�̕K�v�Ȃ�]
-//�{�̑��̐����o���̈ʒu���
-//left�ŏ�ɍ��ɕ\��
+//[変更の必要なし]
+//本体側の吹き出しの位置情報
+//leftで常に左に表示
 
 kero.balloon.alignment,left
-//[�ύX�̕K�v�Ȃ�]
-//�������̐����o���̈ʒu���
-//left�ŏ�ɍ��ɕ\��
+//[変更の必要なし]
+//相方側の吹き出しの位置情報
+//leftで常に左に表示
 
 char2.balloon.alignment,left
-//[�ύX�̕K�v�Ȃ�]
-//2�l�ڂ̐����o���̈ʒu���
-//left�ŏ�ɍ��ɕ\��
+//[変更の必要なし]
+//2人目の吹き出しの位置情報
+//leftで常に左に表示
 
 char3.balloon.alignment,left
-//[�ύX�̕K�v�Ȃ�]
-//3�l�ڂ̐����o���̈ʒu���
-//left�ŏ�ɍ��ɕ\��
+//[変更の必要なし]
+//3人目の吹き出しの位置情報
+//leftで常に左に表示
