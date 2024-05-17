@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>LilyNovelPlayer シナリオ制作の手引き</title>
+	<meta name="description" content="SSPで動作する、ノベルゲームを作れる枠組み的なゴースト＆シェル＆バルーン「Lily Novel Player」の取扱説明書">
+	<link rel="stylesheet" href="./src/style.css">
+	<script src="./src/script.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="content">
+
+			<div class="side">
+				<ul>
+					<li class="differentpage"><a href="./tags.html">「独自タグ一覧」頁</a></li>
+					<li class="returntotop"><a href="#">▲TOP▲</a></li>
+					<li><a href="#about_lilynovelplayer">LilyNovelPlayerについて</a></li>
+					<li><a href="#included_materials_and_terms">同梱素材のリストと利用条件</a></li>
+					<li><a href="#shell_folder_naming_conventions">シェルフォルダの命名規則</a></li>
+					<li><a href="#scenario_flow">シナリオの流れ</a></li>
+					<li><a href="#notes_on_dictionary_descriptions">辞書記述時の注意点</a></li>
+					<li><a href="#saved_data">セーブデータ</a></li>
+					<li><a href="#on_loading_and_resuming_from_interruption">ロードおよび中断から再開時</a></li>
+					<li><a href="#setting_dictionary">設定辞書</a></li>
+					<li><a href="#ui_including_menus">メニューなどのUI</a></li>
+					<li><a href="#configuration_changes">コンフィグの設定変更</a></li>
+					<li><a href="#allow_users_to_enter_text">ユーザに文字入力させる</a></li>
+					<li><a href="#reaction_to_keyboard_input">キーボード入力への反応</a></li>
+					<li><a href="#reaction_to_mouse_input">マウス入力への反応</a></li>
+					<li><a href="#backlog">バックログ</a></li>
+					<li><a href="#gallery">ギャラリー</a></li>
+				</ul>
+			</div>
+
+			<div class="main">
+				<div class="item" id="example">
+					<h2>Lily Novel Player シナリオ制作の手引き</h2>
+					<ul>
+						<li>変更すべき箇所は<em>赤い色の太字</em>で表記されます。</li>
+						<li>Lily Novel PlayerをLNPと略記する場合があります。</li>
+					</ul>
+				</div>
+
+				<div class="item" id="about_lilynovelplayer">
+					<h2>Lily Novel Playerについて</h2>
+					<p>Lily Novel Playerは、使用中のシェルに対応して内容が変わるゴーストです。</p>
+					<p>
+						使用中のシェルのフォルダ名と同じ名前のフォルダが「ghost/master/scenarios/<em>【フォルダ名】</em>」として存在すれば、その中の「dic<em>【任意の辞書名】</em>.txt」をLNP基本辞書に追加して読み込みます。
+					</p>
+					<hr>
+					<p>追加シナリオを配布する場合、シェルとゴースト追加辞書とをまとめたサプリメントが基本的な１セットとなります。</p>
+					<p>配布用ファイルの作成については、<a href="https://ssp.shillest.net/ukadoc/manual/dev_nar.html"
+							target="_blank">UKADOC</a>をご確認ください。</p>
+					<p>また、「LilyNovelPlayer」フォルダ直下に、説明つき見本「test_supplement.zip」を同梱しています。<br>
+						zipファイルを解凍して中身をご覧ください。<br>
+						そのままインストールもできます。</p>
+					<hr>
+					<p>シナリオの記述方法については、「ghost/master/scenarios/master」以下のtxtが動作見本となっております。<br>
+						「ghost/master」直下のLNP基本辞書を理解する必要は、基本的にはありません。</p>
+				</div>
+
+				<div class="item" id="included_materials_and_terms">
+					<h2>同梱素材のリストと利用条件</h2>
+					<h3>利用条件</h3>
+					<p>
+						LNPへの追加ファイルへの使用に限り、以下の条件でご自由にお使いいただけます。
+					</p>
+					<ul>
+						<li>著作者表示不要</li>
+						<li>加筆・反転等の加工OK</li>
+						<li>同梱再配布OK</li>
+					</ul>
+					<p>
+						※初期から同梱済みのファイルを改変せずに使う場合、配布ファイルにそれを含める必要はありません。<br>
+						既存のファイルを指定してお使いください。<br>
+						例: （bg、<em>assets/preset/color_light.png</em>）
+					</p>
+					<h3>素材リスト</h3>
+					<div class="copy-block">
+						<p>
+							ghost/master/<br>
+							　dic_base_bootend.txt<br>
+							　dic_base_event.txt<br>
+							　dic_base_resource.txt<br>
+							　dic_game_core.txt<br>
+							　dic_game_tag.txt<br>
+							　dic_menu.txt<br>
+							　dic_menu_config.txt<br>
+							　dic_menu_gallery.txt<br>
+							　dic_menu_saveload.txt<br>
+							　dic_settings_default.txt
+						</p><p>
+							　assets/<br>
+							　　preset/<br>
+							　　　batsu_button.png<br>
+							　　　button1.png<br>
+							　　　button1d.png<br>
+							　　　choice_base1.png<br>
+							　　　clickwait.png<br>
+							　　　color_dark.png<br>
+							　　　color_light.png<br>
+							　　　gallery_locked.png<br>
+							　　　menu_backlog.png<br>
+							　　　menu_config.png<br>
+							　　　menu_gallery.png<br>
+							　　　menu_load.png<br>
+							　　　menu_save.png<br>
+							　　　messagewindow1.png<br>
+							　　　messagewindow2.png<br>
+							　　　nowloading.png<br>
+							　　　ownerdraw_background.png<br>
+							　　　ownerdraw_foreground.png<br>
+							　　　ownerdraw_sidebar.png<br>
+							　　　resumewindow.png<br>
+							　　　osorawo_osampo.mp3<br>
+							　　　tanoshii_ukagaka.mp3
+						</p><p>
+							　　preset_chara/<br>
+							　　　gallery/<br>
+							　　　　boy_01_g.png<br>
+							　　　　boy_02_g.png<br>
+							　　　　boy_03_g.png<br>
+							　　　　boy_04_g.png<br>
+							　　　　boy_05_g.png<br>
+							　　　　boy_06_g.png<br>
+							　　　　boy_07_g.png<br>
+							　　　　boy_08_g.png<br>
+							　　　　boy_ex_g.png<br>
+							　　　　girl_01_g.png<br>
+							　　　　girl_02_g.png<br>
+							　　　　girl_03_g.png<br>
+							　　　　girl_04_g.png<br>
+							　　　　girl_05_g.png<br>
+							　　　　girl_06_g.png<br>
+							　　　　girl_07_g.png<br>
+							　　　　girl_08_g.png<br>
+							　　　　girl_ex_g.png
+						</p><p>
+							　　　mirror_gallery/<br>
+							　　　　boy_01_g.png<br>
+							　　　　boy_02_g.png<br>
+							　　　　boy_03_g.png<br>
+							　　　　boy_04_g.png<br>
+							　　　　boy_05_g.png<br>
+							　　　　boy_06_g.png<br>
+							　　　　boy_07_g.png<br>
+							　　　　boy_08_g.png<br>
+							　　　　boy_ex_g.png<br>
+							　　　　girl_01_g.png<br>
+							　　　　girl_02_g.png<br>
+							　　　　girl_03_g.png<br>
+							　　　　girl_04_g.png<br>
+							　　　　girl_05_g.png<br>
+							　　　　girl_06_g.png<br>
+							　　　　girl_07_g.png<br>
+							　　　　girl_08_g.png<br>
+							　　　　girl_ex_g.png
+						</p><p>
+							　　　mirror_stand_large/<br>
+							　　　　boy_01.png<br>
+							　　　　boy_02.png<br>
+							　　　　boy_03.png<br>
+							　　　　boy_04.png<br>
+							　　　　boy_05.png<br>
+							　　　　boy_06.png<br>
+							　　　　boy_07.png<br>
+							　　　　boy_08.png<br>
+							　　　　boy_ex.png<br>
+							　　　　girl_01.png<br>
+							　　　　girl_02.png<br>
+							　　　　girl_03.png<br>
+							　　　　girl_04.png<br>
+							　　　　girl_05.png<br>
+							　　　　girl_06.png<br>
+							　　　　girl_07.png<br>
+							　　　　girl_08.png<br>
+							　　　　girl_ex.png
+						</p><p>
+							　　　mirror_stand/<br>
+							　　　　boy_01.png<br>
+							　　　　boy_02.png<br>
+							　　　　boy_03.png<br>
+							　　　　boy_04.png<br>
+							　　　　boy_05.png<br>
+							　　　　boy_06.png<br>
+							　　　　boy_07.png<br>
+							　　　　boy_08.png<br>
+							　　　　boy_ex.png<br>
+							　　　　girl_01.png<br>
+							　　　　girl_02.png<br>
+							　　　　girl_03.png<br>
+							　　　　girl_04.png<br>
+							　　　　girl_05.png<br>
+							　　　　girl_06.png<br>
+							　　　　girl_07.png<br>
+							　　　　girl_08.png<br>
+							　　　　girl_ex.png
+						</p><p>
+							　　　stand_large/<br>
+							　　　　boy_01.png<br>
+							　　　　boy_02.png<br>
+							　　　　boy_03.png<br>
+							　　　　boy_04.png<br>
+							　　　　boy_05.png<br>
+							　　　　boy_06.png<br>
+							　　　　boy_07.png<br>
+							　　　　boy_08.png<br>
+							　　　　boy_ex.png<br>
+							　　　　girl_01.png<br>
+							　　　　girl_02.png<br>
+							　　　　girl_03.png<br>
+							　　　　girl_04.png<br>
+							　　　　girl_05.png<br>
+							　　　　girl_06.png<br>
+							　　　　girl_07.png<br>
+							　　　　girl_08.png<br>
+							　　　　girl_ex.png
+						</p><p>
+							　　　stand/<br>
+							　　　　boy_01.png<br>
+							　　　　boy_02.png<br>
+							　　　　boy_03.png<br>
+							　　　　boy_04.png<br>
+							　　　　boy_05.png<br>
+							　　　　boy_06.png<br>
+							　　　　boy_07.png<br>
+							　　　　boy_08.png<br>
+							　　　　boy_ex.png<br>
+							　　　　girl_01.png<br>
+							　　　　girl_02.png<br>
+							　　　　girl_03.png<br>
+							　　　　girl_04.png<br>
+							　　　　girl_05.png<br>
+							　　　　girl_06.png<br>
+							　　　　girl_07.png<br>
+							　　　　girl_08.png<br>
+							　　　　girl_ex.png
+						</p><p>
+							　　　voice/<br>
+							　　　　chara_voice1.wav<br>
+							　　　　chara_voice2.wav<br>
+							　　　　chara_voice_douji.wav
+						</p><p>
+							　scenarios/master/<br>
+							　　dic_gallerylist.txt<br>
+							　　dic_keypress.txt<br>
+							　　dic_scenario1.txt<br>
+							　　dic_scenario2.txt<br>
+							　　dic_settings.txt<br>
+							　　dic_snippet.txt<br>
+							　　dic_title.txt
+						</p><p>
+							　　resources/<br>
+							　　　Number001.png<br>
+							　　　Number002.png<br>
+							　　　Number003.png<br>
+							　　　Number004.png<br>
+							　　　Number005.png<br>
+							　　　Number006.png<br>
+							　　　Number007.png<br>
+							　　　Number008.png<br>
+							　　　Number009.png<br>
+							　　　Number010.png<br>
+							　　　bg_desktop.png<br>
+							　　　bg_move1.png<br>
+							　　　bg_move2.png<br>
+							　　　bg_move3.png<br>
+							　　　bg_move4.png<br>
+							　　　bg_sky.png<br>
+							　　　bg_title.png<br>
+							　　　nowloading.png
+						</p><p>
+							shell/master/<br>
+							　descript.txt<br>
+							　surface0.png<br>
+							　surface10.png<br>
+							　surfaces.txt<br>
+							　title1.png<br>
+							　titlebar1.png<br>
+							　window_reduce.png
+						</p><p>
+							LilyNovelPlayerBallon/<br>
+							　arrow0.png<br>
+							　arrow1.png<br>
+							　balloonc0.png<br>
+							　balloons0.png<br>
+							　balloons1.png<br>
+							　balloons2.png<br>
+							　balloons3.png<br>
+							　cancel_down.png<br>
+							　cancel_up.png<br>
+							　clickwait.png<br>
+							　descript.txt<br>
+							　install.txt<br>
+							　marker.png<br>
+							　ok_down.png<br>
+							　ok_up.png<br>
+							　online0.png<br>
+							　online1.png<br>
+							　online2.png<br>
+							　online3.png<br>
+							　sstp.png
+						</p><p>
+							test_supplement/<br>
+							　install.txt
+						</p><p>
+							　ghost/master/scenarios/LilyNovelPlayer_test/<br>
+							　　dic0.txt
+						</p><p>
+							　shell/LilyNovelPlayer_test/<br>
+							　　descript.txt<br>
+							　　readme.txt<br>
+							　　surface0.png<br>
+							　　surface10.png<br>
+							　　surfaces.txt<br>
+							　　titlebar1.png<br>
+							　　window_reduce.png
+						</p><p>
+							　LilyNovelPlayerBallon_test/<br>
+							　　arrow0.png<br>
+							　　arrow1.png<br>
+							　　balloonc0.png<br>
+							　　balloons0.png<br>
+							　　balloons1.png<br>
+							　　balloons2.png<br>
+							　　balloons3.png<br>
+							　　cancel_down.png<br>
+							　　cancel_up.png<br>
+							　　clickwait.png<br>
+							　　descript.txt<br>
+							　　install.txt<br>
+							　　marker.png<br>
+							　　ok_down.png<br>
+							　　ok_up.png<br>
+							　　online0.png<br>
+							　　online1.png<br>
+							　　online2.png<br>
+							　　online3.png<br>
+							　　sstp.png
+						</p>
+					</div>
+				</div>
+
+				<div class="item" id="shell_folder_naming_conventions">
+					<h2>シェルフォルダの命名規則</h2>
+					<p>LNPではシェルフォルダ名をシナリオの識別名とみなし、他の追加シェルと被らないことを前提として動作しています。<br>
+						そのため、フォルダ名は以下の命名規則で、赤太文字の部分を半角英数字のみ（0～9、a～z、A～Z）で表記してください。</p>
+					<pre><code><em>作者名</em>_<em>タイトル名などの管理用文字列</em></code></pre>
+					<p>作者名を出したくない場合などは、masterシェルのシナリオに「補助識別子生成」があるので、ご活用ください。</p>
+				</div>
+
+				<div class="item" id="scenario_flow">
+					<h2>シナリオの流れ</h2>
+					<p>ゴースト起動後およびシェル変更後、必要な処理が終わると「＊<em>【フォルダ名】</em>.起動」へジャンプします。</p>
+					<p>待ち時間は基本的に短いため、最初の場面で音や効果音を鳴らしたい場合は、事前にワンクッション置くと親切かもしれません。</p>
+					<hr>
+					<p>シナリオ中は、LNP独自タグ<a href="./tags.html#next">「next」</a>・<a href="./tags.html#nextset">「nextset」</a>・<a
+							href="./tags.html#nextjump">「nextjump」</a>・<a href="./tags.html#choices">「選択肢」</a>で関数を移動していく、というのが基本の流れです。</p>
+					<p>上記４種のタグでシナリオを移動する場合のジャンプ先は「<em>【フォルダ名】</em>.<em>【任意の文字列】</em>」です。</p>
+					<p>LNP独自タグ以外で遷移すれば他の関数名も使えますが、そのままでは中断からの復帰やセーブデータからの再開時のチェックポイントになりません。</p>
+					<p>いずれの場合も、LNP基本辞書内の文・単語群・変数との名前被りがあると、不具合の原因になります。</p>
+					<hr>
+					<p>展開を分岐させる場合の例は以下です。</p>
+					<pre><code><em>（when,（<a href="./tags.html#variable_reading">変数読み出し</a>,うにゅう好感度）>100,
+（next_set,うにゅうの好感度が高い,１）,
+（next_set,うにゅうの好感度が普通,１）
+）</em></code></pre>
+					<hr>
+					<p>終了時は「ゲーム終了」へジャンプさせてください。</p>
+					<p>独自で「\-」を記述してもよいです。<br>
+						（ただし、セーブデータに不要な変数がたくさん残ります）</p>
+				</div>
+
+				<div class="item" id="notes_on_dictionary_descriptions">
+					<h2>辞書記述時の注意点</h2>
+					<p>フォルダ名・関数名・ゲーム内変数の名前・ゲーム内変数の内容には、なるべく区切り字を含まないでください。<br>
+						※括弧の展開などで、LNP独自タグ実行のタイミングで無くなっていればかまいません。</p>
+					<pre><code>＃里々既定の区切り字
+、
+､
+，
+,
+（バイト値、１）
+＃LNP独自の区切り字
+|
+:</code></pre>
+					<hr>
+					<p>LNP基本辞書でsplit関数を多用しています。<br>
+						そのため、シナリオの動作でsplitを使う場合、splitした直後以外は（Ｓ<em>【数値】</em>）の中身が書き換わっている可能性が高いです。</p>
+					<hr>
+					<p>「＄自動改行挿入」を「無効」にしています。<br>
+						そのため、辞書の＊内の改行に応じて\nが自動挿入されることはありません。<br>
+						出力スクリプトを改行したい時は、手動で\nなどを書いてください。</p>
+					<hr>
+					<p>
+						中断やセーブからの再開はチェックポイント(*1)を起点に行われます。<br>
+						そのため、画像や音の指定は、変更が無くても再度行ってください。<br>
+						そうしないと、再開時に画像や音が出ないことがあります。
+					</p>
+					<p>
+						*1: <a href="./tags.html#next">next</a>・<a href="./tags.html#nextset">nextset</a>・<a
+							href="./tags.html#nextjump">nextjump</a>・<a href="./tags.html#choices">選択肢</a>のタグ実行直後に移動した関数の冒頭
+					</p>
+					<hr>
+					<p>「\w1」～「\w9」は、LNP独自のコンフィグ設定に応じて、スクリプト出力直前に「\_w[【半角数値】]」へ置き換えられるか、除去されます。<br>
+						「\w1」～「\w9」以外は変更されません。</p>
+					<hr>
+					<p>以下のような形で関数を移動すると、LNP独自の文字色設定などが初期化されます。</p>
+					<pre><code>＊関数名１
+：ほにゃらら\x
+＞関数名２</code></pre>
+					<p>LNP独自の文字色設定用スクリプトは出力スクリプトの冒頭へ挿入されています。<br>
+						「\x」を使うと、それらは使用中バルーンのデフォルト設定に戻されます。<br>
+						そのあと「＞<em>関数名</em>」や「（<em>関数名</em>）」、「（call,<em>関数名</em>）」などのSHIORIリクエストの発生しない方法で関数を移動すると、文字色設定用スクリプトが再び挿入されることはありません。
+					</p>
+					<p>「\![raise,<em>関数名</em>]」「\![embed,<em>関数名</em>]」を使うと、再び文字色設定用スクリプトが挿入されます。</p>
+				</div>
+
+				<div class="item" id="saved_data">
+					<h2>セーブデータ</h2>
+					<p>LNP独自タグ<a href="./tags.html#next">「next」</a>・<a href="./tags.html#nextset">「nextset」</a>・<a href="./tags.html#nextjump">「nextjump」</a>・<a href="./tags.html#choices">「選択肢」</a>で、ゲーム内変数を操作できます。<br>
+						特別な理由のない限り、残したい変数の記録はLNP独自タグで行ってください。</p>
+					<p>「＄変数名【タブ】内容」や「（set,変数名,内容）」で変数を操作する場合、中断からの復帰やセーブデータからの再開時、再度同じ動作が行われることを念頭に置いてください。</p>
+					<hr>
+					<p>ゲーム内変数には、セーブデータのロードで書き換わるものと、ロードで書き換わらないもの（グローバル変数）との２種類があります。</p>
+					<hr>
+					<p>グローバル変数は、他のシナリオからも読み込むことができます。<br>
+						他のシナリオのゲーム内変数を書き換えるLNP独自タグの実装予定はありません。</p>
+				</div>
+
+				<div class="item" id="on_loading_and_resuming_from_interruption">
+					<h2>ロードおよび中断から再開時</h2>
+					<p>LNP独自タグ<a href="./tags.html#next">「next」</a>・<a href="./tags.html#next_set">「next_set」</a>・<a href="./tags.html#nextjump">「nextjump」</a>・<a href="./tags.html#choices">「選択肢」</a>でジャンプした先の関数が、中断からの復帰やセーブデータからの再開のチェックポイントとして扱われます。</p>
+					<hr>
+					<p>セーブデータからの再開時、グローバル変数以外のゲーム内変数は、すべてロードしたセーブデータのものと置き換えられます。</p>
+					<hr>
+					<p>中断から復帰した時（最小化からの復帰やメニューから戻った時など）、チェックポイントとなった関数の終了まで、以下の変更が加えられます。</p>
+					<ul>
+						<li>「\w1」～「\w9」のウェイトは削除</li>
+						<li>文字表示スピードは一括</li>
+						<li>効果音・ボイスが再生されない</li>
+					</ul>
+					<p>セーブデータからの再開はこの対象になりません。</p>
+					<hr>
+					<p>SSPの本体設定で「最小化時に喋らない」が有効になっていると、「メニュー.最小化」を経由しない最小化時(*1)に音が一時停止されません。<br>
+						対応不可能なため、仕様とします。<br>
+						*1: ショートカットキー操作・タスクトレイアイコンのダブルクリック、など</p>
+				</div>
+
+				<div class="item" id="setting_dictionary">
+					<h2>設定辞書</h2>
+					<p>「ghost/master/dic_settings_default.txt」にある内容は、シナリオ側に同じ設定があれば、シナリオ側のものが優先されます。</p>
+					<p>
+						変更したい設定のみ、単語群名の冒頭の「<em>__default</em>」の部分を<em>【シナリオフォルダ名】</em>と差し替え、「ghost/master/scenarios/<em>【フォルダ名】</em>/dic<em>【辞書名】</em>.txt」に記述してください。
+					</p>
+				</div>
+
+				<div class="item" id="ui_including_menus">
+					<h2>メニューなどのUI</h2>
+					<p>
+						レイアウトの調整をしたい場合、<a href="#setting_dictionary">設定辞書</a>の項目を変更すると、LNP基本辞書で用意しているメニュー類のレイアウトが変更されます。
+					</p>
+					<hr>
+					<p>
+						以下の関数がある場合、その関数へジャンプし、LNP基本辞書の処理は行われません。<br>
+						これにより、高度なレイアウト変更・処理の追加等が可能です。
+					</p>
+					<pre><code>＊<em>（フォルダ名）</em>.ギャラリー
+＊<em>（フォルダ名）</em>.コンフィグ
+＊<em>（フォルダ名）</em>.セーブ
+＊<em>（フォルダ名）</em>.タイトルに戻る
+＊<em>（フォルダ名）</em>.バックログ
+＊<em>（フォルダ名）</em>.ロード
+＊<em>（フォルダ名）</em>.不許可
+＊<em>（フォルダ名）</em>.終了ダイアログ</code></pre>
+					<hr>
+					<p>
+						「<em>【フォルダ名】</em>.不許可」は、<a href="./tags.html#menu_disallowed">タグ「メニュー不可」</a>などでメニュー表示を拒否している時に操作されると発生します。<br>
+						<code>（__MenuCurrent）</code>に何が不許可だったかが入っています。
+					</p>
+					<p>
+						◆入っている可能性のある内容のリスト
+					</p>
+					<ul>
+						<li>オート</li>
+						<li>ギャラリー</li>
+						<li>クイックセーブ</li>
+						<li>クイックロード</li>
+						<li>コンフィグ</li>
+						<li>スキップ</li>
+						<li>セーブ</li>
+						<li>タイトルに戻る</li>
+						<li>ハイド</li>
+						<li>バックログ</li>
+						<li>ロード</li>
+					</ul>
+					<hr>
+					<p>
+						各種メニューが開けるかどうかの状態を個別に変えたい場合は、以下の変数の中身を直接書き換えてください。<br>
+						変数の中身が「1」ならば、許可していることになります。<br>
+						終了ダイアログを禁止する変数は、LNP基本辞書では用意していません。
+					</p>
+					<ul>
+						<li>メニュー状態.オート</li>
+						<li>メニュー状態.ギャラリー</li>
+						<li>メニュー状態.クイックセーブ</li>
+						<li>メニュー状態.クイックロード</li>
+						<li>メニュー状態.コンフィグ</li>
+						<li>メニュー状態.スキップ</li>
+						<li>メニュー状態.セーブ</li>
+						<li>メニュー状態.タイトルに戻る</li>
+						<li>メニュー状態.ハイド</li>
+						<li>メニュー状態.バックログ</li>
+						<li>メニュー状態.ロード</li>
+					</ul>
+					<hr>
+					<p>
+						また、<a href="./tags.html#menu_button">タグ「メニューボタン」</a>は前述の変数と連動します。
+					</p>
+				</div>
+
+				<div class="item" id="configuration_changes">
+					<h2>コンフィグの設定変更</h2>
+					<p>
+						LNP基本UIを使う場合、以下の設定が変更できます。
+					</p>
+					<dl>
+						<dt>ウェイト</dt>
+						<dd>辞書内の「\w1」～「\w9」をLNP基本辞書が設定に応じて置き換えます。</dd>
+						<dt>文字の速さ</dt>
+						<dd>文字表示にかかるスピードを変更します。</dd>
+						<dt>音声</dt>
+						<dd>音楽・効果音・ボイスの音量を設定します。<br>
+							外部プラグイン読み上げ対応の設定(*1)も切り替えられます。</dd>
+						<dt>スキップ・オート</dt>
+						<dd>スキップ・オート機能関連の設定を変更します。</dd>
+						<dt>既読</dt>
+						<dd>既読の文章・選択肢の表示などを変更します。</dd>
+					</dl>
+					<p>
+						これらはSSPの本体設定に影響を及ぼしません。<br>
+						LNP内各シナリオで共通して使われます。
+					</p>
+					<p>
+						*1 : 「する」では画面がチラつきやすくなり、動作が不安定になります。
+					</p>
+				</div>
+
+				<div class="item" id="allow_users_to_enter_text">
+					<h2>ユーザに文字入力させる</h2>
+					<pre><code>\![open,inputbox,<em>ID</em>,--reference=<em>【ジャンプ先シナリオ名】</em>,<em>...</em>]</code></pre>
+					<p>
+						<em>Onで始まらないID</em>を振ると、入力された文字に対して「OnUserInput」で区切り字消し加工をします。<br>
+						さくらスクリプトのエスケープはしないので、読み上げる時は「\_?」で前後を囲むなどしてください。
+					</p>
+					<hr>
+					<p>
+						イベント「OnUserInput」「OnUserInputCancel」の処理は、変数「ユーザ入力受付中」のみ動作します。
+					</p>
+					<hr>
+					<p><em>Onで始まるID</em>を振るとLNP基本辞書での加工はされません。<br>
+						入力決定後にイベント「On<em>【振ったID】</em>」が発生します。<br>
+						入力ボックスを閉じるか時間切れでイベント「On<em>【振ったID】</em>Cancel」が発生します。<br>
+						この場合、変数「ユーザ入力受付中」の状態は関係しません。
+					</p>
+				</div>
+
+				<div class="item" id="reaction_to_keyboard_input">
+					<h2>キーボード入力への反応</h2>
+					<p>
+						「＊<em>【フォルダ名】</em>.<em>?</em>が押された」が存在すると、そのキーが押された時に該当する関数へジャンプします。<br>
+						アルファベットのAキーが押された場合、小文字の「＊<em>【フォルダ名】</em>.aが押された」が呼ばれます。
+					</p>
+					<hr>
+					<p>
+						「KeyPressCommand_AcceptingInputs」変数が1のときにキー入力があると、「＠<em>【フォルダ名】</em>.KeyPressCommand」の中身に応じてコマンドを照合します。<br>
+						この変数が1である間は、「＊<em>【フォルダ名】</em>.<em>?</em>が押された」へのジャンプ動作は行われません。<br>
+						コマンドが合致するか、ゴーストの起動・終了でこれらの変数は初期化されます。
+						半角カンマ区切りで左から照合し、合致したら「＊<em>【フォルダ名】</em>.<em>【シナリオ名】</em>」へジャンプします。
+					</p>
+					<pre><code>＠<em>【フォルダ名】</em>.KeyPressCommand_List
+<em>command1</em>,<em>シナリオ名１</em>,<em>command2</em>,<em>シナリオ名２</em></code></pre>
+					<p>
+						ジャンプ直後の関数はセーブデータのチェックポイントにならないため、以下の様にラベル通過を適宜行ってください。
+					</p>
+					<pre><code>＊<em>【フォルダ名】</em>.<em>【シナリオ名】</em>
+
+＄__tmp	（call,ラベル通過,<em>【シナリオ名】</em>）
+＃オートセーブを許可する場合こちら
+
+＄__tmp	（call,ラベル通過,<em>【シナリオ名】</em>,オートセーブ不可）
+＃オートセーブを許可しない場合こちら</code></pre>
+				</div>
+
+				<div class="item" id="reaction_to_mouse_input">
+					<h2>マウス入力への反応</h2>
+					<p>
+						以下の変数の中身が1の時のみ、それぞれのマウス入力へ反応するための関数へ飛ぼうとします。<br>
+						変数はゲーム起動時、0に戻ります。
+					</p>
+					<dl>
+						<dt>変数「マウス受付_クリック」</dt>
+						<dd>＊<em>【フォルダ名】</em>.<em>（当たり判定名）</em>左クリック</dd>
+						<dd>＊<em>【フォルダ名】</em>.<em>（当たり判定名）</em>右クリック</dd>
+						<dt>変数「マウス受付_つつかれ」</dt>
+						<dd>＊<em>【フォルダ名】</em>.<em>（当たり判定名）</em>つつかれ</dd>
+						<dt>変数「マウス受付_なでられ」</dt>
+						<dd>＊<em>【フォルダ名】</em>.<em>（当たり判定名）</em>なでられ</dd>
+						<dt>変数「マウス受付_ころころ」</dt>
+						<dd>＊<em>【フォルダ名】</em>.<em>（当たり判定名）</em>ころころ上</dd>
+						<dd>＊<em>【フォルダ名】</em>.<em>（当たり判定名）</em>ころころ下</dd>
+						<dd>＊<em>【フォルダ名】</em>.<em>（当たり判定名）</em>ころころ</dd>
+					</dl>
+					<hr>
+					<p>
+						当たり判定のない箇所で操作があった時は、<em>（当たり判定名）</em>の箇所のない関数に飛ぼうとします。
+					</p>
+					<dl>
+						<dt>変数「マウス受付_クリック」</dt>
+						<dd>＊<em>【フォルダ名】</em>.左クリック</dd>
+						<dd>＊<em>【フォルダ名】</em>.右クリック</dd>
+						<dt>変数「マウス受付_つつかれ」</dt>
+						<dd>＊<em>【フォルダ名】</em>.つつかれ</dd>
+						<dt>変数「マウス受付_なでられ」</dt>
+						<dd>＊<em>【フォルダ名】</em>.なでられ</dd>
+						<dt>変数「マウス受付_ころころ」</dt>
+						<dd>＊<em>【フォルダ名】</em>.ころころ上</dd>
+						<dd>＊<em>【フォルダ名】</em>.ころころ下</dd>
+						<dd>＊<em>【フォルダ名】</em>.ころころ</dd>
+					</dl>
+				</div>
+
+				<div class="item" id="backlog">
+					<h2>バックログ</h2>
+					<p>
+						「バックログ状態」という変数の中身が1である時にチェックポイント(*1)を通過すると、通過したシナリオ名が「バックログ格納」という変数へ記録されます。
+					</p>
+					<p>
+						バックログを開くと、「バックログ格納」に記録された内容と<a href="#setting_dictionary">設定辞書</a>の記述に応じて、「<em>【フォルダ名】</em>.<em>【シナリオ名】</em><em>【バックログ接尾辞】</em>」が参照されます。
+					</p>
+					<p>
+						同じシナリオ名が連続してバックログに入ることはありません。
+					</p>
+					<p>
+						セーブデータからのロード時には水平線が挿入されます。
+					</p>
+					<p>*1: <a href="tags.html#next">next</a>・<a href="tags.html#nextset">nextset</a>・<a
+							href="tags.html#nextjump">nextjump</a>・<a href="tags.html#choices">選択肢</a>のタグ実行直後に移動した関数の冒頭</p>
+				</div>
+
+				<div class="item" id="gallery">
+					<h2>ギャラリー</h2>
+					<p>
+						<a
+							href="#setting_dictionary">設定辞書</a>の記述に応じて、「<em>【フォルダ名】</em>.<em>【ギャラリーリスト名】</em><em>【１から始まる連番】</em>」が参照されます。
+					</p>
+					<hr>
+					<pre><code>＠<em>【フォルダ名】</em>.<em>【ギャラリーリスト名】</em><em>【１から始まる連番】</em>
+<em>見出し用画像</em>|<em>個別表示画像ファイルパス</em>|<em>解禁判定変数名(グローバル変数)</em></code></pre>
+					<p>
+						例１：差分無しの場合<br>
+						見出し用画像は<em>画像パス</em>または\_b["<em>画像パス</em>",inline,--option=background<em>,...</em>]で指定してください。
+					</p>
+					<hr>
+					<pre><code>＠<em>【フォルダ名】</em>.<em>【ギャラリーリスト名】</em><em>【１から始まる連番】</em>
+<em>見出し用画像</em>|<em>個別表示画像ファイルパス１</em>|<em>解禁判定変数名(グローバル変数)</em>|<em>個別表示画像ファイルパス２</em>|<em>解禁判定変数名(グローバル変数)</em>|<em>...</em></code></pre>
+					<p>
+						例２：差分有りの場合
+					</p>
+					<hr>
+					<pre><code>＠【フォルダ名】.【ギャラリーリスト名】【１から始まる連番】
+見出し用画像|個別表示画像ファイルパス:<em>x座標(半角数字)</em>:<em>y座標(半角数字)</em>|解禁判定変数名(グローバル変数)|...</code></pre>
+					<p>
+						例３：画面いっぱいよりも小さい画像を表示するときの座標を指定できます。<br>
+						座標指定が無ければテキスト描画開始位置左上（0,0）に配置されます。
+					</p>
+				</div>
+			</div>
+
+			<div id="page_top"><a href="#">▲</a></div>
+
+		</div>
+	</div>
+</body>
+</html>
+
+

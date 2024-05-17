@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>LilyNovelPlayer 独自タグ一覧</title>
+	<meta name="description" content="SSPで動作する、ノベルゲームを作れる枠組み的なゴースト＆シェル＆バルーン「Lily Novel Player」の取扱説明書">
+	<link rel="stylesheet" href="./src/style.css">
+	<script src="./src/script.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="content">
+
+			<div class="side">
+				<ul>
+					<li class="differentpage"><a href="./hint.html">「制作の手引き」頁</a></li>
+					<li class="returntotop"><a href="#">▲TOP▲</a></li>
+					<li><a href="#bg">bg</a></li>
+					<li><a href="#image">image</a></li>
+					<li><a href="#freeimage">freeimage</a></li>
+					<li><a href="#menu_allowed">メニュー許可</a></li>
+					<li><a href="#menu_disallowed">メニュー不可</a></li>
+					<li><a href="#unskip">スキップ解除</a></li>
+					<li><a href="#unauto">オート解除</a></li>
+					<li><a href="#variable_reading">変数読み出し</a></li>
+					<li><a href="#global_variable_reading">変数読み出しg</a></li>
+					<li><a href="#name_tag">名札</a></li>
+					<li><a href="#menu_button">メニューボタン</a></li>
+					<li><a href="#next">next</a></li>
+					<li><a href="#nextset">nextset</a></li>
+					<li><a href="#nextjump">nextjump</a></li>
+					<li><a href="#choices">選択肢</a></li>
+					<li><a href="#music">音楽</a></li>
+					<li><a href="#sound_effect">効果音</a></li>
+					<li><a href="#voice">ボイス</a></li>
+					<li><a href="#sound_stop">音停止</a></li>
+					<li><a href="#sound_load">音ロード</a></li>
+				</ul>
+			</div>
+
+			<div class="main">
+
+				<div class="item" id="example">
+					<h2>Lily Novel Player　独自タグ一覧</h2>
+					<pre><code>（タグ名,<em>変更すべき箇所</em>）</code></pre>
+					<p>変更すべき箇所は<em>赤い色の太字</em>で表記されます。<br>
+						タグ末尾に「<em>...</em>」という省略がある場合、引数の数を限定しません。</p>
+					<p>当頁にあるタグには、以下のような指定をreplace.txtで行っています。<br>
+						そのためcallを省略でき、バイト値１以外の里々既定の区切り字４種が使えます。<br>
+						使用例は半角カンマで統一しています。</p>
+					<pre><code>（bg,&Tab;（call,bg,
+（bg、&Tab;（call、bg、
+（bg，&Tab;（call，bg，
+（bg､&Tab;（call､bg､</code></pre>
+				</div>
+
+				<div class="item" id="bg">
+					<h2>bg</h2>
+					<pre><code>（bg,<em>画像パス</em>）</code></pre>
+					<p>
+						背景を描画します。<br>
+						座標とレイヤ、オプションの指定は固定されています。<br>
+						このタグで描画中の画像と同じ指示がこのタグで来ても、何も起こりません。<br>
+						違う指示が来たら、\p[3]のバルーンをクリアしてから次の画像を描画します。
+					</p>
+					<p>
+						指定済みオプションは以下です。
+					</p>
+					<dl>
+						<dt>inline</dt>
+						<dd>バルーンのテキスト行内に1文字分扱いとして画像を貼り付ける</dd>
+						<dt>--option=foreground</dt>
+						<dd>バルーンよりも画像の透明度を優先して合成表示される</dd>
+						<dt>--option=opaque</dt>
+						<dd>左上の色を透過しないで表示する</dd>
+						<dt>--option=fixed</dt>
+						<dd>スクロールした時に画像を動かさない</dd>
+					</dl>
+				</div>
+
+				<div class="item" id="image">
+					<h2>image</h2>
+					<pre><code>（image,<em>画像パス</em>,<em>x座標</em>,<em>y座標</em>,<em>描画レイヤ</em>）</code></pre>
+					<pre><code>（image,<em>画像パス</em>,<em>x座標</em>,<em>y座標</em>,<em>描画レイヤ</em>,<em>オプション指定</em>,<em>...</em>）</code></pre>
+					<p>
+						指定した画像を描画します。<br>
+						このタグで描画中の画像と同じ指示がこのタグで来ても、何も起こりません。<br>
+						違う指示が来たら、前の画像の手前に次の画像を描画します。
+					</p>
+					<hr>
+					<p>指定できるレイヤは１～３です。（３が奥で１が手前、０は文章が描画されます）</p>
+					<hr>
+					<p>以下の２つのオプションが必ず指定されます。</p>
+					<dl>
+						<dt>--option:fixed</dt>
+						<dd>スクロールした時に画像を動かさない</dd>
+						<dt>--option=foreground</dt>
+						<dd>バルーンよりも画像の透明度を優先して合成表示される</dd>
+					</dl>
+
+					<hr>
+					<p>指定できるオプションは以下です。</p>
+					<dl>
+						<dt>--option=opaque</dt>
+						<dd>左上の色を透過しないで表示する</dd>
+						<dt>--option=use_self_alpha</dt>
+						<dd>アルファチャンネル付きのPNGを透過して表示する</dd>
+						<dt>---clipping=左 上 右 下</dt>
+						<dd>画像の一部分を矩形に切り抜いて表示する<br>
+							切り抜く範囲は左上右下と数値で指定</dd>
+					</dl>
+
+				</div>
+
+				<div class="item" id="freeimage">
+					<h2>freeimage</h2>
+					<pre><code>（freeimage,<em>レイヤ番号</em>）</code></pre>
+					<p>
+						例１：指定したスコープ番号（０～３）のバルーンに表示されている画像や文字をすべて消去します。
+					</p>
+					<hr>
+					<pre><code>（freeimage）</code></pre>
+					<p>
+						例２：番号指定を省略すると、０～３全てのバルーンの中身の表示が消去されます。
+					</p>
+				</div>
+
+				<div class="item" id="menu_allowed">
+					<h2>メニュー許可</h2>
+					<pre><code>（メニュー許可）</code></pre>
+					<p>各種メニューが開けるかどうかを一括で制御します。</p>
+					<p>個別に状態を変えたい場合は、以下の変数を直接書き換えてください。<br>
+						変数の中身が「1」ならば、許可していることになります。</p>
+					<ul>
+						<li>メニュー状態.オート</li>
+						<li>メニュー状態.ギャラリー</li>
+						<li>メニュー状態.クイックセーブ</li>
+						<li>メニュー状態.クイックロード</li>
+						<li>メニュー状態.コンフィグ</li>
+						<li>メニュー状態.スキップ</li>
+						<li>メニュー状態.セーブ</li>
+						<li>メニュー状態.タイトルに戻る</li>
+						<li>メニュー状態.ハイド</li>
+						<li>メニュー状態.バックログ</li>
+						<li>メニュー状態.ロード</li>
+					</ul>
+				</div>
+
+				<div class="item" id="menu_disallowed">
+					<h2>メニュー不可</h2>
+					<pre><code>（メニュー不可）</code></pre>
+					<p>各種メニューが開けるかどうかを一括で制御します。</p>
+					<p>個別に状態を変えたい場合は、以下の変数を直接書き換えてください。<br>
+						変数の中身が「1」以外ならば、許可していないことになります。</p>
+					<ul>
+						<li>メニュー状態.オート</li>
+						<li>メニュー状態.ギャラリー</li>
+						<li>メニュー状態.クイックセーブ</li>
+						<li>メニュー状態.クイックロード</li>
+						<li>メニュー状態.コンフィグ</li>
+						<li>メニュー状態.スキップ</li>
+						<li>メニュー状態.セーブ</li>
+						<li>メニュー状態.タイトルに戻る</li>
+						<li>メニュー状態.ハイド</li>
+						<li>メニュー状態.バックログ</li>
+						<li>メニュー状態.ロード</li>
+					</ul>
+				</div>
+
+				<div class="item" id="unskip">
+					<h2>スキップ解除</h2>
+					<pre><code>（スキップ解除）</code></pre>
+					<p>このタグがあると、そのセクション(*1)の冒頭でスキップ状態が解除されます。</p>
+					<p>*1: チェックポイント冒頭～<a href="#next">next</a>・<a href="#nextset">nextset</a>・<a href="#nextjump">nextjump</a>・<a
+							href="#choices">選択肢</a>のタグまで。<br>
+						またはチェックポイント冒頭から\eまで。</p>
+				</div>
+
+				<div class="item" id="unauto">
+					<h2>オート解除</h2>
+					<pre><code>（オート解除）</code></pre>
+					<p>このタグがあると、そのセクション(*1)の冒頭でオート状態が解除されます。</p>
+					<p>*1: チェックポイント冒頭～<a href="#next">next</a>・<a href="#nextset">nextset</a>・<a href="#nextjump">nextjump</a>・<a
+							href="#choices">選択肢</a>のタグまで。<br>
+						またはチェックポイント冒頭から\eまで。</p>
+				</div>
+
+				<div class="item" id="variable_reading">
+					<h2>変数読み出し</h2>
+					<pre><code>（変数読み出し,<em>変数名</em>）</code></pre>
+					<p>変数名を渡すと、変数の内容が文字列で返ってきます。<br>
+						変数が存在しない場合、結果は空になります。</p>
+					<p>変数の内容に括弧などの特殊文字が入っていた場合、φでエスケープされて出てくる可能性があります。</p>
+				</div>
+
+				<div class="item" id="global_variable_reading">
+					<h2>変数読み出しg</h2>
+					<pre><code>（変数読み出しg,<em>ゲーム名</em>,<em>変数名</em>）</code></pre>
+					<p>例１：ゲーム名（シェルフォルダ名）と変数名を渡すと、そのゲームのグローバル変数の内容が文字列で返ってきます。<br>
+						変数が存在しない場合、結果は空になります。</p>
+					<p>変数の内容に括弧などの特殊文字が入っていた場合、φでエスケープされて出てくる可能性があります。</p>
+					<hr>
+					<pre><code>（変数読み出しg,,<em>変数名</em>）</code></pre>
+					<p>例２：ゲーム名を省略すると、現在のゲームのグローバル変数を読もうとします。</p>
+				</div>
+
+				<div class="item" id="name_tag">
+					<h2>名札</h2>
+					<pre><code>（名札,<em>表示する文字</em>）</code></pre>
+					<p>例１：名前表示（太文字表記）を\0バルーンの現在のカーソル位置に出します。</p>
+					<hr>
+					<pre><code>（名札,<em>表示する文字</em>,<em>x座標</em>,<em>y座標</em>）</code></pre>
+					<p>例２：名前表示を\0バルーンの指定した座標に出します。<br>
+						タグ使用後のカーソル位置は文字列の直後に移動します。</p>
+				</div>
+
+				<div class="item" id="menu_button">
+					<h2>メニューボタン</h2>
+					<pre><code>（メニューボタン,<em>x座標</em>,<em>y座標</em>,<em>横方向寄せ指定</em>）</code></pre>
+					<p>
+						例：メニューボタンを<a href="./hint.html#setting_dictionary">設定辞書</a>の設定に従い\0のバルーンへ出します。<br>
+						座標省略時はそれぞれ0となります。<br>
+						横方向寄せ指定はleft（左寄せ）、center（中央揃え）、right（右寄せ）の三種が指定できます。（省略時left）<br>
+						0以外のx座標が指定されている場合、中央揃え指定はX座標分インデント処理された扱いになります。<br>
+						表示は<a href="./hint.html#ui_including_menus">メニューの許可状態</a>と連動します。
+					</p>
+				</div>
+
+				<div class="item" id="next">
+					<h2>next</h2>
+					<pre><code>（next）</code></pre>
+					<p>例１：設定済みのシナリオ名接頭辞と連番開始値に従い、次のシナリオへ移動するためのクリック待ちを出します。<br>
+						連番は、クリック待ちを進むごとに１ずつ加算されます。</p>
+					<p>初期値はそれぞれ、接頭辞：「シナリオ」、連番開始値：「１」です。<br>
+						この場合のジャンプ先は「<em>【フォルダ名】</em>.<em>シナリオ</em><em>【現在の連番】</em>」となります。</p>
+					<hr>
+					<pre><code>（next,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>変数名2</em>,<em>代入内容2</em>,<em>...</em>）</code></pre>
+					<p>例２：次のシナリオへの移動時、指定したゲーム内変数を操作します。</p>
+					<hr>
+					<pre><code>（next,<em>内容を削除したい変数名</em>,,<em>内容を書き換える変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例３：変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。</p>
+					<hr>
+					<pre><code>（next,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例４：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						記録時、「__global__」は変数名に入りません。</p>
+				</div>
+
+				<div class="item" id="nextset">
+					<h2>nextset</h2>
+					<pre><code>（nextset,<em>シナリオ名接頭辞</em>,<em>連番開始値</em>）</code></pre>
+					<p>例１：nextのシナリオ名接頭辞と連番開始値を設定し、次のシナリオへ移動します。<br>
+						ジャンプ先は「<em>【フォルダ名】</em>.<em>【シナリオ名接頭辞】</em><em>【連番開始値】</em>」です。</p>
+					<hr>
+					<pre><code>（nextset）</code></pre>
+					<p>例２：指定省略時の初期値はそれぞれ、接頭辞：「シナリオ」、連番開始値：「１」です。</p>
+					<hr>
+					<pre><code>（nextset,<em>シナリオ名接頭辞</em>,<em>連番開始値</em>,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>...</em>）</code></pre>
+					<p>例３：nextのシナリオ名接頭辞と連番開始値を設定し、指定したゲーム内変数を操作します。<br>
+						変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。
+					</p>
+					<hr>
+					<pre><code>（nextset,,,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>...</em>）</code></pre>
+					<p>例４：ゲーム内変数を操作しつつシナリオ名接頭辞および連番開始値を省略する時は、このようにしてください。</p>
+					<hr>
+					<pre><code>（nextset,<em>シナリオ名接頭辞</em>,<em>連番開始値</em>,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例５：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						また、変数記録時、「__global__」は変数名に入りません。</p>
+				</div>
+
+				<div class="item" id="nextjump">
+					<h2>nextjump</h2>
+					<pre><code>（nextjump,<em>シナリオ名</em>）</code></pre>
+					<p>例１：クリック待ち無しで次のシナリオへ移動します。<br>
+						ジャンプ先は「<em>【フォルダ名】</em>.<em>【シナリオ名】</em>」です。</p>
+					<hr>
+					<pre><code>（nextjump,<em>シナリオ名</em>,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>...</em>）</code></pre>
+					<p>例２：ゲーム内変数を操作しつつ指定したシナリオへ移動します。<br>
+						変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。</p>
+					<hr>
+					<pre><code>（nextjump,<em>シナリオ名</em>,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例３：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						また、変数記録時、「__global__」は変数名に入りません。</p>
+				</div>
+
+				<div class="item" id="choices">
+					<h2>選択肢</h2>
+					<pre><code>（選択肢,<em>表示する文字</em>,<em>ジャンプ先シナリオ名</em>）</code></pre>
+					<p>例１：選択肢を\0のバルーンへ出します。<br>
+						描画できる場所は現在のカーソル位置のみです。</p>
+					<p>出現場所を変えたい場合は「\_l[x,y]（選択肢,...）」のようにしてください。</p>
+					<hr>
+					<pre><code>（選択肢,<em>表示する文字</em>,<em>ジャンプ先シナリオ名</em>,<em>操作する変数名</em>,<em>変数へ代入する内容</em>,<em>変数名2</em>,<em>代入内容2</em>,<em>...</em>）</code></pre>
+					<p>例２：選択肢でのジャンプ後、ゲーム内変数を操作できます。<br>
+						変数へ代入する内容が空もしくは存在しない場合、その変数は削除されます。
+					</p>
+					<hr>
+					<pre><code>（選択肢,<em>表示する文字</em>,<em>ジャンプ先シナリオ名</em>,__global__<em>グローバル変数名</em>,<em>代入内容</em>,<em>...</em>）</code></pre>
+					<p>例３：変数名の前に「__global__」とつけると、その変数はグローバル変数として記録されます。<br>
+						グローバル変数はセーブデータのロードによって書き換えられることがありません。<br>
+						また、変数記録時、「__global__」は変数名に入りません。
+					</p>
+				</div>
+
+				<div class="item" id="music">
+					<h2>音楽</h2>
+					<pre><code>（音楽,<em>ファイルパス</em>）</code></pre>
+					<p>例１：指定されたファイルをループ無しで再生します。<br>
+						コンフィグの音楽音量設定が反映されます。<br>
+						現在再生中の音楽と同じものが再度指定された場合、何もしません。<br>
+						音楽再生終了前、またはループ再生中に別の音楽をこのタグで再生指示すると、前の音楽は止まります。</p>
+					<p>※SSPの本体設定で「最小化時に喋らない」が有効になっていると、「メニュー.最小化」を経由しない最小化時(*1)に音が一時停止されません。<br>
+						対応不可能なため、仕様とします。<br>
+						*1: ショートカットキー操作・タスクトレイアイコンのダブルクリック、など</p>
+					<p>※再生失敗した時、およびループ無し指定で１曲を再生終了した時は、再生中の状態変数が自動で解除されます。</p>
+					<hr>
+					<pre><code>（音楽,<em>ファイルパス</em>,loop）</code></pre>
+					<p>例２：ループ再生をしたい場合はこのように指定してください。<br>
+						現在再生中の音楽と同じものが再度指定された場合は、何もしません。</p>
+				</div>
+
+				<div class="item" id="sound_effect">
+					<h2>効果音</h2>
+					<pre><code>（効果音,<em>ファイルパス</em>）</code></pre>
+					<p>指定されたファイルをループ無しで再生します。<br>
+						コンフィグの効果音音量設定が反映されます。</p>
+					<p>※SSPの本体設定で「最小化時に喋らない」が有効になっていると、「＊メニュー.最小化」を経由しない最小化時(*1)に音が一時停止されません。<br>
+						対応不可能なため、仕様とします。<br>
+						*1: ショートカットキー操作・タスクトレイアイコンのダブルクリック、など</p>
+					<p>※再生失敗した時、およびループ無し指定で１効果音を再生終了した時は、再生中の状態変数が自動で解除されます。</p>
+					<hr>
+					<pre><code>（効果音,<em>ファイルパス</em>,loop）</code></pre>
+					<p>例２：ループ再生をしたい場合はこのように指定してください。</p>
+				</div>
+
+				<div class="item" id="voice">
+					<h2>ボイス</h2>
+					<pre><code>（ボイス,<em>ファイルパス</em>）</code></pre>
+					<p>指定されたファイルをループ無しで再生します。<br>
+						コンフィグのボイス音量設定が反映されます。</p>
+					<p>ボイス再生終了前、またはボイスをループ再生中にボイスをこのタグで再生指示すると、前のボイスは止まります。</p>
+					<p>※SSPの本体設定で「最小化時に喋らない」が有効になっていると、「メニュー.最小化」を経由しない最小化時(*1)に音が一時停止されません。<br>
+						対応不可能なため、仕様とします。<br>
+						*1: ショートカットキー操作・タスクトレイアイコンのダブルクリック、など</p>
+					<p>※再生失敗した時、およびループ無し指定で１ボイスを再生終了した時は、再生中の状態変数が自動で解除されます。</p>
+				</div>
+
+				<div class="item" id="sound_stop">
+					<h2>音停止</h2>
+					<pre><code>（音停止）</code></pre>
+					<p>例１：再生中の音声ファイルを全て停止します。</p>
+					<hr>
+					<pre><code>（音停止,<em>音楽</em>）
+（音停止,<em>効果音</em>）
+（音停止,<em>ボイス</em>）</code></pre>
+					<p>例２：再生中の、指定した種類の音声ファイルを全て停止します。</p>
+					<hr>
+					<pre><code>（音停止,<em>ファイルパス</em>）</code></pre>
+					<p>例３：指定したファイルが再生中であれば停止します。</p>
+				</div>
+
+				<div class="item" id="sound_load">
+					<h2>音ロード</h2>
+					<pre><code>（音ロード,<em>ファイルパス</em>）</code></pre>
+					<p>指定されたファイルをあらかじめ読み込んで、再生開始時すぐに再生できるようにします。<br>
+						音楽・効果音のどちらにも有効です。<br>
+						このタグが無くても音の再生自体は行われます。</p>
+					<p>※チェックポイント(*1)をまたいで指定した場合、セーブデータからの再開時にこのタグの設置地点を通らないかもしれません。<br>
+						その時は読み込み時間が発生します。</p>
+					<p>
+						*1: <a href="#next">next</a>・<a href="#nextset">nextset</a>・<a href="#nextjump">nextjump</a>・<a
+							href="#choices">選択肢</a>のタグ実行直後に移動した関数の冒頭
+					</p>
+				</div>
+			</div>
+
+			<div id="page_top"><a href="#">▲</a></div>
+
+		</div>
+	</div>
+</body>
+
+</html>
