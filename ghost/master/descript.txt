@@ -9,6 +9,7 @@ title,LilyNovelPlayer
 
 craftman,lost_nd_xxx & omochi-yoichi
 craftmanw,ろすえん＆おもちよいち
+craftmanurl,https://lnx.flop.jp/
 
 sakura.name,LilyNovelPlayer0
 kero.name,LilyNovelPlayer1
