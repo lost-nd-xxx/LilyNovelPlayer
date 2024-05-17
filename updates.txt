@@ -1,9 +1,4 @@
 charset,UTF-8
-file,docs/hint.html48ea6904ccbe2e4b1c74fdd48db52493size=33900date=2012-12-21T00:00:00
-file,docs/src/icon_lily.svg3a362afa263083b2e758de0f4b59c09esize=16147date=2012-12-21T00:00:00
-file,docs/src/script.jsabb43b42e58cbcbbc39e2338f64e55a0size=219date=2012-12-21T00:00:00
-file,docs/src/style.css0cd3ad83018c553b4e5c4ef15f36a84fsize=4173date=2012-12-21T00:00:00
-file,docs/tags.html7a0bb2d3b2411cd15ba0af36a54ce80dsize=22885date=2012-12-21T00:00:00
 file,ghost/master/assets/preset/batsu_button.pngd37ac411645ce04ce6aab3b23bbaad11size=585date=2012-12-21T00:00:00
 file,ghost/master/assets/preset/button1.pngfcb734732465ceb4362a9f35d851cd46size=596date=2012-12-21T00:00:00
 file,ghost/master/assets/preset/button1d.pnge6a0ee91b05651aafe807e216524e8dbsize=593date=2012-12-21T00:00:00
