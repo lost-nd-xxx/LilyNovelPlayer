@@ -1,5 +1,5 @@
 # Lily Novel Player
-スクショgif貼る
+![screen shots](lnp_screenshot.gif)
 
 
 ## 概要
@@ -19,7 +19,7 @@
 
 
 ## 更新履歴
-* [大まかな更新履歴](#)
-* [詳細な更新履歴](#)
+* ~~大まかな更新履歴~~
+* [詳細な更新履歴](https://github.com/lost-nd-xxx/LilyNovelPlayer/commits/main/)
 
 
