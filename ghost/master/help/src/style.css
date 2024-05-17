@@ -1,0 +1,275 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image: url('./icon_lily.svg');
+	background-attachment: fixed;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-color: #eee;
+	background-size: 512px;
+	background-color: rgba(238, 238, 238, 0.75);
+	background-blend-mode: soft-light;
+	color: #222;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	min-width: 400px;
+}
+
+h1 {
+	background: #fff;
+	border-radius: 5px;
+	color: #1976D2;
+	padding: 10px;
+	display: block;
+	margin: 0;
+}
+
+h2 {
+	background: #1976D2;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	margin: 0;
+	border-radius: 5px;
+}
+
+pre {
+	position: relative;
+	margin: 1em 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 15px;
+	background: #eee;
+	border-radius: 5px;
+}
+
+pre code {
+	display: block;
+	margin: 0;
+	padding: 2em 1em;
+	max-height: 240px;
+	line-height: 1.4;
+	overflow: auto;
+}
+
+.copy-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	margin: 0 auto;
+	padding: 0 1em;
+	height: 24px;
+	border: none;
+	line-height: 1;
+	font-weight: bold;
+	background: #455A64;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.copy-button:hover {
+	background: #999
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+	color: #F44336;
+}
+
+.side ul {
+	padding: 0;
+	margin-block-end: 0;
+	margin-block-start: 0;
+	width: 290px;
+}
+
+.side ul li {
+	width: auto;
+	color: #222;
+	border-left: solid 6px #2196F3;
+	/*左側の線*/
+	background: #B3E5FC;
+	/*背景色*/
+	margin-bottom: 5px;
+	/*下のバーとの余白*/
+	line-height: 1.5;
+	padding: 0.2em;
+	padding-left: 0.5em;
+	padding-right: 3em;
+	list-style-type: none !important;
+	/*ポチ消す*/
+	vertical-align: middle;
+	box-shadow: 1px 1px 3px #666;
+}
+
+.returntotop {
+	border-left: solid 6px #FFC107 !important;
+	/*左側の線*/
+	background: #FFECB3 !important;
+	/*背景色*/
+}
+
+.differentpage {
+	border-left: solid 6px #E91E63 !important;
+	/*左側の線*/
+	background: #F8BBD0 !important;
+	/*背景色*/
+}
+
+.side ul li:hover {
+	background: #fff !important;
+	/*背景*/
+}
+
+.side ul li a {
+	text-decoration: none;
+	display: block;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+}
+
+.header,
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.main {
+	line-height: 1.5em;
+	width: 100%;
+	height: 100%;
+	max-width: 600px;
+	min-width: 100px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.main::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.main p {
+	margin: 1em 0;
+}
+
+.side {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 5px;
+	/* 追従する */
+	height: 100%;
+	width: 270px;
+	min-width: 270px;
+	margin: 0;
+	margin-right: -2.5em;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.item {
+	background: #fff;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 20px;
+	position: relative;
+	box-shadow: 2px 2px 5px #666;
+}
+
+hr {
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: #ccc;
+}
+
+#page_top {
+	display: block;
+	opacity: 0;
+	transition: opacity 0.4s ease-in ease-out;
+	pointer-events: none;
+}
+
+@media screen and (max-height: 800px),
+screen and (max-width: 850px) {
+
+	body {
+		background-size: 256px !important;
+	}
+
+	.side {
+		top: auto;
+		/* 追従しない */
+		margin-top: 5px;
+	}
+
+	#page_top {
+		display: block;
+		opacity: 0;
+		transition: opacity 0.4s ease-in;
+		pointer-events: none;
+	}
+
+	#page_top a {
+		text-decoration: none;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		z-index: 100;
+		color: rgb(255, 193, 7);
+		background-color: rgb(255, 236, 179);
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 2em;
+		border-radius: 50%;
+		border: solid 4px rgb(255, 193, 7);
+		text-align: center;
+		overflow: hidden;
+		box-shadow: 1px 1px 5px #666;
+		margin: 0;
+		padding: 0;
+	}
+
+	#page_top a:hover {
+		background-color: #fff;
+		cursor: pointer;
+	}
+
+	#page_top.fadein {
+		opacity: .5;
+		pointer-events: auto;
+	}
+
+}
+
+

@@ -2,7 +2,13 @@
 <html lang="ja">
 
 <head>
-	<title>LilyNovelPlayer “Æ©ƒ^ƒOˆê——</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>LilyNovelPlayer ç‹¬è‡ªã‚¿ã‚°ä¸€è¦§</title>
+	<meta name="description" content="SSPã§å‹•ä½œã™ã‚‹ã€ãƒãƒ™ãƒ«ã‚²ãƒ¼ãƒ ã‚’ä½œã‚Œã‚‹æ çµ„ã¿çš„ãªã‚´ãƒ¼ã‚¹ãƒˆï¼†ã‚·ã‚§ãƒ«ï¼†ãƒãƒ«ãƒ¼ãƒ³ã€ŒLily Novel Playerã€ã®å–æ‰±èª¬æ˜æ›¸">
+	<link rel="stylesheet" href="./src/style.css">
+	<script src="./src/script.js"></script>
 </head>
 
 <body>
@@ -13,720 +19,373 @@
 
 			<div class="side">
 				<ul>
-					<a href="./hint.html">
-						<li class="differentpage">u§ì‚Ìèˆø‚«v•Å</li>
-					</a>
-					<a href="#">
-						<li class="returntotop">£TOP£</li>
-					</a>
-					<a href="#bg">
-						<li>bg</li>
-					</a>
-					<a href="#image">
-						<li>image</li>
-					</a>
-					<a href="#freeimage">
-						<li>freeimage</li>
-					</a>
-					<a href="#ƒƒjƒ…[‹–‰Â">
-						<li>ƒƒjƒ…[‹–‰Â</li>
-					</a>
-					<a href="#ƒƒjƒ…[•s‰Â">
-						<li>ƒƒjƒ…[•s‰Â</li>
-					</a>
-					<a href="#ƒXƒLƒbƒv‰ğœ">
-						<li>ƒXƒLƒbƒv‰ğœ</li>
-					</a>
-					<a href="#ƒI[ƒg‰ğœ">
-						<li>ƒI[ƒg‰ğœ</li>
-					</a>
-					<a href="#•Ï”“Ç‚İo‚µ">
-						<li>•Ï”“Ç‚İo‚µ</li>
-					</a>
-					<a href="#•Ï”“Ç‚İo‚µg">
-						<li>•Ï”“Ç‚İo‚µg</li>
-					</a>
-					<a href="#–¼D">
-						<li>–¼D</li>
-					</a>
-					<a href="#ƒƒjƒ…[ƒ{ƒ^ƒ“">
-						<li>ƒƒjƒ…[ƒ{ƒ^ƒ“</li>
-					</a>
-					<a href="#next">
-						<li>next</li>
-					</a>
-					<a href="#nextset">
-						<li>nextset</li>
-					</a>
-					<a href="#nextjump">
-						<li>nextjump</li>
-					</a>
-					<a href="#‘I‘ğˆ">
-						<li>‘I‘ğˆ</li>
-					</a>
-					<a href="#‰¹Šy">
-						<li>‰¹Šy</li>
-					</a>
-					<a href="#Œø‰Ê‰¹">
-						<li>Œø‰Ê‰¹</li>
-					</a>
-					<a href="#ƒ{ƒCƒX">
-						<li>ƒ{ƒCƒX</li>
-					</a>
-					<a href="#‰¹’â~">
-						<li>‰¹’â~</li>
-					</a>
-					<a href="#‰¹ƒ[ƒh">
-						<li>‰¹ƒ[ƒh</li>
-					</a>
+					<li class="differentpage"><a href="./hint.html">ã€Œåˆ¶ä½œã®æ‰‹å¼•ãã€é </a></li>
+					<li class="returntotop"><a href="#">â–²TOPâ–²</a></li>
+					<li><a href="#bg">bg</a></li>
+					<li><a href="#image">image</a></li>
+					<li><a href="#freeimage">freeimage</a></li>
+					<li><a href="#menu_allowed">ãƒ¡ãƒ‹ãƒ¥ãƒ¼è¨±å¯</a></li>
+					<li><a href="#menu_disallowed">ãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯</a></li>
+					<li><a href="#unskip">ã‚¹ã‚­ãƒƒãƒ—è§£é™¤</a></li>
+					<li><a href="#unauto">ã‚ªãƒ¼ãƒˆè§£é™¤</a></li>
+					<li><a href="#variable_reading">å¤‰æ•°èª­ã¿å‡ºã—</a></li>
+					<li><a href="#global_variable_reading">å¤‰æ•°èª­ã¿å‡ºã—g</a></li>
+					<li><a href="#name_tag">åæœ­</a></li>
+					<li><a href="#menu_button">ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³</a></li>
+					<li><a href="#next">next</a></li>
+					<li><a href="#nextset">nextset</a></li>
+					<li><a href="#nextjump">nextjump</a></li>
+					<li><a href="#choices">é¸æŠè‚¢</a></li>
+					<li><a href="#music">éŸ³æ¥½</a></li>
+					<li><a href="#sound_effect">åŠ¹æœéŸ³</a></li>
+					<li><a href="#voice">ãƒœã‚¤ã‚¹</a></li>
+					<li><a href="#sound_stop">éŸ³åœæ­¢</a></li>
+					<li><a href="#sound_load">éŸ³ãƒ­ãƒ¼ãƒ‰</a></li>
 				</ul>
 			</div>
 
 			<div class="main">
 
-				<div class="item" id="–}—á">
-					<h2>LilyNovelPlayer@“Æ©ƒ^ƒOˆê——</h2>
-					<pre><code>iƒ^ƒO–¼,<em>•ÏX‚·‚×‚«‰ÓŠ</em>j</code></pre>
-					<p>•ÏX‚·‚×‚«‰ÓŠ‚Í<em>Ô‚¢F‚Ì‘¾š</em>‚Å•\‹L‚³‚ê‚Ü‚·B<br>
-						ƒ^ƒO––”ö‚Éu<em>...</em>v‚Æ‚¢‚¤È—ª‚ª‚ ‚éê‡Aˆø”‚Ì”‚ğŒÀ’è‚µ‚Ü‚¹‚ñB</p>
-					<p>“–•Å‚É‚ ‚éƒ^ƒO‚É‚ÍAˆÈ‰º‚Ì‚æ‚¤‚Èw’è‚ğreplace.txt‚Ås‚Á‚Ä‚¢‚Ü‚·B<br>
-						‚»‚Ì‚½‚ßcall‚ğÈ—ª‚Å‚«AƒoƒCƒg’l‚PˆÈŠO‚Ì—¢XŠù’è‚Ì‹æØ‚èš‚Sí‚ªg‚¦‚Ü‚·B<br>
-						g—p—á‚Í”¼ŠpƒJƒ“ƒ}‚Å“ˆê‚µ‚Ä‚¢‚Ü‚·B</p>
-					<pre><code>ibg,	icall,bg,
-ibgA	icallAbgA
-ibgC	icallCbgC
-ibg¤	icall¤bg¤</code></pre>
+				<div class="item" id="example">
+					<h2>Lily Novel Playerã€€ç‹¬è‡ªã‚¿ã‚°ä¸€è¦§</h2>
+					<pre><code>ï¼ˆã‚¿ã‚°å,<em>å¤‰æ›´ã™ã¹ãç®‡æ‰€</em>ï¼‰</code></pre>
+					<p>å¤‰æ›´ã™ã¹ãç®‡æ‰€ã¯<em>èµ¤ã„è‰²ã®å¤ªå­—</em>ã§è¡¨è¨˜ã•ã‚Œã¾ã™ã€‚<br>
+						ã‚¿ã‚°æœ«å°¾ã«ã€Œ<em>...</em>ã€ã¨ã„ã†çœç•¥ãŒã‚ã‚‹å ´åˆã€å¼•æ•°ã®æ•°ã‚’é™å®šã—ã¾ã›ã‚“ã€‚</p>
+					<p>å½“é ã«ã‚ã‚‹ã‚¿ã‚°ã«ã¯ã€ä»¥ä¸‹ã®ã‚ˆã†ãªæŒ‡å®šã‚’replace.txtã§è¡Œã£ã¦ã„ã¾ã™ã€‚<br>
+						ãã®ãŸã‚callã‚’çœç•¥ã§ãã€ãƒã‚¤ãƒˆå€¤ï¼‘ä»¥å¤–ã®é‡Œã€…æ—¢å®šã®åŒºåˆ‡ã‚Šå­—ï¼”ç¨®ãŒä½¿ãˆã¾ã™ã€‚<br>
+						ä½¿ç”¨ä¾‹ã¯åŠè§’ã‚«ãƒ³ãƒã§çµ±ä¸€ã—ã¦ã„ã¾ã™ã€‚</p>
+					<pre><code>ï¼ˆbg,&Tab;ï¼ˆcall,bg,
+ï¼ˆbgã€&Tab;ï¼ˆcallã€bgã€
+ï¼ˆbgï¼Œ&Tab;ï¼ˆcallï¼Œbgï¼Œ
+ï¼ˆbgï½¤&Tab;ï¼ˆcallï½¤bgï½¤</code></pre>
 				</div>
 
 				<div class="item" id="bg">
 					<h2>bg</h2>
-					<pre><code>ibg,<em>‰æ‘œƒpƒX</em>j</code></pre>
+					<pre><code>ï¼ˆbg,<em>ç”»åƒãƒ‘ã‚¹</em>ï¼‰</code></pre>
 					<p>
-						”wŒi‚ğ•`‰æ‚µ‚Ü‚·B<br>
-						À•W‚ÆƒŒƒCƒ„AƒIƒvƒVƒ‡ƒ“‚Ìw’è‚ÍŒÅ’è‚³‚ê‚Ä‚¢‚Ü‚·B<br>
-						‚±‚Ìƒ^ƒO‚Å•`‰æ’†‚Ì‰æ‘œ‚Æ“¯‚¶w¦‚ª‚±‚Ìƒ^ƒO‚Å—ˆ‚Ä‚àA‰½‚à‹N‚±‚è‚Ü‚¹‚ñB<br>
-						ˆá‚¤w¦‚ª—ˆ‚½‚çA\p[3]‚Ìƒoƒ‹[ƒ“‚ğƒNƒŠƒA‚µ‚Ä‚©‚çŸ‚Ì‰æ‘œ‚ğ•`‰æ‚µ‚Ü‚·B
+						èƒŒæ™¯ã‚’æç”»ã—ã¾ã™ã€‚<br>
+						åº§æ¨™ã¨ãƒ¬ã‚¤ãƒ¤ã€ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®æŒ‡å®šã¯å›ºå®šã•ã‚Œã¦ã„ã¾ã™ã€‚<br>
+						ã“ã®ã‚¿ã‚°ã§æç”»ä¸­ã®ç”»åƒã¨åŒã˜æŒ‡ç¤ºãŒã“ã®ã‚¿ã‚°ã§æ¥ã¦ã‚‚ã€ä½•ã‚‚èµ·ã“ã‚Šã¾ã›ã‚“ã€‚<br>
+						é•ã†æŒ‡ç¤ºãŒæ¥ãŸã‚‰ã€\p[3]ã®ãƒãƒ«ãƒ¼ãƒ³ã‚’ã‚¯ãƒªã‚¢ã—ã¦ã‹ã‚‰æ¬¡ã®ç”»åƒã‚’æç”»ã—ã¾ã™ã€‚
 					</p>
 					<p>
-						w’èÏ‚İƒIƒvƒVƒ‡ƒ“‚ÍˆÈ‰º‚Å‚·B
+						æŒ‡å®šæ¸ˆã¿ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯ä»¥ä¸‹ã§ã™ã€‚
 					</p>
 					<dl>
 						<dt>inline</dt>
-						<dd>ƒoƒ‹[ƒ“‚ÌƒeƒLƒXƒgs“à‚É1•¶š•ªˆµ‚¢‚Æ‚µ‚Ä‰æ‘œ‚ğ“\‚è•t‚¯‚é</dd>
+						<dd>ãƒãƒ«ãƒ¼ãƒ³ã®ãƒ†ã‚­ã‚¹ãƒˆè¡Œå†…ã«1æ–‡å­—åˆ†æ‰±ã„ã¨ã—ã¦ç”»åƒã‚’è²¼ã‚Šä»˜ã‘ã‚‹</dd>
 						<dt>--option=foreground</dt>
-						<dd>ƒoƒ‹[ƒ“‚æ‚è‚à‰æ‘œ‚Ì“§–¾“x‚ğ—Dæ‚µ‚Ä‡¬•\¦‚³‚ê‚é</dd>
+						<dd>ãƒãƒ«ãƒ¼ãƒ³ã‚ˆã‚Šã‚‚ç”»åƒã®é€æ˜åº¦ã‚’å„ªå…ˆã—ã¦åˆæˆè¡¨ç¤ºã•ã‚Œã‚‹</dd>
 						<dt>--option=opaque</dt>
-						<dd>¶ã‚ÌF‚ğ“§‰ß‚µ‚È‚¢‚Å•\¦‚·‚é</dd>
+						<dd>å·¦ä¸Šã®è‰²ã‚’é€éã—ãªã„ã§è¡¨ç¤ºã™ã‚‹</dd>
 						<dt>--option=fixed</dt>
-						<dd>ƒXƒNƒ[ƒ‹‚µ‚½‚É‰æ‘œ‚ğ“®‚©‚³‚È‚¢</dd>
+						<dd>ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã—ãŸæ™‚ã«ç”»åƒã‚’å‹•ã‹ã•ãªã„</dd>
 					</dl>
 				</div>
 
 				<div class="item" id="image">
 					<h2>image</h2>
-					<pre><code>iimage,<em>‰æ‘œƒpƒX</em>,<em>xÀ•W</em>,<em>yÀ•W</em>,<em>•`‰æƒŒƒCƒ„</em>j</code></pre>
-					<pre><code>iimage,<em>‰æ‘œƒpƒX</em>,<em>xÀ•W</em>,<em>yÀ•W</em>,<em>•`‰æƒŒƒCƒ„</em>,<em>ƒIƒvƒVƒ‡ƒ“w’è</em>,<em>...</em>j</code></pre>
+					<pre><code>ï¼ˆimage,<em>ç”»åƒãƒ‘ã‚¹</em>,<em>xåº§æ¨™</em>,<em>yåº§æ¨™</em>,<em>æç”»ãƒ¬ã‚¤ãƒ¤</em>ï¼‰</code></pre>
+					<pre><code>ï¼ˆimage,<em>ç”»åƒãƒ‘ã‚¹</em>,<em>xåº§æ¨™</em>,<em>yåº§æ¨™</em>,<em>æç”»ãƒ¬ã‚¤ãƒ¤</em>,<em>ã‚ªãƒ—ã‚·ãƒ§ãƒ³æŒ‡å®š</em>,<em>...</em>ï¼‰</code></pre>
 					<p>
-						w’è‚µ‚½‰æ‘œ‚ğ•`‰æ‚µ‚Ü‚·B<br>
-						‚±‚Ìƒ^ƒO‚Å•`‰æ’†‚Ì‰æ‘œ‚Æ“¯‚¶w¦‚ª‚±‚Ìƒ^ƒO‚Å—ˆ‚Ä‚àA‰½‚à‹N‚±‚è‚Ü‚¹‚ñB<br>
-						ˆá‚¤w¦‚ª—ˆ‚½‚çA‘O‚Ì‰æ‘œ‚Ìè‘O‚ÉŸ‚Ì‰æ‘œ‚ğ•`‰æ‚µ‚Ü‚·B
+						æŒ‡å®šã—ãŸç”»åƒã‚’æç”»ã—ã¾ã™ã€‚<br>
+						ã“ã®ã‚¿ã‚°ã§æç”»ä¸­ã®ç”»åƒã¨åŒã˜æŒ‡ç¤ºãŒã“ã®ã‚¿ã‚°ã§æ¥ã¦ã‚‚ã€ä½•ã‚‚èµ·ã“ã‚Šã¾ã›ã‚“ã€‚<br>
+						é•ã†æŒ‡ç¤ºãŒæ¥ãŸã‚‰ã€å‰ã®ç”»åƒã®æ‰‹å‰ã«æ¬¡ã®ç”»åƒã‚’æç”»ã—ã¾ã™ã€‚
 					</p>
 					<hr>
-					<p>w’è‚Å‚«‚éƒŒƒCƒ„‚Í‚P`‚R‚Å‚·Bi‚R‚ª‰œ‚Å‚P‚ªè‘OA‚O‚Í•¶Í‚ª•`‰æ‚³‚ê‚Ü‚·j</p>
+					<p>æŒ‡å®šã§ãã‚‹ãƒ¬ã‚¤ãƒ¤ã¯ï¼‘ï½ï¼“ã§ã™ã€‚ï¼ˆï¼“ãŒå¥¥ã§ï¼‘ãŒæ‰‹å‰ã€ï¼ã¯æ–‡ç« ãŒæç”»ã•ã‚Œã¾ã™ï¼‰</p>
 					<hr>
-					<p>ˆÈ‰º‚Ì‚Q‚Â‚ÌƒIƒvƒVƒ‡ƒ“‚ª•K‚¸w’è‚³‚ê‚Ü‚·B</p>
+					<p>ä»¥ä¸‹ã®ï¼’ã¤ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒå¿…ãšæŒ‡å®šã•ã‚Œã¾ã™ã€‚</p>
 					<dl>
 						<dt>--option:fixed</dt>
-						<dd>ƒXƒNƒ[ƒ‹‚µ‚½‚É‰æ‘œ‚ğ“®‚©‚³‚È‚¢</dd>
+						<dd>ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã—ãŸæ™‚ã«ç”»åƒã‚’å‹•ã‹ã•ãªã„</dd>
 						<dt>--option=foreground</dt>
-						<dd>ƒoƒ‹[ƒ“‚æ‚è‚à‰æ‘œ‚Ì“§–¾“x‚ğ—Dæ‚µ‚Ä‡¬•\¦‚³‚ê‚é</dd>
+						<dd>ãƒãƒ«ãƒ¼ãƒ³ã‚ˆã‚Šã‚‚ç”»åƒã®é€æ˜åº¦ã‚’å„ªå…ˆã—ã¦åˆæˆè¡¨ç¤ºã•ã‚Œã‚‹</dd>
 					</dl>
-					
+
 					<hr>
-					<p>w’è‚Å‚«‚éƒIƒvƒVƒ‡ƒ“‚ÍˆÈ‰º‚Å‚·B</p>
+					<p>æŒ‡å®šã§ãã‚‹ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯ä»¥ä¸‹ã§ã™ã€‚</p>
 					<dl>
 						<dt>--option=opaque</dt>
-						<dd>¶ã‚ÌF‚ğ“§‰ß‚µ‚È‚¢‚Å•\¦‚·‚é</dd>
+						<dd>å·¦ä¸Šã®è‰²ã‚’é€éã—ãªã„ã§è¡¨ç¤ºã™ã‚‹</dd>
 						<dt>--option=use_self_alpha</dt>
-						<dd>ƒAƒ‹ƒtƒ@ƒ`ƒƒƒ“ƒlƒ‹•t‚«‚ÌPNG‚ğ“§‰ß‚µ‚Ä•\¦‚·‚é</dd>
-						<dt>---clipping=¶ ã ‰E ‰º</dt>
-						<dd>‰æ‘œ‚Ìˆê•”•ª‚ğ‹éŒ`‚ÉØ‚è”²‚¢‚Ä•\¦‚·‚é<br>
-							Ø‚è”²‚­”ÍˆÍ‚Í¶ã‰E‰º‚Æ”’l‚Åw’è</dd>
+						<dd>ã‚¢ãƒ«ãƒ•ã‚¡ãƒãƒ£ãƒ³ãƒãƒ«ä»˜ãã®PNGã‚’é€éã—ã¦è¡¨ç¤ºã™ã‚‹</dd>
+						<dt>---clipping=å·¦ ä¸Š å³ ä¸‹</dt>
+						<dd>ç”»åƒã®ä¸€éƒ¨åˆ†ã‚’çŸ©å½¢ã«åˆ‡ã‚ŠæŠœã„ã¦è¡¨ç¤ºã™ã‚‹<br>
+							åˆ‡ã‚ŠæŠœãç¯„å›²ã¯å·¦ä¸Šå³ä¸‹ã¨æ•°å€¤ã§æŒ‡å®š</dd>
 					</dl>
-					
+
 				</div>
 
 				<div class="item" id="freeimage">
 					<h2>freeimage</h2>
-					<pre><code>ifreeimage,<em>ƒŒƒCƒ„”Ô†</em>j</code></pre>
+					<pre><code>ï¼ˆfreeimage,<em>ãƒ¬ã‚¤ãƒ¤ç•ªå·</em>ï¼‰</code></pre>
 					<p>
-						—á‚PFw’è‚µ‚½ƒXƒR[ƒv”Ô†i‚O`‚Rj‚Ìƒoƒ‹[ƒ“‚É•\¦‚³‚ê‚Ä‚¢‚é‰æ‘œ‚â•¶š‚ğ‚·‚×‚ÄÁ‹‚µ‚Ü‚·B
+						ä¾‹ï¼‘ï¼šæŒ‡å®šã—ãŸã‚¹ã‚³ãƒ¼ãƒ—ç•ªå·ï¼ˆï¼ï½ï¼“ï¼‰ã®ãƒãƒ«ãƒ¼ãƒ³ã«è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ç”»åƒã‚„æ–‡å­—ã‚’ã™ã¹ã¦æ¶ˆå»ã—ã¾ã™ã€‚
 					</p>
 					<hr>
-					<pre><code>ifreeimagej</code></pre>
+					<pre><code>ï¼ˆfreeimageï¼‰</code></pre>
 					<p>
-						—á‚QF”Ô†w’è‚ğÈ—ª‚·‚é‚ÆA‚O`‚R‘S‚Ä‚Ìƒoƒ‹[ƒ“‚Ì’†g‚Ì•\¦‚ªÁ‹‚³‚ê‚Ü‚·B
+						ä¾‹ï¼’ï¼šç•ªå·æŒ‡å®šã‚’çœç•¥ã™ã‚‹ã¨ã€ï¼ï½ï¼“å…¨ã¦ã®ãƒãƒ«ãƒ¼ãƒ³ã®ä¸­èº«ã®è¡¨ç¤ºãŒæ¶ˆå»ã•ã‚Œã¾ã™ã€‚
 					</p>
 				</div>
 
-				<div class="item" id="ƒƒjƒ…[‹–‰Â">
-					<h2>ƒƒjƒ…[‹–‰Â</h2>
-					<pre><code>iƒƒjƒ…[‹–‰Âj</code></pre>
-					<p>Šeíƒƒjƒ…[‚ªŠJ‚¯‚é‚©‚Ç‚¤‚©‚ğˆêŠ‡‚Å§Œä‚µ‚Ü‚·B</p>
-					<p>ŒÂ•Ê‚Éó‘Ô‚ğ•Ï‚¦‚½‚¢ê‡‚ÍAˆÈ‰º‚Ì•Ï”‚ğ’¼Ú‘‚«Š·‚¦‚Ä‚­‚¾‚³‚¢B<br>
-						•Ï”‚Ì’†g‚ªu1v‚È‚ç‚ÎA‹–‰Â‚µ‚Ä‚¢‚é‚±‚Æ‚É‚È‚è‚Ü‚·B</p>
+				<div class="item" id="menu_allowed">
+					<h2>ãƒ¡ãƒ‹ãƒ¥ãƒ¼è¨±å¯</h2>
+					<pre><code>ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼è¨±å¯ï¼‰</code></pre>
+					<p>å„ç¨®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒé–‹ã‘ã‚‹ã‹ã©ã†ã‹ã‚’ä¸€æ‹¬ã§åˆ¶å¾¡ã—ã¾ã™ã€‚</p>
+					<p>å€‹åˆ¥ã«çŠ¶æ…‹ã‚’å¤‰ãˆãŸã„å ´åˆã¯ã€ä»¥ä¸‹ã®å¤‰æ•°ã‚’ç›´æ¥æ›¸ãæ›ãˆã¦ãã ã•ã„ã€‚<br>
+						å¤‰æ•°ã®ä¸­èº«ãŒã€Œ1ã€ãªã‚‰ã°ã€è¨±å¯ã—ã¦ã„ã‚‹ã“ã¨ã«ãªã‚Šã¾ã™ã€‚</p>
 					<ul>
-						<li>ƒƒjƒ…[ó‘Ô.ƒI[ƒg</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒMƒƒƒ‰ƒŠ[</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒZ[ƒu</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒ[ƒh</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒRƒ“ƒtƒBƒO</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒXƒLƒbƒv</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒZ[ƒu</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒ^ƒCƒgƒ‹‚É–ß‚é</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒnƒCƒh</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒoƒbƒNƒƒO</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒ[ƒh</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚ªãƒ¼ãƒˆ</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚®ãƒ£ãƒ©ãƒªãƒ¼</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ã‚»ãƒ¼ãƒ–</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ãƒ­ãƒ¼ãƒ‰</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚³ãƒ³ãƒ•ã‚£ã‚°</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¹ã‚­ãƒƒãƒ—</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚»ãƒ¼ãƒ–</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒã‚¤ãƒ‰</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒãƒƒã‚¯ãƒ­ã‚°</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒ­ãƒ¼ãƒ‰</li>
 					</ul>
 				</div>
 
-				<div class="item" id="ƒƒjƒ…[•s‰Â">
-					<h2>ƒƒjƒ…[•s‰Â</h2>
-					<pre><code>iƒƒjƒ…[•s‰Âj</code></pre>
-					<p>Šeíƒƒjƒ…[‚ªŠJ‚¯‚é‚©‚Ç‚¤‚©‚ğˆêŠ‡‚Å§Œä‚µ‚Ü‚·B</p>
-					<p>ŒÂ•Ê‚Éó‘Ô‚ğ•Ï‚¦‚½‚¢ê‡‚ÍAˆÈ‰º‚Ì•Ï”‚ğ’¼Ú‘‚«Š·‚¦‚Ä‚­‚¾‚³‚¢B<br>
-						•Ï”‚Ì’†g‚ªu1vˆÈŠO‚È‚ç‚ÎA‹–‰Â‚µ‚Ä‚¢‚È‚¢‚±‚Æ‚É‚È‚è‚Ü‚·B</p>
+				<div class="item" id="menu_disallowed">
+					<h2>ãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯</h2>
+					<pre><code>ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ä¸å¯ï¼‰</code></pre>
+					<p>å„ç¨®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒé–‹ã‘ã‚‹ã‹ã©ã†ã‹ã‚’ä¸€æ‹¬ã§åˆ¶å¾¡ã—ã¾ã™ã€‚</p>
+					<p>å€‹åˆ¥ã«çŠ¶æ…‹ã‚’å¤‰ãˆãŸã„å ´åˆã¯ã€ä»¥ä¸‹ã®å¤‰æ•°ã‚’ç›´æ¥æ›¸ãæ›ãˆã¦ãã ã•ã„ã€‚<br>
+						å¤‰æ•°ã®ä¸­èº«ãŒã€Œ1ã€ä»¥å¤–ãªã‚‰ã°ã€è¨±å¯ã—ã¦ã„ãªã„ã“ã¨ã«ãªã‚Šã¾ã™ã€‚</p>
 					<ul>
-						<li>ƒƒjƒ…[ó‘Ô.ƒI[ƒg</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒMƒƒƒ‰ƒŠ[</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒZ[ƒu</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒNƒCƒbƒNƒ[ƒh</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒRƒ“ƒtƒBƒO</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒXƒLƒbƒv</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒZ[ƒu</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒ^ƒCƒgƒ‹‚É–ß‚é</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒnƒCƒh</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒoƒbƒNƒƒO</li>
-						<li>ƒƒjƒ…[ó‘Ô.ƒ[ƒh</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚ªãƒ¼ãƒˆ</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚®ãƒ£ãƒ©ãƒªãƒ¼</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ã‚»ãƒ¼ãƒ–</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¯ã‚¤ãƒƒã‚¯ãƒ­ãƒ¼ãƒ‰</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚³ãƒ³ãƒ•ã‚£ã‚°</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¹ã‚­ãƒƒãƒ—</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚»ãƒ¼ãƒ–</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ã‚¿ã‚¤ãƒˆãƒ«ã«æˆ»ã‚‹</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒã‚¤ãƒ‰</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒãƒƒã‚¯ãƒ­ã‚°</li>
+						<li>ãƒ¡ãƒ‹ãƒ¥ãƒ¼çŠ¶æ…‹.ãƒ­ãƒ¼ãƒ‰</li>
 					</ul>
 				</div>
 
-				<div class="item" id="ƒXƒLƒbƒv‰ğœ">
-					<h2>ƒXƒLƒbƒv‰ğœ</h2>
-					<pre><code>iƒXƒLƒbƒv‰ğœj</code></pre>
-					<p>‚±‚Ìƒ^ƒO‚ª‚ ‚é‚ÆA‚»‚ÌƒZƒNƒVƒ‡ƒ“(*1)‚Ì–`“ª‚ÅƒXƒLƒbƒvó‘Ô‚ª‰ğœ‚³‚ê‚Ü‚·B</p>
-					<p>*1: ƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg–`“ª`<a href="#next">next</a>E<a href="#nextset">nextset</a>E<a href="#nextjump">nextjump</a>E<a
-							href="#‘I‘ğˆ">‘I‘ğˆ</a>‚Ìƒ^ƒO‚Ü‚ÅB<br>
-						‚Ü‚½‚Íƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg–`“ª‚©‚ç\e‚Ü‚ÅB</p>
+				<div class="item" id="unskip">
+					<h2>ã‚¹ã‚­ãƒƒãƒ—è§£é™¤</h2>
+					<pre><code>ï¼ˆã‚¹ã‚­ãƒƒãƒ—è§£é™¤ï¼‰</code></pre>
+					<p>ã“ã®ã‚¿ã‚°ãŒã‚ã‚‹ã¨ã€ãã®ã‚»ã‚¯ã‚·ãƒ§ãƒ³(*1)ã®å†’é ­ã§ã‚¹ã‚­ãƒƒãƒ—çŠ¶æ…‹ãŒè§£é™¤ã•ã‚Œã¾ã™ã€‚</p>
+					<p>*1: ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆå†’é ­ï½<a href="#next">next</a>ãƒ»<a href="#nextset">nextset</a>ãƒ»<a href="#nextjump">nextjump</a>ãƒ»<a
+							href="#choices">é¸æŠè‚¢</a>ã®ã‚¿ã‚°ã¾ã§ã€‚<br>
+						ã¾ãŸã¯ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆå†’é ­ã‹ã‚‰\eã¾ã§ã€‚</p>
 				</div>
 
-				<div class="item" id="ƒI[ƒg‰ğœ">
-					<h2>ƒI[ƒg‰ğœ</h2>
-					<pre><code>iƒI[ƒg‰ğœj</code></pre>
-					<p>‚±‚Ìƒ^ƒO‚ª‚ ‚é‚ÆA‚»‚ÌƒZƒNƒVƒ‡ƒ“(*1)‚Ì–`“ª‚ÅƒI[ƒgó‘Ô‚ª‰ğœ‚³‚ê‚Ü‚·B</p>
-					<p>*1: ƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg–`“ª`<a href="#next">next</a>E<a href="#nextset">nextset</a>E<a href="#nextjump">nextjump</a>E<a
-							href="#‘I‘ğˆ">‘I‘ğˆ</a>‚Ìƒ^ƒO‚Ü‚ÅB<br>
-						‚Ü‚½‚Íƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg–`“ª‚©‚ç\e‚Ü‚ÅB</p>
+				<div class="item" id="unauto">
+					<h2>ã‚ªãƒ¼ãƒˆè§£é™¤</h2>
+					<pre><code>ï¼ˆã‚ªãƒ¼ãƒˆè§£é™¤ï¼‰</code></pre>
+					<p>ã“ã®ã‚¿ã‚°ãŒã‚ã‚‹ã¨ã€ãã®ã‚»ã‚¯ã‚·ãƒ§ãƒ³(*1)ã®å†’é ­ã§ã‚ªãƒ¼ãƒˆçŠ¶æ…‹ãŒè§£é™¤ã•ã‚Œã¾ã™ã€‚</p>
+					<p>*1: ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆå†’é ­ï½<a href="#next">next</a>ãƒ»<a href="#nextset">nextset</a>ãƒ»<a href="#nextjump">nextjump</a>ãƒ»<a
+							href="#choices">é¸æŠè‚¢</a>ã®ã‚¿ã‚°ã¾ã§ã€‚<br>
+						ã¾ãŸã¯ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆå†’é ­ã‹ã‚‰\eã¾ã§ã€‚</p>
 				</div>
 
-				<div class="item" id="•Ï”“Ç‚İo‚µ">
-					<h2>•Ï”“Ç‚İo‚µ</h2>
-					<pre><code>i•Ï”“Ç‚İo‚µ,<em>•Ï”–¼</em>j</code></pre>
-					<p>•Ï”–¼‚ğ“n‚·‚ÆA•Ï”‚Ì“à—e‚ª•¶š—ñ‚Å•Ô‚Á‚Ä‚«‚Ü‚·B<br>
-						•Ï”‚ª‘¶İ‚µ‚È‚¢ê‡AŒ‹‰Ê‚Í‹ó‚É‚È‚è‚Ü‚·B</p>
-					<p>•Ï”‚Ì“à—e‚ÉŠ‡ŒÊ‚È‚Ç‚Ì“Áê•¶š‚ª“ü‚Á‚Ä‚¢‚½ê‡AƒÓ‚ÅƒGƒXƒP[ƒv‚³‚ê‚Äo‚Ä‚­‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B</p>
+				<div class="item" id="variable_reading">
+					<h2>å¤‰æ•°èª­ã¿å‡ºã—</h2>
+					<pre><code>ï¼ˆå¤‰æ•°èª­ã¿å‡ºã—,<em>å¤‰æ•°å</em>ï¼‰</code></pre>
+					<p>å¤‰æ•°åã‚’æ¸¡ã™ã¨ã€å¤‰æ•°ã®å†…å®¹ãŒæ–‡å­—åˆ—ã§è¿”ã£ã¦ãã¾ã™ã€‚<br>
+						å¤‰æ•°ãŒå­˜åœ¨ã—ãªã„å ´åˆã€çµæœã¯ç©ºã«ãªã‚Šã¾ã™ã€‚</p>
+					<p>å¤‰æ•°ã®å†…å®¹ã«æ‹¬å¼§ãªã©ã®ç‰¹æ®Šæ–‡å­—ãŒå…¥ã£ã¦ã„ãŸå ´åˆã€Ï†ã§ã‚¨ã‚¹ã‚±ãƒ¼ãƒ—ã•ã‚Œã¦å‡ºã¦ãã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚</p>
 				</div>
 
-				<div class="item" id="•Ï”“Ç‚İo‚µg">
-					<h2>•Ï”“Ç‚İo‚µg</h2>
-					<pre><code>i•Ï”“Ç‚İo‚µg,<em>ƒQ[ƒ€–¼</em>,<em>•Ï”–¼</em>j</code></pre>
-					<p>—á‚PFƒQ[ƒ€–¼iƒVƒFƒ‹ƒtƒHƒ‹ƒ_–¼j‚Æ•Ï”–¼‚ğ“n‚·‚ÆA‚»‚ÌƒQ[ƒ€‚ÌƒOƒ[ƒoƒ‹•Ï”‚Ì“à—e‚ª•¶š—ñ‚Å•Ô‚Á‚Ä‚«‚Ü‚·B<br>
-						•Ï”‚ª‘¶İ‚µ‚È‚¢ê‡AŒ‹‰Ê‚Í‹ó‚É‚È‚è‚Ü‚·B</p>
-					<p>•Ï”‚Ì“à—e‚ÉŠ‡ŒÊ‚È‚Ç‚Ì“Áê•¶š‚ª“ü‚Á‚Ä‚¢‚½ê‡AƒÓ‚ÅƒGƒXƒP[ƒv‚³‚ê‚Äo‚Ä‚­‚é‰Â”\«‚ª‚ ‚è‚Ü‚·B</p>
+				<div class="item" id="global_variable_reading">
+					<h2>å¤‰æ•°èª­ã¿å‡ºã—g</h2>
+					<pre><code>ï¼ˆå¤‰æ•°èª­ã¿å‡ºã—g,<em>ã‚²ãƒ¼ãƒ å</em>,<em>å¤‰æ•°å</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šã‚²ãƒ¼ãƒ åï¼ˆã‚·ã‚§ãƒ«ãƒ•ã‚©ãƒ«ãƒ€åï¼‰ã¨å¤‰æ•°åã‚’æ¸¡ã™ã¨ã€ãã®ã‚²ãƒ¼ãƒ ã®ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã®å†…å®¹ãŒæ–‡å­—åˆ—ã§è¿”ã£ã¦ãã¾ã™ã€‚<br>
+						å¤‰æ•°ãŒå­˜åœ¨ã—ãªã„å ´åˆã€çµæœã¯ç©ºã«ãªã‚Šã¾ã™ã€‚</p>
+					<p>å¤‰æ•°ã®å†…å®¹ã«æ‹¬å¼§ãªã©ã®ç‰¹æ®Šæ–‡å­—ãŒå…¥ã£ã¦ã„ãŸå ´åˆã€Ï†ã§ã‚¨ã‚¹ã‚±ãƒ¼ãƒ—ã•ã‚Œã¦å‡ºã¦ãã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>i•Ï”“Ç‚İo‚µg,,<em>•Ï”–¼</em>j</code></pre>
-					<p>—á‚QFƒQ[ƒ€–¼‚ğÈ—ª‚·‚é‚ÆAŒ»İ‚ÌƒQ[ƒ€‚ÌƒOƒ[ƒoƒ‹•Ï”‚ğ“Ç‚à‚¤‚Æ‚µ‚Ü‚·B</p>
+					<pre><code>ï¼ˆå¤‰æ•°èª­ã¿å‡ºã—g,,<em>å¤‰æ•°å</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šã‚²ãƒ¼ãƒ åã‚’çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ã®ã‚²ãƒ¼ãƒ ã®ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã‚’èª­ã‚‚ã†ã¨ã—ã¾ã™ã€‚</p>
 				</div>
 
-				<div class="item" id="–¼D">
-					<h2>–¼D</h2>
-					<pre><code>i–¼D,<em>•\¦‚·‚é•¶š</em>j</code></pre>
-					<p>—á‚PF–¼‘O•\¦i‘¾•¶š•\‹Lj‚ğ\0ƒoƒ‹[ƒ“‚ÌŒ»İ‚ÌƒJ[ƒ\ƒ‹ˆÊ’u‚Éo‚µ‚Ü‚·B</p>
+				<div class="item" id="name_tag">
+					<h2>åæœ­</h2>
+					<pre><code>ï¼ˆåæœ­,<em>è¡¨ç¤ºã™ã‚‹æ–‡å­—</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šåå‰è¡¨ç¤ºï¼ˆå¤ªæ–‡å­—è¡¨è¨˜ï¼‰ã‚’\0ãƒãƒ«ãƒ¼ãƒ³ã®ç¾åœ¨ã®ã‚«ãƒ¼ã‚½ãƒ«ä½ç½®ã«å‡ºã—ã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>i–¼D,<em>•\¦‚·‚é•¶š</em>,<em>xÀ•W</em>,<em>yÀ•W</em>j</code></pre>
-					<p>—á‚QF–¼‘O•\¦‚ğ\0ƒoƒ‹[ƒ“‚Ìw’è‚µ‚½À•W‚Éo‚µ‚Ü‚·B<br>
-						ƒ^ƒOg—pŒã‚ÌƒJ[ƒ\ƒ‹ˆÊ’u‚Í•¶š—ñ‚Ì’¼Œã‚ÉˆÚ“®‚µ‚Ü‚·B</p>
+					<pre><code>ï¼ˆåæœ­,<em>è¡¨ç¤ºã™ã‚‹æ–‡å­—</em>,<em>xåº§æ¨™</em>,<em>yåº§æ¨™</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šåå‰è¡¨ç¤ºã‚’\0ãƒãƒ«ãƒ¼ãƒ³ã®æŒ‡å®šã—ãŸåº§æ¨™ã«å‡ºã—ã¾ã™ã€‚<br>
+						ã‚¿ã‚°ä½¿ç”¨å¾Œã®ã‚«ãƒ¼ã‚½ãƒ«ä½ç½®ã¯æ–‡å­—åˆ—ã®ç›´å¾Œã«ç§»å‹•ã—ã¾ã™ã€‚</p>
 				</div>
 
-				<div class="item" id="ƒƒjƒ…[ƒ{ƒ^ƒ“">
-					<h2>ƒƒjƒ…[ƒ{ƒ^ƒ“</h2>
-					<pre><code>iƒƒjƒ…[ƒ{ƒ^ƒ“,<em>xÀ•W</em>,<em>yÀ•W</em>,<em>‰¡•ûŒüŠñ‚¹w’è</em>j</code></pre>
+				<div class="item" id="menu_button">
+					<h2>ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³</h2>
+					<pre><code>ï¼ˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³,<em>xåº§æ¨™</em>,<em>yåº§æ¨™</em>,<em>æ¨ªæ–¹å‘å¯„ã›æŒ‡å®š</em>ï¼‰</code></pre>
 					<p>
-						—áFƒƒjƒ…[ƒ{ƒ^ƒ“‚ğ<a href="./hint.html#İ’è«‘">İ’è«‘</a>‚Ìİ’è‚É]‚¢\0‚Ìƒoƒ‹[ƒ“‚Öo‚µ‚Ü‚·B<br>
-						À•WÈ—ª‚Í‚»‚ê‚¼‚ê0‚Æ‚È‚è‚Ü‚·B<br>
-						‰¡•ûŒüŠñ‚¹w’è‚Ílefti¶Šñ‚¹jAcenteri’†‰›‘µ‚¦jArighti‰EŠñ‚¹j‚ÌOí‚ªw’è‚Å‚«‚Ü‚·BiÈ—ªleftj<br>
-						0ˆÈŠO‚ÌxÀ•W‚ªw’è‚³‚ê‚Ä‚¢‚éê‡A’†‰›‘µ‚¦w’è‚ÍXÀ•W•ªƒCƒ“ƒfƒ“ƒgˆ—‚³‚ê‚½ˆµ‚¢‚É‚È‚è‚Ü‚·B<br>
-						•\¦‚Í<a href="./hint.html#ƒƒjƒ…[‚È‚Ç‚ÌUI">ƒƒjƒ…[‚Ì‹–‰Âó‘Ô</a>‚Æ˜A“®‚µ‚Ü‚·B
+						ä¾‹ï¼šãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒœã‚¿ãƒ³ã‚’<a href="./hint.html#setting_dictionary">è¨­å®šè¾æ›¸</a>ã®è¨­å®šã«å¾“ã„\0ã®ãƒãƒ«ãƒ¼ãƒ³ã¸å‡ºã—ã¾ã™ã€‚<br>
+						åº§æ¨™çœç•¥æ™‚ã¯ãã‚Œãã‚Œ0ã¨ãªã‚Šã¾ã™ã€‚<br>
+						æ¨ªæ–¹å‘å¯„ã›æŒ‡å®šã¯leftï¼ˆå·¦å¯„ã›ï¼‰ã€centerï¼ˆä¸­å¤®æƒãˆï¼‰ã€rightï¼ˆå³å¯„ã›ï¼‰ã®ä¸‰ç¨®ãŒæŒ‡å®šã§ãã¾ã™ã€‚ï¼ˆçœç•¥æ™‚leftï¼‰<br>
+						0ä»¥å¤–ã®xåº§æ¨™ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã€ä¸­å¤®æƒãˆæŒ‡å®šã¯Xåº§æ¨™åˆ†ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆå‡¦ç†ã•ã‚ŒãŸæ‰±ã„ã«ãªã‚Šã¾ã™ã€‚<br>
+						è¡¨ç¤ºã¯<a href="./hint.html#ui_including_menus">ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®è¨±å¯çŠ¶æ…‹</a>ã¨é€£å‹•ã—ã¾ã™ã€‚
 					</p>
 				</div>
 
 				<div class="item" id="next">
 					<h2>next</h2>
-					<pre><code>inextj</code></pre>
-					<p>—á‚PFİ’èÏ‚İ‚ÌƒVƒiƒŠƒI–¼Ú“ª«‚Æ˜A”ÔŠJn’l‚É]‚¢AŸ‚ÌƒVƒiƒŠƒI‚ÖˆÚ“®‚·‚é‚½‚ß‚ÌƒNƒŠƒbƒN‘Ò‚¿‚ğo‚µ‚Ü‚·B<br>
-						˜A”Ô‚ÍAƒNƒŠƒbƒN‘Ò‚¿‚ği‚Ş‚²‚Æ‚É‚P‚¸‚Â‰ÁZ‚³‚ê‚Ü‚·B</p>
-					<p>‰Šú’l‚Í‚»‚ê‚¼‚êAÚ“ª«FuƒVƒiƒŠƒIvA˜A”ÔŠJn’lFu‚Pv‚Å‚·B<br>
-						‚±‚Ìê‡‚ÌƒWƒƒƒ“ƒvæ‚Íu<em>yƒtƒHƒ‹ƒ_–¼z</em>.<em>ƒVƒiƒŠƒI</em><em>yŒ»İ‚Ì˜A”Ôz</em>v‚Æ‚È‚è‚Ü‚·B</p>
+					<pre><code>ï¼ˆnextï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šè¨­å®šæ¸ˆã¿ã®ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾ã¨é€£ç•ªé–‹å§‹å€¤ã«å¾“ã„ã€æ¬¡ã®ã‚·ãƒŠãƒªã‚ªã¸ç§»å‹•ã™ã‚‹ãŸã‚ã®ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ã‚’å‡ºã—ã¾ã™ã€‚<br>
+						é€£ç•ªã¯ã€ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ã‚’é€²ã‚€ã”ã¨ã«ï¼‘ãšã¤åŠ ç®—ã•ã‚Œã¾ã™ã€‚</p>
+					<p>åˆæœŸå€¤ã¯ãã‚Œãã‚Œã€æ¥é ­è¾ï¼šã€Œã‚·ãƒŠãƒªã‚ªã€ã€é€£ç•ªé–‹å§‹å€¤ï¼šã€Œï¼‘ã€ã§ã™ã€‚<br>
+						ã“ã®å ´åˆã®ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã¯ã€Œ<em>ã€ãƒ•ã‚©ãƒ«ãƒ€åã€‘</em>.<em>ã‚·ãƒŠãƒªã‚ª</em><em>ã€ç¾åœ¨ã®é€£ç•ªã€‘</em>ã€ã¨ãªã‚Šã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>inext,<em>‘€ì‚·‚é•Ï”–¼</em>,<em>•Ï”‚Ö‘ã“ü‚·‚é“à—e</em>,<em>•Ï”–¼2</em>,<em>‘ã“ü“à—e2</em>,<em>...</em>j</code></pre>
-					<p>—á‚QFŸ‚ÌƒVƒiƒŠƒI‚Ö‚ÌˆÚ“®Aw’è‚µ‚½ƒQ[ƒ€“à•Ï”‚ğ‘€ì‚µ‚Ü‚·B</p>
+					<pre><code>ï¼ˆnext,<em>æ“ä½œã™ã‚‹å¤‰æ•°å</em>,<em>å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹</em>,<em>å¤‰æ•°å2</em>,<em>ä»£å…¥å†…å®¹2</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šæ¬¡ã®ã‚·ãƒŠãƒªã‚ªã¸ã®ç§»å‹•æ™‚ã€æŒ‡å®šã—ãŸã‚²ãƒ¼ãƒ å†…å¤‰æ•°ã‚’æ“ä½œã—ã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>inext,<em>“à—e‚ğíœ‚µ‚½‚¢•Ï”–¼</em>,,<em>“à—e‚ğ‘‚«Š·‚¦‚é•Ï”–¼</em>,<em>‘ã“ü“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚RF•Ï”‚Ö‘ã“ü‚·‚é“à—e‚ª‹ó‚à‚µ‚­‚Í‘¶İ‚µ‚È‚¢ê‡A‚»‚Ì•Ï”‚Ííœ‚³‚ê‚Ü‚·B</p>
+					<pre><code>ï¼ˆnext,<em>å†…å®¹ã‚’å‰Šé™¤ã—ãŸã„å¤‰æ•°å</em>,,<em>å†…å®¹ã‚’æ›¸ãæ›ãˆã‚‹å¤‰æ•°å</em>,<em>ä»£å…¥å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼“ï¼šå¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹ãŒç©ºã‚‚ã—ãã¯å­˜åœ¨ã—ãªã„å ´åˆã€ãã®å¤‰æ•°ã¯å‰Šé™¤ã•ã‚Œã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>inext,__global__<em>ƒOƒ[ƒoƒ‹•Ï”–¼</em>,<em>‘ã“ü“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚SF•Ï”–¼‚Ì‘O‚Éu__global__v‚Æ‚Â‚¯‚é‚ÆA‚»‚Ì•Ï”‚ÍƒOƒ[ƒoƒ‹•Ï”‚Æ‚µ‚Ä‹L˜^‚³‚ê‚Ü‚·B<br>
-						ƒOƒ[ƒoƒ‹•Ï”‚ÍƒZ[ƒuƒf[ƒ^‚Ìƒ[ƒh‚É‚æ‚Á‚Ä‘‚«Š·‚¦‚ç‚ê‚é‚±‚Æ‚ª‚ ‚è‚Ü‚¹‚ñB<br>
-						‹L˜^Au__global__v‚Í•Ï”–¼‚É“ü‚è‚Ü‚¹‚ñB</p>
+					<pre><code>ï¼ˆnext,__global__<em>ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å</em>,<em>ä»£å…¥å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼”ï¼šå¤‰æ•°åã®å‰ã«ã€Œ__global__ã€ã¨ã¤ã‘ã‚‹ã¨ã€ãã®å¤‰æ•°ã¯ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¨ã—ã¦è¨˜éŒ²ã•ã‚Œã¾ã™ã€‚<br>
+						ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¯ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ›¸ãæ›ãˆã‚‰ã‚Œã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã›ã‚“ã€‚<br>
+						è¨˜éŒ²æ™‚ã€ã€Œ__global__ã€ã¯å¤‰æ•°åã«å…¥ã‚Šã¾ã›ã‚“ã€‚</p>
 				</div>
 
 				<div class="item" id="nextset">
 					<h2>nextset</h2>
-					<pre><code>inextset,<em>ƒVƒiƒŠƒI–¼Ú“ª«</em>,<em>˜A”ÔŠJn’l</em>j</code></pre>
-					<p>—á‚PFnext‚ÌƒVƒiƒŠƒI–¼Ú“ª«‚Æ˜A”ÔŠJn’l‚ğİ’è‚µAŸ‚ÌƒVƒiƒŠƒI‚ÖˆÚ“®‚µ‚Ü‚·B<br>
-						ƒWƒƒƒ“ƒvæ‚Íu<em>yƒtƒHƒ‹ƒ_–¼z</em>.<em>yƒVƒiƒŠƒI–¼Ú“ª«z</em><em>y˜A”ÔŠJn’lz</em>v‚Å‚·B</p>
+					<pre><code>ï¼ˆnextset,<em>ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾</em>,<em>é€£ç•ªé–‹å§‹å€¤</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šnextã®ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾ã¨é€£ç•ªé–‹å§‹å€¤ã‚’è¨­å®šã—ã€æ¬¡ã®ã‚·ãƒŠãƒªã‚ªã¸ç§»å‹•ã—ã¾ã™ã€‚<br>
+						ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã¯ã€Œ<em>ã€ãƒ•ã‚©ãƒ«ãƒ€åã€‘</em>.<em>ã€ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾ã€‘</em><em>ã€é€£ç•ªé–‹å§‹å€¤ã€‘</em>ã€ã§ã™ã€‚</p>
 					<hr>
-					<pre><code>inextsetj</code></pre>
-					<p>—á‚QFw’èÈ—ª‚Ì‰Šú’l‚Í‚»‚ê‚¼‚êAÚ“ª«FuƒVƒiƒŠƒIvA˜A”ÔŠJn’lFu‚Pv‚Å‚·B</p>
+					<pre><code>ï¼ˆnextsetï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šæŒ‡å®šçœç•¥æ™‚ã®åˆæœŸå€¤ã¯ãã‚Œãã‚Œã€æ¥é ­è¾ï¼šã€Œã‚·ãƒŠãƒªã‚ªã€ã€é€£ç•ªé–‹å§‹å€¤ï¼šã€Œï¼‘ã€ã§ã™ã€‚</p>
 					<hr>
-					<pre><code>inextset,<em>ƒVƒiƒŠƒI–¼Ú“ª«</em>,<em>˜A”ÔŠJn’l</em>,<em>‘€ì‚·‚é•Ï”–¼</em>,<em>•Ï”‚Ö‘ã“ü‚·‚é“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚RFnext‚ÌƒVƒiƒŠƒI–¼Ú“ª«‚Æ˜A”ÔŠJn’l‚ğİ’è‚µAw’è‚µ‚½ƒQ[ƒ€“à•Ï”‚ğ‘€ì‚µ‚Ü‚·B<br>
-						•Ï”‚Ö‘ã“ü‚·‚é“à—e‚ª‹ó‚à‚µ‚­‚Í‘¶İ‚µ‚È‚¢ê‡A‚»‚Ì•Ï”‚Ííœ‚³‚ê‚Ü‚·B
+					<pre><code>ï¼ˆnextset,<em>ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾</em>,<em>é€£ç•ªé–‹å§‹å€¤</em>,<em>æ“ä½œã™ã‚‹å¤‰æ•°å</em>,<em>å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼“ï¼šnextã®ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾ã¨é€£ç•ªé–‹å§‹å€¤ã‚’è¨­å®šã—ã€æŒ‡å®šã—ãŸã‚²ãƒ¼ãƒ å†…å¤‰æ•°ã‚’æ“ä½œã—ã¾ã™ã€‚<br>
+						å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹ãŒç©ºã‚‚ã—ãã¯å­˜åœ¨ã—ãªã„å ´åˆã€ãã®å¤‰æ•°ã¯å‰Šé™¤ã•ã‚Œã¾ã™ã€‚
 					</p>
 					<hr>
-					<pre><code>inextset,,,<em>‘€ì‚·‚é•Ï”–¼</em>,<em>•Ï”‚Ö‘ã“ü‚·‚é“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚SFƒQ[ƒ€“à•Ï”‚ğ‘€ì‚µ‚Â‚ÂƒVƒiƒŠƒI–¼Ú“ª«‚¨‚æ‚Ñ˜A”ÔŠJn’l‚ğÈ—ª‚·‚é‚ÍA‚±‚Ì‚æ‚¤‚É‚µ‚Ä‚­‚¾‚³‚¢B</p>
+					<pre><code>ï¼ˆnextset,,,<em>æ“ä½œã™ã‚‹å¤‰æ•°å</em>,<em>å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼”ï¼šã‚²ãƒ¼ãƒ å†…å¤‰æ•°ã‚’æ“ä½œã—ã¤ã¤ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾ãŠã‚ˆã³é€£ç•ªé–‹å§‹å€¤ã‚’çœç•¥ã™ã‚‹æ™‚ã¯ã€ã“ã®ã‚ˆã†ã«ã—ã¦ãã ã•ã„ã€‚</p>
 					<hr>
-					<pre><code>inextset,<em>ƒVƒiƒŠƒI–¼Ú“ª«</em>,<em>˜A”ÔŠJn’l</em>,__global__<em>ƒOƒ[ƒoƒ‹•Ï”–¼</em>,<em>‘ã“ü“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚TF•Ï”–¼‚Ì‘O‚Éu__global__v‚Æ‚Â‚¯‚é‚ÆA‚»‚Ì•Ï”‚ÍƒOƒ[ƒoƒ‹•Ï”‚Æ‚µ‚Ä‹L˜^‚³‚ê‚Ü‚·B<br>
-						ƒOƒ[ƒoƒ‹•Ï”‚ÍƒZ[ƒuƒf[ƒ^‚Ìƒ[ƒh‚É‚æ‚Á‚Ä‘‚«Š·‚¦‚ç‚ê‚é‚±‚Æ‚ª‚ ‚è‚Ü‚¹‚ñB<br>
-						‚Ü‚½A•Ï”‹L˜^Au__global__v‚Í•Ï”–¼‚É“ü‚è‚Ü‚¹‚ñB</p>
+					<pre><code>ï¼ˆnextset,<em>ã‚·ãƒŠãƒªã‚ªåæ¥é ­è¾</em>,<em>é€£ç•ªé–‹å§‹å€¤</em>,__global__<em>ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å</em>,<em>ä»£å…¥å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼•ï¼šå¤‰æ•°åã®å‰ã«ã€Œ__global__ã€ã¨ã¤ã‘ã‚‹ã¨ã€ãã®å¤‰æ•°ã¯ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¨ã—ã¦è¨˜éŒ²ã•ã‚Œã¾ã™ã€‚<br>
+						ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¯ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ›¸ãæ›ãˆã‚‰ã‚Œã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã›ã‚“ã€‚<br>
+						ã¾ãŸã€å¤‰æ•°è¨˜éŒ²æ™‚ã€ã€Œ__global__ã€ã¯å¤‰æ•°åã«å…¥ã‚Šã¾ã›ã‚“ã€‚</p>
 				</div>
 
 				<div class="item" id="nextjump">
 					<h2>nextjump</h2>
-					<pre><code>inextjump,<em>ƒVƒiƒŠƒI–¼</em>j</code></pre>
-					<p>—á‚PFƒNƒŠƒbƒN‘Ò‚¿–³‚µ‚ÅŸ‚ÌƒVƒiƒŠƒI‚ÖˆÚ“®‚µ‚Ü‚·B<br>
-						ƒWƒƒƒ“ƒvæ‚Íu<em>yƒtƒHƒ‹ƒ_–¼z</em>.<em>yƒVƒiƒŠƒI–¼z</em>v‚Å‚·B</p>
+					<pre><code>ï¼ˆnextjump,<em>ã‚·ãƒŠãƒªã‚ªå</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šã‚¯ãƒªãƒƒã‚¯å¾…ã¡ç„¡ã—ã§æ¬¡ã®ã‚·ãƒŠãƒªã‚ªã¸ç§»å‹•ã—ã¾ã™ã€‚<br>
+						ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã¯ã€Œ<em>ã€ãƒ•ã‚©ãƒ«ãƒ€åã€‘</em>.<em>ã€ã‚·ãƒŠãƒªã‚ªåã€‘</em>ã€ã§ã™ã€‚</p>
 					<hr>
-					<pre><code>inextjump,<em>ƒVƒiƒŠƒI–¼</em>,<em>‘€ì‚·‚é•Ï”–¼</em>,<em>•Ï”‚Ö‘ã“ü‚·‚é“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚QFƒQ[ƒ€“à•Ï”‚ğ‘€ì‚µ‚Â‚Âw’è‚µ‚½ƒVƒiƒŠƒI‚ÖˆÚ“®‚µ‚Ü‚·B<br>
-						•Ï”‚Ö‘ã“ü‚·‚é“à—e‚ª‹ó‚à‚µ‚­‚Í‘¶İ‚µ‚È‚¢ê‡A‚»‚Ì•Ï”‚Ííœ‚³‚ê‚Ü‚·B</p>
+					<pre><code>ï¼ˆnextjump,<em>ã‚·ãƒŠãƒªã‚ªå</em>,<em>æ“ä½œã™ã‚‹å¤‰æ•°å</em>,<em>å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šã‚²ãƒ¼ãƒ å†…å¤‰æ•°ã‚’æ“ä½œã—ã¤ã¤æŒ‡å®šã—ãŸã‚·ãƒŠãƒªã‚ªã¸ç§»å‹•ã—ã¾ã™ã€‚<br>
+						å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹ãŒç©ºã‚‚ã—ãã¯å­˜åœ¨ã—ãªã„å ´åˆã€ãã®å¤‰æ•°ã¯å‰Šé™¤ã•ã‚Œã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>inextjump,<em>ƒVƒiƒŠƒI–¼</em>,__global__<em>ƒOƒ[ƒoƒ‹•Ï”–¼</em>,<em>‘ã“ü“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚RF•Ï”–¼‚Ì‘O‚Éu__global__v‚Æ‚Â‚¯‚é‚ÆA‚»‚Ì•Ï”‚ÍƒOƒ[ƒoƒ‹•Ï”‚Æ‚µ‚Ä‹L˜^‚³‚ê‚Ü‚·B<br>
-						ƒOƒ[ƒoƒ‹•Ï”‚ÍƒZ[ƒuƒf[ƒ^‚Ìƒ[ƒh‚É‚æ‚Á‚Ä‘‚«Š·‚¦‚ç‚ê‚é‚±‚Æ‚ª‚ ‚è‚Ü‚¹‚ñB<br>
-						‚Ü‚½A•Ï”‹L˜^Au__global__v‚Í•Ï”–¼‚É“ü‚è‚Ü‚¹‚ñB</p>
+					<pre><code>ï¼ˆnextjump,<em>ã‚·ãƒŠãƒªã‚ªå</em>,__global__<em>ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å</em>,<em>ä»£å…¥å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼“ï¼šå¤‰æ•°åã®å‰ã«ã€Œ__global__ã€ã¨ã¤ã‘ã‚‹ã¨ã€ãã®å¤‰æ•°ã¯ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¨ã—ã¦è¨˜éŒ²ã•ã‚Œã¾ã™ã€‚<br>
+						ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¯ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ›¸ãæ›ãˆã‚‰ã‚Œã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã›ã‚“ã€‚<br>
+						ã¾ãŸã€å¤‰æ•°è¨˜éŒ²æ™‚ã€ã€Œ__global__ã€ã¯å¤‰æ•°åã«å…¥ã‚Šã¾ã›ã‚“ã€‚</p>
 				</div>
 
-				<div class="item" id="‘I‘ğˆ">
-					<h2>‘I‘ğˆ</h2>
-					<pre><code>i‘I‘ğˆ,<em>•\¦‚·‚é•¶š</em>,<em>ƒWƒƒƒ“ƒvæƒVƒiƒŠƒI–¼</em>j</code></pre>
-					<p>—á‚PF‘I‘ğˆ‚ğ\0‚Ìƒoƒ‹[ƒ“‚Öo‚µ‚Ü‚·B<br>
-						•`‰æ‚Å‚«‚éêŠ‚ÍŒ»İ‚ÌƒJ[ƒ\ƒ‹ˆÊ’u‚Ì‚İ‚Å‚·B</p>
-					<p>oŒ»êŠ‚ğ•Ï‚¦‚½‚¢ê‡‚Íu\_l[x,y]i‘I‘ğˆ,...jv‚Ì‚æ‚¤‚É‚µ‚Ä‚­‚¾‚³‚¢B</p>
+				<div class="item" id="choices">
+					<h2>é¸æŠè‚¢</h2>
+					<pre><code>ï¼ˆé¸æŠè‚¢,<em>è¡¨ç¤ºã™ã‚‹æ–‡å­—</em>,<em>ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã‚·ãƒŠãƒªã‚ªå</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šé¸æŠè‚¢ã‚’\0ã®ãƒãƒ«ãƒ¼ãƒ³ã¸å‡ºã—ã¾ã™ã€‚<br>
+						æç”»ã§ãã‚‹å ´æ‰€ã¯ç¾åœ¨ã®ã‚«ãƒ¼ã‚½ãƒ«ä½ç½®ã®ã¿ã§ã™ã€‚</p>
+					<p>å‡ºç¾å ´æ‰€ã‚’å¤‰ãˆãŸã„å ´åˆã¯ã€Œ\_l[x,y]ï¼ˆé¸æŠè‚¢,...ï¼‰ã€ã®ã‚ˆã†ã«ã—ã¦ãã ã•ã„ã€‚</p>
 					<hr>
-					<pre><code>i‘I‘ğˆ,<em>•\¦‚·‚é•¶š</em>,<em>ƒWƒƒƒ“ƒvæƒVƒiƒŠƒI–¼</em>,<em>‘€ì‚·‚é•Ï”–¼</em>,<em>•Ï”‚Ö‘ã“ü‚·‚é“à—e</em>,<em>•Ï”–¼2</em>,<em>‘ã“ü“à—e2</em>,<em>...</em>j</code></pre>
-					<p>—á‚QF‘I‘ğˆ‚Å‚ÌƒWƒƒƒ“ƒvŒãAƒQ[ƒ€“à•Ï”‚ğ‘€ì‚Å‚«‚Ü‚·B<br>
-						•Ï”‚Ö‘ã“ü‚·‚é“à—e‚ª‹ó‚à‚µ‚­‚Í‘¶İ‚µ‚È‚¢ê‡A‚»‚Ì•Ï”‚Ííœ‚³‚ê‚Ü‚·B
+					<pre><code>ï¼ˆé¸æŠè‚¢,<em>è¡¨ç¤ºã™ã‚‹æ–‡å­—</em>,<em>ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã‚·ãƒŠãƒªã‚ªå</em>,<em>æ“ä½œã™ã‚‹å¤‰æ•°å</em>,<em>å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹</em>,<em>å¤‰æ•°å2</em>,<em>ä»£å…¥å†…å®¹2</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šé¸æŠè‚¢ã§ã®ã‚¸ãƒ£ãƒ³ãƒ—å¾Œã€ã‚²ãƒ¼ãƒ å†…å¤‰æ•°ã‚’æ“ä½œã§ãã¾ã™ã€‚<br>
+						å¤‰æ•°ã¸ä»£å…¥ã™ã‚‹å†…å®¹ãŒç©ºã‚‚ã—ãã¯å­˜åœ¨ã—ãªã„å ´åˆã€ãã®å¤‰æ•°ã¯å‰Šé™¤ã•ã‚Œã¾ã™ã€‚
 					</p>
 					<hr>
-					<pre><code>i‘I‘ğˆ,<em>•\¦‚·‚é•¶š</em>,<em>ƒWƒƒƒ“ƒvæƒVƒiƒŠƒI–¼</em>,__global__<em>ƒOƒ[ƒoƒ‹•Ï”–¼</em>,<em>‘ã“ü“à—e</em>,<em>...</em>j</code></pre>
-					<p>—á‚RF•Ï”–¼‚Ì‘O‚Éu__global__v‚Æ‚Â‚¯‚é‚ÆA‚»‚Ì•Ï”‚ÍƒOƒ[ƒoƒ‹•Ï”‚Æ‚µ‚Ä‹L˜^‚³‚ê‚Ü‚·B<br>
-						ƒOƒ[ƒoƒ‹•Ï”‚ÍƒZ[ƒuƒf[ƒ^‚Ìƒ[ƒh‚É‚æ‚Á‚Ä‘‚«Š·‚¦‚ç‚ê‚é‚±‚Æ‚ª‚ ‚è‚Ü‚¹‚ñB<br>
-						‚Ü‚½A•Ï”‹L˜^Au__global__v‚Í•Ï”–¼‚É“ü‚è‚Ü‚¹‚ñB
+					<pre><code>ï¼ˆé¸æŠè‚¢,<em>è¡¨ç¤ºã™ã‚‹æ–‡å­—</em>,<em>ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã‚·ãƒŠãƒªã‚ªå</em>,__global__<em>ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å</em>,<em>ä»£å…¥å†…å®¹</em>,<em>...</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼“ï¼šå¤‰æ•°åã®å‰ã«ã€Œ__global__ã€ã¨ã¤ã‘ã‚‹ã¨ã€ãã®å¤‰æ•°ã¯ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¨ã—ã¦è¨˜éŒ²ã•ã‚Œã¾ã™ã€‚<br>
+						ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã¯ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ›¸ãæ›ãˆã‚‰ã‚Œã‚‹ã“ã¨ãŒã‚ã‚Šã¾ã›ã‚“ã€‚<br>
+						ã¾ãŸã€å¤‰æ•°è¨˜éŒ²æ™‚ã€ã€Œ__global__ã€ã¯å¤‰æ•°åã«å…¥ã‚Šã¾ã›ã‚“ã€‚
 					</p>
 				</div>
 
-				<div class="item" id="‰¹Šy">
-					<h2>‰¹Šy</h2>
-					<pre><code>i‰¹Šy,<em>ƒtƒ@ƒCƒ‹ƒpƒX</em>j</code></pre>
-					<p>—á‚PFw’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ğƒ‹[ƒv–³‚µ‚ÅÄ¶‚µ‚Ü‚·B<br>
-						ƒRƒ“ƒtƒBƒO‚Ì‰¹Šy‰¹—Êİ’è‚ª”½‰f‚³‚ê‚Ü‚·B<br>
-						Œ»İÄ¶’†‚Ì‰¹Šy‚Æ“¯‚¶‚à‚Ì‚ªÄ“xw’è‚³‚ê‚½ê‡A‰½‚à‚µ‚Ü‚¹‚ñB<br>
-						‰¹ŠyÄ¶I—¹‘OA‚Ü‚½‚Íƒ‹[ƒvÄ¶’†‚É•Ê‚Ì‰¹Šy‚ğ‚±‚Ìƒ^ƒO‚ÅÄ¶w¦‚·‚é‚ÆA‘O‚Ì‰¹Šy‚Í~‚Ü‚è‚Ü‚·B</p>
-					<p>¦SSP‚Ì–{‘Ìİ’è‚ÅuÅ¬‰»‚É’‚ç‚È‚¢v‚ª—LŒø‚É‚È‚Á‚Ä‚¢‚é‚ÆAuƒƒjƒ…[.Å¬‰»v‚ğŒo—R‚µ‚È‚¢Å¬‰»(*1)‚É‰¹‚ªˆê’â~‚³‚ê‚Ü‚¹‚ñB<br>
-						‘Î‰•s‰Â”\‚È‚½‚ßAd—l‚Æ‚µ‚Ü‚·B<br>
-						*1: ƒVƒ‡[ƒgƒJƒbƒgƒL[‘€ìEƒ^ƒXƒNƒgƒŒƒCƒAƒCƒRƒ“‚Ìƒ_ƒuƒ‹ƒNƒŠƒbƒNA‚È‚Ç</p>
-					<p>¦Ä¶¸”s‚µ‚½A‚¨‚æ‚Ñƒ‹[ƒv–³‚µw’è‚Å‚P‹È‚ğÄ¶I—¹‚µ‚½‚ÍAÄ¶’†‚Ìó‘Ô•Ï”‚ª©“®‚Å‰ğœ‚³‚ê‚Ü‚·B</p>
+				<div class="item" id="music">
+					<h2>éŸ³æ¥½</h2>
+					<pre><code>ï¼ˆéŸ³æ¥½,<em>ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šæŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ«ãƒ¼ãƒ—ç„¡ã—ã§å†ç”Ÿã—ã¾ã™ã€‚<br>
+						ã‚³ãƒ³ãƒ•ã‚£ã‚°ã®éŸ³æ¥½éŸ³é‡è¨­å®šãŒåæ˜ ã•ã‚Œã¾ã™ã€‚<br>
+						ç¾åœ¨å†ç”Ÿä¸­ã®éŸ³æ¥½ã¨åŒã˜ã‚‚ã®ãŒå†åº¦æŒ‡å®šã•ã‚ŒãŸå ´åˆã€ä½•ã‚‚ã—ã¾ã›ã‚“ã€‚<br>
+						éŸ³æ¥½å†ç”Ÿçµ‚äº†å‰ã€ã¾ãŸã¯ãƒ«ãƒ¼ãƒ—å†ç”Ÿä¸­ã«åˆ¥ã®éŸ³æ¥½ã‚’ã“ã®ã‚¿ã‚°ã§å†ç”ŸæŒ‡ç¤ºã™ã‚‹ã¨ã€å‰ã®éŸ³æ¥½ã¯æ­¢ã¾ã‚Šã¾ã™ã€‚</p>
+					<p>â€»SSPã®æœ¬ä½“è¨­å®šã§ã€Œæœ€å°åŒ–æ™‚ã«å–‹ã‚‰ãªã„ã€ãŒæœ‰åŠ¹ã«ãªã£ã¦ã„ã‚‹ã¨ã€ã€Œãƒ¡ãƒ‹ãƒ¥ãƒ¼.æœ€å°åŒ–ã€ã‚’çµŒç”±ã—ãªã„æœ€å°åŒ–æ™‚(*1)ã«éŸ³ãŒä¸€æ™‚åœæ­¢ã•ã‚Œã¾ã›ã‚“ã€‚<br>
+						å¯¾å¿œä¸å¯èƒ½ãªãŸã‚ã€ä»•æ§˜ã¨ã—ã¾ã™ã€‚<br>
+						*1: ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆã‚­ãƒ¼æ“ä½œãƒ»ã‚¿ã‚¹ã‚¯ãƒˆãƒ¬ã‚¤ã‚¢ã‚¤ã‚³ãƒ³ã®ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã€ãªã©</p>
+					<p>â€»å†ç”Ÿå¤±æ•—ã—ãŸæ™‚ã€ãŠã‚ˆã³ãƒ«ãƒ¼ãƒ—ç„¡ã—æŒ‡å®šã§ï¼‘æ›²ã‚’å†ç”Ÿçµ‚äº†ã—ãŸæ™‚ã¯ã€å†ç”Ÿä¸­ã®çŠ¶æ…‹å¤‰æ•°ãŒè‡ªå‹•ã§è§£é™¤ã•ã‚Œã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>i‰¹Šy,<em>ƒtƒ@ƒCƒ‹ƒpƒX</em>,loopj</code></pre>
-					<p>—á‚QFƒ‹[ƒvÄ¶‚ğ‚µ‚½‚¢ê‡‚Í‚±‚Ì‚æ‚¤‚Éw’è‚µ‚Ä‚­‚¾‚³‚¢B<br>
-						Œ»İÄ¶’†‚Ì‰¹Šy‚Æ“¯‚¶‚à‚Ì‚ªÄ“xw’è‚³‚ê‚½ê‡‚ÍA‰½‚à‚µ‚Ü‚¹‚ñB</p>
+					<pre><code>ï¼ˆéŸ³æ¥½,<em>ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹</em>,loopï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šãƒ«ãƒ¼ãƒ—å†ç”Ÿã‚’ã—ãŸã„å ´åˆã¯ã“ã®ã‚ˆã†ã«æŒ‡å®šã—ã¦ãã ã•ã„ã€‚<br>
+						ç¾åœ¨å†ç”Ÿä¸­ã®éŸ³æ¥½ã¨åŒã˜ã‚‚ã®ãŒå†åº¦æŒ‡å®šã•ã‚ŒãŸå ´åˆã¯ã€ä½•ã‚‚ã—ã¾ã›ã‚“ã€‚</p>
 				</div>
 
-				<div class="item" id="Œø‰Ê‰¹">
-					<h2>Œø‰Ê‰¹</h2>
-					<pre><code>iŒø‰Ê‰¹,<em>ƒtƒ@ƒCƒ‹ƒpƒX</em>j</code></pre>
-					<p>w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ğƒ‹[ƒv–³‚µ‚ÅÄ¶‚µ‚Ü‚·B<br>
-						ƒRƒ“ƒtƒBƒO‚ÌŒø‰Ê‰¹‰¹—Êİ’è‚ª”½‰f‚³‚ê‚Ü‚·B</p>
-					<p>¦SSP‚Ì–{‘Ìİ’è‚ÅuÅ¬‰»‚É’‚ç‚È‚¢v‚ª—LŒø‚É‚È‚Á‚Ä‚¢‚é‚ÆAu–ƒƒjƒ…[.Å¬‰»v‚ğŒo—R‚µ‚È‚¢Å¬‰»(*1)‚É‰¹‚ªˆê’â~‚³‚ê‚Ü‚¹‚ñB<br>
-						‘Î‰•s‰Â”\‚È‚½‚ßAd—l‚Æ‚µ‚Ü‚·B<br>
-						*1: ƒVƒ‡[ƒgƒJƒbƒgƒL[‘€ìEƒ^ƒXƒNƒgƒŒƒCƒAƒCƒRƒ“‚Ìƒ_ƒuƒ‹ƒNƒŠƒbƒNA‚È‚Ç</p>
-					<p>¦Ä¶¸”s‚µ‚½A‚¨‚æ‚Ñƒ‹[ƒv–³‚µw’è‚Å‚PŒø‰Ê‰¹‚ğÄ¶I—¹‚µ‚½‚ÍAÄ¶’†‚Ìó‘Ô•Ï”‚ª©“®‚Å‰ğœ‚³‚ê‚Ü‚·B</p>
+				<div class="item" id="sound_effect">
+					<h2>åŠ¹æœéŸ³</h2>
+					<pre><code>ï¼ˆåŠ¹æœéŸ³,<em>ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹</em>ï¼‰</code></pre>
+					<p>æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ«ãƒ¼ãƒ—ç„¡ã—ã§å†ç”Ÿã—ã¾ã™ã€‚<br>
+						ã‚³ãƒ³ãƒ•ã‚£ã‚°ã®åŠ¹æœéŸ³éŸ³é‡è¨­å®šãŒåæ˜ ã•ã‚Œã¾ã™ã€‚</p>
+					<p>â€»SSPã®æœ¬ä½“è¨­å®šã§ã€Œæœ€å°åŒ–æ™‚ã«å–‹ã‚‰ãªã„ã€ãŒæœ‰åŠ¹ã«ãªã£ã¦ã„ã‚‹ã¨ã€ã€Œï¼Šãƒ¡ãƒ‹ãƒ¥ãƒ¼.æœ€å°åŒ–ã€ã‚’çµŒç”±ã—ãªã„æœ€å°åŒ–æ™‚(*1)ã«éŸ³ãŒä¸€æ™‚åœæ­¢ã•ã‚Œã¾ã›ã‚“ã€‚<br>
+						å¯¾å¿œä¸å¯èƒ½ãªãŸã‚ã€ä»•æ§˜ã¨ã—ã¾ã™ã€‚<br>
+						*1: ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆã‚­ãƒ¼æ“ä½œãƒ»ã‚¿ã‚¹ã‚¯ãƒˆãƒ¬ã‚¤ã‚¢ã‚¤ã‚³ãƒ³ã®ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã€ãªã©</p>
+					<p>â€»å†ç”Ÿå¤±æ•—ã—ãŸæ™‚ã€ãŠã‚ˆã³ãƒ«ãƒ¼ãƒ—ç„¡ã—æŒ‡å®šã§ï¼‘åŠ¹æœéŸ³ã‚’å†ç”Ÿçµ‚äº†ã—ãŸæ™‚ã¯ã€å†ç”Ÿä¸­ã®çŠ¶æ…‹å¤‰æ•°ãŒè‡ªå‹•ã§è§£é™¤ã•ã‚Œã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>iŒø‰Ê‰¹,<em>ƒtƒ@ƒCƒ‹ƒpƒX</em>,loopj</code></pre>
-					<p>—á‚QFƒ‹[ƒvÄ¶‚ğ‚µ‚½‚¢ê‡‚Í‚±‚Ì‚æ‚¤‚Éw’è‚µ‚Ä‚­‚¾‚³‚¢B</p>
+					<pre><code>ï¼ˆåŠ¹æœéŸ³,<em>ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹</em>,loopï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šãƒ«ãƒ¼ãƒ—å†ç”Ÿã‚’ã—ãŸã„å ´åˆã¯ã“ã®ã‚ˆã†ã«æŒ‡å®šã—ã¦ãã ã•ã„ã€‚</p>
 				</div>
 
-				<div class="item" id="ƒ{ƒCƒX">
-					<h2>ƒ{ƒCƒX</h2>
-					<pre><code>iƒ{ƒCƒX,<em>ƒtƒ@ƒCƒ‹ƒpƒX</em>j</code></pre>
-					<p>w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ğƒ‹[ƒv–³‚µ‚ÅÄ¶‚µ‚Ü‚·B<br>
-						ƒRƒ“ƒtƒBƒO‚Ìƒ{ƒCƒX‰¹—Êİ’è‚ª”½‰f‚³‚ê‚Ü‚·B</p>
-					<p>ƒ{ƒCƒXÄ¶I—¹‘OA‚Ü‚½‚Íƒ{ƒCƒX‚ğƒ‹[ƒvÄ¶’†‚Éƒ{ƒCƒX‚ğ‚±‚Ìƒ^ƒO‚ÅÄ¶w¦‚·‚é‚ÆA‘O‚Ìƒ{ƒCƒX‚Í~‚Ü‚è‚Ü‚·B</p>
-					<p>¦SSP‚Ì–{‘Ìİ’è‚ÅuÅ¬‰»‚É’‚ç‚È‚¢v‚ª—LŒø‚É‚È‚Á‚Ä‚¢‚é‚ÆAuƒƒjƒ…[.Å¬‰»v‚ğŒo—R‚µ‚È‚¢Å¬‰»(*1)‚É‰¹‚ªˆê’â~‚³‚ê‚Ü‚¹‚ñB<br>
-						‘Î‰•s‰Â”\‚È‚½‚ßAd—l‚Æ‚µ‚Ü‚·B<br>
-						*1: ƒVƒ‡[ƒgƒJƒbƒgƒL[‘€ìEƒ^ƒXƒNƒgƒŒƒCƒAƒCƒRƒ“‚Ìƒ_ƒuƒ‹ƒNƒŠƒbƒNA‚È‚Ç</p>
-					<p>¦Ä¶¸”s‚µ‚½A‚¨‚æ‚Ñƒ‹[ƒv–³‚µw’è‚Å‚Pƒ{ƒCƒX‚ğÄ¶I—¹‚µ‚½‚ÍAÄ¶’†‚Ìó‘Ô•Ï”‚ª©“®‚Å‰ğœ‚³‚ê‚Ü‚·B</p>
+				<div class="item" id="voice">
+					<h2>ãƒœã‚¤ã‚¹</h2>
+					<pre><code>ï¼ˆãƒœã‚¤ã‚¹,<em>ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹</em>ï¼‰</code></pre>
+					<p>æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ãƒ«ãƒ¼ãƒ—ç„¡ã—ã§å†ç”Ÿã—ã¾ã™ã€‚<br>
+						ã‚³ãƒ³ãƒ•ã‚£ã‚°ã®ãƒœã‚¤ã‚¹éŸ³é‡è¨­å®šãŒåæ˜ ã•ã‚Œã¾ã™ã€‚</p>
+					<p>ãƒœã‚¤ã‚¹å†ç”Ÿçµ‚äº†å‰ã€ã¾ãŸã¯ãƒœã‚¤ã‚¹ã‚’ãƒ«ãƒ¼ãƒ—å†ç”Ÿä¸­ã«ãƒœã‚¤ã‚¹ã‚’ã“ã®ã‚¿ã‚°ã§å†ç”ŸæŒ‡ç¤ºã™ã‚‹ã¨ã€å‰ã®ãƒœã‚¤ã‚¹ã¯æ­¢ã¾ã‚Šã¾ã™ã€‚</p>
+					<p>â€»SSPã®æœ¬ä½“è¨­å®šã§ã€Œæœ€å°åŒ–æ™‚ã«å–‹ã‚‰ãªã„ã€ãŒæœ‰åŠ¹ã«ãªã£ã¦ã„ã‚‹ã¨ã€ã€Œãƒ¡ãƒ‹ãƒ¥ãƒ¼.æœ€å°åŒ–ã€ã‚’çµŒç”±ã—ãªã„æœ€å°åŒ–æ™‚(*1)ã«éŸ³ãŒä¸€æ™‚åœæ­¢ã•ã‚Œã¾ã›ã‚“ã€‚<br>
+						å¯¾å¿œä¸å¯èƒ½ãªãŸã‚ã€ä»•æ§˜ã¨ã—ã¾ã™ã€‚<br>
+						*1: ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆã‚­ãƒ¼æ“ä½œãƒ»ã‚¿ã‚¹ã‚¯ãƒˆãƒ¬ã‚¤ã‚¢ã‚¤ã‚³ãƒ³ã®ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã€ãªã©</p>
+					<p>â€»å†ç”Ÿå¤±æ•—ã—ãŸæ™‚ã€ãŠã‚ˆã³ãƒ«ãƒ¼ãƒ—ç„¡ã—æŒ‡å®šã§ï¼‘ãƒœã‚¤ã‚¹ã‚’å†ç”Ÿçµ‚äº†ã—ãŸæ™‚ã¯ã€å†ç”Ÿä¸­ã®çŠ¶æ…‹å¤‰æ•°ãŒè‡ªå‹•ã§è§£é™¤ã•ã‚Œã¾ã™ã€‚</p>
 				</div>
 
-				<div class="item" id="‰¹’â~">
-					<h2>‰¹’â~</h2>
-					<pre><code>i‰¹’â~j</code></pre>
-					<p>—á‚PFÄ¶’†‚Ì‰¹ºƒtƒ@ƒCƒ‹‚ğ‘S‚Ä’â~‚µ‚Ü‚·B</p>
+				<div class="item" id="sound_stop">
+					<h2>éŸ³åœæ­¢</h2>
+					<pre><code>ï¼ˆéŸ³åœæ­¢ï¼‰</code></pre>
+					<p>ä¾‹ï¼‘ï¼šå†ç”Ÿä¸­ã®éŸ³å£°ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å…¨ã¦åœæ­¢ã—ã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>i‰¹’â~,<em>‰¹Šy</em>j
-i‰¹’â~,<em>Œø‰Ê‰¹</em>j
-i‰¹’â~,<em>ƒ{ƒCƒX</em>j</code></pre>
-					<p>—á‚QFÄ¶’†‚ÌAw’è‚µ‚½í—Ş‚Ì‰¹ºƒtƒ@ƒCƒ‹‚ğ‘S‚Ä’â~‚µ‚Ü‚·B</p>
+					<pre><code>ï¼ˆéŸ³åœæ­¢,<em>éŸ³æ¥½</em>ï¼‰
+ï¼ˆéŸ³åœæ­¢,<em>åŠ¹æœéŸ³</em>ï¼‰
+ï¼ˆéŸ³åœæ­¢,<em>ãƒœã‚¤ã‚¹</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼’ï¼šå†ç”Ÿä¸­ã®ã€æŒ‡å®šã—ãŸç¨®é¡ã®éŸ³å£°ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å…¨ã¦åœæ­¢ã—ã¾ã™ã€‚</p>
 					<hr>
-					<pre><code>i‰¹’â~,<em>ƒtƒ@ƒCƒ‹ƒpƒX</em>j</code></pre>
-					<p>—á‚RFw’è‚µ‚½ƒtƒ@ƒCƒ‹‚ªÄ¶’†‚Å‚ ‚ê‚Î’â~‚µ‚Ü‚·B</p>
+					<pre><code>ï¼ˆéŸ³åœæ­¢,<em>ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹</em>ï¼‰</code></pre>
+					<p>ä¾‹ï¼“ï¼šæŒ‡å®šã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ãŒå†ç”Ÿä¸­ã§ã‚ã‚Œã°åœæ­¢ã—ã¾ã™ã€‚</p>
 				</div>
 
-				<div class="item" id="‰¹ƒ[ƒh">
-					<h2>‰¹ƒ[ƒh</h2>
-					<pre><code>i‰¹ƒ[ƒh,<em>ƒtƒ@ƒCƒ‹ƒpƒX</em>j</code></pre>
-					<p>w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ğ‚ ‚ç‚©‚¶‚ß“Ç‚İ‚ñ‚ÅAÄ¶ŠJn‚·‚®‚ÉÄ¶‚Å‚«‚é‚æ‚¤‚É‚µ‚Ü‚·B<br>
-						‰¹ŠyEŒø‰Ê‰¹‚Ì‚Ç‚¿‚ç‚É‚à—LŒø‚Å‚·B<br>
-						‚±‚Ìƒ^ƒO‚ª–³‚­‚Ä‚à‰¹‚ÌÄ¶©‘Ì‚Ís‚í‚ê‚Ü‚·B</p>
-					<p>¦ƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg(*1)‚ğ‚Ü‚½‚¢‚Åw’è‚µ‚½ê‡AƒZ[ƒuƒf[ƒ^‚©‚ç‚ÌÄŠJ‚É‚±‚Ìƒ^ƒO‚Ìİ’u’n“_‚ğ’Ê‚ç‚È‚¢‚©‚à‚µ‚ê‚Ü‚¹‚ñB<br>
-						‚»‚Ì‚Í“Ç‚İ‚İŠÔ‚ª”­¶‚µ‚Ü‚·B</p>
+				<div class="item" id="sound_load">
+					<h2>éŸ³ãƒ­ãƒ¼ãƒ‰</h2>
+					<pre><code>ï¼ˆéŸ³ãƒ­ãƒ¼ãƒ‰,<em>ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹</em>ï¼‰</code></pre>
+					<p>æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚ã‚‰ã‹ã˜ã‚èª­ã¿è¾¼ã‚“ã§ã€å†ç”Ÿé–‹å§‹æ™‚ã™ãã«å†ç”Ÿã§ãã‚‹ã‚ˆã†ã«ã—ã¾ã™ã€‚<br>
+						éŸ³æ¥½ãƒ»åŠ¹æœéŸ³ã®ã©ã¡ã‚‰ã«ã‚‚æœ‰åŠ¹ã§ã™ã€‚<br>
+						ã“ã®ã‚¿ã‚°ãŒç„¡ãã¦ã‚‚éŸ³ã®å†ç”Ÿè‡ªä½“ã¯è¡Œã‚ã‚Œã¾ã™ã€‚</p>
+					<p>â€»ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆ(*1)ã‚’ã¾ãŸã„ã§æŒ‡å®šã—ãŸå ´åˆã€ã‚»ãƒ¼ãƒ–ãƒ‡ãƒ¼ã‚¿ã‹ã‚‰ã®å†é–‹æ™‚ã«ã“ã®ã‚¿ã‚°ã®è¨­ç½®åœ°ç‚¹ã‚’é€šã‚‰ãªã„ã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚<br>
+						ãã®æ™‚ã¯èª­ã¿è¾¼ã¿æ™‚é–“ãŒç™ºç”Ÿã—ã¾ã™ã€‚</p>
 					<p>
-						*1: <a href="#next">next</a>E<a href="#nextset">nextset</a>E<a href="#nextjump">nextjump</a>E<a
-							href="#‘I‘ğˆ">‘I‘ğˆ</a>‚Ìƒ^ƒOÀs’¼Œã‚ÉˆÚ“®‚µ‚½ŠÖ”‚Ì–`“ª
+						*1: <a href="#next">next</a>ãƒ»<a href="#nextset">nextset</a>ãƒ»<a href="#nextjump">nextjump</a>ãƒ»<a
+							href="#choices">é¸æŠè‚¢</a>ã®ã‚¿ã‚°å®Ÿè¡Œç›´å¾Œã«ç§»å‹•ã—ãŸé–¢æ•°ã®å†’é ­
 					</p>
 				</div>
 			</div>
 
-			<div id="page_top"><a href="#">£</a></div>
+			<div id="page_top"><a href="#">â–²</a></div>
 
 		</div>
 	</div>
-
-	<script>
-		// ƒRƒs[ƒ{ƒ^ƒ“ì¬—pƒR[ƒh
-		(function (d) {
-			const pre = d.querySelectorAll('pre');
-			if (pre.length == 0) {
-				return
-			}
-			for (let i = 0; i < pre.length; i++) {
-				const btn = d.createElement('button');
-				btn.className = 'copy-button';
-				btn.textContent = 'Copy';
-				pre[i].insertBefore(btn, pre[i].firstElementChild);
-				btn.addEventListener('click', copy_code, false)
-			}
-		})(document);
-
-		// ƒRƒs[‹@”\—pƒR[ƒh
-		function copy_code() {
-			const code = this.nextElementSibling.innerText;
-			if (navigator.clipboard) {
-				navigator.clipboard.writeText(code).then(() => {
-					this.textContent = 'ƒRƒs[‚µ‚Ü‚µ‚½I';
-					setTimeout(() => {
-						this.textContent = 'Copy'
-					}, 1000)
-				}).catch(e => {
-					alert('ƒRƒs[‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½\n‚¨è”‚Å‚·‚ªè“®‚ÅƒRƒs[‚µ‚Ä‚­‚¾‚³‚¢\n\n' + e.message)
-				})
-			} else {
-				alert('‚±‚Ìƒuƒ‰ƒEƒU‚Í Clipboard API ”ñ‘Î‰‚Å‚·\n‚¨è”‚Å‚·‚ªè“®‚ÅƒRƒs[‚µ‚Ä‚­‚¾‚³‚¢')
-			}
-		};
-
-	window.addEventListener('scroll',() => {
-		const pageTop = document.getElementById('page_top');
-			if(window.pageYOffset >= 100) {
-			pageTop.classList.add('fadein');
-		} else {
-			pageTop.classList.remove('fadein');
-		}
-	});
-
-	</script>
-
 </body>
-
-<style>
-	html {
-		scroll-behavior: smooth;
-	}
-
-	body {
-		background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20543%20543%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22m425%2034h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2034h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2034h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%2051h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m476%2051h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%2068h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%2068h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m476%2068h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%2085h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%2085h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%2085h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%2085h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%2085h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20102h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20102h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%20102h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20119h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20119h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20119h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20136h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20136h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20136h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20136h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20136h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20136h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20153h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20153h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20153h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20153h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20153h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20153h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20170h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20170h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20170h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20170h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20170h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20170h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20187h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20187h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20187h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20187h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20187h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20187h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20187h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m51%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20204h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20204h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20204h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20204h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20204h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20204h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20204h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20204h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20204h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20204h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20221h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20221h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20221h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20221h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20221h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20221h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20221h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20221h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20221h16v16h-16z%22%20fill%3D%22%23c2ce7d%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20221h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20221h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20221h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20238h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20238h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20238h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20238h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20238h16v16h-16z%22%20fill%3D%22%2383a474%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20238h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20238h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20238h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20255h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20255h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20255h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20255h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20255h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20255h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20255h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20272h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20272h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20272h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20272h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20272h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20272h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20272h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20272h16v16h-16z%22%20fill%3D%22%23d2d9ae%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20272h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20289h16v16h-16z%22%20fill%3D%22%23c7cbab%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20289h16v16h-16z%22%20fill%3D%22%23ce946e%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20289h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20306h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20306h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20306h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20306h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20323h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20323h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20323h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20340h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20340h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20340h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20340h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m442%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m459%20340h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20357h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20357h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20357h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20357h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20357h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m408%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m425%20357h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20374h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20374h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20374h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20374h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20374h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20374h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20374h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m391%20374h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m51%20391h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20391h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20391h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20391h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20391h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20391h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20391h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m357%20391h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20391h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m68%20408h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20408h16v16h-16z%22%20fill%3D%22%23e4e4e4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20408h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20408h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20408h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m323%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m340%20408h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m374%20408h16v16h-16z%22%20fill%3D%22%23c8c8c8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m85%20425h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m102%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20425h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20425h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20425h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m272%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m289%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m306%20425h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m119%20442h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20442h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20442h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20442h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20442h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20442h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m238%20442h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m255%20442h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m136%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20459h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20459h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m153%20476h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20476h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20476h16v16h-16z%22%20fill%3D%22%2333703f%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20476h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m221%20476h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m170%20493h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20493h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m204%20493h16v16h-16z%22%20fill%3D%22%234c9a5c%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m187%20510h16v16h-16z%22%20fill%3D%22%2384c691%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-		background-attachment: fixed;
-		background-position: left bottom;
-		background-repeat: no-repeat;
-		background-color: #fff;
-		background-size: 20%;
-		color: #222;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		min-width: 400px;
-	}
-
-	h1 {
-		background: #fff;
-		border-radius: 5px;
-		color: #1976D2;
-		padding: 10px;
-		display: block;
-		margin: 0;
-	}
-
-	h2 {
-		background: #1976D2;
-		color: #fff;
-		padding: 10px;
-		display: block;
-		margin: 0;
-		border-radius: 5px;
-	}
-
-	pre {
-		position: relative;
-		margin: 1em 0;
-		padding: 0;
-		line-height: 1;
-		font-size: 15px;
-		background: #eee;
-		border-radius: 5px;
-	}
-
-	pre code {
-		display: block;
-		margin: 0;
-		padding: 2em 1em;
-		max-height: 240px;
-		line-height: 1.4;
-		overflow: auto;
-	}
-
-	.copy-button {
-		position: absolute;
-		top: 0;
-		right: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		appearance: none;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		margin: 0 auto;
-		padding: 0 1em;
-		height: 24px;
-		border: none;
-		line-height: 1;
-		font-weight: bold;
-		background: #455A64;
-		color: #fff;
-		cursor: pointer;
-		border-radius: 5px;
-	}
-
-	.copy-button:hover {
-		background: #999
-	}
-
-	em {
-		font-style: normal;
-		font-weight: bold;
-		color: #F44336;
-	}
-
-	.side ul {
-		padding: 0;
-		margin-block-end: 0;
-		margin-block-start: 0;
-		width: 290px;
-	}
-
-	.side ul li {
-		width: auto;
-		color: #222;
-		border-left: solid 6px #2196F3; /*¶‘¤‚Ìü*/
-		background: #B3E5FC; /*”wŒiF*/
-		margin-bottom: 5px; /*‰º‚Ìƒo[‚Æ‚Ì—]”’*/
-		line-height: 1.5;
-		padding: 0.2em;
-		padding-left: 0.5em;
-		padding-right: 3em;
-		list-style-type: none !important; /*ƒ|ƒ`Á‚·*/
-		vertical-align: middle;
-		box-shadow: 1px 1px 3px #666;
-	}
-
-	.returntotop {
-		border-left: solid 6px #FFC107 !important; /*¶‘¤‚Ìü*/
-		background: #FFECB3 !important; /*”wŒiF*/
-	}
-
-	.differentpage {
-		border-left: solid 6px #E91E63 !important; /*¶‘¤‚Ìü*/
-		background: #F8BBD0 !important; /*”wŒiF*/
-	}
-
-	.side ul li:hover {
-		background: #fff !important; /*”wŒi*/
-	}
-
-	.side ul a {
-		text-decoration: none;
-	}
-
-	.container {
-		padding: 0;
-		margin: 0;
-	}
-
-	.header,
-	.footer {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 100px;
-	}
-
-	.content {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-		align-items: flex-start;
-		align-content: flex-start;
-		flex-wrap: wrap;
-	}
-
-	.main {
-		line-height: 1.5em;
-		width: 100%;
-		height: 100%;
-		max-width: 600px;
-		min-width: 100px;
-		margin-left: 0;
-		padding-left: 0;
-	}
-
-	.main::before {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-
-	.main p {
-		margin: 1em 0;
-	}
-
-	.side {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: -webkit-sticky;
-		position: sticky;
-		top: 5px;/* ’Ç]‚·‚é */
-		height: 100%;
-		width: 270px;
-		min-width: 270px;
-		margin: 0;
-		margin-right: -2.5em;
-		padding: 0;
-		white-space: nowrap;
-	}
-
-	.item {
-		background: #fff;
-		margin: 0;
-		margin-top: 5px;
-		margin-bottom: 10px;
-		padding: 20px;
-		position: relative;
-		box-shadow: 2px 2px 5px #666;
-	}
-
-	hr {
-		border-width: 0 0 1px;
-		border-style: solid;
-		border-color: #ccc;
-	}
-
-	#page_top {
-		display: block;
-		opacity: 0;
-		transition: opacity 0.4s ease-in ease-out;
-		pointer-events: none;
-	}
-
-	@media screen and (max-height: 800px), screen and (max-width: 850px)  {
-
-	.side {
-		top: auto; /* ’Ç]‚µ‚È‚¢ */
-		margin-top: 5px;
-	}
-
-	#page_top {
-		display: block;
-		opacity: 0;
-		transition: opacity 0.4s ease-in;
-		pointer-events: none;
-	}
-
-	#page_top a {
-		text-decoration: none;
-		position: fixed;
-		right: 20px;
-		bottom: 20px;
-		z-index: 100;
-		color: rgb(255, 193, 7);
-		background-color: rgb(255, 236, 179);
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		font-size: 2em;
-		border-radius: 50%;
-		border: solid 4px rgb(255, 193, 7);
-		text-align: center;
-		overflow: hidden;
-		box-shadow: 1px 1px 5px #666;
-		margin: 0;
-		padding: 0;
-	}
-
-	#page_top a:hover {
-		background-color: #fff;
-		cursor: pointer;
-	}
-
-	#page_top.fadein {
-		opacity: .5;
-		pointer-events: auto;
-	}
-
-}
-
-</style>
 
 </html>
