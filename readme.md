@@ -4,7 +4,8 @@
 
 ## 概要
 リリー・ノベル・プレイヤー(略して「LNP」)は、ノベルゲームを作れる枠組み的なゴースト＆シェル＆バルーンです。
-[ろすえん](https://lnx.flop.jp/) & [おもちよいち](https://sites.google.com/view/omochi-yoichi/)
+
+作者: [ろすえん](https://lnx.flop.jp/) & [おもちよいち](https://sites.google.com/view/omochi-yoichi/)
 
 
 ## 動作環境
