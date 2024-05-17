@@ -147,8 +147,8 @@ file,ghost/master/dic_menu_saveload.txta7582ee04110ee66357795aa6ac4969bsize=15
 file,ghost/master/dic_settings_default.txtd50747e57b690cd12d790e20d609739fsize=17953date=2012-12-21T00:00:00
 file,ghost/master/help/hint.html48ea6904ccbe2e4b1c74fdd48db52493size=33900date=2012-12-21T00:00:00
 file,ghost/master/help/src/icon_lily.svg3a362afa263083b2e758de0f4b59c09esize=16147date=2012-12-21T00:00:00
-file,ghost/master/help/src/script.jsabb43b42e58cbcbbc39e2338f64e55a0size=219date=2012-12-21T00:00:00
-file,ghost/master/help/src/style.css0cd3ad83018c553b4e5c4ef15f36a84fsize=4173date=2012-12-21T00:00:00
+file,ghost/master/help/src/script.js48f0a328750d53c865029ac4846bad25size=1122date=2012-12-21T00:00:00
+file,ghost/master/help/src/style.cssb7f349477e1156bb6e223036a30e3ff6size=4156date=2012-12-21T00:00:00
 file,ghost/master/help/tags.html7a0bb2d3b2411cd15ba0af36a54ce80dsize=22885date=2012-12-21T00:00:00
 file,ghost/master/lnp_icon.ico8bf58db8dfd6f07201caf0aeda3790d5size=78446date=2012-12-21T00:00:00
 file,ghost/master/replace.txt12a8e87ecea75ee673ae3a52c03175a6size=4663date=2012-12-21T00:00:00
