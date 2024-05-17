@@ -21,4 +21,4 @@ balloon.dontmove,1
 seriko.alignmenttodesktop,free
 readme.charset,UTF-8
 
-homeurl,https://raw.githubusercontent.com/kanadelab/LilyNovelPlayer/main/
+homeurl,https://raw.githubusercontent.com/lost-nd-xxx/LilyNovelPlayer/main/
