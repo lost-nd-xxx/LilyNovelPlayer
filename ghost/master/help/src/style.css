@@ -107,6 +107,10 @@ em {
 	vertical-align: middle;
 	box-shadow: 1px 1px 3px #666;
 }
+.officialweb {
+	border-left: solid 6px #4CAF50 !important; /* 左側の線 */
+	background: #DCEDC8 !important; /* 背景色 */
+}
 
 .returntotop {
 	border-left: solid 6px #FFC107 !important; /* 左側の線 */
