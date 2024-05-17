@@ -21,7 +21,7 @@
 
 
 ## 更新履歴
-* ~~大まかな更新履歴~~
+* [大まかな更新履歴](https://github.com/lost-nd-xxx/LilyNovelPlayer/wiki/rough_change_log)
 * [詳細な更新履歴](https://github.com/lost-nd-xxx/LilyNovelPlayer/commits/main/)
 
 
