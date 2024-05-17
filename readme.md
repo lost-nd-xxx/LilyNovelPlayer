@@ -1,5 +1,5 @@
 # Lily Novel Player
-スクショgif貼る
+![screen shots](lnp_screenshot.gif)
 
 
 ## 概要
