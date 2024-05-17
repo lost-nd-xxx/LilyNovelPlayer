@@ -1,4 +1,5 @@
 LilyNovelPlayerBallon/,noupdate
-html/,nonar,noupdate
+LICENCE.md,nonar,noupdate
+lnp_screenshot.gif,nonar,noupdate
 readme.md,nonar,noupdate
 //developer_options.txt,nonar,noupdate
