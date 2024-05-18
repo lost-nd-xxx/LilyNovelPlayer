@@ -8,7 +8,11 @@
 ### 利用条件
 [同梱素材リスト](#同梱素材リスト)に含まれるファイルについては、MITライセンスを適用します。
 
-また、LNPへに関する物品の制作＆頒布時に限り、以下の条件でご自由にお使いいただけます。
+| (c) 2024 lost_nd_xxx & omochi-yoichi<br>Released under the MIT license<br>https://opensource.org/license/MIT |
+| :- |
+
+
+また、これらのファイルは、LNPへに関する物品の制作＆頒布時に限り、以下の条件でご自由にお使いいただけます。
 * 著作者表示不要
 * 加筆・反転等の加工OK
 * 同梱再配布OK
@@ -404,7 +408,7 @@ ghost/master/assets/preset/
 　tanoshii_ukagaka.mp3
 ```
 以上のファイルはCREEVOで生成した楽曲です。
-ダウンミックス・空白カット等は、LilyNovelPlayer製作委員会が行いました。
+ダウンミックス・空白カット等は、ゴースト作者が行いました。
 
 * 商用利用　可
 * クレジット表記　不要
