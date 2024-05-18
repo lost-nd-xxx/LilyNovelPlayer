@@ -155,8 +155,6 @@ file,ghost/master/replace.txt12a8e87ecea75ee673ae3a52c03175a6size=4663date=20
 file,ghost/master/satori.dll1e3a88721efcef3093649b431d8b2565size=712704date=2012-12-21T00:00:00
 file,ghost/master/satori_bootconf.txtf755e4251a9d8b06706839ca921627f2size=17date=2012-12-21T00:00:00
 file,ghost/master/satori_conf.txtcc3e5125180a38e69cff3dc14b47052asize=1698date=2012-12-21T00:00:00
-file,ghost/master/satori_savebackup.txt183cc585619059ffe0f391db95ac489csize=4178date=2012-12-21T00:00:00
-file,ghost/master/satori_savedata.txt4711fb139a057c83bafd96e5e935b901size=1427date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_backloglist.txt2c25ea53e27b5d7f6a9fbee0a88cbe50size=4835date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_gallerylist.txt1769ab6c59dede46f216294d2b9b3f18size=5705date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_keypress.txtf8b8810eb6eac808a8af7d30a895e888size=674date=2012-12-21T00:00:00
