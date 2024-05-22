@@ -35,7 +35,7 @@ h2 {
 	border-radius: 5px;
 }
 
-pre {
+pre, .copy-block {
 	position: relative;
 	margin: 1em 0;
 	padding: 0;
@@ -45,7 +45,7 @@ pre {
 	border-radius: 5px;
 }
 
-pre code {
+pre code, .copy-text {
 	display: block;
 	margin: 0;
 	padding: 2em 1em;
