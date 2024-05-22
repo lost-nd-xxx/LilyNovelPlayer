@@ -1,16 +1,16 @@
-(function (d) {
-	const pre = d.querySelectorAll('pre');
+document.addEventListener('DOMContentLoaded',() => {
+	const pre = document.querySelectorAll('pre,.copy-block');
 	if (pre.length == 0) {
 		return;
 	}
 	for (let i = 0; i < pre.length; i++) {
-		const btn = d.createElement('button');
+		const btn = document.createElement('button');
 		btn.className = 'copy-button';
 		btn.textContent = 'Copy';
 		pre[i].insertBefore(btn, pre[i].firstElementChild);
 		btn.addEventListener('click', copy_code, false);
 	}
-})(document);
+});
 
 function copy_code() {
 	const code = this.nextElementSibling.innerText;
