@@ -138,7 +138,7 @@ file,ghost/master/descript.txt9ed12f3bf5ca052e5d3bc1a4e0261fcesize=513date=20
 file,ghost/master/dic_base_bootend.txtfeb78af571498631817f44609fec44d6size=12701date=2012-12-21T00:00:00
 file,ghost/master/dic_base_event.txt427515235e261dfd3c02b16024ea79e6size=13252date=2012-12-21T00:00:00
 file,ghost/master/dic_base_resource.txt1269f9693432801c8b8fe8afa936dd29size=2473date=2012-12-21T00:00:00
-file,ghost/master/dic_game_core.txt206c79429446a4ef95792d1b797c0633size=19917date=2012-12-21T00:00:00
+file,ghost/master/dic_game_core.txt3607bdaa2b2de78562e36a07d3cfeb75size=19995date=2012-12-21T00:00:00
 file,ghost/master/dic_game_tag.txta11d5593d60317f19e35da8e2f3e7a33size=16723date=2012-12-21T00:00:00
 file,ghost/master/dic_menu.txta2e1317f62ced075205dfa95a7a5c535size=8683date=2012-12-21T00:00:00
 file,ghost/master/dic_menu_config.txtccda4555989e03585d5f29052e71a056size=13659date=2012-12-21T00:00:00
