@@ -73,7 +73,8 @@
 ＄Translate有効	0
 ＄__tmp	（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
 ＄__tmp	（when,（オート）==1,（オート解除.変数戻す））
-（一体化解除）\![sound,pause]
+＄返信ヘッダ「ValueNotify」	\![sound,pause]
+（一体化解除）
 
 
 
