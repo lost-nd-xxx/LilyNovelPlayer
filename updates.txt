@@ -136,7 +136,7 @@ file,ghost/master/assets/preset_chara/voice/chara_voice2.wav2c21d192e3eb369f3fa
 file,ghost/master/assets/preset_chara/voice/chara_voice_douji.wava5df04b9d573fe95d8cdd11413558939size=22094date=2012-12-21T00:00:00
 file,ghost/master/descript.txt9ed12f3bf5ca052e5d3bc1a4e0261fcesize=513date=2012-12-21T00:00:00
 file,ghost/master/dic_base_bootend.txtfeb78af571498631817f44609fec44d6size=12701date=2012-12-21T00:00:00
-file,ghost/master/dic_base_event.txt427515235e261dfd3c02b16024ea79e6size=13252date=2012-12-21T00:00:00
+file,ghost/master/dic_base_event.txtf3510a5b8ce13c8e72db6f8a59169bdesize=13289date=2012-12-21T00:00:00
 file,ghost/master/dic_base_resource.txt1269f9693432801c8b8fe8afa936dd29size=2473date=2012-12-21T00:00:00
 file,ghost/master/dic_game_core.txt3607bdaa2b2de78562e36a07d3cfeb75size=19995date=2012-12-21T00:00:00
 file,ghost/master/dic_game_tag.txta11d5593d60317f19e35da8e2f3e7a33size=16723date=2012-12-21T00:00:00
@@ -149,7 +149,7 @@ file,ghost/master/help/hint.htmlf009d62c2ccb1abe9ce2a9ba29f5ebddsize=33934dat
 file,ghost/master/help/src/icon_lily.svg3a362afa263083b2e758de0f4b59c09esize=16147date=2012-12-21T00:00:00
 file,ghost/master/help/src/script.jse2f1a2a64980c68be85f6d6c9df15594size=1175date=2012-12-21T00:00:00
 file,ghost/master/help/src/style.cssd53039390ff0f471208a84a8a53f579esize=4310date=2012-12-21T00:00:00
-file,ghost/master/help/tags.html6cad398a89c3efde40011cedcdcc05fbsize=22883date=2012-12-21T00:00:00
+file,ghost/master/help/tags.html33b3d8e9f5009c69103c1151b00a2139size=21749date=2012-12-21T00:00:00
 file,ghost/master/lnp_icon.ico8bf58db8dfd6f07201caf0aeda3790d5size=78446date=2012-12-21T00:00:00
 file,ghost/master/replace.txt12a8e87ecea75ee673ae3a52c03175a6size=4663date=2012-12-21T00:00:00
 file,ghost/master/satori.dll1e3a88721efcef3093649b431d8b2565size=712704date=2012-12-21T00:00:00
