@@ -134,11 +134,11 @@ file,ghost/master/assets/preset_chara/stand_large/girl_ex.png3d5b1809528cffe906
 file,ghost/master/assets/preset_chara/voice/chara_voice1.wav09ff9f50dcc1419e6f0913fef50b5826size=22094date=2012-12-21T00:00:00
 file,ghost/master/assets/preset_chara/voice/chara_voice2.wav2c21d192e3eb369f3fa2cc3d72ae5334size=22094date=2012-12-21T00:00:00
 file,ghost/master/assets/preset_chara/voice/chara_voice_douji.wava5df04b9d573fe95d8cdd11413558939size=22094date=2012-12-21T00:00:00
-file,ghost/master/descript.txt9ed12f3bf5ca052e5d3bc1a4e0261fcesize=513date=2012-12-21T00:00:00
-file,ghost/master/dic_base_bootend.txtfeb78af571498631817f44609fec44d6size=12701date=2012-12-21T00:00:00
-file,ghost/master/dic_base_event.txtf3510a5b8ce13c8e72db6f8a59169bdesize=13289date=2012-12-21T00:00:00
+file,ghost/master/descript.txtb57509abd3c0150264bad7d3f5d3cf95size=600date=2012-12-21T00:00:00
+file,ghost/master/dic_base_bootend.txtec90e37469066e6ca94aaf6081a1e586size=12782date=2012-12-21T00:00:00
+file,ghost/master/dic_base_event.txt3bf1d9f56818deaebeb8600a1af111c6size=15250date=2012-12-21T00:00:00
 file,ghost/master/dic_base_resource.txt1269f9693432801c8b8fe8afa936dd29size=2473date=2012-12-21T00:00:00
-file,ghost/master/dic_game_core.txt3607bdaa2b2de78562e36a07d3cfeb75size=19995date=2012-12-21T00:00:00
+file,ghost/master/dic_game_core.txt61d1f33a07bc5eb534f0316ecbe6ba17size=21354date=2012-12-21T00:00:00
 file,ghost/master/dic_game_tag.txta11d5593d60317f19e35da8e2f3e7a33size=16723date=2012-12-21T00:00:00
 file,ghost/master/dic_menu.txta2e1317f62ced075205dfa95a7a5c535size=8683date=2012-12-21T00:00:00
 file,ghost/master/dic_menu_config.txtccda4555989e03585d5f29052e71a056size=13659date=2012-12-21T00:00:00
@@ -154,7 +154,7 @@ file,ghost/master/lnp_icon.ico8bf58db8dfd6f07201caf0aeda3790d5size=78446date=
 file,ghost/master/replace.txt12a8e87ecea75ee673ae3a52c03175a6size=4663date=2012-12-21T00:00:00
 file,ghost/master/satori.dll1e3a88721efcef3093649b431d8b2565size=712704date=2012-12-21T00:00:00
 file,ghost/master/satori_bootconf.txtf755e4251a9d8b06706839ca921627f2size=17date=2012-12-21T00:00:00
-file,ghost/master/satori_conf.txtcc3e5125180a38e69cff3dc14b47052asize=1698date=2012-12-21T00:00:00
+file,ghost/master/satori_conf.txtd201d1d190eae426157ef8f8fcc377c6size=1842date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_backloglist.txt2c25ea53e27b5d7f6a9fbee0a88cbe50size=4835date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_gallerylist.txt1769ab6c59dede46f216294d2b9b3f18size=5705date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_keypress.txtf8b8810eb6eac808a8af7d30a895e888size=674date=2012-12-21T00:00:00
@@ -181,7 +181,7 @@ file,ghost/master/scenarios/master/resources/bg_move4.png01142b13bbb92c968e674f
 file,ghost/master/scenarios/master/resources/bg_sky.png356b5693305a9b2a81ecbf54c300b6b4size=98923date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/resources/bg_title.pngd039f49083844eadecd4625dec787debsize=61769date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/resources/nowloading.png34496fd8636c21075fdf243a7d3ee14asize=2603date=2012-12-21T00:00:00
-file,install.txt14db8b1bebf7c2b53bc64fedeba953dbsize=128date=2012-12-21T00:00:00
+file,install.txt31a05f9ff1f9f88a83037542d9b1b775size=124date=2012-12-21T00:00:00
 file,readme.txt321df365e4bc0e7d4e9c1ee47d961f69size=5319date=2012-12-21T00:00:00
 file,shell/master/descript.txtdec7dd7473fd830878a3288a1ae76d55size=2650date=2012-12-21T00:00:00
 file,shell/master/readme.txt7375bb3211ee815ab533fadb2d21ca6asize=8297date=2012-12-21T00:00:00
