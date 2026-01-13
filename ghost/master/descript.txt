@@ -16,8 +16,11 @@ kero.name,LilyNovelPlayer1
 
 name.allowoverride,0
 
+balloon,LilyNovelPlayerBallon
 default.balloon.path,LilyNovelPlayerBallon
 balloon.dontmove,1
+balloon.syncscale,true
+recommended.balloon.forceupdate,1
 
 seriko.alignmenttodesktop,free
 readme.charset,UTF-8
