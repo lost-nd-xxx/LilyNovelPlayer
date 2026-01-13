@@ -1,0 +1,13 @@
+# セーブデータ等
+shell/master/profile/
+ghost/master/profile/
+ghost/master/satori_savedata.txt
+ghost/master/satori_savebackup.txt
+
+# シナリオ
+ghost/master/scenarios/*/
+!ghost/master/scenarios/master/
+
+# シェル
+shell/*/
+!shell/master/
