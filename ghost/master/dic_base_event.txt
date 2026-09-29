@@ -29,29 +29,32 @@
 
 ＊ベースウェア判定.部品
 ＞ベースウェア判定.NG	（vncall,equal,ベースウェア情報.本体名,A0）!=1
-＄S0	0
-＄S1	0
-＄S2	0
+＃足りない桁は0とみなす（2.8 → 2.8.0）
 ＄__tmp	（vncall,split,A1,ベースウェア判定.番号.区切り字）
-＞ベースウェア判定.NG	（vncall,is_digit,S0）==0
-＞ベースウェア判定.NG	（vncall,is_digit,S1）==0
-＞ベースウェア判定.NG	（vncall,is_digit,S2）==0
-＄__t1_0	（when,（vncall,is_digit,S0）==1,（S0）,0）
-＄__t1_1	（when,（vncall,is_digit,S1）==1,（S1）,0）
-＄__t1_2	（when,（vncall,is_digit,S2）==1,（S2）,0）
-＄S0	0
-＄S1	0
-＄S2	0
+＄__t1_0	（S0）
+＄__t1_1	（when,（__tmp）>=2,（S1）,0）
+＄__t1_2	（when,（__tmp）>=3,（S2）,0）
+＞ベースウェア判定.NG	（vncall,is_digit,__t1_0）==0
+＞ベースウェア判定.NG	（vncall,is_digit,__t1_1）==0
+＞ベースウェア判定.NG	（vncall,is_digit,__t1_2）==0
 ＄__tmp	（vncall,split,ベースウェア情報.番号,ベースウェア判定.番号.区切り字）
-＞ベースウェア判定.NG	（vncall,is_digit,S0）==0
-＞ベースウェア判定.NG	（vncall,is_digit,S1）==0
-＞ベースウェア判定.NG	（vncall,is_digit,S2）==0
-＄__t2_0	（when,（vncall,is_digit,S0）==1,（S0）,0）
-＄__t2_1	（when,（vncall,is_digit,S1）==1,（S1）,0）
-＄__t2_2	（when,（vncall,is_digit,S2）==1,（S2）,0）
-＞ベースウェア判定.NG	（__t1_0）>（__t2_0）
-＞ベースウェア判定.NG	（__t1_1）>（__t2_1）
-＞ベースウェア判定.NG	（__t1_2）>（__t2_2）
+＄__t2_0	（S0）
+＄__t2_1	（when,（__tmp）>=2,（S1）,0）
+＄__t2_2	（when,（__tmp）>=3,（S2）,0）
+＞ベースウェア判定.NG	（vncall,is_digit,__t2_0）==0
+＞ベースウェア判定.NG	（vncall,is_digit,__t2_1）==0
+＞ベースウェア判定.NG	（vncall,is_digit,__t2_2）==0
+＃上の桁から順に比べ、大小がついた時点で確定する
+＞ベースウェア判定.OK	（__t2_0）>（__t1_0）
+＞ベースウェア判定.NG	（__t2_0）<（__t1_0）
+＞ベースウェア判定.OK	（__t2_1）>（__t1_1）
+＞ベースウェア判定.NG	（__t2_1）<（__t1_1）
+＞ベースウェア判定.NG	（__t2_2）<（__t1_2）
+＄ベースウェア判定.結果	1
+
+
+
+＊ベースウェア判定.OK
 ＄ベースウェア判定.結果	1
 
 
