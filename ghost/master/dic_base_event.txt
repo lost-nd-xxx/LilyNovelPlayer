@@ -359,9 +359,9 @@ KeyPressCommand_FunctionNameToJump
 ＄KeyPressCommand_Search＝（vncall,count,KeyPressCommand_InputedForward,S（KeyPressCommand_Count））>=1
 ＄KeyPressCommand_Count	（calc,（KeyPressCommand_Count）+1）
 ＄KeyPressCommand_ThisVariableWillBeCleared	（when,（KeyPressCommand_Search）==1,（vncall,set,KeyPressCommand_VarName,S（KeyPressCommand_Count）））
-＞KeyPressCommand_Matched＝（変数「（KeyPressCommand_VarName）」の存在）==1&&（vncall,length,（KeyPressCommand_VarName））>0
+＞KeyPressCommand_Matched	（変数「（KeyPressCommand_VarName）」の存在）==1&&（vncall,length,（KeyPressCommand_VarName））>0
 ＄KeyPressCommand_Count	（calc,（KeyPressCommand_Count）+1）
-＞KeyPressCommand_NoMatched＝（KeyPressCommand_EndCount）<（KeyPressCommand_Count）
+＞KeyPressCommand_NoMatched	（KeyPressCommand_EndCount）<（KeyPressCommand_Count）
 ＞KeyPressCommand_Check_Main
 
 
