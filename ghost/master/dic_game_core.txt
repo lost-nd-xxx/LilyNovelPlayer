@@ -303,7 +303,6 @@
 ＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,0]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
 （TalkPrefix）（__translate）
 ＄__translate	
-＄__window	
 ＄TalkPrefix	
 
 
@@ -313,7 +312,6 @@
 ＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,0]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
 （TalkPrefix）（__translate）
 ＄__translate	
-＄__window	
 ＄TalkPrefix	
 
 
@@ -323,7 +321,6 @@
 ＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
 （TalkPrefix）（__translate）
 ＄__translate	
-＄__window	
 ＄TalkPrefix	
 
 
@@ -336,7 +333,6 @@
 （TalkPrefix）（__translate）
 ＄__translate	
 ＄中断再開中	0
-＄__window	
 ＄TalkPrefix	
 
 
@@ -347,7 +343,6 @@
 ＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,0]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
 （TalkPrefix）（__translate）
 ＄__translate	
-＄__window	
 ＄TalkPrefix	
 
 
@@ -358,7 +353,6 @@
 ＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
 （TalkPrefix）（__translate）
 ＄__translate	
-＄__window	
 ＄TalkPrefix	
 
 
@@ -369,7 +363,6 @@
 ＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
 （TalkPrefix）（__translate）
 ＄__translate	
-＄__window	
 ＄TalkPrefix	
 
 
@@ -380,7 +373,6 @@
 ＄TalkPrefix	\0\c\![enter,nouserbreakmode]\![set,balloonwait,（テキスピ乗数）]\![set,balloontimeout,0]\![set,choicetimeout,0]（__textcolor）
 （TalkPrefix）（__translate）
 ＄__translate	
-＄__window	
 ＄TalkPrefix	
 
 

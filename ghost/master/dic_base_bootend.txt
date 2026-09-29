@@ -173,7 +173,6 @@
 ＄__start	
 ＄__stats	
 ＄__t	
-＄__textcolor	
 ＄__titlebar	
 ＄__tmp	
 ＄__x	
