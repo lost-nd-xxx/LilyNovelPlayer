@@ -135,10 +135,10 @@ file,ghost/master/assets/preset_chara/voice/chara_voice1.wav09ff9f50dcc1419e6f0
 file,ghost/master/assets/preset_chara/voice/chara_voice2.wav2c21d192e3eb369f3fa2cc3d72ae5334size=22094date=2012-12-21T00:00:00
 file,ghost/master/assets/preset_chara/voice/chara_voice_douji.wava5df04b9d573fe95d8cdd11413558939size=22094date=2012-12-21T00:00:00
 file,ghost/master/descript.txtb57509abd3c0150264bad7d3f5d3cf95size=600date=2012-12-21T00:00:00
-file,ghost/master/dic_base_bootend.txtec90e37469066e6ca94aaf6081a1e586size=12782date=2012-12-21T00:00:00
-file,ghost/master/dic_base_event.txt3bf1d9f56818deaebeb8600a1af111c6size=15250date=2012-12-21T00:00:00
+file,ghost/master/dic_base_bootend.txtd3c09b8ccb339434961e5213e1940df5size=12766date=2012-12-21T00:00:00
+file,ghost/master/dic_base_event.txt01bbed8c2373738dae5cb61e35e6b2e2size=15400date=2012-12-21T00:00:00
 file,ghost/master/dic_base_resource.txt1269f9693432801c8b8fe8afa936dd29size=2473date=2012-12-21T00:00:00
-file,ghost/master/dic_game_core.txt61d1f33a07bc5eb534f0316ecbe6ba17size=21354date=2012-12-21T00:00:00
+file,ghost/master/dic_game_core.txtc18532f65976b726bd33b806c63621e9size=21250date=2012-12-21T00:00:00
 file,ghost/master/dic_game_tag.txta11d5593d60317f19e35da8e2f3e7a33size=16723date=2012-12-21T00:00:00
 file,ghost/master/dic_menu.txta2e1317f62ced075205dfa95a7a5c535size=8683date=2012-12-21T00:00:00
 file,ghost/master/dic_menu_config.txtccda4555989e03585d5f29052e71a056size=13659date=2012-12-21T00:00:00
