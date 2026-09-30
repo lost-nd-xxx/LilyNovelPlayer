@@ -2,7 +2,7 @@
 
 
 
-＠bg	（外部プラグイン読み上げ対応）==0
+＠bg
 （when（b1）φ
 （vncall,length,A0）>0&&φ
 （count（b1）（描画中3）（b1）|（A0）,0,0|）==0（b1）φ
@@ -13,16 +13,7 @@
 
 
 
-＠bg	（外部プラグイン読み上げ対応）==1
-（when（b1）φ
-（vncall,length,A0）>0（b1）φ
-\p[3]\_l[0,0]φ
-\_b["（A0）",inline,--option=foreground,--option=opaque,--option=fixed]φ
-）
-
-
-
-＠image	（外部プラグイン読み上げ対応）==0
+＠image
 （set（b1）__A3（b1）（vncall,zen2han,A3））φ
 （when（b1）φ
 （vncall,is_digit,__A3）==1&&φ
@@ -41,19 +32,7 @@
 
 
 
-＠image	（外部プラグイン読み上げ対応）==1
-（set（b1）__A3（b1）（vncall,zen2han,A3））φ
-（when（b1）φ
-（vncall,is_digit,__A3）==1（b1）φ
-（whenlist,（__A3）==,0,\0,1,\1,\p[（__A3）]）φ
-\_l[（A1）,（A2）]φ
-\_b["（A0）",inline,--option=foreground,--option=fixed（for、4、（Aの数）-1、1、,（A（C0）））]φ
-）φ
-（set,__A3,）
-
-
-
-＠freeimage	（外部プラグイン読み上げ対応）==0
+＠freeimage
 \_q（when（b1）
 （Aの数）==0（b1）
 \p[3]\c
@@ -69,11 +48,6 @@
 ）
 ）
 ）\_q\0（__textcolor）
-
-
-
-＠freeimage	（外部プラグイン読み上げ対応）==1
-（nop,）
 
 
 
@@ -117,7 +91,7 @@
 （スキップ）!=1、φ
 \x[noclear]φ
 ）φ
-\![（when,（外部プラグイン読み上げ対応）==1,raise,embed）,OnGamePlayCore,φ
+\![embed,OnGamePlayCore,φ
 （next接頭辞）（next数値）φ
 （when（b1）（vncall,length,A0）>0（b1）φ
 （for（b1）0（b1）（Aの数）-1（b1）1（b1）,（A（C0）））φ
@@ -142,7 +116,7 @@
 （スキップ）!=1、φ
 \x[noclear]φ
 ）φ
-\![（when,（外部プラグイン読み上げ対応）==1,raise,embed）,OnGamePlayCore,φ
+\![embed,OnGamePlayCore,φ
 （next接頭辞）（next数値）φ
 （when（b1）（vncall,length,A2）>0（b1）φ
 （for（b1）2（b1）（Aの数）-1（b1）1（b1）,（A（C0）））φ
@@ -156,7 +130,7 @@
 （when（b1）（ハイド中）==1（b1）（ハイド部品）（b1）φ
 \0φ
 （when、（オート）==1、\![sound,wait]\_w[（オート_待ち時間）]）φ
-\![（when,（外部プラグイン読み上げ対応）==1,raise,embed）,OnGamePlayCore,φ
+\![embed,OnGamePlayCore,φ
 （A0）φ
 （when（b1）（vncall,length,A1）>0（b1）φ
 （for（b1）1（b1）（Aの数）-1（b1）1（b1）,（A（C0）））φ

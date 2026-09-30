@@ -111,14 +111,6 @@
 （when、（音量_BGM）==0、　　０％、
 \__q[OnSoundVolumeSet,BGM,0]　　０％\__q）\n[150]
 
-\_l[（__x）,]外部プラグイン読み上げ対応\n
-\_l[（__x）,]\![*]
-（when、（外部プラグイン読み上げ対応）==1、する　、
-\__q[OnCompatibleVoiceReadingSet,1]する　\__q）\f[valign,center]\f[height,14]（文字色.disable）※「する」では画面がチラつきやすく、処理が不安定になります（文字色.normal）\f[height,default]\n
-\_l[（__x）,]\![*]
-（when、（外部プラグイン読み上げ対応）==0、しない、
-\__q[OnCompatibleVoiceReadingSet,0]しない\__q）
-
 （音ロード,assets/preset/sample_se.wav）
 \_l[,（__y）]\n[200]
 \_l[（__x3）,]効果音\n
@@ -244,13 +236,6 @@
 \_l[（__x2）,]\![*]
 \__q[On既読ConfigReSet_Dialog]【危険】実行する\__q
 \_q
-
-
-
-＊OnCompatibleVoiceReadingSet
-＄外部プラグイン読み上げ対応	（R0）
-＞メニュー.コンフィグ.本体
-
 
 
 
