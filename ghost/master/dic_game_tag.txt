@@ -343,8 +343,8 @@
 （split_to（b1）__se.（b1）（再生中SE）（b1）|（b1）0（b1）0）φ
 （times（b1）（__se.の数）（b1）φ
 \![sound,stop,"（__se.（C0））"]φ
-（set（b1）再生中SE（b1）（erase（b1）（再生中SE）（b1）|（再生中SE）））φ
 ）φ
+（set,再生中SE,|）φ
 ）（b1）φ
 φ
 （equal（b1）（A0）（b1）ボイス）==1（b1）φ
