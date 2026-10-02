@@ -2,6 +2,9 @@
 
 
 
+＃里々のforは、終わりの値が始めの値より小さいと逆向きに回る（for,4,3 は 4、3 の順）
+＃引数の数などで回す範囲が無くなる時は、whenで囲んでforを回さないようにしている
+
 ＠bg
 （__描画中の確認）φ
 （when（b1）φ
@@ -22,7 +25,7 @@
 （count（b1）（描画中（__A3））（b1）|（A0）,（A1）,（A2）|）==0（b1）φ
 （whenlist,（__A3）==,0,\0,1,\1,\p[（__A3）]）φ
 \_l[（A1）,（A2）]φ
-\_b["（A0）",inline,--option=foreground,--option=fixed（for、4、（Aの数）-1、1、,（A（C0）））]φ
+\_b["（A0）",inline,--option=foreground,--option=fixed（when（b1）（Aの数）>4（b1）（for、4、（Aの数）-1、1、,（A（C0））））]φ
 （whenlist,（nop,）,φ
 （vncall,length,__A3）<=0||（vncall,is_digit,__A3）==0,φ
 （nop,）,φ
@@ -163,8 +166,10 @@
 \*\_qφ
 \__q[OnGamePlayCore_Choiced,φ
 （A1）φ
+（when（b1）（Aの数）>2（b1）φ
 （for（b1）2（b1）（Aの数）-1（b1）1（b1）φ
 ,（A（C0））φ
+）φ
 ）φ
 ]φ
 （A0）φ
