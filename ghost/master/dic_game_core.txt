@@ -287,6 +287,8 @@
 
 ＊OnTranslate	（Translate有効）==1&&（変数「R0」の存在）==1&&（vncall,length,R0）>0
 ＄スクリプトの一番頭	（__window）
+＄__描画中.新しいスクリプト	
+＃次のリクエストでbg・imageが描画中の記録を確かめ直せるよう、印を外す（dic_game_tag.txtの＠__描画中の確認を参照）
 ＄__translate	（R0）
 ＄__MenuCurrent	
 ＞OnTranslate.ハイド中	（ハイド中）==1
