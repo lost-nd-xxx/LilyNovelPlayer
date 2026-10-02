@@ -42,6 +42,7 @@
 					<li><a href="#voice">ボイス</a></li>
 					<li><a href="#sound_stop">音停止</a></li>
 					<li><a href="#sound_load">音ロード</a></li>
+					<li><a href="#backlog_delete">バックログ削除</a></li>
 				</ul>
 			</div>
 
@@ -371,6 +372,20 @@
 						*1: <a href="#next">next</a>・<a href="#nextset">nextset</a>・<a href="#nextjump">nextjump</a>・<a
 							href="#choices">選択肢</a>のタグ実行直後に移動した関数の冒頭
 					</p>
+				</div>
+
+				<div class="item" id="backlog_delete">
+					<h2>バックログ削除</h2>
+					<pre><code>（バックログ削除,<em>シナリオ名</em>）</code></pre>
+					<p>例１：バックログから、指定したシナリオ名のログを１つ削除します。<br>
+						同じシナリオ名のログが複数ある場合は、最も新しいものを削除します。<br>
+						シナリオ名は「<em>【フォルダ名】</em>.」を除いた部分です。<br>
+						該当するログが無い場合、何もしません。</p>
+					<hr>
+					<pre><code>（バックログ削除,<em>番号</em>）</code></pre>
+					<p>例２：数字のみで指定すると、その番号のログを削除します。<br>
+						番号は最も新しいログを０として、古くなるほど大きくなります。<br>
+						存在しない番号を指定した場合、何もしません。</p>
 				</div>
 			</div>
 
