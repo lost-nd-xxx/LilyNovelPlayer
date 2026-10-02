@@ -331,18 +331,20 @@
 （equal（b1）（A0）（b1）音楽）==1（b1）φ
 （when（b1）（vncall,length,再生中BGM）>1（b1）φ
 \![sound,stop,"（再生中BGM）"]φ
-（set,再生中BGM,|）φ
+（call（b1）__音の記録から削除（b1）（再生中BGM））φ
 ）（b1）φ
 φ
 （equal（b1）（A0）（b1）効果音）==1（b1）φ
 （whenlist（b1）（nop,）（b1）φ
 （count（b1）（再生中SE）（b1）|）==2（b1）φ
 \![sound,stop,"（erase（b1）（再生中SE）（b1）|）"]φ
+（call（b1）__音の記録から削除（b1）（erase（b1）（再生中SE）（b1）|））φ
 （set,再生中SE,|）（b1）φ
 （count（b1）（再生中SE）（b1）|）>2（b1）φ
 （split_to（b1）__se.（b1）（再生中SE）（b1）|（b1）0（b1）0）φ
 （times（b1）（__se.の数）（b1）φ
 \![sound,stop,"（__se.（C0））"]φ
+（call（b1）__音の記録から削除（b1）（__se.（C0）））φ
 ）φ
 （set,再生中SE,|）φ
 ）（b1）φ
@@ -350,22 +352,16 @@
 （equal（b1）（A0）（b1）ボイス）==1（b1）φ
 （when（b1）（vncall,length,再生中VOICE）>1（b1）φ
 \![sound,stop,"（再生中VOICE）"]φ
-（set,再生中VOICE,|）φ
+（call（b1）__音の記録から削除（b1）（再生中VOICE））φ
 ）（b1）φ
 φ
 （vncall,length,A0）>0（b1）φ
 \![sound,stop,"（A0）"]φ
-（when（b1）（vncall,equal,再生中BGM,A0）==1（b1）φ
-（set,再生中BGM,|）φ
-）φ
-（when（b1）（count（b1）（再生中SE）（b1）|（A0）|）>0（b1）φ
-（set（b1）再生中SE（b1）（call（b1）__効果音の記録から削除（b1）（A0）））φ
-）φ
-（when（b1）（vncall,equal,再生中VOICE,A0）==1（b1）φ
-（set,再生中VOICE,|）φ
-）φ
+（call（b1）__音の記録から削除（b1）（A0））φ
 φ
 ）
+＃同じファイルは、音楽・効果音・ボイスのどれとして鳴らしていても、SSPでは1つの音として扱われる
+＃そのため、種類を指定して止めた時も、止めたファイルはすべての種類の記録から消す
 
 
 
@@ -373,12 +369,13 @@
 （when（b1）（vncall,equal,再生中BGM,A0）==0（b1）φ
 （when（b1）（vncall,length,再生中BGM）>1（b1）φ
 \![sound,stop,"（再生中BGM）"]φ
+（call（b1）__音の記録から削除（b1）（再生中BGM））φ
 ）φ
 \![sound,（when（b1）（vncall,length,A1）>0（b1）（A1）（b1）play）,"（A0）",--volume=（音量_BGM）]φ
 （set（b1）再生中BGM（b1）（A0））φ
 ）
 ＃現在再生中の音楽と同じものが再度指定された場合は何もしない
-＃多重再生不可
+＃多重再生不可（前の音楽は止め、止めたファイルはすべての種類の記録から消す）
 
 
 
@@ -389,7 +386,8 @@
 ）φ
 （set（b1）再生中SE（b1）|（A0）（再生中SE））
 ＃中断等から再開中は鳴らさない
-＃多重再生可
+＃別々のファイルなら同時に鳴らせる
+＃同じファイルを重ねて指定しても、SSPでは1つの音として扱われるので重ならない（記録には重ねて残る）
 
 
 
@@ -398,30 +396,36 @@
 （vncall,length,A0）>0&&（中断再開中）!=1&&（バックログ中）!=1&&（スキップ）!=1（b1）φ
 （when（b1）（vncall,length,再生中VOICE）>1（b1）φ
 \![sound,stop,"（再生中VOICE）"]φ
+（call（b1）__音の記録から削除（b1）（再生中VOICE））φ
 ）φ
 \![sound,play,"（A0）",--volume=（音量_VOICE）]φ
 （set（b1）再生中VOICE（b1）（A0））φ
 ）
 ＃中断等から再開中は鳴らさない
-＃多重再生不可
+＃多重再生不可（前のボイスは止め、止めたファイルはすべての種類の記録から消す）
 
 
 
 ＊OnSoundStop
-＄__tmp	（when,（vncall,equal,再生中BGM,R0）==1,（set,再生中BGM,|））
-＄再生中SE	（when（b1）（count（b1）（再生中SE）（b1）|（R0）|）>0（b1）（call（b1）__効果音の記録から削除（b1）（R0））（b1）（再生中SE））
-＄__tmp	（when,（vncall,equal,再生中VOICE,R0）==1,（set,再生中VOICE,|））
-＃「再生中〇〇」と同じファイル名が停止した場合は再生中〇〇を初期化する
-＃効果音のみ多重再生を許可しているため、該当ファイルのみ記録から消す
+＄__tmp	（call（b1）__音の記録から削除（b1）（R0））
+＃停止したファイルを、音楽・効果音・ボイスすべての記録から消す
+＃（同じファイルは、どの種類として鳴らしていてもSSPでは1つの音として扱われる）
+＃なお\![sound,stop]で止めた時はこのイベントが来ないので、止める側で記録を消している
 
 
 
 ＊OnSoundError
-＄__tmp	（when,（vncall,equal,再生中BGM,R0）==1,（set,再生中BGM,|））
-＄再生中SE	（when（b1）（count（b1）（再生中SE）（b1）|（R0）|）>0（b1）（call（b1）__効果音の記録から削除（b1）（R0））（b1）（再生中SE））
-＄__tmp	（when,（vncall,equal,再生中VOICE,R0）==1,（set,再生中VOICE,|））
-＃「再生中〇〇」と同じファイル名で失敗した場合は再生中〇〇を初期化する
-＃効果音のみ多重再生を許可しているため、該当ファイルのみ記録から消す
+＄__tmp	（call（b1）__音の記録から削除（b1）（R0））
+＃再生に失敗したファイルを、音楽・効果音・ボイスすべての記録から消す
+
+
+
+＠__音の記録から削除
+（when（b1）（vncall,equal,再生中BGM,A0）==1（b1）（set,再生中BGM,|））φ
+（when（b1）（count（b1）（再生中SE）（b1）|（A0）|）>0（b1）（set（b1）再生中SE（b1）（call（b1）__効果音の記録から削除（b1）（A0））））φ
+（when（b1）（vncall,equal,再生中VOICE,A0）==1（b1）（set,再生中VOICE,|））
+＃ファイル名A0を、音楽・効果音・ボイスすべての記録（再生中BGM・再生中SE・再生中VOICE）から消す
+＃同じファイルは、どの種類として鳴らしていてもSSPでは1つの音として扱われるので、止まった時はすべての記録から消す
 
 
 
