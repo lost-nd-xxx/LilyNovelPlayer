@@ -11,3 +11,6 @@ ghost/master/scenarios/*/
 # シェル
 shell/*/
 !shell/master/
+
+# 作業スペース
+.workspace/
