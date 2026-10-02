@@ -1,4 +1,5 @@
 charset,UTF-8
+file,.gitattributes6ec08fc77340603b6e398e4fc8adabd2size=18date=2012-12-21T00:00:00
 file,ghost/master/assets/preset/batsu_button.pngd37ac411645ce04ce6aab3b23bbaad11size=585date=2012-12-21T00:00:00
 file,ghost/master/assets/preset/button1.pngfcb734732465ceb4362a9f35d851cd46size=596date=2012-12-21T00:00:00
 file,ghost/master/assets/preset/button1d.pnge6a0ee91b05651aafe807e216524e8dbsize=593date=2012-12-21T00:00:00
@@ -152,7 +153,7 @@ file,ghost/master/help/src/style.cssd53039390ff0f471208a84a8a53f579esize=4310
 file,ghost/master/help/tags.html50dae3c84098441b7cd984336ab87c0csize=24550date=2012-12-21T00:00:00
 file,ghost/master/lnp_icon.ico8bf58db8dfd6f07201caf0aeda3790d5size=78446date=2012-12-21T00:00:00
 file,ghost/master/replace.txt12a8e87ecea75ee673ae3a52c03175a6size=4663date=2012-12-21T00:00:00
-file,ghost/master/satori.dll1e3a88721efcef3093649b431d8b2565size=712704date=2012-12-21T00:00:00
+file,ghost/master/satori.dll0771fea87ae5ce991d63465785ee1159size=737280date=2012-12-21T00:00:00
 file,ghost/master/satori_bootconf.txtf755e4251a9d8b06706839ca921627f2size=17date=2012-12-21T00:00:00
 file,ghost/master/satori_conf.txt231b070b9d560c07cb0e958eeba51262size=1797date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_backloglist.txt2c25ea53e27b5d7f6a9fbee0a88cbe50size=4835date=2012-12-21T00:00:00
