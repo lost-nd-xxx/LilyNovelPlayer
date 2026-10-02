@@ -189,11 +189,14 @@
 
 ＊OnGamePlayCore
 ＞OnGamePlayCore.再生失敗	（文「（ゲームID）.（R0）」の存在）==0
-＄__t	（when（b1）（vncall,length,R1）>0（b1）（for（b1）1（b1）（Rの数）-1（b1）2（b1）（vncall（b1）OnGamePlayCore.変数操作（b1）R（C0）（b1）R（calc,（C0）+1））））
 ＄__t＝（next数値）+1
 ＄next数値	（when（b1）（vncall,全角半角判定,next数値）==半角（b1）（vncall,zen2han,__t）（b1）（__t））
 ＄__tmp	（when（b1）（スキップ）==1&&（スキップ_未読で停止）==1&&（count（b1）（s_（ゲームID）.既読判定）（b1）|（R0）|）==0（b1）（メニュー.スキップ停止.変数戻す））
 ＄__tmp	（vncall,ラベル通過,R0）
+＄__t	（when（b1）（vncall,length,R1）>0（b1）（for（b1）1（b1）（Rの数）-1（b1）2（b1）（vncall（b1）OnGamePlayCore.変数操作（b1）R（C0）（b1）R（calc,（C0）+1））））
+＃変数操作はラベル通過の後に行う
+＃オートセーブが空（「|」だけ）の時に先に変数操作をすると、シナリオ名などの欄が空のまま「|||変数:値|」となり、
+＃続くラベル通過で欄が詰められて変数が失われるため
 ＄__tmp	（when（b1）（バックログ状態）==1（b1）（vncall,バックログ追加,R0））
 ＞（ゲームID）.（R0）
 ＃中断やセーブデータからの復帰時はここには来ない
