@@ -10,7 +10,7 @@
 
 ＊ベースウェア判定.変数削除
 ＄ベースウェア判定.結果	
-＄__tmp	（nop,（split_reset））
+＄__tmp	（nop,（変数の一括削除,__bw））
 ＄__t1_0	
 ＄__t1_1	
 ＄__t1_2	
@@ -30,17 +30,19 @@
 ＊ベースウェア判定.部品
 ＞ベースウェア判定.NG	（vncall,equal,ベースウェア情報.本体名,A0）!=1
 ＃足りない桁は0とみなす（2.8 → 2.8.0）
-＄__tmp	（vncall,split,A1,ベースウェア判定.番号.区切り字）
-＄__t1_0	（S0）
-＄__t1_1	（when,（__tmp）>=2,（S1）,0）
-＄__t1_2	（when,（__tmp）>=3,（S2）,0）
+＄__tmp	（vncall,split_to,ベースウェア判定.接頭辞1,A1,ベースウェア判定.番号.区切り字）
+＄__tmp	（__bw1.の数）
+＄__t1_0	（__bw1.0）
+＄__t1_1	（when,（__tmp）>=2,（__bw1.1）,0）
+＄__t1_2	（when,（__tmp）>=3,（__bw1.2）,0）
 ＞ベースウェア判定.NG	（vncall,is_digit,__t1_0）==0
 ＞ベースウェア判定.NG	（vncall,is_digit,__t1_1）==0
 ＞ベースウェア判定.NG	（vncall,is_digit,__t1_2）==0
-＄__tmp	（vncall,split,ベースウェア情報.番号,ベースウェア判定.番号.区切り字）
-＄__t2_0	（S0）
-＄__t2_1	（when,（__tmp）>=2,（S1）,0）
-＄__t2_2	（when,（__tmp）>=3,（S2）,0）
+＄__tmp	（vncall,split_to,ベースウェア判定.接頭辞2,ベースウェア情報.番号,ベースウェア判定.番号.区切り字）
+＄__tmp	（__bw2.の数）
+＄__t2_0	（__bw2.0）
+＄__t2_1	（when,（__tmp）>=2,（__bw2.1）,0）
+＄__t2_2	（when,（__tmp）>=3,（__bw2.2）,0）
 ＞ベースウェア判定.NG	（vncall,is_digit,__t2_0）==0
 ＞ベースウェア判定.NG	（vncall,is_digit,__t2_1）==0
 ＞ベースウェア判定.NG	（vncall,is_digit,__t2_2）==0
@@ -67,12 +69,19 @@
 ＠ベースウェア判定.番号.区切り字
 .
 
+＠ベースウェア判定.接頭辞1
+__bw1.
+
+＠ベースウェア判定.接頭辞2
+__bw2.
+＃番号は数字で始まるので、split_toに直接書くと＄SAORI引数の計算で式として計算されてしまう。vncallで値を渡す
+
 
 
 ＊OnNotifyShellInfo
 ＄シェル名	（R0）
-＄__t	（split_reset）
-＄ゲームID	（S（calc,（split（b1）（R1）（b1）/（b1）0（b1）0）-1））
+＄__t	（split_to（b1）__path.（b1）（R1）（b1）/（b1）0（b1）0）
+＄ゲームID	（__path.（calc,（__path.の数）-1））
 ＃シェルフォルダ名をユニークな英数字文字列とみなす
 ＃そのため、名前かぶりで変更されると製作委員が泣く
 
@@ -354,8 +363,8 @@ KeyPressCommand_FunctionNameToJump
 ＄KeyPressCommand_InputedReverse	（vncall,erase,KeyPressCommand_InputedReverse,バイト値、1）
 ＄KeyPressCommand_InputedForward	（vncall,reverse,KeyPressCommand_InputedReverse）
 ＄KeyPressCommand_Check	（（ゲームID）.KeyPressCommand_List）
-＄__tmp	（split_reset）
-＄KeyPressCommand_EndCount	（split（b1）（KeyPressCommand_Check）（b1）,（b1）0（b1）0）
+＄__tmp	（split_to（b1）__kp.（b1）（KeyPressCommand_Check）（b1）,（b1）0（b1）0）
+＄KeyPressCommand_EndCount	（__kp.の数）
 ＞KeyPressCommand_NoMatched	（KeyPressCommand_EndCount）<=1
 ＄KeyPressCommand_EndCount	（calc,（KeyPressCommand_EndCount）-1）
 ＄KeyPressCommand_Count	0
@@ -365,9 +374,9 @@ KeyPressCommand_FunctionNameToJump
 
 
 ＊KeyPressCommand_Check_Main
-＄KeyPressCommand_Search＝（vncall,count,KeyPressCommand_InputedForward,S（KeyPressCommand_Count））>=1
+＄KeyPressCommand_Search＝（vncall,count,KeyPressCommand_InputedForward,__kp.（KeyPressCommand_Count））>=1
 ＄KeyPressCommand_Count	（calc,（KeyPressCommand_Count）+1）
-＄KeyPressCommand_ThisVariableWillBeCleared	（when,（KeyPressCommand_Search）==1,（vncall,set,KeyPressCommand_VarName,S（KeyPressCommand_Count）））
+＄KeyPressCommand_ThisVariableWillBeCleared	（when,（KeyPressCommand_Search）==1,（vncall,set,KeyPressCommand_VarName,__kp.（KeyPressCommand_Count）））
 ＞KeyPressCommand_Matched	（変数「（KeyPressCommand_VarName）」の存在）==1&&（vncall,length,（KeyPressCommand_VarName））>0
 ＄KeyPressCommand_Count	（calc,（KeyPressCommand_Count）+1）
 ＞KeyPressCommand_NoMatched	（KeyPressCommand_EndCount）<（KeyPressCommand_Count）

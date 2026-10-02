@@ -246,8 +246,8 @@
 ＄__BackLog_MaxCount	（call,存在確認,バックログ.履歴最大数）
 ＄__x	（call,存在確認,バックログ.offset_x）
 ＄__y	（call,存在確認,バックログ.offset_y）
-＄__tmp	（split_reset）
-＄__count	（calc,（split（b1）（バックログ格納）（b1）|（b1）（__BackLog_MaxCount）（b1）0）-1）
+＄__tmp	（split_to（b1）__blv.（b1）（バックログ格納）（b1）|（b1）（__BackLog_MaxCount）（b1）0）
+＄__count	（calc,（__blv.の数）-1）
 ＞BackLog_Core
 
 
@@ -263,10 +263,10 @@
 
 ＠BackLog_Part
 （whenlist（b1）（nop,）（b1）φ
-（equal（b1）（S（BackLog_Partカウンタ））（b1）__horizon__）==1（b1）φ
+（equal（b1）（__blv.（BackLog_Partカウンタ））（b1）__horizon__）==1（b1）φ
 \n[-100]\_n（call,存在確認,バックログ.水平線）\_n\n \_l[（__x）,]（b1）φ
-（vncall（b1）length（b1）（ゲームID）.（S（BackLog_Partカウンタ））ログ）>0（b1）φ
-（（ゲームID）.（S（BackLog_Partカウンタ））ログ）\n[200] \_l[（__x）,]φ
+（vncall（b1）length（b1）（ゲームID）.（__blv.（BackLog_Partカウンタ））ログ）>0（b1）φ
+（（ゲームID）.（__blv.（BackLog_Partカウンタ））ログ）\n[200] \_l[（__x）,]φ
 ）
 
 
