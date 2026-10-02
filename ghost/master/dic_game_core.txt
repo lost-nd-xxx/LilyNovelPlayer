@@ -131,12 +131,11 @@
 ）φ
 （when（b1）（変数「A1」の存在）==0||（vncall,length,A1）==0（b1）φ
 （call（b1）ラベル通過_既読判定追加（b1）（A0））φ
-（split_reset）φ
-（nop,（split（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0））φ
+（split_to（b1）__lp.（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0）φ
 （set（b1）s_（ゲームID）.オートセーブ（b1）φ
 |（A0）|（next接頭辞）|（next数値）|φ
-（when（b1）（変数「S3」の存在）==1（b1）φ
-（for（b1）3（b1）（Sの数）-1（b1）1（b1）（S（C0））|）φ
+（when（b1）（変数「__lp.3」の存在）==1（b1）φ
+（for（b1）3（b1）（__lp.の数）-1（b1）1（b1）（__lp.（C0））|）φ
 ）φ
 ）φ
 ）φ
@@ -221,10 +220,10 @@
 ＞OnGamePlayCore.変数操作しない	（変数「A0」の存在）==0||（vncall,length,A0）==0
 ＞OnGamePlayCore.グローバル変数操作	（equal（b1）（substr（b1）（A0）（b1）0（b1）10）（b1）__global__）==1
 ＞OnGamePlayCore.変数削除	（vncall,length,A1）==0||（変数「A1」の存在）==0
-＄__tmp	（split_reset）
-＄__count	（calc,-1+（split（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0））
+＄__tmp	（split_to（b1）__vo.（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0）
+＄__count	（calc,-1+（__vo.の数））
 ＄__t	0
-＄s_（ゲームID）.オートセーブ	|（S0）|（S1）|（S2）|（when（b1）（変数「S3」の存在）==1&&（vncall,length,（S3））>0（b1）（for（b1）3（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（A0）:）==1（b1）（A0）:（A1）（set（b1）__t（b1）1）（b1）（S（C0））|）））
+＄s_（ゲームID）.オートセーブ	|（__vo.0）|（__vo.1）|（__vo.2）|（when（b1）（変数「__vo.3」の存在）==1&&（vncall,length,__vo.3）>0（b1）（for（b1）3（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（__vo.（C0））（b1）（A0）:）==1（b1）（A0）:（A1）|（set（b1）__t（b1）1）（b1）（__vo.（C0））|）））
 ＄s_（ゲームID）.オートセーブ	（s_（ゲームID）.オートセーブ）（when（b1）（__t）==0（b1）（A0）:（A1）|）
 ＄__t	
 
@@ -236,9 +235,9 @@
 
 
 ＊OnGamePlayCore.変数削除
-＄__tmp	（split_reset）
-＄__count	（calc,-1+（split（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0））
-＄s_（ゲームID）.オートセーブ	|（S0）|（S1）|（S2）|（when（b1）（vncall,length,S3）>0（b1）（for（b1）3（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（A0）:）<=0（b1）（S（C0））|）））
+＄__tmp	（split_to（b1）__vo.（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0）
+＄__count	（calc,-1+（__vo.の数））
+＄s_（ゲームID）.オートセーブ	|（__vo.0）|（__vo.1）|（__vo.2）|（when（b1）（vncall,length,__vo.3）>0（b1）（for（b1）3（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（__vo.（C0））（b1）（A0）:）<=0（b1）（__vo.（C0））|）））
 
 
 
@@ -246,10 +245,10 @@
 ＄__A0	（substr（b1）（A0）（b1）10）
 ＞OnGamePlayCore.変数操作しない	（変数「__A0」の存在）==0||（vncall,length,__A0）==0
 ＞OnGamePlayCore.グローバル変数削除	（vncall,length,A1）==0||（変数「A1」の存在）==0
-＄__tmp	（split_reset）
-＄__count	（calc,-1+（split（b1）（s_（ゲームID）.グローバルセーブ）（b1）|（b1）0（b1）0））
+＄__tmp	（split_to（b1）__gvo.（b1）（s_（ゲームID）.グローバルセーブ）（b1）|（b1）0（b1）0）
+＄__count	（calc,-1+（__gvo.の数））
 ＄__t	0
-＄s_（ゲームID）.グローバルセーブ	|（when（b1）（vncall,length,S0）>0（b1）（for（b1）0（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（__A0）:）==1（b1）（__A0）:（A1）（set,__t,1）（b1）（S（C0）））|））
+＄s_（ゲームID）.グローバルセーブ	|（when（b1）（vncall,length,__gvo.0）>0（b1）（for（b1）0（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（__gvo.（C0））（b1）（__A0）:）==1（b1）（__A0）:（A1）（set,__t,1）（b1）（__gvo.（C0）））|））
 ＄s_（ゲームID）.グローバルセーブ	（s_（ゲームID）.グローバルセーブ）（when（b1）（__t）==0（b1）（__A0）:（A1）|）
 ＄__t	
 ＄__A0	
@@ -257,9 +256,9 @@
 
 
 ＊OnGamePlayCore.グローバル変数削除
-＄__tmp	（split_reset）
-＄__count	（calc,-1+（split（b1）（s_（ゲームID）.グローバルセーブ）（b1）|（b1）0（b1）0））
-＄s_（ゲームID）.グローバルセーブ	|（when（b1）（vncall,length,S0）>0（b1）（for（b1）0（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（S（C0））（b1）（__A0）:）<=0（b1）（S（C0））|）））
+＄__tmp	（split_to（b1）__gvo.（b1）（s_（ゲームID）.グローバルセーブ）（b1）|（b1）0（b1）0）
+＄__count	（calc,-1+（__gvo.の数））
+＄s_（ゲームID）.グローバルセーブ	|（when（b1）（vncall,length,__gvo.0）>0（b1）（for（b1）0（b1）（__count）（b1）1（b1）（when（b1）（count（b1）（__gvo.（C0））（b1）（__A0）:）<=0（b1）（__gvo.（C0））|）））
 
 
 

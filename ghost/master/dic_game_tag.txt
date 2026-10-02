@@ -194,10 +194,9 @@
 
 
 ＠バックログ追加
-（split_reset）φ
-（nop,（split（b1）（バックログ格納）（b1）|（b1）0（b1）0））φ
+（split_to（b1）__bl.（b1）（バックログ格納）（b1）|（b1）0（b1）0）φ
 （whenlist（b1）（nop,）（b1）φ
-（vncall,equal,A0,S0）==1&&（vncall,length,S0）>0&&（vncall,length,A0）>0（b1）φ
+（vncall,equal,A0,__bl.0）==1&&（vncall,length,__bl.0）>0&&（vncall,length,A0）>0（b1）φ
 （nop,）（b1）φ
 （compare,（A1）,1）==1&&（vncall,length,A0）>0（b1）φ
 （vncall,バックログ追加_部品,A0）（b1）φ
@@ -212,7 +211,7 @@
 （set（b1）バックログ格納（b1）φ
 |（A0）φ
 （times（b1）（calc（b1）（call（b1）存在確認（b1）バックログ.履歴最大数）-1）（b1）φ
-（when（b1）（vncall,length,S（C0））>0（b1）|（S（C0）））φ
+（when（b1）（vncall,length,__bl.（C0））>0（b1）|（__bl.（C0）））φ
 ）φ
 |φ
 ）
@@ -229,12 +228,12 @@
 
 
 ＠バックログ削除	（vncall,is_digit,A0）==1
-（split_reset）φ
-（set（b1）__count（b1）（split（b1）（バックログ格納）（b1）|（b1）0（b1）0））φ
+（split_to（b1）__bl.（b1）（バックログ格納）（b1）|（b1）0（b1）0）φ
+（set（b1）__count（b1）（__bl.の数））φ
 （set（b1）バックログ格納（b1）|φ
 （for（b1）0（b1）（__count）-1（b1）1（b1）φ
 （when（b1）（C0）!=（A0）（b1）φ
-（S（C0））|φ
+（__bl.（C0））|φ
 ）））φ
 （set,__count,）
 ＃数字のみで指定が来たらその番号を消す　０始まり
@@ -279,14 +278,14 @@
 ＠変数読み出し
 （when（b1）（count（b1）（s_（ゲームID）.オートセーブ）（b1）|（A0）:）>0（b1）φ
 （set,__t,）φ
-（split_reset）φ
+（split_to（b1）__rd.（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0）φ
 （for（b1）φ
 3（b1）φ
-（calc,-1+（split（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0））（b1）φ
+（calc,-1+（__rd.の数））（b1）φ
 1（b1）φ
 （when（b1）φ
-（compare_head（b1）（S（C0））（b1）（A0）:）==1（b1）φ
-（set（b1）__t（b1）（erase_first（b1）（S（C0））（b1）（A0）:））φ
+（compare_head（b1）（__rd.（C0））（b1）（A0）:）==1（b1）φ
+（set（b1）__t（b1）（erase_first（b1）（__rd.（C0））（b1）（A0）:））φ
 ）φ
 ）φ
 （when（b1）（変数「__t」の存在）==1（b1）（__t））φ
@@ -301,14 +300,14 @@
 （set（b1）__A0（b1）φ
 （when（b1）（vncall,length,A0）<=0（b1）（ゲームID）（b1）（A0））φ
 ）φ
-（split_reset）φ
+（split_to（b1）__rdg.（b1）（s_（__A0）.グローバルセーブ）（b1）|（b1）0（b1）0）φ
 （for（b1）φ
 0（b1）φ
-（calc,-1+（split（b1）（s_（__A0）.グローバルセーブ）（b1）|（b1）0（b1）0））（b1）φ
+（calc,-1+（__rdg.の数））（b1）φ
 1（b1）φ
 （when（b1）φ
-（compare_head（b1）（S（C0））（b1）（A1）:）==1（b1）φ
-（set（b1）__t（b1）（erase_first（b1）（S（C0））（b1）（A1）:））φ
+（compare_head（b1）（__rdg.（C0））（b1）（A1）:）==1（b1）φ
+（set（b1）__t（b1）（erase_first（b1）（__rdg.（C0））（b1）（A1）:））φ
 ）φ
 ）φ
 （when（b1）（変数「__t」の存在）==1（b1）（__t））φ
