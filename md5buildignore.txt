@@ -21,7 +21,7 @@ __MACOSX/
 XtraStuf.mac/
 
 
-/developer_options.txt
+/.narinclude
 /md5buildignore.txt
 
 *.log
@@ -29,5 +29,6 @@ XtraStuf.mac/
 /.github/
 /docs/
 /LilyNovelPlayerBallon/
+/tools/
 LICENCE.md
 lnp_screenshot.gif
