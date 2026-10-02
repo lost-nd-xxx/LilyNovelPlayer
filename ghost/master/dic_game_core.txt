@@ -391,35 +391,27 @@ __translate
 
 
 ＠__x_replace
-（for,1,2,1,（vncall,set,__translate_tempvarname,__x_replace_core1））
+（vncall,set,__translate_tempvarname,__x_replace_core）
 
-＠__x_replace_core1
-（vncall,__x_replace_core2,__translate,C0）
-
-＠__x_replace_core2
-（vncall,replace,A0,__cw（A1）,__cw_after）
+＠__x_replace_core
+（vncall,replace,__translate,__cw1,__cw_after,__cw2,__cw_after）
 
 
 
 ＠__x_replace2
-（for,1,2,1,（vncall,set,__translate_tempvarname,__x_replace2_core1））
+（vncall,set,__translate_tempvarname,__x_replace2_core）
 
-＠__x_replace2_core1
-（vncall,__x_replace2_core2,__translate,C0）
-
-＠__x_replace2_core2
-（call（b1）replace（b1）（A0）（b1）（__cw（A1））（b1）（__cw_after2）（__cw（A1）））
+＠__x_replace2_core
+（vncall,replace,__translate,__cw1,__cw_after2_1,__cw2,__cw_after2_2）
 
 
 
 ＠__x_erase
-（for,1,2,1,（vncall,set,__translate_tempvarname,__x_erase_core1））
+（vncall,set,__translate_tempvarname,__x_erase_core）
 
-＠__x_erase_core1
-（vncall,__x_erase_core2,__translate,C0）
-
-＠__x_erase_core2
-（vncall,erase,A0,__cw（A1））
+＠__x_erase_core
+（vncall,erase,__translate,__cw1,__cw2）
+＃置換・削除は一度の走査で行うので、\x[noclear]と\xを並べる順番は問わない（長いほうが優先される）
 
 
 
@@ -435,30 +427,30 @@ __translate
 ＠__cw_after2
 （call,__クリック待ち描画,（call,存在確認,クリック待ちマーカー））φ
 
+＠__cw_after2_1
+（__cw_after2）（__cw1）
+
+＠__cw_after2_2
+（__cw_after2）（__cw2）
+
 ＠__クリック待ち描画
 \_l[（A1）,（A2）]\_b["（A0）",inline,--option=fixed,--option=foreground]
 
 
 
 ＠__wait_replace
-（for,1,9,1,（vncall,set,__translate_tempvarname,__wait_replace_core1））
+（vncall,set,__translate_tempvarname,__wait_replace_core）
 
-＠__wait_replace_core1
-（vncall,__wait_replace_core2,__translate,C0）
-
-＠__wait_replace_core2
-（vncall,replace,A0,__wr（A1）,__wr_after）
+＠__wait_replace_core
+（vncall,replace,__translate,__wr1,__wr_after1,__wr2,__wr_after2,__wr3,__wr_after3,__wr4,__wr_after4,__wr5,__wr_after5,__wr6,__wr_after6,__wr7,__wr_after7,__wr8,__wr_after8,__wr9,__wr_after9）
 
 
 
 ＠__wait_erase
-（for,1,9,1,（vncall,set,__translate_tempvarname,__wait_erase_core1））
+（vncall,set,__translate_tempvarname,__wait_erase_core）
 
-＠__wait_erase_core1
-（vncall,__wait_erase_core2,__translate,C0）
-
-＠__wait_erase_core2
-（vncall,erase,A0,__wr（A1））
+＠__wait_erase_core
+（vncall,erase,__translate,__wr1,__wr2,__wr3,__wr4,__wr5,__wr6,__wr7,__wr8,__wr9）
 
 
 
@@ -491,8 +483,35 @@ __translate
 
 
 
+＠__wr_after1
+（call,__wr_after,1）
+
+＠__wr_after2
+（call,__wr_after,2）
+
+＠__wr_after3
+（call,__wr_after,3）
+
+＠__wr_after4
+（call,__wr_after,4）
+
+＠__wr_after5
+（call,__wr_after,5）
+
+＠__wr_after6
+（call,__wr_after,6）
+
+＠__wr_after7
+（call,__wr_after,7）
+
+＠__wr_after8
+（call,__wr_after,8）
+
+＠__wr_after9
+（call,__wr_after,9）
+
 ＠__wr_after	（ウェイト乗数）>0
-\_w[（calc,（C0）*（ウェイト乗数））]
+\_w[（calc,（A0）*（ウェイト乗数））]
 
 ＠__wr_after	（ウェイト乗数）==0
 \_w[0]
