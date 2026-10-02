@@ -76,7 +76,6 @@
 
 
 ＊メニュー.ページ項目
-＄__t	（split_reset）
 ＄__maxperpage	（calc,（__CurrentPage）*6-2）
 ＄__endcount	（when,（__maxperpage）>（__MaxItemCount）,（__MaxItemCount）,（__maxperpage））
 ：\f[align,left]
@@ -150,7 +149,7 @@
 
 
 ＠セーブロードボタン_内容表示
-（when（b1）（変数「s_（ゲームID）.（A0）」の存在）==0||（vncall,length,s_（ゲームID）.（A0））<=1（b1）空白のセーブデータ（b1）（nop（b1）（split（b1）（s_（ゲームID）.（A0））（b1）|（b1）0（b1）0））（when（b1）（vncall,length,S0）>=9（b1）（substr（b1）（S0）（b1）0（b1）9）..（b1）（S0）））
+（when（b1）（変数「s_（ゲームID）.（A0）」の存在）==0||（vncall,length,s_（ゲームID）.（A0））<=1（b1）空白のセーブデータ（b1）（split_to（b1）__sv.（b1）（s_（ゲームID）.（A0））（b1）|（b1）0（b1）0）（when（b1）（vncall,length,__sv.0）>=9（b1）（substr（b1）（__sv.0）（b1）0（b1）9）..（b1）（__sv.0）））
 
 
 
@@ -235,19 +234,17 @@
 ＄__tmp＝（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
 ＄__tmp＝（when,（オート）==1,（メニュー.オート解除.変数戻す））
 ＄s_（ゲームID）.オートセーブ	（s_（ゲームID）.（R0））
-＄__tmp	（split_reset）
-＄__tmp	（split,（s_（ゲームID）.オートセーブ）,|,0,0）
-＄中断箇所	（ゲームID）.（S0）
-＄__tmp	（S0）
+＄__t	（split_to（b1）__sv.（b1）（s_（ゲームID）.オートセーブ）（b1）|（b1）0（b1）0）
+＄中断箇所	（ゲームID）.（__sv.0）
+＄__tmp	（__sv.0）
 ＞OnResumeGameFailure	（文「（中断箇所）」の存在）==0
 ＄バックログ状態	1
-＄next接頭辞	（when（b1）（vncall,length,S1）>0（b1）（S1）（b1）シナリオ）
-＄next数値	（when（b1）（vncall,length,S2）>0（b1）（S2）（b1）１）
-＄文字色.current	（when,（count（b1）（s_（ゲームID）.既読判定）（b1）|（S0）|）==0,（文字色.normal）,（文字色.visited））
+＄next接頭辞	（when（b1）（vncall,length,__sv.1）>0（b1）（__sv.1）（b1）シナリオ）
+＄next数値	（when（b1）（vncall,length,__sv.2）>0（b1）（__sv.2）（b1）１）
+＄文字色.current	（when,（count（b1）（s_（ゲームID）.既読判定）（b1）|（__sv.0）|）==0,（文字色.normal）,（文字色.visited））
 ＄__t	（call,バックログ追加,__horizon__）
-＄__t	（split_reset）
-＄__t	（nop,（split（b1）（バックログ格納）（b1）|（b1）3（b1）0））
-＄__t	（when（b1）（vncall,equal,__tmp,S1）==0（b1）（call（b1）バックログ追加（b1）（__tmp）））
+＄__t	（split_to（b1）__bl.（b1）（バックログ格納）（b1）|（b1）3（b1）0）
+＄__t	（when（b1）（vncall,equal,__tmp,__bl.1）==0（b1）（call（b1）バックログ追加（b1）（__tmp）））
 ＄描画中1	|
 ＄描画中2	|
 ＄描画中3	|
@@ -267,13 +264,12 @@
 
 
 ＊OnSavedataEraseDialog
-＄__t	（split_reset）
 \_q\*
 （__BG）
 （call,__offset,（R0）,0）以下のセーブデータを削除してもよいですか？\n[200]
 （call,__offset,（R0））（R1）\n
-（nop（b1）（split（b1）（s_（ゲームID）.（R1））（b1）|（b1）0（b1）0））
-（call,__offset,（R0））（S0）\n[200]
+（split_to（b1）__sv.（b1）（s_（ゲームID）.（R1））（b1）|（b1）0（b1）0）
+（call,__offset,（R0））（__sv.0）\n[200]
 （call,__offset,（R0））\__q[OnSavedataEraseDialog.Set,（R0）,（R1）]削除する\__q\n[125]
 （call,__offset,（R0））\__q[メニュー.（R0）]削除しない\__q\n
 
@@ -314,21 +310,19 @@
 ＄メニュー中	0
 ＄__tmp＝（when,（スキップ）==1,（メニュー.スキップ停止.変数戻す））
 ＄__tmp＝（when,（オート）==1,（メニュー.オート解除.変数戻す））
-＄__t	（split_reset）
-＄__t	（nop,（split（b1）（s_（ゲームID）.クイックセーブ）（b1）|（b1）4（b1）0））
-＞クイックロード失敗	（文「（ゲームID）.（S0）」の存在）==0
+＄__t	（split_to（b1）__sv.（b1）（s_（ゲームID）.クイックセーブ）（b1）|（b1）4（b1）0）
+＞クイックロード失敗	（文「（ゲームID）.（__sv.0）」の存在）==0
 ＄s_（ゲームID）.オートセーブ	（s_（ゲームID）.クイックセーブ）
-＄中断箇所	（ゲームID）.（S0）
-＄__tmp	（S0）
+＄中断箇所	（ゲームID）.（__sv.0）
+＄__tmp	（__sv.0）
 ＞クイックロード失敗	（文「（中断箇所）」の存在）==0
 ＄バックログ状態	1
-＄next接頭辞	（when（b1）（vncall,length,S1）>0（b1）（S1）（b1）シナリオ）
-＄next数値	（when（b1）（vncall,length,S2）>0（b1）（S2）（b1）１）
-＄文字色.current	（when,（count（b1）（s_（ゲームID）.既読判定）（b1）|（S0）|）==0,（文字色.normal）,（文字色.visited））
+＄next接頭辞	（when（b1）（vncall,length,__sv.1）>0（b1）（__sv.1）（b1）シナリオ）
+＄next数値	（when（b1）（vncall,length,__sv.2）>0（b1）（__sv.2）（b1）１）
+＄文字色.current	（when,（count（b1）（s_（ゲームID）.既読判定）（b1）|（__sv.0）|）==0,（文字色.normal）,（文字色.visited））
 ＄__t	（call,バックログ追加,__horizon__）
-＄__t	（split_reset）
-＄__t	（nop,（split（b1）（バックログ格納）（b1）|（b1）3（b1）0））
-＄__t	（when（b1）（vncall,equal,__tmp,S1）==0（b1）（call（b1）バックログ追加（b1）（__tmp）））
+＄__t	（split_to（b1）__bl.（b1）（バックログ格納）（b1）|（b1）3（b1）0）
+＄__t	（when（b1）（vncall,equal,__tmp,__bl.1）==0（b1）（call（b1）バックログ追加（b1）（__tmp）））
 ＄描画中1	|
 ＄描画中2	|
 ＄描画中3	|
