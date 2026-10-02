@@ -138,7 +138,7 @@ file,ghost/master/descript.txtb57509abd3c0150264bad7d3f5d3cf95size=600date=20
 file,ghost/master/dic_base_bootend.txt79750df0f8bd9f42402c23b04833af36size=11759date=2012-12-21T00:00:00
 file,ghost/master/dic_base_event.txt4afab6e2b02e2bb8fd147303e2b6533bsize=18463date=2012-12-21T00:00:00
 file,ghost/master/dic_base_resource.txt1269f9693432801c8b8fe8afa936dd29size=2473date=2012-12-21T00:00:00
-file,ghost/master/dic_game_core.txt37a7d11cedb8287f3e17337091cc0673size=22224date=2012-12-21T00:00:00
+file,ghost/master/dic_game_core.txt0d32f33c04db9305a073a67e669befa2size=22153date=2012-12-21T00:00:00
 file,ghost/master/dic_game_tag.txt838ee51cf66a5e4e1189beee6c0fdcfesize=19594date=2012-12-21T00:00:00
 file,ghost/master/dic_menu.txt9780e05fd33c4ce95c67f79728437c54size=8716date=2012-12-21T00:00:00
 file,ghost/master/dic_menu_config.txt13468af475a0881e09f778aefb279f9esize=12999date=2012-12-21T00:00:00
@@ -152,7 +152,7 @@ file,ghost/master/help/src/style.cssb4fcc7fb84cd1c1beb5550bd00ae07a7size=5259
 file,ghost/master/help/tags.htmla772852dda3d013d1b46de54ce3a0b9bsize=27494date=2012-12-21T00:00:00
 file,ghost/master/lnp_icon.ico8bf58db8dfd6f07201caf0aeda3790d5size=78446date=2012-12-21T00:00:00
 file,ghost/master/replace.txt9c4616b4b4b4396b5b7a4d0fea48d984size=4909date=2012-12-21T00:00:00
-file,ghost/master/satori.dll0771fea87ae5ce991d63465785ee1159size=737280date=2012-12-21T00:00:00
+file,ghost/master/satori.dll24729b8a591211aa1786845566a6b32bsize=815104date=2012-12-21T00:00:00
 file,ghost/master/satori_bootconf.txtc0a8cbb43e3dbe1e9f8eafad693c428bsize=216date=2012-12-21T00:00:00
 file,ghost/master/satori_conf.txt231b070b9d560c07cb0e958eeba51262size=1797date=2012-12-21T00:00:00
 file,ghost/master/scenarios/master/dic_backloglist.txt2c25ea53e27b5d7f6a9fbee0a88cbe50size=4835date=2012-12-21T00:00:00
