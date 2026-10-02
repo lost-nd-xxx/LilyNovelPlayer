@@ -1,1 +1,3 @@
-is_utf8_all,true
+# 文字コードは里々（Unicode版）の自動判定に任せる
+# UTF-8の基本辞書と、Shift_JISで書かれたサプリメントの辞書を、どちらも読めるようにするため
+is_utf8_all,false
