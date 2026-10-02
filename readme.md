@@ -30,3 +30,13 @@ Lily Novel Player(リリー・ノベル・プレイヤー、略して「LNP」)�
 * [独自タグ一覧](https://lost-nd-xxx.github.io/LilyNovelPlayer/tags.html)
 
 
+## AIの利用について
+2026年10月の更新（里々 Unicode 版への対応）から、開発の一部にAI（AnthropicのClaude）を利用しています。
+* 利用した範囲：辞書（里々）の修正や不具合の調査、手引き・独自タグ一覧の文章、動作確認用の道具など
+* AIによる変更は、すべて作者が内容を確認し、SSPで動作を確かめてから取り込んでいます。
+
+同梱素材のうち、configのサンプルボイスは音声合成ソフト「[VOICEVOX](https://voicevox.hiroshiba.jp/)」で、masterシナリオのBGMは自動作曲サービス「[CREEVO](https://creevo-music.com/)」で作ったものです。詳しくは同梱の readme.txt と、各ツールの公式サイトをご覧ください。
+
+画像と効果音はAIによらない素材です。
+
+
