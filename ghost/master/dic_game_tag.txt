@@ -359,7 +359,7 @@
 （set,再生中BGM,|）φ
 ）φ
 （when（b1）（count（b1）（再生中SE）（b1）|（A0）|）>0（b1）φ
-（set（b1）再生中SE（b1）（erase（b1）（再生中SE）（b1）|（A0）））φ
+（set（b1）再生中SE（b1）（call（b1）__効果音の記録から削除（b1）（A0）））φ
 ）φ
 （when（b1）（vncall,count,再生中VOICE,A0）>0（b1）φ
 （set,再生中VOICE,|）φ
@@ -409,7 +409,7 @@
 
 ＊OnSoundStop
 ＄__tmp	（when,（vncall,count,再生中BGM,R0）>0,（set,再生中BGM,|））
-＄再生中SE	（when（b1）（count（b1）（再生中SE）（b1）|（R0）|）>0（b1）（erase（b1）（再生中SE）（b1）|（R0））（b1）（再生中SE））
+＄再生中SE	（when（b1）（count（b1）（再生中SE）（b1）|（R0）|）>0（b1）（call（b1）__効果音の記録から削除（b1）（R0））（b1）（再生中SE））
 ＄__tmp	（when,（vncall,count,再生中VOICE,R0）>=1,（set,再生中VOICE,|））
 ＃「再生中〇〇」と同じファイル名が停止した場合は再生中〇〇を初期化する
 ＃効果音のみ多重再生を許可しているため、該当ファイルのみ記録から消す
@@ -418,10 +418,19 @@
 
 ＊OnSoundError
 ＄__tmp	（when,（vncall,count,再生中BGM,R0）>0,（set,再生中BGM,|））
-＄再生中SE	（when（b1）（count（b1）（再生中SE）（b1）|（R0）|）>0（b1）（erase（b1）（再生中SE）（b1）|（R0））（b1）（再生中SE））
+＄再生中SE	（when（b1）（count（b1）（再生中SE）（b1）|（R0）|）>0（b1）（call（b1）__効果音の記録から削除（b1）（R0））（b1）（再生中SE））
 ＄__tmp	（when,（vncall,count,再生中VOICE,R0）>0,（set,再生中VOICE,|））
 ＃「再生中〇〇」と同じファイル名で失敗した場合は再生中〇〇を初期化する
 ＃効果音のみ多重再生を許可しているため、該当ファイルのみ記録から消す
+
+
+
+＠__効果音の記録から削除
+（replace（b1）（erase（b1）（replace（b1）（再生中SE）（b1）|（b1）||）（b1）|（A0）|）（b1）||（b1）|）
+＃「再生中SE」（|a.wav|b.wav|）から、ファイル名がA0と一致するものをすべて除いた文字列を返す
+＃区切りごと「|A0|」で探さないと、頭が一致する別のファイル（a.wav2など）まで削れる
+＃同じファイルが続けて記録されている時（|a.wav|a.wav|）は区切りを共有しているので、
+＃いったん区切りを「||」に増やして一つずつ独立させてから消し、最後に「|」へ戻す
 
 
 
