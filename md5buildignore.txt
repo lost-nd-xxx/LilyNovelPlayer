@@ -27,7 +27,6 @@ XtraStuf.mac/
 *.log
 
 /.github/
-/docs/
 /LilyNovelPlayerBallon/
 /tools/
 LICENCE.md
