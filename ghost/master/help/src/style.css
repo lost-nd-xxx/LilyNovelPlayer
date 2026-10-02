@@ -88,9 +88,15 @@ em {
 
 .side ul {
 	padding: 0;
+	padding-right: 4px; /* 付箋の影が切れないように */
 	margin-block-end: 0;
 	margin-block-start: 0;
-	width: 290px;
+}
+
+.side ul.side_scroll {
+	min-height: 0; /* 画面に収まらない時は、上の固定部分を残してこちらだけスクロールする */
+	overflow-y: auto;
+	padding-bottom: 4px; /* 付箋の影が切れないように */
 }
 
 .side ul li {
@@ -122,8 +128,20 @@ em {
 	background: #F8BBD0 !important; /* 背景色 */
 }
 
+.category {
+	border-left: solid 6px #0D47A1 !important; /* 左側の線 */
+	background: #1976D2 !important; /* 背景色 */
+	color: #fff !important;
+	font-weight: bold;
+	margin-top: 12px; /* 上の分類との余白 */
+}
+
 .side ul li:hover {
 	background: #fff !important; /* 背景 */
+}
+
+.side ul li.category:hover {
+	background: #1976D2 !important; /* 見出しはリンクではないので変えない */
 }
 
 .side ul li a {
@@ -176,12 +194,14 @@ em {
 
 .side {
 	display: flex;
-	align-items: center;
+	flex-direction: column; /* 固定部分とスクロール部分を縦に並べる */
+	align-items: stretch; /* 目次の幅を左の欄の幅にそろえる */
 	justify-content: center;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 5px; /* 追従する */
 	height: 100%;
+	max-height: calc(100vh - 10px); /* 画面に収める */
 	width: 270px;
 	min-width: 270px;
 	margin: 0;
@@ -223,6 +243,11 @@ screen and (max-width: 850px) {
 	.side {
 		top: auto; /* 追従しない */
 		margin-top: 5px;
+		max-height: none; /* 追従しないのでページと一緒に流す */
+	}
+
+	.side ul.side_scroll {
+		overflow-y: visible;
 	}
 
 	#page_top {
