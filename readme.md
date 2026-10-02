@@ -37,6 +37,6 @@ Lily Novel Player(リリー・ノベル・プレイヤー、略して「LNP」)�
 
 同梱素材のうち、configのサンプルボイスは音声合成ソフト「[VOICEVOX](https://voicevox.hiroshiba.jp/)」で、masterシナリオのBGMは自動作曲サービス「[CREEVO](https://creevo-music.com/)」で作ったものです。詳しくは同梱の readme.txt と、各ツールの公式サイトをご覧ください。
 
-画像と効果音はAIによらない素材です。
+画像と効果音はAIによらない素材です。ただし、`ghost/master/scenarios/master/resources/bg_desktop.png` は、写真を加工する際に、画像編集ソフトのAI機能（背景の自動認識・範囲の選択）を使っています。
 
 
