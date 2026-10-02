@@ -28,14 +28,14 @@
 ＞OnGallery_NoValidItem	（変数「__Gallery_MaxSectionCount」の存在）==0
 ＄__Gallery_MaxSectionCount	（length,（__Gallery_MaxSectionCount））
 ＄__Gallery_MaxPageCount	（calc,（__Gallery_MaxSectionCount）/6（when,（calc,（__Gallery_MaxSectionCount）%6）>0,+1））
-＄__Gallery_ImageAll	（for，1，（__Gallery_MaxSectionCount），1，（for，1，（split，（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C1），（han2zen，（C1）））），|，0，0）-1，2，（S（C0））、））
-＄__Gallery_ButtonAll	（for，1，（__Gallery_MaxSectionCount），1，（nop,（split，（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C0），（han2zen，（C0）））），|，0，0））（when、（equal,（substr、（S0）、0、4）,\_b[）==0、（vncall,__Gallery_ListButton_Path,S0）、（S0））、）
-＄__Gallery_FlagNameAll	（for,1,（__Gallery_MaxSectionCount）,1,（for,2,（split，（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C1），（han2zen，（C1）））），|，0，0）-1,2,（S（C0）），）、）
+＄__Gallery_ImageAll	（for，1，（__Gallery_MaxSectionCount），1，（for，1，（split_to（b1）__gl.（b1）（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C1），（han2zen，（C1））））（b1）|（b1）0（b1）0）（__gl.の数）-1，2，（__gl.（C0））、））
+＄__Gallery_ButtonAll	（for，1，（__Gallery_MaxSectionCount），1，（split_to（b1）__gl.（b1）（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C0），（han2zen，（C0））））（b1）|（b1）0（b1）0）（when、（equal,（substr、（__gl.0）、0、4）,\_b[）==0、（vncall,__Gallery_ListButton_Path,__gl.0）、（__gl.0））、）
+＄__Gallery_FlagNameAll	（for,1,（__Gallery_MaxSectionCount）,1,（for,2,（split_to（b1）__gl.（b1）（（__Gallery_ListName）（when，（__Gallery_IsCountHalfWidth）==1，（C1），（han2zen，（C1））））（b1）|（b1）0（b1）0）（__gl.の数）-1,2,（__gl.（C0）），）、）
 ＄__Gallery_FlagNameAll	（replace,（__Gallery_FlagNameAll）,，、,、）
 ＄__Gallery_StatusAll_Split	（call、__Gallery_SummariseStatus、（__Gallery_FlagNameAll））
 ＄__Gallery_StatusAll_Joined	（erase,（__Gallery_StatusAll_Split）,、）
 ＄__Gallery_MaxImageCount	（length,（__Gallery_StatusAll_Joined））
-＄__Gallery_SectionHeadCount	（set,__count,0）（for,0,（split,（__Gallery_StatusAll_Split）,、,0,0）-1,1,（__count）（set,__count,（calc,（__count）+（length,（S（C0）））））、）
+＄__Gallery_SectionHeadCount	（set,__count,0）（split_to（b1）__gls.（b1）（__Gallery_StatusAll_Split）（b1）、（b1）0（b1）0）（for,0,（__gls.の数）-1,1,（__count）（set,__count,（calc,（__count）+（length,（__gls.（C0）））））、）
 ＞OnGallery_List
 
 
@@ -81,8 +81,8 @@
 （when,（__Gallery_MaxPageCount）>1,（__Gallery_List_Pager））
 
 \f[align,left]
-（nop,（split,（__Gallery_StatusAll_Split）,、,0,0））
-（for、（__Gallery_List_MaxPerPage）-6、（__Gallery_List_EndCountPerPage）-1、1、（call,__Gallery_ListButton,（call,__Gallery_ListButton_Coordinate,（C0））,（C0）,（S（C0））））
+（split_to（b1）__gls.（b1）（__Gallery_StatusAll_Split）（b1）、（b1）0（b1）0）
+（for、（__Gallery_List_MaxPerPage）-6、（__Gallery_List_EndCountPerPage）-1、1、（call,__Gallery_ListButton,（call,__Gallery_ListButton_Coordinate,（C0））,（C0）,（__gls.（C0））））
 
 
 
@@ -98,7 +98,8 @@
 ＄__count	0
 ＄__start	（call、__Extractor、（__count）、（__stats））
 ＄__start	（calc,（__n）-（__start））
-＄__tmp＝（nop,（split_reset）（split,（__Gallery_ImageAll）,、,0,0））
+＄__tmp	（split_to（b1）__gli.（b1）（__Gallery_ImageAll）（b1）、（b1）0（b1）0）
+＃分割した画像の一覧は、OnGallery_Detail_Core と、そこから embed される OnGallery_Detail_Next の繰り返しで読む
 ＞OnGallery_Detail_Core
 
 
@@ -106,7 +107,7 @@
 ＊OnGallery_Detail_Core
 ＄__x	0
 ＄__y	0
-＄__current	（S（__n））
+＄__current	（__gli.（__n））
 ＄__tmp	（when（b1）（count（b1）（__current）（b1）:）==2（b1）（__Gallery_Detail_Split））
 （when（b1）（equal（b1）（__Gallery_BGM）（b1）__nochange__）==0（b1）（音楽,（__Gallery_BGM）））
 \_q\*
